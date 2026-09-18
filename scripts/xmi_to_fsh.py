@@ -454,12 +454,15 @@ def render_instances(instance_specs: list[InstanceSpec], classes: dict[str, Logi
     tell them apart.
 
     Object diagrams are inherently partial sketches: they rarely set every
-    required (min cardinality >= 1) attribute of the class they instantiate,
-    which SUSHI rejects for `Usage: #example` instances. So an instance is
-    only marked #example (a standalone, browsable example in the built IG)
-    when every one of its class's required attributes got a value from a
-    slot; otherwise it's marked #inline (still compiled and included in the
-    FHIR package, just not validated or published as its own example page)."""
+    required (min cardinality >= 1) attribute of the class they instantiate.
+    SUSHI validates that against the InstanceOf profile regardless of the
+    instance's `Usage`, so a partial instance can't be compiled as a real
+    FSH Instance at all without either dropping data or fabricating values
+    for the missing required fields. Instead: only instances that set every
+    required attribute become real, validated `Instance:` resources; the
+    rest are emitted as FSH comments (SUSHI ignores comments entirely) so
+    the information from the object diagram is still visible in the
+    generated source without breaking validation."""
     out: list[str] = []
     for spec in instance_specs:
         cls = classes.get(spec.classifier_id) if spec.classifier_id else None
@@ -498,36 +501,49 @@ def render_instances(instance_specs: list[InstanceSpec], classes: dict[str, Logi
                     f"converted automatically"
                 )
                 continue
-            rules.append(
-                f"* {attr.field_name} = {format_instance_value(value_text, attr.type_name)}"
-            )
+            rules.append((attr.field_name, format_instance_value(value_text, attr.type_name)))
             covered_source_ids.add(attr.source_id)
 
         is_complete = all(
             attr.lower == "0" or attr.source_id in covered_source_ids
             for attr in cls.attributes
         )
-        usage = "#example" if is_complete else "#inline"
-        if not is_complete:
-            warnings.append(
-                f"{spec.name}: marked Usage: #inline instead of #example — "
-                f"this object diagram doesn't set every required attribute "
-                f"of '{cls.name}', so SUSHI would reject it as an example"
-            )
 
-        lines = [f"Instance: {candidate}"]
-        lines.append(f"InstanceOf: {cls.fsh_name}")
-        lines.append(f'Title: "{escape_fsh_string(spec.name)}"')
-        lines.append(f"Usage: {usage}")
-        role = "Example" if is_complete else "Partial example (illustrative only)"
-        lines.append(
-            f'Description: "{role} instance generated from an object diagram '
-            f'in {escape_fsh_string(source_file)}."'
-        )
-        lines.extend(rules)
-        if not rules:
-            lines.append("// (no slot values could be mapped to attributes)")
-        out.append("\n".join(lines) + "\n")
+        if is_complete:
+            lines = [f"Instance: {candidate}"]
+            lines.append(f"InstanceOf: {cls.fsh_name}")
+            lines.append(f'Title: "{escape_fsh_string(spec.name)}"')
+            lines.append("Usage: #example")
+            lines.append(
+                f'Description: "Example instance generated from an object '
+                f'diagram in {escape_fsh_string(source_file)}."'
+            )
+            for field_name, value in rules:
+                lines.append(f"* {field_name} = {value}")
+            if not rules:
+                lines.append("// (no slot values could be mapped to attributes)")
+            out.append("\n".join(lines) + "\n")
+        else:
+            # Not every required attribute of the class is set, so this
+            # can't validate as a real Instance — keep the data visible as
+            # a comment instead of dropping or fabricating values.
+            warnings.append(
+                f"{spec.name}: rendered as a comment, not a FSH Instance — "
+                f"this object diagram doesn't set every required attribute "
+                f"of '{cls.name}', so SUSHI would reject it"
+            )
+            lines = [
+                f"// Partial example (from an object diagram in {source_file}, "
+                f"not a valid Instance — missing required attributes of "
+                f"'{cls.name}'):",
+                f"// Instance: {candidate} (InstanceOf: {cls.fsh_name}, "
+                f"title: \"{spec.name}\")",
+            ]
+            for field_name, value in rules:
+                lines.append(f"// * {field_name} = {value}")
+            if not rules:
+                lines.append("// (no slot values could be mapped to attributes)")
+            out.append("\n".join(lines) + "\n")
     return out
 
 
