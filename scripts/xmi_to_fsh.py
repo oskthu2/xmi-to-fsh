@@ -127,6 +127,7 @@ class Attribute:
     type_name: str
     is_complex: bool
     unresolved_type: bool = False
+    source_id: str | None = None
 
 
 @dataclass
@@ -137,6 +138,14 @@ class LogicalClass:
     attributes: list[Attribute] = field(default_factory=list)
     fsh_id: str | None = None
     fsh_name: str | None = None
+
+
+@dataclass
+class InstanceSpec:
+    xmi_id: str
+    name: str
+    classifier_id: str | None
+    slots: list[tuple[str, str]]  # (definingFeature xmi:id, value text)
 
 
 class ConversionWarning(Exception):
@@ -155,13 +164,37 @@ def is_element_type(el: ET.Element, *type_names: str) -> bool:
     return xmi_attr(el, "type") in type_names
 
 
+def parse_instance_spec(el: ET.Element) -> InstanceSpec:
+    xid = xmi_attr(el, "id") or ""
+    classifier_el = el.find("classifier")
+    classifier_id = xmi_attr(classifier_el, "idref") if classifier_el is not None else None
+    slots: list[tuple[str, str]] = []
+    for slot_el in el.findall("slot"):
+        defining_feature = slot_el.get("definingFeature")
+        value_el = slot_el.find("value")
+        if not defining_feature or value_el is None:
+            continue
+        value_text = value_el.get("body")
+        if value_text is None:
+            continue
+        slots.append((defining_feature, value_text))
+    return InstanceSpec(
+        xmi_id=xid,
+        name=el.get("name") or xid,
+        classifier_id=classifier_id,
+        slots=slots,
+    )
+
+
 def build_registry(root: ET.Element):
-    """Walk the whole document once, indexing classes/datatypes/enumerations
-    and associations by xmi:id, regardless of how deeply they're nested
-    (Visual Paradigm nests classes inside packages and inside each other)."""
+    """Walk the whole document once, indexing classes/datatypes/enumerations,
+    associations and instance specifications (object-diagram instances) by
+    xmi:id, regardless of how deeply they're nested (Visual Paradigm nests
+    classes inside packages and inside each other)."""
     classes: dict[str, LogicalClass] = {}
     type_name: dict[str, str] = {}  # xmi:id -> raw UML type/enumeration name
     associations: list[ET.Element] = []
+    instance_specs: list[InstanceSpec] = []
 
     for el in root.iter():
         if is_element_type(el, "uml:Class"):
@@ -179,8 +212,10 @@ def build_registry(root: ET.Element):
                 type_name[xid] = el.get("name") or xid
         elif is_element_type(el, "uml:Association"):
             associations.append(el)
+        elif is_element_type(el, "uml:InstanceSpecification"):
+            instance_specs.append(parse_instance_spec(el))
 
-    return classes, type_name, associations
+    return classes, type_name, associations, instance_specs
 
 
 def assign_fsh_names(classes: dict[str, LogicalClass], name_registry: set[str]) -> None:
@@ -228,7 +263,8 @@ def resolve_type(type_id: str | None, classes: dict[str, LogicalClass],
 
 def make_attribute(raw_name: str | None, type_id: str | None, lower_el, upper_el,
                     classes, type_name, warnings, context,
-                    default_lower="0", default_upper="1") -> Attribute:
+                    default_lower="0", default_upper="1",
+                    source_id: str | None = None) -> Attribute:
     original_name = raw_name or "field"
     field_name = sanitize_field_name(original_name)
     renamed = False
@@ -254,6 +290,7 @@ def make_attribute(raw_name: str | None, type_id: str | None, lower_el, upper_el
         type_name=type_fsh,
         is_complex=is_complex,
         unresolved_type=unresolved,
+        source_id=source_id,
     )
 
 
@@ -269,6 +306,7 @@ def collect_class_attributes(class_el: ET.Element, cls: LogicalClass, classes,
             attr_el.find("upperValue"),
             classes, type_name, warnings,
             context=cls.name,
+            source_id=xmi_attr(attr_el, "id"),
         )
         cls.attributes.append(attr)
 
@@ -334,6 +372,7 @@ def apply_associations(associations: list[ET.Element], classes: dict[str, Logica
                 upper=upper,
                 type_name=target_cls.fsh_name,
                 is_complex=True,
+                source_id=xmi_attr(target_end, "id"),
             ))
             warnings.append(
                 f"{owner_cls.name}: synthesized attribute '{candidate}' -> "
@@ -374,8 +413,104 @@ def render_class_fsh(cls: LogicalClass, is_root: bool, source_file: str,
     return "\n".join(lines) + "\n"
 
 
+def build_attribute_index(classes: dict[str, LogicalClass]
+                           ) -> dict[str, tuple[LogicalClass, Attribute]]:
+    """Maps a source ownedAttribute/association-end xmi:id to the class that
+    owns it and the Attribute we generated for it, so InstanceSpecification
+    slots (which reference that same xmi:id via `definingFeature`) can be
+    matched back to a FSH element name."""
+    index: dict[str, tuple[LogicalClass, Attribute]] = {}
+    for cls in classes.values():
+        for attr in cls.attributes:
+            if attr.source_id:
+                index[attr.source_id] = (cls, attr)
+    return index
+
+
+def format_instance_value(value_text: str, type_name: str) -> str:
+    text = value_text.strip()
+    if type_name == "boolean" and text.lower() in ("true", "false"):
+        return text.lower()
+    if type_name in ("integer", "unsignedInt", "positiveInt") and re.fullmatch(r"-?\d+", text):
+        return text
+    if type_name == "decimal":
+        try:
+            float(text)
+            return text
+        except ValueError:
+            pass
+    return f'"{escape_fsh_string(value_text)}"'
+
+
+def render_instances(instance_specs: list[InstanceSpec], classes: dict[str, LogicalClass],
+                      attr_index: dict[str, tuple[LogicalClass, Attribute]],
+                      instance_name_registry: set[str],
+                      warnings: list[str], source_file: str) -> list[str]:
+    """Best-effort: converts each uml:InstanceSpecification (an object in one
+    of the source model's object diagrams) into a FSH example Instance of
+    the corresponding Logical model. Slot values are copied through as-is —
+    some object diagrams use real example data, others use descriptive
+    placeholder text (e.g. "{comment} [0..1]"), and this does not try to
+    tell them apart."""
+    out: list[str] = []
+    for spec in instance_specs:
+        cls = classes.get(spec.classifier_id) if spec.classifier_id else None
+        if cls is None:
+            warnings.append(
+                f"{spec.name}: skipped example instance — classifier "
+                f"'{spec.classifier_id}' not found among converted classes"
+            )
+            continue
+
+        inst_name = re.sub(r"[^A-Za-z0-9]", "", strip_diacritics(spec.name)) or "Example"
+        if inst_name[0].isdigit():
+            inst_name = f"Example{inst_name}"
+        candidate = inst_name
+        n = 2
+        while candidate.lower() in instance_name_registry:
+            candidate = f"{inst_name}{n}"
+            n += 1
+        instance_name_registry.add(candidate.lower())
+
+        lines = [f"Instance: {candidate}"]
+        lines.append(f"InstanceOf: {cls.fsh_name}")
+        lines.append(f'Title: "{escape_fsh_string(spec.name)}"')
+        lines.append("Usage: #example")
+        lines.append(
+            f'Description: "Example instance generated from an object diagram '
+            f'in {escape_fsh_string(source_file)}."'
+        )
+
+        rule_count = 0
+        for defining_feature, value_text in spec.slots:
+            found = attr_index.get(defining_feature)
+            if found is None:
+                warnings.append(
+                    f"{spec.name}: skipped a slot — its attribute could not "
+                    f"be matched back to '{cls.name}'"
+                )
+                continue
+            _, attr = found
+            if attr.is_complex:
+                warnings.append(
+                    f"{spec.name}.{attr.field_name}: skipped — value is a "
+                    f"complex/reference type, only primitive slot values are "
+                    f"converted automatically"
+                )
+                continue
+            lines.append(
+                f"* {attr.field_name} = {format_instance_value(value_text, attr.type_name)}"
+            )
+            rule_count += 1
+
+        if rule_count == 0:
+            lines.append("// (no slot values could be mapped to attributes)")
+        out.append("\n".join(lines) + "\n")
+    return out
+
+
 def convert_file(xmi_path: Path, out_dir: Path, id_registry: set[str],
-                  name_registry: set[str]) -> list[str]:
+                  name_registry: set[str], instance_name_registry: set[str]) -> list[str]:
     warnings: list[str] = []
     try:
         tree = ET.parse(xmi_path)
@@ -383,7 +518,7 @@ def convert_file(xmi_path: Path, out_dir: Path, id_registry: set[str],
         raise ConversionWarning(f"{xmi_path.name}: could not parse XML ({exc})")
 
     root = tree.getroot()
-    classes, type_name, associations = build_registry(root)
+    classes, type_name, associations, instance_specs = build_registry(root)
 
     if not classes:
         raise ConversionWarning(f"{xmi_path.name}: no uml:Class elements found")
@@ -431,13 +566,25 @@ def convert_file(xmi_path: Path, out_dir: Path, id_registry: set[str],
         out_parts.append(render_class_fsh(cls, cls is root_cls, xmi_path.name,
                                            id_registry))
 
+    instance_count = 0
+    if instance_specs:
+        attr_index = build_attribute_index(classes)
+        instance_blocks = render_instances(
+            instance_specs, classes, attr_index,
+            instance_name_registry, warnings,
+            xmi_path.name,
+        )
+        out_parts.extend(instance_blocks)
+        instance_count = len(instance_blocks)
+
     out_dir.mkdir(parents=True, exist_ok=True)
     out_name = re.sub(r"[^A-Za-z0-9.\-]+", "_", xmi_path.stem) + ".fsh"
     out_path = out_dir / out_name
     out_path.write_text("\n".join(out_parts), encoding="utf-8")
 
     print(f"[ok] {xmi_path.name} -> {out_path} "
-          f"({len(classes)} class(es), root: {root_cls.name})")
+          f"({len(classes)} class(es), {instance_count} example instance(s), "
+          f"root: {root_cls.name})")
     for w in warnings:
         print(f"  [warn] {w}")
     return warnings
@@ -469,11 +616,13 @@ def main() -> int:
 
     id_registry: set[str] = set()
     name_registry: set[str] = set()
+    instance_name_registry: set[str] = set()
     total_warnings = 0
     failed = False
     for xmi_path in xmi_files:
         try:
-            warnings = convert_file(xmi_path, out_dir, id_registry, name_registry)
+            warnings = convert_file(xmi_path, out_dir, id_registry, name_registry,
+                                     instance_name_registry)
             total_warnings += len(warnings)
         except ConversionWarning as exc:
             print(f"[error] {exc}", file=sys.stderr)
