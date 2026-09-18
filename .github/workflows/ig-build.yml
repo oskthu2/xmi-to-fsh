@@ -104,7 +104,7 @@ jobs:
             "https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar"
 
       - name: Build IG (this also runs SUSHI again to produce FHIR resources)
-        run: java -Xmx4g -jar publisher.jar -ig sushi-config.yaml
+        run: java -Xmx4g -jar publisher.jar -ig ig.ini
 
       - name: Upload built IG site
         uses: actions/upload-artifact@v4
