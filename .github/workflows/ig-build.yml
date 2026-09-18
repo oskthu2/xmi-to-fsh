@@ -78,6 +78,16 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      # The IG Publisher's default template (fhir.base.template) renders
+      # the site with Jekyll, which isn't preinstalled on the runner.
+      - name: Set up Ruby (for Jekyll)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+
+      - name: Install Jekyll
+        run: gem install jekyll
+
       # upload-artifact flattens input/fsh/models/*.fsh to just the
       # filenames (their common parent dir becomes the artifact root), so
       # download straight back into that same directory.
