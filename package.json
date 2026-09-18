@@ -1,0 +1,12 @@
+{
+  "name": "xmi-to-fsh-ig",
+  "private": true,
+  "description": "Build tooling for the FHIR IG generated from Visual Paradigm XMI exports",
+  "devDependencies": {
+    "fsh-sushi": "3.20.1"
+  },
+  "scripts": {
+    "generate": "python3 scripts/xmi_to_fsh.py",
+    "sushi": "sushi build ."
+  }
+}

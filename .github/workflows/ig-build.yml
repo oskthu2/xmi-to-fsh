@@ -1,0 +1,141 @@
+name: Build FHIR IG from XMI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+# Avoid overlapping publishes to gh-pages.
+concurrency:
+  group: ig-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Step 1: turn every xmi-input/*.xmi file into FSH logical models, then
+  # ask SUSHI to compile+validate the FSH. This is the fast gate: if the
+  # XMI doesn't produce valid FSH, nothing else runs.
+  extract-and-validate:
+    name: Extract FSH from XMI & validate with SUSHI
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install SUSHI
+        run: npm ci
+
+      - name: Generate FSH logical models from XMI
+        run: python3 scripts/xmi_to_fsh.py --input xmi-input --output input/fsh/models
+
+      - name: Validate FSH with SUSHI
+        run: npx sushi build .
+
+      - name: Upload generated FSH
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-fsh
+          path: input/fsh/models/*.fsh
+          if-no-files-found: error
+          retention-days: 7
+
+  # Step 2: build the full IG website with the HL7 FHIR IG Publisher,
+  # reusing exactly the FSH that was just validated. Only runs if step 1
+  # succeeded.
+  build-ig:
+    name: Build IG with FHIR IG Publisher
+    needs: extract-and-validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install SUSHI globally (IG Publisher shells out to it)
+        run: |
+          version=$(node -p "require('./package.json').devDependencies['fsh-sushi']")
+          npm install -g "fsh-sushi@${version}"
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      # The IG's template (fhir2.base.template, set in ig.ini) renders
+      # the site with Jekyll, which isn't preinstalled on the runner.
+      - name: Set up Ruby (for Jekyll)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2"
+
+      - name: Install Jekyll
+        run: gem install jekyll
+
+      # upload-artifact flattens input/fsh/models/*.fsh to just the
+      # filenames (their common parent dir becomes the artifact root), so
+      # download straight back into that same directory.
+      - name: Download generated FSH from step 1
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-fsh
+          path: input/fsh/models
+
+      - name: Get current week (cache key for the IG Publisher jar)
+        id: week
+        run: echo "value=$(date +%Y-%U)" >> "$GITHUB_OUTPUT"
+
+      # Cached per calendar week so the jar isn't re-downloaded on every
+      # run, but still picks up new IG Publisher releases regularly.
+      - name: Cache IG Publisher jar
+        id: cache-publisher
+        uses: actions/cache@v4
+        with:
+          path: publisher.jar
+          key: ig-publisher-${{ steps.week.outputs.value }}
+
+      - name: Download latest IG Publisher
+        if: steps.cache-publisher.outputs.cache-hit != 'true'
+        run: |
+          curl -fL -o publisher.jar \
+            "https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar"
+
+      # The IG Publisher expects fsh-generated/ to already contain the
+      # compiled FHIR resources (including the ImplementationGuide
+      # resource ig.ini points at) — it does not run SUSHI itself.
+      - name: Run SUSHI to produce FHIR resources
+        run: sushi build .
+
+      - name: Build IG
+        run: java -Xmx4g -jar publisher.jar -ig ig.ini
+
+      - name: Upload built IG site
+        uses: actions/upload-artifact@v4
+        with:
+          name: ig-site
+          path: output/**
+          retention-days: 14
+
+      - name: Publish IG site to gh-pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
