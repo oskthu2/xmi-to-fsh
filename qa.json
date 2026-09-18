@@ -1,0 +1,19 @@
+{
+  "url" : "http://example.org/fhir/xmi-to-fsh/ImplementationGuide/xmi.to.fsh",
+  "name" : "XmiToFshIG",
+  "title" : "Logical Models from Visual Paradigm XMI",
+  "description" : "Logical models generated automatically from Visual Paradigm XMI exports found in xmi-input/. Do not edit the generated FSH files under input/fsh/models/ by hand — re-run scripts/xmi_to_fsh.py instead.",
+  "status" : "draft",
+  "package-id" : "xmi.to.fsh",
+  "ig-ver" : "0.1.0",
+  "date" : "Fri, 18 Sep, 2026 08:41:45 +0000",
+  "dateISO8601" : "2026-09-18T08:41:45+00:00",
+  "errs" : 3,
+  "warnings" : 513,
+  "hints" : 90,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 704855144
+}

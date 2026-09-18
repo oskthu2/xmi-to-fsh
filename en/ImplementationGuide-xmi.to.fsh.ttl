@@ -1,0 +1,2039 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.org/fhir/xmi-to-fsh/ImplementationGuide/xmi.to.fsh> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "xmi.to.fsh"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide xmi.to.fsh</b></p><a name=\"xmi.to.fsh\"> </a><a name=\"hcxmi.to.fsh\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>XmiToFshIG</h2><p>The official URL for this implementation guide is: </p><pre>http://example.org/fhir/xmi-to-fsh/ImplementationGuide/xmi.to.fsh</pre><div><p>Logical models generated automatically from Visual Paradigm XMI exports found in xmi-input/. Do not edit the generated FSH files under input/fsh/models/ by hand — re-run scripts/xmi_to_fsh.py instead.</p>\n</div></div>"
+  ] ;
+  fhir:ImplementationGuide.url [ fhir:value "http://example.org/fhir/xmi-to-fsh/ImplementationGuide/xmi.to.fsh"] ;
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"] ;
+  fhir:ImplementationGuide.name [ fhir:value "XmiToFshIG"] ;
+  fhir:ImplementationGuide.title [ fhir:value "Logical Models from Visual Paradigm XMI"] ;
+  fhir:ImplementationGuide.status [ fhir:value "draft"] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-18T08:41:45+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.publisher [ fhir:value "xmi-to-fsh"] ;
+  fhir:ImplementationGuide.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "xmi-to-fsh" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://github.com/oskthu2/xmi-to-fsh" ]
+     ]
+  ] ;
+  fhir:ImplementationGuide.description [ fhir:value "Logical models generated automatically from Visual Paradigm XMI exports found in xmi-input/. Do not edit the generated FSH files under input/fsh/models/ by hand — re-run scripts/xmi_to_fsh.py instead."] ;
+  fhir:ImplementationGuide.packageId [ fhir:value "xmi.to.fsh"] ;
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1" ;
+     fhir:index -1
+  ] ;
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7tx" ] ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology" ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "7.3.0" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Element.id [ fhir:value "hl7ext" ] ;
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ] ;
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ;
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions" ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.3.0" ]
+  ] ;
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2026+" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-liquid-template" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-liquid-template" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://example.org/fhir/xmi-to-fsh/history.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "apply-wg" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueString [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency" ] ;
+       fhir:Extension.valueCode [ fhir:value "hl7.fhir.uv.tools.r4#1.1.2" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "2026+" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "ci-build" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-liquid-template" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-qa" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-temp" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-output" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "path-history" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://example.org/fhir/xmi-to-fsh/history.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-html" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "template-md" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-context" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-license" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-version" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "apply-wg" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "active-tables" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "fmm-definition" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/versions.html#maturity" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "propagate-status" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "excludelogbinaryformat" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "tabbed-snapshots" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "code" ] ;
+         fhir:Extension.valueCode [ fhir:value "i18n-default-lang" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "value" ] ;
+         fhir:Extension.valueString [ fhir:value "en" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ] ;
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Halso--och-sjukvardspersonal" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value ": Hälso- och sjukvårdspersonal" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: : Hälso- och sjukvårdspersonal)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient-2> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value ": Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: : Patient)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Analysgrupp" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysgrupp" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp-2> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Analysgrupp-2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysgrupp" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp-svarsgrupp> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Analysgrupp-svarsgrupp" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysgrupp (svarsgrupp)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp (svarsgrupp))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysutrustning-Resurs> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Analysutrustning-Resurs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysutrustning : Resurs" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Analysutrustning : Resurs)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Ansvarig-enhet-Organisation-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Ansvarig-enhet-Organisation-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ansvarig enhet : Organisation (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Ansvarig enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/BL> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BL" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BL" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: BL)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CV" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CV" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: CV)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/CV-CWE" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CV CWE" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: CV CWE)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Delsvar-Dokument-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Delsvar-Dokument-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Delsvar : Dokument (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Delsvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/FHIR-Diagnostic-Report-Status> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/FHIR-Diagnostic-Report-Status" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FHIR Diagnostic Report Status " ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: FHIR Diagnostic Report Status )." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Fordjupad-analys> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Fordjupad-analys" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fördjupad analys" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Fördjupad analys)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Forekomst-av-antikropp-titer> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Forekomst-av-antikropp-titer" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Förekomst av antikropp (titer)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Förekomst av antikropp (titer))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/HSA-verksamhetskod> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/HSA-verksamhetskod" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HSA verksamhetskod" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: HSA verksamhetskod)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/II> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/II" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "II" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: II)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Informationsmodell> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Informationsmodell" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Informationsmodell" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Root logical model generated from gloo4.xmi (source class: Informationsmodell)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/INT> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/INT" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "INT" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: INT)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/IVL-PQ> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/IVL-PQ" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IVL<PQ>" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: IVL<PQ>)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Kontaktinformation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Kontaktinformation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kontaktinformation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Kontaktinformation)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Kopiemottagande-enhet> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Kopiemottagande-enhet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kopiemottagande enhet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Kopiemottagande enhet)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/KV-befattning> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KV-befattning" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KV befattning" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: KV befattning)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/KV-kon> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/KV-kon" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KV kön" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: KV kön)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratorieanalys-Aktivitet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorieanalys : Aktivitet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratorieanalysresultat-Observation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorieanalysresultat : Observation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observation)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorieanalysresultat : Observerat hälsotillstånd" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observerat hälsotillstånd)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriedisciplin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratoriedisciplin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratoriedisciplin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratoriedisciplin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratoriesvar-Dokument" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratoriesvar : Dokument" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratoriesvar : Dokument (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Mikroorganism> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Mikroorganism" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mikroorganism" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Mikroorganism)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Malpopulation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Malpopulation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Målpopulation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Målpopulation)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/NPU> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/NPU" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NPU" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: NPU)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organisatorisk enhet : Organisation (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organisatorisk enhet : Organisatorisk enhet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisatorisk enhet)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Origin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Origin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Origin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Origin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Root logical model generated from Test1.xmi (source class: Patient)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient-Patient> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-Patient" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient : Patient" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Patient : Patient)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Person-Person> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Person-Person" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Person : Person" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Person : Person)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Personal> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Personal" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Personal" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from Test1.xmi (source class: Personal)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/PQ> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PQ" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PQ" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: PQ)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Preliminarsvar-Dokument-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Preliminarsvar-Dokument-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Preliminärsvar : Dokument (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Preliminärsvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Presentationsformat> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Presentationsformat" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Presentationsformat" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Presentationsformat)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Prov-Resurs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prov : Resurs" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prov : Resurs (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-id> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Prov-id" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prov-id" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Prov-id)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provbehallare-Resurs> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Provbehallare-Resurs" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provbehållare : Resurs" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provbehållare : Resurs)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provgivare> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Provgivare" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provgivare" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provgivare)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provmaterial> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Provmaterial" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provmaterial" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provmaterial)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provrelaterad-aktivitet-Aktivitet> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Provrelaterad-aktivitet-Aktivitet" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provrelaterad aktivitet: Aktivitet" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provrelaterad aktivitet: Aktivitet)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provtagningsmetod> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Provtagningsmetod" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provtagningsmetod" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provtagningsmetod)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Referens" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referens" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referens)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referenser> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Referenser" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referenser" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referenser)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensintervall> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Referensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referensintervall)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensmodell> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Referensmodell" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensmodell" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referensmodell)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referenspopulation> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Referenspopulation" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referenspopulation" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referenspopulation)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensvarde> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Referensvarde" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensvärde" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referensvärde)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Remiss-Dokument" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remiss : Dokument" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remiss : Dokument (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissmottagande-enhet-Organisation-inom-halso--och-sju> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Remissmottagande-enhet-Organisation-inom-halso--och-sju" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remissmottagande enhet : Organisation (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remissmottagande enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remissvar : Dokument (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remissvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvarsmottagande-enhet-Organisation-inom-halso--och> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Remissvarsmottagande-enhet-Organisation-inom-halso--och" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remittent-Halso--och-sjukvardspersonal> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Remittent-Halso--och-sjukvardspersonal" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remittent : Hälso- och sjukvårdspersonal" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remittent : Hälso- och sjukvårdspersonal)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remitterande-enhet-Organisation-inom-halso--och-sjukvar> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Remitterande-enhet-Organisation-inom-halso--och-sjukvar" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remitterande enhet : Organisation (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remitterande enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Resistens> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Resistens" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resistens" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Resistens)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Resistensbestamning-Aktivitet-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Resistensbestamning-Aktivitet-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resistensbestämning : Aktivitet (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Resistensbestämning : Aktivitet (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Revisionshistorik> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Revisionshistorik" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Revisionshistorik" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Revisionshistorik)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/RevisionshistorikTA> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/RevisionshistorikTA" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "RevisionshistorikTA" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: RevisionshistorikTA)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signatur> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Signatur" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Signatur" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Signatur)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Signering-Deltagande" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Signering : Deltagande" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande-2> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Signering-Deltagande-2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Signering : Deltagande" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Slutsvar-Dokument-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Slutsvar-Dokument-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Slutsvar : Dokument (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Slutsvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/SNOMED-CT-SE> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SNOMED-CT-SE" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNOMED-CT SE" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: SNOMED-CT SE)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ST" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ST" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: ST)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/TS" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "TS" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: TS)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-analyskoder-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-analyskoder-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval analyskoder laboratoriemedicin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval analyskoder laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-analysmetod-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-analysmetod-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval analysmetod laboratoriemedicin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval analysmetod laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-analysstatus-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-analysstatus-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval analysstatus laboratoriemedicin  " ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval analysstatus laboratoriemedicin  )." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-anatomisk-lokalisation-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-anatomisk-lokalisation-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval anatomisk lokalisation laboratoriemedicin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval anatomisk lokalisation laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-fynd-bakterieegenskaper-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-fynd-bakterieegenskaper-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval fynd bakterieegenskaper laboratoriemedicin " ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval fynd bakterieegenskaper laboratoriemedicin )." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-fynd-mikroorganism-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-fynd-mikroorganism-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval fynd mikroorganism laboratoriemedicin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval fynd mikroorganism laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-fynd-resistens-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-fynd-resistens-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval fynd resistens laboratoriemedicin " ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval fynd resistens laboratoriemedicin )." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-fynd-ovrigt-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-fynd-ovrigt-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval fynd övrigt laboratoriemedicin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval fynd övrigt laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-provbehallare-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-provbehallare-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval provbehallare laboratoriemedicin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval provbehallare laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-provtyp-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-provtyp-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval provtyp laboratoriemedicin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval provtyp laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-tolkning-resultat-laboratoriemedicin> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-tolkning-resultat-laboratoriemedicin" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval tolkning resultat laboratoriemedicin" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval tolkning resultat laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Utforande-enhet-Organisation-inom-halso--och-sjukvard> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Utforande-enhet-Organisation-inom-halso--och-sjukvard" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Utförande enhet : Organisation (inom hälso- och sjukvård)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Utförande enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Utford-analys> ;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Utford-analys" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Utförd analys" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Utförd analys)." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ] ;
+     fhir:ImplementationGuide.definition.page [
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+         fhir:Extension.valueUrl [ fhir:value "toc.html" ]
+       ] ;
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ] ;
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ] ;
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ] ;
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index -1 ;
+         fhir:Element.extension [
+           fhir:index -1 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ] ;
+           fhir:Extension.valueUrl [ fhir:value "index.html" ]
+         ] ;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ] ;
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Home" ] ;
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ]
+     ] ;
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/maps" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/assets" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ] ;
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://example.org/fhir/xmi-to-fsh/ImplementationGuide/xmi.to.fsh.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

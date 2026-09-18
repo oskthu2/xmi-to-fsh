@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Origin","Origin","","","",0,*,"","","","null {[]} {[]}
+","Origin","Supporting logical model generated from gloo4.xmi (source class: Origin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Origin.timeStamp","Origin.timeStamp","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: timeStamp","Source attribute: timeStamp","","","","","","","","","",,,,,"",,,,"Origin.timeStamp",0,1,"",""
+"Origin.byRole","Origin.byRole","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: byRole","Source attribute: byRole","","","","","","","","","",,,,,"",,,,"Origin.byRole",0,1,"",""

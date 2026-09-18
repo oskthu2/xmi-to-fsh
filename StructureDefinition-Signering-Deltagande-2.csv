@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Signering-Deltagande-2","Signering-Deltagande-2","","","",0,*,"","","","null {[]} {[]}
+","Signering : Deltagande","Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Signering-Deltagande-2.gorsAv","Signering-Deltagande-2.gorsAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand {[]} {[]}
+","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Signering-Deltagande-2.gorsAv",0,1,"",""
+"Signering-Deltagande-2.gorsAv2","Signering-Deltagande-2.gorsAv2","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal {[]} {[]}
+","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Signering-Deltagande-2.gorsAv2",0,1,"",""
+"Signering-Deltagande-2.gorsAv3","Signering-Deltagande-2.gorsAv3","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
+","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Signering-Deltagande-2.gorsAv3",0,1,"",""
+"Signering-Deltagande-2.arResultatAv","Signering-Deltagande-2.arResultatAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signatur {[]} {[]}
+","Source attribute: är resultat av","Source attribute: är resultat av","","","","","","","","","",,,,,"",,,,"Signering-Deltagande-2.arResultatAv",0,1,"",""

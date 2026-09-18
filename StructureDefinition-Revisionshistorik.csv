@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Revisionshistorik","Revisionshistorik","","","",0,*,"","","","null {[]} {[]}
+","Revisionshistorik","Supporting logical model generated from gloo4.xmi (source class: Revisionshistorik).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Revisionshistorik.Version40RC2","Revisionshistorik.Version40RC2","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: Version 4.0 RC2; type could not be resolved from source model","Source attribute: Version 4.0 RC2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC2",0,1,"",""
+"Revisionshistorik.Version40RC5","Revisionshistorik.Version40RC5","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: Version 4.0 RC5; type could not be resolved from source model","Source attribute: Version 4.0 RC5; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC5",0,1,"",""
+"Revisionshistorik.Version40RC6","Revisionshistorik.Version40RC6","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: Version 4.0 RC6; type could not be resolved from source model","Source attribute: Version 4.0 RC6; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC6",0,1,"",""
+"Revisionshistorik.Version40RC9","Revisionshistorik.Version40RC9","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: Version 4.0 RC9; type could not be resolved from source model","Source attribute: Version 4.0 RC9; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC9",0,1,"",""
+"Revisionshistorik.Version40","Revisionshistorik.Version40","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: Version 4.0; type could not be resolved from source model","Source attribute: Version 4.0; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40",0,1,"",""
+"Revisionshistorik.Version401","Revisionshistorik.Version401","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: Version 4.0.1; type could not be resolved from source model","Source attribute: Version 4.0.1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version401",0,1,"",""
+"Revisionshistorik.f402","Revisionshistorik.f402","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: 4.0.2; type could not be resolved from source model","Source attribute: 4.0.2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.f402",0,1,"",""
+"Revisionshistorik.Version41","Revisionshistorik.Version41","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: Version 4.1; type could not be resolved from source model","Source attribute: Version 4.1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version41",0,1,"",""

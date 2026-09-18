@@ -1,0 +1,630 @@
+[{
+  "id" : "xmi.to.fsh",
+  "type" : "ImplementationGuide",
+  "url" : "http://example.org/fhir/xmi-to-fsh/ImplementationGuide/xmi.to.fsh",
+  "version" : "0.1.0",
+  "name" : "XmiToFshIG"
+},
+{
+  "id" : "Analysgrupp",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp",
+  "version" : "0.1.0",
+  "name" : "Analysgrupp"
+},
+{
+  "id" : "Analysgrupp-2",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp-2",
+  "version" : "0.1.0",
+  "name" : "Analysgrupp2"
+},
+{
+  "id" : "Analysgrupp-svarsgrupp",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp-svarsgrupp",
+  "version" : "0.1.0",
+  "name" : "Analysgruppsvarsgrupp"
+},
+{
+  "id" : "Analysutrustning-Resurs",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysutrustning-Resurs",
+  "version" : "0.1.0",
+  "name" : "AnalysutrustningResurs"
+},
+{
+  "id" : "Ansvarig-enhet-Organisation-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Ansvarig-enhet-Organisation-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "AnsvarigenhetOrganisationinomhalsoochsjukvard"
+},
+{
+  "id" : "BL",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/BL",
+  "version" : "0.1.0",
+  "name" : "BL"
+},
+{
+  "id" : "CV",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV",
+  "version" : "0.1.0",
+  "name" : "CV"
+},
+{
+  "id" : "CV-CWE",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE",
+  "version" : "0.1.0",
+  "name" : "CVCWE"
+},
+{
+  "id" : "Delsvar-Dokument-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Delsvar-Dokument-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "DelsvarDokumentinomhalsoochsjukvard"
+},
+{
+  "id" : "FHIR-Diagnostic-Report-Status",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/FHIR-Diagnostic-Report-Status",
+  "version" : "0.1.0",
+  "name" : "FHIRDiagnosticReportStatus"
+},
+{
+  "id" : "Fordjupad-analys",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Fordjupad-analys",
+  "version" : "0.1.0",
+  "name" : "Fordjupadanalys"
+},
+{
+  "id" : "Forekomst-av-antikropp-titer",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Forekomst-av-antikropp-titer",
+  "version" : "0.1.0",
+  "name" : "Forekomstavantikropptiter"
+},
+{
+  "id" : "HSA-verksamhetskod",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/HSA-verksamhetskod",
+  "version" : "0.1.0",
+  "name" : "HSAverksamhetskod"
+},
+{
+  "id" : "Halso--och-sjukvardspersonal",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal",
+  "version" : "0.1.0",
+  "name" : "Halsoochsjukvardspersonal"
+},
+{
+  "id" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson",
+  "version" : "0.1.0",
+  "name" : "HalsoochsjukvardspersonalHalsoochsjukvardspersonal"
+},
+{
+  "id" : "II",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/II",
+  "version" : "0.1.0",
+  "name" : "II"
+},
+{
+  "id" : "INT",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/INT",
+  "version" : "0.1.0",
+  "name" : "INT"
+},
+{
+  "id" : "IVL-PQ",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/IVL-PQ",
+  "version" : "0.1.0",
+  "name" : "IVLPQ"
+},
+{
+  "id" : "Informationsmodell",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Informationsmodell",
+  "version" : "0.1.0",
+  "name" : "Informationsmodell"
+},
+{
+  "id" : "KV-befattning",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/KV-befattning",
+  "version" : "0.1.0",
+  "name" : "KVbefattning"
+},
+{
+  "id" : "KV-kon",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/KV-kon",
+  "version" : "0.1.0",
+  "name" : "KVkon"
+},
+{
+  "id" : "Kontaktinformation",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Kontaktinformation",
+  "version" : "0.1.0",
+  "name" : "Kontaktinformation"
+},
+{
+  "id" : "Kopiemottagande-enhet",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Kopiemottagande-enhet",
+  "version" : "0.1.0",
+  "name" : "Kopiemottagandeenhet"
+},
+{
+  "id" : "Laboratorieanalys-Aktivitet",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet",
+  "version" : "0.1.0",
+  "name" : "LaboratorieanalysAktivitet"
+},
+{
+  "id" : "Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "LaboratorieanalysAktivitetinomhalsoochsjukvard"
+},
+{
+  "id" : "Laboratorieanalysresultat-Observation",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observation",
+  "version" : "0.1.0",
+  "name" : "LaboratorieanalysresultatObservation"
+},
+{
+  "id" : "Laboratorieanalysresultat-Observerat-halsotillstand",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand",
+  "version" : "0.1.0",
+  "name" : "LaboratorieanalysresultatObserverathalsotillstand"
+},
+{
+  "id" : "Laboratoriedisciplin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriedisciplin",
+  "version" : "0.1.0",
+  "name" : "Laboratoriedisciplin"
+},
+{
+  "id" : "Laboratoriesvar-Dokument",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument",
+  "version" : "0.1.0",
+  "name" : "LaboratoriesvarDokument"
+},
+{
+  "id" : "Laboratoriesvar-Dokument-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "LaboratoriesvarDokumentinomhalsoochsjukvard"
+},
+{
+  "id" : "Malpopulation",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Malpopulation",
+  "version" : "0.1.0",
+  "name" : "Malpopulation"
+},
+{
+  "id" : "Mikroorganism",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Mikroorganism",
+  "version" : "0.1.0",
+  "name" : "Mikroorganism"
+},
+{
+  "id" : "NPU",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/NPU",
+  "version" : "0.1.0",
+  "name" : "NPU"
+},
+{
+  "id" : "Organisatorisk-enhet-Organisation-inom-halso--och-sjukv",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv",
+  "version" : "0.1.0",
+  "name" : "OrganisatoriskenhetOrganisationinomhalsoochsjukvard"
+},
+{
+  "id" : "Organisatorisk-enhet-Organisatorisk-enhet",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet",
+  "version" : "0.1.0",
+  "name" : "OrganisatoriskenhetOrganisatoriskenhet"
+},
+{
+  "id" : "Origin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Origin",
+  "version" : "0.1.0",
+  "name" : "Origin"
+},
+{
+  "id" : "PQ",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/PQ",
+  "version" : "0.1.0",
+  "name" : "PQ"
+},
+{
+  "id" : "Patient",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient",
+  "version" : "0.1.0",
+  "name" : "Patient"
+},
+{
+  "id" : "Patient-2",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient-2",
+  "version" : "0.1.0",
+  "name" : "Patient2"
+},
+{
+  "id" : "Patient-Patient",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient-Patient",
+  "version" : "0.1.0",
+  "name" : "PatientPatient"
+},
+{
+  "id" : "Person-Person",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Person-Person",
+  "version" : "0.1.0",
+  "name" : "PersonPerson"
+},
+{
+  "id" : "Personal",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Personal",
+  "version" : "0.1.0",
+  "name" : "Personal"
+},
+{
+  "id" : "Preliminarsvar-Dokument-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Preliminarsvar-Dokument-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "PreliminarsvarDokumentinomhalsoochsjukvard"
+},
+{
+  "id" : "Presentationsformat",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Presentationsformat",
+  "version" : "0.1.0",
+  "name" : "Presentationsformat"
+},
+{
+  "id" : "Prov-Resurs",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs",
+  "version" : "0.1.0",
+  "name" : "ProvResurs"
+},
+{
+  "id" : "Prov-Resurs-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "ProvResursinomhalsoochsjukvard"
+},
+{
+  "id" : "Prov-id",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-id",
+  "version" : "0.1.0",
+  "name" : "Provid"
+},
+{
+  "id" : "Provbehallare-Resurs",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provbehallare-Resurs",
+  "version" : "0.1.0",
+  "name" : "ProvbehallareResurs"
+},
+{
+  "id" : "Provgivare",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provgivare",
+  "version" : "0.1.0",
+  "name" : "Provgivare"
+},
+{
+  "id" : "Provmaterial",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provmaterial",
+  "version" : "0.1.0",
+  "name" : "Provmaterial"
+},
+{
+  "id" : "Provrelaterad-aktivitet-Aktivitet",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provrelaterad-aktivitet-Aktivitet",
+  "version" : "0.1.0",
+  "name" : "ProvrelateradaktivitetAktivitet"
+},
+{
+  "id" : "Provtagningsmetod",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provtagningsmetod",
+  "version" : "0.1.0",
+  "name" : "Provtagningsmetod"
+},
+{
+  "id" : "Referens",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens",
+  "version" : "0.1.0",
+  "name" : "Referens"
+},
+{
+  "id" : "Referenser",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referenser",
+  "version" : "0.1.0",
+  "name" : "Referenser"
+},
+{
+  "id" : "Referensintervall",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensintervall",
+  "version" : "0.1.0",
+  "name" : "Referensintervall"
+},
+{
+  "id" : "Referensmodell",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensmodell",
+  "version" : "0.1.0",
+  "name" : "Referensmodell"
+},
+{
+  "id" : "Referenspopulation",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referenspopulation",
+  "version" : "0.1.0",
+  "name" : "Referenspopulation"
+},
+{
+  "id" : "Referensvarde",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensvarde",
+  "version" : "0.1.0",
+  "name" : "Referensvarde"
+},
+{
+  "id" : "Remiss-Dokument",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument",
+  "version" : "0.1.0",
+  "name" : "RemissDokument"
+},
+{
+  "id" : "Remiss-Dokument-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "RemissDokumentinomhalsoochsjukvard"
+},
+{
+  "id" : "Remissmottagande-enhet-Organisation-inom-halso--och-sju",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissmottagande-enhet-Organisation-inom-halso--och-sju",
+  "version" : "0.1.0",
+  "name" : "RemissmottagandeenhetOrganisationinomhalsoochsjukvard"
+},
+{
+  "id" : "Remissvar-Dokument-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "RemissvarDokumentinomhalsoochsjukvard"
+},
+{
+  "id" : "Remissvarsmottagande-enhet-Organisation-inom-halso--och",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvarsmottagande-enhet-Organisation-inom-halso--och",
+  "version" : "0.1.0",
+  "name" : "RemissvarsmottagandeenhetOrganisationinomhalsoochsjukvard"
+},
+{
+  "id" : "Remittent-Halso--och-sjukvardspersonal",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remittent-Halso--och-sjukvardspersonal",
+  "version" : "0.1.0",
+  "name" : "RemittentHalsoochsjukvardspersonal"
+},
+{
+  "id" : "Remitterande-enhet-Organisation-inom-halso--och-sjukvar",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remitterande-enhet-Organisation-inom-halso--och-sjukvar",
+  "version" : "0.1.0",
+  "name" : "RemitterandeenhetOrganisationinomhalsoochsjukvard"
+},
+{
+  "id" : "Resistens",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Resistens",
+  "version" : "0.1.0",
+  "name" : "Resistens"
+},
+{
+  "id" : "Resistensbestamning-Aktivitet-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Resistensbestamning-Aktivitet-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "ResistensbestamningAktivitetinomhalsoochsjukvard"
+},
+{
+  "id" : "Revisionshistorik",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Revisionshistorik",
+  "version" : "0.1.0",
+  "name" : "Revisionshistorik"
+},
+{
+  "id" : "RevisionshistorikTA",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/RevisionshistorikTA",
+  "version" : "0.1.0",
+  "name" : "RevisionshistorikTA"
+},
+{
+  "id" : "SNOMED-CT-SE",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/SNOMED-CT-SE",
+  "version" : "0.1.0",
+  "name" : "SNOMEDCTSE"
+},
+{
+  "id" : "ST",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST",
+  "version" : "0.1.0",
+  "name" : "ST"
+},
+{
+  "id" : "Signatur",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signatur",
+  "version" : "0.1.0",
+  "name" : "Signatur"
+},
+{
+  "id" : "Signering-Deltagande",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande",
+  "version" : "0.1.0",
+  "name" : "SigneringDeltagande"
+},
+{
+  "id" : "Signering-Deltagande-2",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande-2",
+  "version" : "0.1.0",
+  "name" : "SigneringDeltagande2"
+},
+{
+  "id" : "Slutsvar-Dokument-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Slutsvar-Dokument-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "SlutsvarDokumentinomhalsoochsjukvard"
+},
+{
+  "id" : "TS",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS",
+  "version" : "0.1.0",
+  "name" : "TS"
+},
+{
+  "id" : "Urval-analyskoder-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-analyskoder-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalanalyskoderlaboratoriemedicin"
+},
+{
+  "id" : "Urval-analysmetod-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-analysmetod-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalanalysmetodlaboratoriemedicin"
+},
+{
+  "id" : "Urval-analysstatus-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-analysstatus-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalanalysstatuslaboratoriemedicin"
+},
+{
+  "id" : "Urval-anatomisk-lokalisation-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-anatomisk-lokalisation-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalanatomisklokalisationlaboratoriemedicin"
+},
+{
+  "id" : "Urval-fynd-bakterieegenskaper-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-fynd-bakterieegenskaper-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalfyndbakterieegenskaperlaboratoriemedicin"
+},
+{
+  "id" : "Urval-fynd-mikroorganism-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-fynd-mikroorganism-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalfyndmikroorganismlaboratoriemedicin"
+},
+{
+  "id" : "Urval-fynd-ovrigt-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-fynd-ovrigt-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalfyndovrigtlaboratoriemedicin"
+},
+{
+  "id" : "Urval-fynd-resistens-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-fynd-resistens-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalfyndresistenslaboratoriemedicin"
+},
+{
+  "id" : "Urval-provbehallare-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-provbehallare-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalprovbehallarelaboratoriemedicin"
+},
+{
+  "id" : "Urval-provtyp-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-provtyp-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvalprovtyplaboratoriemedicin"
+},
+{
+  "id" : "Urval-tolkning-resultat-laboratoriemedicin",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Urval-tolkning-resultat-laboratoriemedicin",
+  "version" : "0.1.0",
+  "name" : "Urvaltolkningresultatlaboratoriemedicin"
+},
+{
+  "id" : "Utforande-enhet-Organisation-inom-halso--och-sjukvard",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Utforande-enhet-Organisation-inom-halso--och-sjukvard",
+  "version" : "0.1.0",
+  "name" : "UtforandeenhetOrganisationinomhalsoochsjukvard"
+},
+{
+  "id" : "Utford-analys",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Utford-analys",
+  "version" : "0.1.0",
+  "name" : "Utfordanalys"
+}]

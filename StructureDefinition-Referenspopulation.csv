@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Referenspopulation","Referenspopulation","","","",0,*,"","","","null {[]} {[]}
+","Referenspopulation","Supporting logical model generated from gloo4.xmi (source class: Referenspopulation).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Referenspopulation.liggerTillGrundFor","Referenspopulation.liggerTillGrundFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensintervall {[]} {[]}
+","Source attribute: ligger till grund för","Source attribute: ligger till grund för","","","","","","","","","",,,,,"",,,,"Referenspopulation.liggerTillGrundFor",0,1,"",""
+"Referenspopulation.jamforsMed","Referenspopulation.jamforsMed","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Malpopulation {[]} {[]}
+","Source attribute: jämförs med","Source attribute: jämförs med","","","","","","","","","",,,,,"",,,,"Referenspopulation.jamforsMed",0,1,"",""

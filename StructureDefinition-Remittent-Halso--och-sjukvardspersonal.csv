@@ -1,0 +1,9 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Remittent-Halso--och-sjukvardspersonal","Remittent-Halso--och-sjukvardspersonal","","","",0,*,"","","","null {[]} {[]}
+","Remittent : Hälso- och sjukvårdspersonal","Supporting logical model generated from gloo4.xmi (source class: Remittent : Hälso- och sjukvårdspersonal).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Remittent-Halso--och-sjukvardspersonal.skapar","Remittent-Halso--och-sjukvardspersonal.skapar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard {[]} {[]}
+","Source attribute: skapar","Source attribute: skapar","","","","","","","","","",,,,,"",,,,"Remittent-Halso--och-sjukvardspersonal.skapar",0,1,"",""
+"Remittent-Halso--och-sjukvardspersonal.tillhor","Remittent-Halso--och-sjukvardspersonal.tillhor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remitterande-enhet-Organisation-inom-halso--och-sjukvar {[]} {[]}
+","Source attribute: tillhör","Source attribute: tillhör","","","","","","","","","",,,,,"",,,,"Remittent-Halso--och-sjukvardspersonal.tillhor",0,1,"",""
+"Remittent-Halso--och-sjukvardspersonal.arEn","Remittent-Halso--och-sjukvardspersonal.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal {[]} {[]}
+","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Remittent-Halso--och-sjukvardspersonal.arEn",0,1,"",""

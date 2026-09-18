@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Referens","Referens","","","",0,*,"","","","null {[]} {[]}
+","Referens","Supporting logical model generated from gloo4.xmi (source class: Referens).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Referens.intervall","Referens.intervall","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: intervall","Source attribute: intervall","","","","","","","","","",,,,,"",,,,"Referens.intervall",0,1,"",""
+"Referens.text","Referens.text","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
+","Source attribute: text","Source attribute: text","","","","","","","","","",,,,,"",,,,"Referens.text",0,1,"",""
+"Referens.population","Referens.population","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
+","Source attribute: population","Source attribute: population","","","","","","","","","",,,,,"",,,,"Referens.population",0,1,"",""
+"Referens.kommentar","Referens.kommentar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
+","Source attribute: kommentar","Source attribute: kommentar","","","","","","","","","",,,,,"",,,,"Referens.kommentar",0,1,"",""
+"Referens.jamforsMed","Referens.jamforsMed","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observation {[]} {[]}
+","Source attribute: jämförs med","Source attribute: jämförs med","","","","","","","","","",,,,,"",,,,"Referens.jamforsMed",0,*,"",""

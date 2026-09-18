@@ -1,0 +1,21 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Remiss-Dokument","Remiss-Dokument","","","",0,*,"","","","null {[]} {[]}
+","Remiss : Dokument","Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Remiss-Dokument.remissId","Remiss-Dokument.remissId","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
+","Source attribute: remiss-id","Source attribute: remiss-id","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.remissId",1,1,"",""
+"Remiss-Dokument.remisstidpunkt","Remiss-Dokument.remisstidpunkt","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
+","Source attribute: remisstidpunkt","Source attribute: remisstidpunkt","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.remisstidpunkt",1,1,"",""
+"Remiss-Dokument.versionsnummer","Remiss-Dokument.versionsnummer","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/INT {[]} {[]}
+","Source attribute: versionsnummer","Source attribute: versionsnummer","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.versionsnummer",0,1,"",""
+"Remiss-Dokument.fragestallning","Remiss-Dokument.fragestallning","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
+","Source attribute: frågeställning","Source attribute: frågeställning","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.fragestallning",0,1,"",""
+"Remiss-Dokument.efterfragadTjanst","Remiss-Dokument.efterfragadTjanst","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
+","Source attribute: efterfrågad tjänst","Source attribute: efterfrågad tjänst","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.efterfragadTjanst",0,*,"",""
+"Remiss-Dokument.kommentarFranBestallare","Remiss-Dokument.kommentarFranBestallare","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
+","Source attribute: kommentar från beställare","Source attribute: kommentar från beställare","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.kommentarFranBestallare",0,1,"",""
+"Remiss-Dokument.medicinskInformation","Remiss-Dokument.medicinskInformation","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
+","Source attribute: medicinsk information","Source attribute: medicinsk information","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.medicinskInformation",0,1,"",""
+"Remiss-Dokument.besvarar","Remiss-Dokument.besvarar","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
+","Source attribute: besvarar","Source attribute: besvarar","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.besvarar",0,*,"",""
+"Remiss-Dokument.harRemittent","Remiss-Dokument.harRemittent","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson {[]} {[]}
+","Source attribute: har remittent","Source attribute: har remittent","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.harRemittent",0,1,"",""

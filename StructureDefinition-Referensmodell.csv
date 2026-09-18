@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Referensmodell","Referensmodell","","","",0,*,"","","","null {[]} {[]}
+","Referensmodell","Supporting logical model generated from gloo4.xmi (source class: Referensmodell).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Referensmodell.NINationellInformationsstruktur","Referensmodell.NINationellInformationsstruktur","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: NI (Nationell Informationsstruktur); type could not be resolved from source model","Source attribute: NI (Nationell Informationsstruktur); type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Referensmodell.NINationellInformationsstruktur",0,1,"",""
+"Referensmodell.RIMSaknas","Referensmodell.RIMSaknas","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: RIM saknas; type could not be resolved from source model","Source attribute: RIM saknas; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Referensmodell.RIMSaknas",0,1,"",""

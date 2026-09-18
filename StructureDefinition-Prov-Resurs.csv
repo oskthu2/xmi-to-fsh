@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Prov-Resurs","Prov-Resurs","","","",0,*,"","","","null {[]} {[]}
+","Prov : Resurs","Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Prov-Resurs.-id","Prov-Resurs._id","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
+","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Prov-Resurs._id",0,1,"",""
+"Prov-Resurs.material","Prov-Resurs.material","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
+","Source attribute: material","Source attribute: material","","","","","","","","","",,,,,"",,,,"Prov-Resurs.material",1,1,"",""
+"Prov-Resurs.provtagningstidpunkt","Prov-Resurs.provtagningstidpunkt","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
+","Source attribute: provtagningstidpunkt","Source attribute: provtagningstidpunkt","","","","","","","","","",,,,,"",,,,"Prov-Resurs.provtagningstidpunkt",1,1,"",""
+"Prov-Resurs.anatomiskLokalisation","Prov-Resurs.anatomiskLokalisation","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
+","Source attribute: anatomisk lokalisation","Source attribute: anatomisk lokalisation","","","","","","","","","",,,,,"",,,,"Prov-Resurs.anatomiskLokalisation",0,1,"",""
+"Prov-Resurs.kommentar","Prov-Resurs.kommentar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
+","Source attribute: kommentar","Source attribute: kommentar","","","","","","","","","",,,,,"",,,,"Prov-Resurs.kommentar",0,1,"",""
+"Prov-Resurs.forvarasI","Prov-Resurs.forvarasI","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provbehallare-Resurs {[]} {[]}
+","Source attribute: förvaras i","Source attribute: förvaras i","","","","","","","","","",,,,,"",,,,"Prov-Resurs.forvarasI",0,*,"",""
+"Prov-Resurs.avser","Prov-Resurs.avser","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provrelaterad-aktivitet-Aktivitet {[]} {[]}
+","Source attribute: avser","Source attribute: avser","","","","","","","","","",,,,,"",,,,"Prov-Resurs.avser",0,*,"",""
+"Prov-Resurs.avser2","Prov-Resurs.avser2","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet {[]} {[]}
+","Source attribute: avser","Source attribute: avser","","","","","","","","","",,,,,"",,,,"Prov-Resurs.avser2",0,*,"",""
