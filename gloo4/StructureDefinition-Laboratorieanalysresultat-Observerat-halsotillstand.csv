@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Laboratorieanalysresultat-Observerat-halsotillstand","Laboratorieanalysresultat-Observerat-halsotillstand","","","",0,*,"","","","null {[]} {[]}
+","Laboratorieanalysresultat : Observerat hälsotillstånd","Resultat av en laboratorieanalys. 
+ 
+Ett laboratorieanalysresultat kan utgöras av t.ex. ett fynd (som har sina egenskaper) eller ett mätvärde.  
+Exempel på fynd är en viss bakterieart eller en viss typ av virus.   
+Exempel på ett fynds egenskaper är serotyp, subserotyp och koncentration.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor","Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Referensintervall {[]} {[]}
+","Source attribute: gäller för","Source attribute: gäller för","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor",0,1,"",""
+"Laboratorieanalysresultat-Observerat-halsotillstand.gorsAv","Laboratorieanalysresultat-Observerat-halsotillstand.gorsAv","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Signering-Deltagande-2 {[]} {[]}
+","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observerat-halsotillstand.gorsAv",0,1,"",""
+"Laboratorieanalysresultat-Observerat-halsotillstand.arResultatAv","Laboratorieanalysresultat-Observerat-halsotillstand.arResultatAv","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
+","Source attribute: är resultat av","Source attribute: är resultat av","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observerat-halsotillstand.arResultatAv",0,1,"",""
+"Laboratorieanalysresultat-Observerat-halsotillstand.kanVaraFyndAv","Laboratorieanalysresultat-Observerat-halsotillstand.kanVaraFyndAv","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Mikroorganism {[]} {[]}
+","Source attribute: kan vara fynd av","Source attribute: kan vara fynd av","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observerat-halsotillstand.kanVaraFyndAv",0,1,"",""
+"Laboratorieanalysresultat-Observerat-halsotillstand.innehaller","Laboratorieanalysresultat-Observerat-halsotillstand.innehaller","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
+","Source attribute: innehåller","Source attribute: innehåller","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observerat-halsotillstand.innehaller",0,1,"",""
+"Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor2","Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor2","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Referensvarde {[]} {[]}
+","Source attribute: gäller för","Source attribute: gäller för","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor2",0,1,"",""

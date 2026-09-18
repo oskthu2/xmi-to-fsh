@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "Referensintervall2",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvZ2xvbzQvU3RydWN0dXJlRGVmaW5pdGlvbi9SZWZlcmVucyIKfQo="
+}

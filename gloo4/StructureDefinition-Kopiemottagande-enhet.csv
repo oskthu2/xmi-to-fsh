@@ -1,0 +1,16 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Kopiemottagande-enhet","Kopiemottagande-enhet","","","",0,*,"","","","null {[]} {[]}
+","Kopiemottagande enhet","Den organisatoriska enhet som tar emot en kopia av laboratoriesvaret.  
+   
+Eller ”… av remissvaret”, om detta ska vara generellt. I projektet e-remiss finns ingen kopiemottagare, är det något speciellt för laboratorieremisser? 
+
+2018-03-14: Vi stryker denna ur begreppsmodellen, svarskopia är inget unikt för labbremisser.
+
+2018-03-09: Jonas Svanberg:  
+Kopiemottagande enhet  
+Nej, svarskopia är inget unikt för labbremisser. Det är en kvarleva från papperstiden, då det var lätt att ta en kopia (på vad som helst) och skicka till någon annan.  
+Det förekommer säkert hos vissa landsting, men vanligast är nog att det bara finns ett svar.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Kopiemottagande-enhet.tarEmotKopiaAv","Kopiemottagande-enhet.tarEmotKopiaAv","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
+","Source attribute: tar emot kopia av","Source attribute: tar emot kopia av","","","","","","","","","",,,,,"",,,,"Kopiemottagande-enhet.tarEmotKopiaAv",0,1,"",""
+"Kopiemottagande-enhet.arEn","Kopiemottagande-enhet.arEn","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv {[]} {[]}
+","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Kopiemottagande-enhet.arEn",0,1,"",""

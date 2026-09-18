@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Organisatorisk-enhet-Organisatorisk-enhet"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition Organisatorisk-enhet-Organisatorisk-enhet</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet-definitions.html#Organisatorisk-enhet-Organisatorisk-enhet" title="Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation.">Organisatorisk-enhet-Organisatorisk-enhet</a><a name="Organisatorisk-enhet-Organisatorisk-enhet"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Organisatorisk enhet : Organisatorisk enhet<br/><span style="font-weight:bold">Instances of this type can be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet-definitions.html#Organisatorisk-enhet-Organisatorisk-enhet.-id" title="Angivelse av identitetsbeteckning för den organisatoriska enheten.
+
+Är alltid ett HSA-id.">_id</a><a name="Organisatorisk-enhet-Organisatorisk-enhet.-id"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-II.html">II</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: id; renamed from reserved FSH name 'id'</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet-definitions.html#Organisatorisk-enhet-Organisatorisk-enhet.namn" title="Angivelse av namn på den organisatoriska enheten.">namn</a><a name="Organisatorisk-enhet-Organisatorisk-enhet.namn"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ST.html">ST</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: namn</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet-definitions.html#Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet" title="Kod för typ av verksamhet som den organisatoriska enheten bedriver.">typAvVerksamhet</a><a name="Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-CV.html">CV</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: typ av verksamhet<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet-definitions.html#Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI" title="Source attribute: är ansvarig för innehållet i">arAnsvarigForInnehalletI</a><a name="Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Laboratoriesvar-Dokument.html">Laboratoriesvar-Dokument</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: är ansvarig för innehållet i<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet-definitions.html#Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande" title="Source attribute: har svarsmottagande">harSvarsmottagande</a><a name="Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Laboratoriesvar-Dokument.html">Laboratoriesvar-Dokument</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: har svarsmottagande<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet-definitions.html#Organisatorisk-enhet-Organisatorisk-enhet.harUtforande" title="Source attribute: har utförande">harUtforande</a><a name="Organisatorisk-enhet-Organisatorisk-enhet.harUtforande"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Laboratorieanalys-Aktivitet.html">Laboratorieanalys-Aktivitet</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: har utförande<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet-definitions.html#Organisatorisk-enhet-Organisatorisk-enhet.harUppdragFor" title="Source attribute: har uppdrag för">harUppdragFor</a><a name="Organisatorisk-enhet-Organisatorisk-enhet.harUppdragFor"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.html">Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: har uppdrag för<br/></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://example.org/fhir/gloo4/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet"/>
+  <version value="0.1.0"/>
+  <name value="OrganisatoriskenhetOrganisatoriskenhet"/>
+  <title value="Organisatorisk enhet : Organisatorisk enhet"/>
+  <status value="draft"/>
+  <date value="2026-09-18T11:14:11+00:00"/>
+  <publisher value="xmi-to-fsh"/>
+  <contact>
+    <name value="xmi-to-fsh"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/oskthu2/xmi-to-fsh"/>
+    </telecom>
+  </contact>
+  <description value="Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation."/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://example.org/fhir/gloo4/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet"/>
+      <short value="Organisatorisk enhet : Organisatorisk enhet"/>
+      <definition value="Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.-id">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet._id"/>
+      <short value="Source attribute: id; renamed from reserved FSH name 'id'"/>
+      <definition value="Angivelse av identitetsbeteckning för den organisatoriska enheten.&#xA;&#xA;Är alltid ett HSA-id."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Organisatorisk-enhet-Organisatorisk-enhet._id"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.namn">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.namn"/>
+      <short value="Source attribute: namn"/>
+      <definition value="Angivelse av namn på den organisatoriska enheten."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Organisatorisk-enhet-Organisatorisk-enhet.namn"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet"/>
+      <short value="Source attribute: typ av verksamhet"/>
+      <definition value="Kod för typ av verksamhet som den organisatoriska enheten bedriver."/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/CV"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI"/>
+      <short value="Source attribute: är ansvarig för innehållet i"/>
+      <definition value="Source attribute: är ansvarig för innehållet i"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratoriesvar-Dokument"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande"/>
+      <short value="Source attribute: har svarsmottagande"/>
+      <definition value="Source attribute: har svarsmottagande"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratoriesvar-Dokument"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.harUtforande">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.harUtforande"/>
+      <short value="Source attribute: har utförande"/>
+      <definition value="Source attribute: har utförande"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Organisatorisk-enhet-Organisatorisk-enhet.harUtforande"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.harUppdragFor">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.harUppdragFor"/>
+      <short value="Source attribute: har uppdrag för"/>
+      <definition value="Source attribute: har uppdrag för"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Organisatorisk-enhet-Organisatorisk-enhet.harUppdragFor"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet"/>
+      <short value="Organisatorisk enhet : Organisatorisk enhet"/>
+      <definition value="Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation."/>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.-id">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet._id"/>
+      <short value="Source attribute: id; renamed from reserved FSH name 'id'"/>
+      <definition value="Angivelse av identitetsbeteckning för den organisatoriska enheten.&#xA;&#xA;Är alltid ett HSA-id."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.namn">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.namn"/>
+      <short value="Source attribute: namn"/>
+      <definition value="Angivelse av namn på den organisatoriska enheten."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet"/>
+      <short value="Source attribute: typ av verksamhet"/>
+      <definition value="Kod för typ av verksamhet som den organisatoriska enheten bedriver."/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/CV"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI"/>
+      <short value="Source attribute: är ansvarig för innehållet i"/>
+      <definition value="Source attribute: är ansvarig för innehållet i"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratoriesvar-Dokument"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande"/>
+      <short value="Source attribute: har svarsmottagande"/>
+      <definition value="Source attribute: har svarsmottagande"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratoriesvar-Dokument"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.harUtforande">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.harUtforande"/>
+      <short value="Source attribute: har utförande"/>
+      <definition value="Source attribute: har utförande"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet"/>
+      </type>
+    </element>
+    <element id="Organisatorisk-enhet-Organisatorisk-enhet.harUppdragFor">
+      <path value="Organisatorisk-enhet-Organisatorisk-enhet.harUppdragFor"/>
+      <short value="Source attribute: har uppdrag för"/>
+      <definition value="Source attribute: har uppdrag för"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

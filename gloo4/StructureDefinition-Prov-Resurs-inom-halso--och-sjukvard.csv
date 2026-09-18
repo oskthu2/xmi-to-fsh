@@ -1,0 +1,16 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Prov-Resurs-inom-halso--och-sjukvard","Prov-Resurs-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
+","Prov : Resurs (inom hälso- och sjukvård)","(inom hälso- och sjukvården:) humanbiologiskt material som tagits från en levande eller avliden person eller ett foster i syfte att erhålla information om den som provet härrör från (Biobanksordlistan, under rev.)
+Exempel på humanbiologiskt material är vävnad och kroppsvätskor som blod, urin, sekret.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Prov-Resurs-inom-halso--och-sjukvard.grupperarAnalyserSomUtfortsPaSamma","Prov-Resurs-inom-halso--och-sjukvard.grupperarAnalyserSomUtfortsPaSamma","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Analysgrupp-svarsgrupp {[]} {[]}
+","Source attribute: grupperar analyser som utförts på samma","Source attribute: grupperar analyser som utförts på samma","","","","","","","","","",,,,,"",,,,"Prov-Resurs-inom-halso--och-sjukvard.grupperarAnalyserSomUtfortsPaSamma",0,1,"",""
+"Prov-Resurs-inom-halso--och-sjukvard.Identifierar","Prov-Resurs-inom-halso--och-sjukvard.Identifierar","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Prov-id {[]} {[]}
+","Source attribute: Identifierar","Source attribute: Identifierar","","","","","","","","","",,,,,"",,,,"Prov-Resurs-inom-halso--och-sjukvard.Identifierar",0,1,"",""
+"Prov-Resurs-inom-halso--och-sjukvard.bestarAvVisst","Prov-Resurs-inom-halso--och-sjukvard.bestarAvVisst","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Provmaterial {[]} {[]}
+","Source attribute: består av visst","Source attribute: består av visst","","","","","","","","","",,,,,"",,,,"Prov-Resurs-inom-halso--och-sjukvard.bestarAvVisst",0,1,"",""
+"Prov-Resurs-inom-halso--och-sjukvard.utforsPa","Prov-Resurs-inom-halso--och-sjukvard.utforsPa","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
+","Source attribute: utförs på","Source attribute: utförs på","","","","","","","","","",,,,,"",,,,"Prov-Resurs-inom-halso--och-sjukvard.utforsPa",0,1,"",""
+"Prov-Resurs-inom-halso--och-sjukvard.tasMedViss","Prov-Resurs-inom-halso--och-sjukvard.tasMedViss","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Provtagningsmetod {[]} {[]}
+","Source attribute: tas med viss","Source attribute: tas med viss","","","","","","","","","",,,,,"",,,,"Prov-Resurs-inom-halso--och-sjukvard.tasMedViss",0,1,"",""
+"Prov-Resurs-inom-halso--och-sjukvard.lamnar","Prov-Resurs-inom-halso--och-sjukvard.lamnar","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Provgivare {[]} {[]}
+","Source attribute: lämnar","Source attribute: lämnar","","","","","","","","","",,,,,"",,,,"Prov-Resurs-inom-halso--och-sjukvard.lamnar",0,1,"",""

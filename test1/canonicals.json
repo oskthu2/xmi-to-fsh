@@ -1,0 +1,21 @@
+[{
+  "id" : "test1",
+  "type" : "ImplementationGuide",
+  "url" : "http://example.org/fhir/test1/ImplementationGuide/test1",
+  "version" : "0.1.0",
+  "name" : "Test1IG"
+},
+{
+  "id" : "Patient",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/test1/StructureDefinition/Patient",
+  "version" : "0.1.0",
+  "name" : "Patient"
+},
+{
+  "id" : "Personal",
+  "type" : "StructureDefinition",
+  "url" : "http://example.org/fhir/test1/StructureDefinition/Personal",
+  "version" : "0.1.0",
+  "name" : "Personal"
+}]

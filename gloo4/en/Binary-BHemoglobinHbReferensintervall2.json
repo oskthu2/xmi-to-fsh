@@ -1,0 +1,7 @@
+{
+  "resourceType" : "Binary",
+  "id" : "BHemoglobinHbReferensintervall2",
+  "language" : "en",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvZ2xvbzQvU3RydWN0dXJlRGVmaW5pdGlvbi9SZWZlcmVucyIsCiAgImludGVydmFsbCI6ICIxMTctMTUzIGcvTCIKfQo="
+}

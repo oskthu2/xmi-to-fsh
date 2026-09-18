@@ -1,0 +1,26 @@
+Test1IG : Validation Results
+=========================================
+
+err = 1, warn = 7, info = 3
+IG Publisher Version: 2.3.4
+Generated Fri Sep 18 11:16:06 UTC 2026. FHIR version 4.0.1 for test1#0.1.0 (canonical = http://example.org/fhir/test1)
+ Build Errors : 1 / 3 / 0
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/igs/test1/fsh-generated/resources/ImplementationGuide-test1 : 0 / 0 / 2
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/igs/test1/fsh-generated/resources/StructureDefinition-Patient : 0 / 2 / 2
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/igs/test1/fsh-generated/resources/StructureDefinition-Personal : 0 / 2 / 2
+</table>
+== n/a ==
+ERROR: ImplementationGuide.definition.parameter[24].value: Supressed messages file not found
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-test1.json ==
+INFORMATION: Resource: The resource ImplementationGuide/test1 could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-Patient.json ==
+WARNING: StructureDefinition/Patient: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/Patient: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+INFORMATION: Resource: The resource StructureDefinition/Patient could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+== fsh-generated/resources/StructureDefinition-Personal.json ==
+WARNING: StructureDefinition/Personal: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/Personal: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+INFORMATION: Resource: The resource StructureDefinition/Personal could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

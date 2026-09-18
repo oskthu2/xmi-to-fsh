@@ -1,0 +1,29 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation","","","",0,*,"","","","null {[]} {[]}
+","Laboratorieanalysresultat : Observation","Klassen Laboratorieanalysresultat håller information om resultat av en utförd analys.
+
+Detta resultat kan exempelvis bestå av ett mätvärde inom laboratoriedisciplinen kemi, ett fynd av en viss bakterieart eller en textuell beskrivning av analysresultatet. Utöver detta kan en kommentar avseende analysresultatet anges separat.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Laboratorieanalysresultat-Observation.typ","Laboratorieanalysresultat-Observation.typ","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/CV {[]} {[]}
+","Source attribute: typ","Kod för typ av laboratorieanalysresultat.","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.typ",0,1,"",""
+"Laboratorieanalysresultat-Observation.varde","Laboratorieanalysresultat-Observation.varde","","","",1,1,"","","","string {[]} {[]}
+","Source attribute: värde","Angivelse av utfall av en utförd analys.
+
+PQ|IVL<PQ>|ST|CV","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.varde",1,1,"",""
+"Laboratorieanalysresultat-Observation.kommentar","Laboratorieanalysresultat-Observation.kommentar","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: kommentar","Angivelse av kommentar som rör laboratorieanalysresultatet.","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.kommentar",0,1,"",""
+"Laboratorieanalysresultat-Observation.tolkning","Laboratorieanalysresultat-Observation.tolkning","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/CV {[]} {[]}
+","Source attribute: tolkning","Kod för en tolkning av laboratorieanalysresultatet.  
+
+En sådan tolkning kan vara att analysresultatet ligger utanför aktuellt referensintervall, vilket även benämns som patologisk markör.","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.tolkning",0,*,"",""
+"Laboratorieanalysresultat-Observation.negation","Laboratorieanalysresultat-Observation.negation","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/BL {[]} {[]}
+","Source attribute: negation","Source attribute: negation","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.negation",1,1,"",""
+"Laboratorieanalysresultat-Observation.harResultat","Laboratorieanalysresultat-Observation.harResultat","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet {[]} {[]}
+","Source attribute: har resultat","Source attribute: har resultat","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.harResultat",1,1,"",""
+"Laboratorieanalysresultat-Observation.foranlederFordjupad","Laboratorieanalysresultat-Observation.foranlederFordjupad","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet {[]} {[]}
+","Source attribute: föranleder fördjupad","Source attribute: föranleder fördjupad","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.foranlederFordjupad",0,*,"",""
+"Laboratorieanalysresultat-Observation.jamforsMed","Laboratorieanalysresultat-Observation.jamforsMed","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Referens {[]} {[]}
+","Source attribute: jämförs med","Source attribute: jämförs med","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.jamforsMed",0,1,"",""
+"Laboratorieanalysresultat-Observation.harMottagares","Laboratorieanalysresultat-Observation.harMottagares","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Signering-Deltagande {[]} {[]}
+","Source attribute: har mottagares","Source attribute: har mottagares","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.harMottagares",0,1,"",""
+"Laboratorieanalysresultat-Observation.harUtforares","Laboratorieanalysresultat-Observation.harUtforares","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Signering-Deltagande {[]} {[]}
+","Source attribute: har utförares","Source attribute: har utförares","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.harUtforares",0,1,"",""

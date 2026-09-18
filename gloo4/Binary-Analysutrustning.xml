@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="Analysutrustning"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvZ2xvbzQvU3RydWN0dXJlRGVmaW5pdGlvbi9BbmFseXN1dHJ1c3RuaW5nLVJlc3VycyIKfQo="/>
+</Binary>

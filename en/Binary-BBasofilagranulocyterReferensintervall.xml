@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<Binary xmlns="http://hl7.org/fhir">
-  <id value="BBasofilagranulocyterReferensintervall"/>
-  <language value="en"/>
-  <contentType value="application/fhir+json"/>
-  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIveG1pLXRvLWZzaC9TdHJ1Y3R1cmVEZWZpbml0aW9uL1JlZmVyZW5zIiwKICAiaW50ZXJ2YWxsIjogIjwwLDEgeDEwXjkvTCIKfQo="/>
-</Binary>

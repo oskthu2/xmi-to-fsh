@@ -1,0 +1,13 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Analysutrustning-Resurs","Analysutrustning-Resurs","","","",0,*,"","","","null {[]} {[]}
+","Analysutrustning : Resurs","Klassen Analysutrustning håller information om den utrustning som använts för att utföra en analys.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Analysutrustning-Resurs.-id","Analysutrustning-Resurs._id","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/II {[]} {[]}
+","Source attribute: id; renamed from reserved FSH name 'id'","Identitetsbeteckning för en analysutrustning.Id identifierar unikt en viss instans av utrustning,till skillnad från attributet typ som identifierar en typ eller modellbeteckning.","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs._id",0,1,"",""
+"Analysutrustning-Resurs.typ","Analysutrustning-Resurs.typ","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/CV-CWE {[]} {[]}
+","Source attribute: typ","Typ eller modellbeteckning
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs.typ",0,1,"",""
+"Analysutrustning-Resurs.beskrivning","Analysutrustning-Resurs.beskrivning","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: beskrivning","","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs.beskrivning",0,1,"",""
+"Analysutrustning-Resurs.harAnvant","Analysutrustning-Resurs.harAnvant","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet {[]} {[]}
+","Source attribute: har använt","Source attribute: har använt","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs.harAnvant",0,*,"",""

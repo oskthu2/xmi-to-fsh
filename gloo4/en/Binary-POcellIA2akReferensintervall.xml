@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="POcellIA2akReferensintervall"/>
+  <language value="en"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvZ2xvbzQvU3RydWN0dXJlRGVmaW5pdGlvbi9SZWZlcmVucyIsCiAgImludGVydmFsbCI6ICI8Nyw1IGtJRS9MIgp9Cg=="/>
+</Binary>

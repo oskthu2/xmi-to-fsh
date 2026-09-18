@@ -1,0 +1,17 @@
+# test1#0.1.0: Test1(en)
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### Logicals
+
+* [Patient](StructureDefinition-Patient.md)
+* [Personal](StructureDefinition-Personal.md)
+
+### ImplementationGuides
+
+* [Test1](ImplementationGuide-test1.md)

@@ -1,0 +1,7 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Slutsvar-Dokument-inom-halso--och-sjukvard","Slutsvar-Dokument-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
+","Slutsvar : Dokument (inom hälso- och sjukvård)","Svar där samtliga i remissen beställda analyser i och med detta svar är besvarade slutligt, och inga fortsatta analyser pågår.
+
+Den remissvarsmottagande enheten ska i och med detta inte förvänta sig ytterligare svar. Även efter ett slutsvar finns det möjlighet för utförande enhet att skicka ytterligare svar relaterat till samma remiss.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Slutsvar-Dokument-inom-halso--och-sjukvard.arEtt","Slutsvar-Dokument-inom-halso--och-sjukvard.arEtt","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
+","Source attribute: är ett","Source attribute: är ett","","","","","","","","","",,,,,"",,,,"Slutsvar-Dokument-inom-halso--och-sjukvard.arEtt",0,1,"",""

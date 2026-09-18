@@ -1,9 +1,0 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"Referensintervall","Referensintervall","","","",0,*,"","","","null {[]} {[]}
-","Referensintervall","Det intervall som värden för ett fysiologiskt mätvärde hos  en referenspopulation   med e  n   given sannolikhet  ligger inom för den givna typen av analys med den givna metoden.
-
-Referensintervallet utgör en bas för jämförelse (en referensram) för att tolka ett analysresultat för en viss patient.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Referensintervall.liggerTillGrundFor","Referensintervall.liggerTillGrundFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referenspopulation {[]} {[]}
-","Source attribute: ligger till grund för","Source attribute: ligger till grund för","","","","","","","","","",,,,,"",,,,"Referensintervall.liggerTillGrundFor",0,1,"",""
-"Referensintervall.gallerFor","Referensintervall.gallerFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand {[]} {[]}
-","Source attribute: gäller för","Source attribute: gäller för","","","","","","","","","",,,,,"",,,,"Referensintervall.gallerFor",0,1,"",""

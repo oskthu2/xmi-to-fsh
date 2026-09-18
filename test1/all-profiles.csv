@@ -1,0 +1,17 @@
+"Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Patient","Patient","Patient","","","",0,*,"","","","null {[]} {[]}
+","Patient","Root logical model generated from Test1.xmi (source class: Patient).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Patient","Patient.-id","Patient._id","","","",1,1,"","","","id {[]} {[]}
+","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Patient._id",1,1,"",""
+"Patient","Patient.namn","Patient.namn","","","",0,*,"","","","string {[]} {[]}
+","Source attribute: namn","Source attribute: namn","","","","","","","","","",,,,,"",,,,"Patient.namn",0,*,"",""
+"Patient","Patient.ansvarig","Patient.ansvarig","","","",0,*,"","","","http://example.org/fhir/test1/StructureDefinition/Personal {[]} {[]}
+","Source attribute: ansvarig","Source attribute: ansvarig","","","","","","","","","",,,,,"",,,,"Patient.ansvarig",0,*,"",""
+"Personal","Personal","Personal","","","",0,*,"","","","null {[]} {[]}
+","Personal","Supporting logical model generated from Test1.xmi (source class: Personal).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Personal","Personal.HSAId","Personal.HSAId","","","",1,1,"","","","id {[]} {[]}
+","Source attribute: HSAId","Source attribute: HSAId","","","","","","","","","",,,,,"",,,,"Personal.HSAId",1,1,"",""
+"Personal","Personal.namn","Personal.namn","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: namn","Source attribute: namn","","","","","","","","","",,,,,"",,,,"Personal.namn",0,1,"",""
+"Personal","Personal.ansvarig","Personal.ansvarig","","","",0,*,"","","","http://example.org/fhir/test1/StructureDefinition/Patient {[]} {[]}
+","Source attribute: ansvarig","Source attribute: ansvarig","","","","","","","","","",,,,,"",,,,"Personal.ansvarig",0,*,"",""

@@ -1,0 +1,27 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Remiss-Dokument","Remiss-Dokument","","","",0,*,"","","","null {[]} {[]}
+","Remiss : Dokument","Klassen Remiss håller information om den remiss som ligger till grund för svaret.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Remiss-Dokument.remissId","Remiss-Dokument.remissId","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/II {[]} {[]}
+","Source attribute: remiss-id","Angivelse av identitetsbeteckning för remissen.
+
+Benämns även RID.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.remissId",1,1,"",""
+"Remiss-Dokument.remisstidpunkt","Remiss-Dokument.remisstidpunkt","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/TS {[]} {[]}
+","Source attribute: remisstidpunkt","Angivelse av tidpunkt för när en viss remissversion skapades.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.remisstidpunkt",1,1,"",""
+"Remiss-Dokument.versionsnummer","Remiss-Dokument.versionsnummer","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/INT {[]} {[]}
+","Source attribute: versionsnummer","Angivelse av löpnummer för remissversion.
+
+Varje ny version av en remiss behåller ursprungligt remiss-id och kan därför refereras av övriga versioner av samma remiss.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.versionsnummer",0,1,"",""
+"Remiss-Dokument.fragestallning","Remiss-Dokument.fragestallning","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: frågeställning","Angivelse av remissens frågeställning.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.fragestallning",0,1,"",""
+"Remiss-Dokument.efterfragadTjanst","Remiss-Dokument.efterfragadTjanst","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/CV-CWE {[]} {[]}
+","Source attribute: efterfrågad tjänst","Kod för typ av tjänst som efterfrågas i remissen.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.efterfragadTjanst",0,*,"",""
+"Remiss-Dokument.kommentarFranBestallare","Remiss-Dokument.kommentarFranBestallare","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: kommentar från beställare","Kommentar på beställningen av laboratorieundersökningen.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.kommentarFranBestallare",0,1,"",""
+"Remiss-Dokument.medicinskInformation","Remiss-Dokument.medicinskInformation","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: medicinsk information","Medicinsk information som angetts i beställningen relaterad till laboratorieundersökningen.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.medicinskInformation",0,1,"",""
+"Remiss-Dokument.besvarar","Remiss-Dokument.besvarar","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
+","Source attribute: besvarar","Source attribute: besvarar","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.besvarar",0,*,"",""
+"Remiss-Dokument.harRemittent","Remiss-Dokument.harRemittent","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson {[]} {[]}
+","Source attribute: har remittent","Source attribute: har remittent","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.harRemittent",0,1,"",""

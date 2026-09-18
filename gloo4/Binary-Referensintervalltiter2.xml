@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="Referensintervalltiter2"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIvZ2xvbzQvU3RydWN0dXJlRGVmaW5pdGlvbi9SZWZlcmVucyIsCiAgImludGVydmFsbCI6ICI8IDQwIGtFL0wiCn0K"/>
+</Binary>

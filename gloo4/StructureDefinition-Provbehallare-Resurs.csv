@@ -1,0 +1,11 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Provbehallare-Resurs","Provbehallare-Resurs","","","",0,*,"","","","null {[]} {[]}
+","Provbehållare : Resurs","Klassen Provbehållare håller information om den eller de provbehållare som provet förvaras i.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Provbehallare-Resurs.-id","Provbehallare-Resurs._id","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/II {[]} {[]}
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för en provbehållare.","","","","","","","","","",,,,,"",,,,"Provbehallare-Resurs._id",0,*,"",""
+"Provbehallare-Resurs.typ","Provbehallare-Resurs.typ","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/CV {[]} {[]}
+","Source attribute: typ","Kod för typ av provbehållare.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Provbehallare-Resurs.typ",1,1,"",""
+"Provbehallare-Resurs.forvarasI","Provbehallare-Resurs.forvarasI","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/Prov-Resurs {[]} {[]}
+","Source attribute: förvaras i","Source attribute: förvaras i","","","","","","","","","",,,,,"",,,,"Provbehallare-Resurs.forvarasI",0,*,"",""

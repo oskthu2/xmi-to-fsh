@@ -1,0 +1,17 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Referens","Referens","","","",0,*,"","","","null {[]} {[]}
+","Referens","Klassen Referens håller information om vilket referensintervall eller referensvärde som gäller för ett resultat.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Referens.intervall","Referens.intervall","","","",0,1,"","","","string {[]} {[]}
+","Source attribute: intervall","Angivelse av referensintervall som numeriskt värde av mätvärden. Ett referensvärde anges genom att antingen ange ett intervall från det lägre värdet 0 till det högre värdet som sätts till referensvärdet, alternativt från referensvärde som start på intervallet utan angivelse av intervallets slut för att ange att normalvärde ligger över referensvärdet.
+
+Ett och endast ett av attributen intervall eller text ska anges.","","","","","","","","","",,,,,"",,,,"Referens.intervall",0,1,"",""
+"Referens.text","Referens.text","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: text","Textuell beskrivning av referensintervall.
+
+Ett och endast ett av attributen intervall eller text ska anges.","","","","","","","","","",,,,,"",,,,"Referens.text",0,1,"",""
+"Referens.population","Referens.population","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: population","Angivelse av den referenspopulation som ligger till grund för angivet referensintervall.","","","","","","","","","",,,,,"",,,,"Referens.population",0,1,"",""
+"Referens.kommentar","Referens.kommentar","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: kommentar","Angivelse av kommentar för det angivna referensintervallet.","","","","","","","","","",,,,,"",,,,"Referens.kommentar",0,1,"",""
+"Referens.jamforsMed","Referens.jamforsMed","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalysresultat-Observation {[]} {[]}
+","Source attribute: jämförs med","Source attribute: jämförs med","","","","","","","","","",,,,,"",,,,"Referens.jamforsMed",0,*,"",""

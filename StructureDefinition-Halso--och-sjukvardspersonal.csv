@@ -1,7 +1,0 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"Halso--och-sjukvardspersonal","Halso--och-sjukvardspersonal","","","",0,*,"","","","null {[]} {[]}
-",": Hälso- och sjukvårdspersonal","Supporting logical model generated from gloo4.xmi (source class: : Hälso- och sjukvårdspersonal).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Halso--och-sjukvardspersonal.gorsAv","Halso--och-sjukvardspersonal.gorsAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande-2 {[]} {[]}
-","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal.gorsAv",0,1,"",""
-"Halso--och-sjukvardspersonal.arEn","Halso--och-sjukvardspersonal.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remittent-Halso--och-sjukvardspersonal {[]} {[]}
-","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal.arEn",0,1,"",""

@@ -1,0 +1,19 @@
+{
+  "url" : "http://example.org/fhir/test1/ImplementationGuide/test1",
+  "name" : "Test1IG",
+  "title" : "Test1",
+  "description" : "Logical model IG generated automatically from Test1.xmi (Visual Paradigm XMI export). Do not edit the generated FSH under input/fsh/models/ by hand — re-run scripts/xmi_to_fsh.py instead.",
+  "status" : "draft",
+  "package-id" : "test1",
+  "ig-ver" : "0.1.0",
+  "date" : "Fri, 18 Sep, 2026 11:15:37 +0000",
+  "dateISO8601" : "2026-09-18T11:15:37+00:00",
+  "errs" : 1,
+  "warnings" : 7,
+  "hints" : 3,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 861022152
+}

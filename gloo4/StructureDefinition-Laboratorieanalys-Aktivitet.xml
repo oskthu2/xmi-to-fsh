@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Laboratorieanalys-Aktivitet"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition Laboratorieanalys-Aktivitet</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet" title="Klassen Laboratorieanalys håller information om en analys">Laboratorieanalys-Aktivitet</a><a name="Laboratorieanalys-Aktivitet"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Laboratorieanalys : Aktivitet<br/><span style="font-weight:bold">Instances of this type can be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.-id" title="Angivelse av identitetsbeteckning för en laboratorieanalys.">_id</a><a name="Laboratorieanalys-Aktivitet.-id"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-II.html">II</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: id; renamed from reserved FSH name 'id'</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.status" title="Kod för analysens status.">status</a><a name="Laboratorieanalys-Aktivitet.status"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-CV.html">CV</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: status</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.kod" title="Kod för den typ av analys som utförts.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.">kod</a><a name="Laboratorieanalys-Aktivitet.kod"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-CV-CWE.html">CV-CWE</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: kod</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.tid" title="Angivelse av tidpunkt då analysen utfördes.">tid</a><a name="Laboratorieanalys-Aktivitet.tid"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-TS.html">TS</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: tid</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.metod" title="Kod för den typ av tillvägagångssätt för utförandet av analysen som avses.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.">metod</a><a name="Laboratorieanalys-Aktivitet.metod"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-CV-CWE.html">CV-CWE</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: metod</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.kommentar" title="Angivelse av kommentar för en enskild analys.">kommentar</a><a name="Laboratorieanalys-Aktivitet.kommentar"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-ST.html">ST</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: kommentar</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.ackrediteradMetod" title="Angivelse av om analysmetoden är ackrediterad eller inte.">ackrediteradMetod</a><a name="Laboratorieanalys-Aktivitet.ackrediteradMetod"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-BL.html">BL</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: ackrediterad metod</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.bestarAv" title="Source attribute: består av">bestarAv</a><a name="Laboratorieanalys-Aktivitet.bestarAv"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Analysgrupp.html">Analysgrupp</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: består av</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.harAnvant" title="Source attribute: har använt">harAnvant</a><a name="Laboratorieanalys-Aktivitet.harAnvant"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Analysutrustning-Resurs.html">Analysutrustning-Resurs</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: har använt<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.harUtforande" title="Source attribute: har utförande">harUtforande</a><a name="Laboratorieanalys-Aktivitet.harUtforande"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Organisatorisk-enhet-Organisatorisk-enhet.html">Organisatorisk-enhet-Organisatorisk-enhet</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: har utförande</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.harResultat" title="Source attribute: har resultat">harResultat</a><a name="Laboratorieanalys-Aktivitet.harResultat"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Laboratorieanalysresultat-Observation.html">Laboratorieanalysresultat-Observation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: har resultat<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.avser" title="Source attribute: avser">avser</a><a name="Laboratorieanalys-Aktivitet.avser"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Prov-Resurs.html">Prov-Resurs</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: avser<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Laboratorieanalys-Aktivitet-definitions.html#Laboratorieanalys-Aktivitet.foranlederFordjupad" title="Source attribute: föranleder fördjupad">foranlederFordjupad</a><a name="Laboratorieanalys-Aktivitet.foranlederFordjupad"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Laboratorieanalysresultat-Observation.html">Laboratorieanalysresultat-Observation</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Source attribute: föranleder fördjupad</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet"/>
+  <version value="0.1.0"/>
+  <name value="LaboratorieanalysAktivitet"/>
+  <title value="Laboratorieanalys : Aktivitet"/>
+  <status value="draft"/>
+  <date value="2026-09-18T11:14:11+00:00"/>
+  <publisher value="xmi-to-fsh"/>
+  <contact>
+    <name value="xmi-to-fsh"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/oskthu2/xmi-to-fsh"/>
+    </telecom>
+  </contact>
+  <description value="Klassen Laboratorieanalys håller information om en analys"/>
+  <fhirVersion value="4.0.1"/>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalys-Aktivitet"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="4.0.1"/>
+    </extension>
+    <element id="Laboratorieanalys-Aktivitet">
+      <path value="Laboratorieanalys-Aktivitet"/>
+      <short value="Laboratorieanalys : Aktivitet"/>
+      <definition value="Klassen Laboratorieanalys håller information om en analys"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.-id">
+      <path value="Laboratorieanalys-Aktivitet._id"/>
+      <short value="Source attribute: id; renamed from reserved FSH name 'id'"/>
+      <definition value="Angivelse av identitetsbeteckning för en laboratorieanalys."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet._id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.status">
+      <path value="Laboratorieanalys-Aktivitet.status"/>
+      <short value="Source attribute: status"/>
+      <definition value="Kod för analysens status."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/CV"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.kod">
+      <path value="Laboratorieanalys-Aktivitet.kod"/>
+      <short value="Source attribute: kod"/>
+      <definition value="Kod för den typ av analys som utförts.&#xA;&#xA;Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ."/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.kod"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/CV-CWE"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.tid">
+      <path value="Laboratorieanalys-Aktivitet.tid"/>
+      <short value="Source attribute: tid"/>
+      <definition value="Angivelse av tidpunkt då analysen utfördes."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.tid"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.metod">
+      <path value="Laboratorieanalys-Aktivitet.metod"/>
+      <short value="Source attribute: metod"/>
+      <definition value="Kod för den typ av tillvägagångssätt för utförandet av analysen som avses.&#xA;&#xA;Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.metod"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/CV-CWE"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.kommentar">
+      <path value="Laboratorieanalys-Aktivitet.kommentar"/>
+      <short value="Source attribute: kommentar"/>
+      <definition value="Angivelse av kommentar för en enskild analys."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.kommentar"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.ackrediteradMetod">
+      <path value="Laboratorieanalys-Aktivitet.ackrediteradMetod"/>
+      <short value="Source attribute: ackrediterad metod"/>
+      <definition value="Angivelse av om analysmetoden är ackrediterad eller inte."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.ackrediteradMetod"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/BL"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.bestarAv">
+      <path value="Laboratorieanalys-Aktivitet.bestarAv"/>
+      <short value="Source attribute: består av"/>
+      <definition value="Source attribute: består av"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.bestarAv"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Analysgrupp"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.harAnvant">
+      <path value="Laboratorieanalys-Aktivitet.harAnvant"/>
+      <short value="Source attribute: har använt"/>
+      <definition value="Source attribute: har använt"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.harAnvant"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Analysutrustning-Resurs"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.harUtforande">
+      <path value="Laboratorieanalys-Aktivitet.harUtforande"/>
+      <short value="Source attribute: har utförande"/>
+      <definition value="Source attribute: har utförande"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.harUtforande"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.harResultat">
+      <path value="Laboratorieanalys-Aktivitet.harResultat"/>
+      <short value="Source attribute: har resultat"/>
+      <definition value="Source attribute: har resultat"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.harResultat"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalysresultat-Observation"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.avser">
+      <path value="Laboratorieanalys-Aktivitet.avser"/>
+      <short value="Source attribute: avser"/>
+      <definition value="Source attribute: avser"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.avser"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Prov-Resurs"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.foranlederFordjupad">
+      <path value="Laboratorieanalys-Aktivitet.foranlederFordjupad"/>
+      <short value="Source attribute: föranleder fördjupad"/>
+      <definition value="Source attribute: föranleder fördjupad"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Laboratorieanalys-Aktivitet.foranlederFordjupad"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalysresultat-Observation"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Laboratorieanalys-Aktivitet">
+      <path value="Laboratorieanalys-Aktivitet"/>
+      <short value="Laboratorieanalys : Aktivitet"/>
+      <definition value="Klassen Laboratorieanalys håller information om en analys"/>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.-id">
+      <path value="Laboratorieanalys-Aktivitet._id"/>
+      <short value="Source attribute: id; renamed from reserved FSH name 'id'"/>
+      <definition value="Angivelse av identitetsbeteckning för en laboratorieanalys."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/II"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.status">
+      <path value="Laboratorieanalys-Aktivitet.status"/>
+      <short value="Source attribute: status"/>
+      <definition value="Kod för analysens status."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/CV"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.kod">
+      <path value="Laboratorieanalys-Aktivitet.kod"/>
+      <short value="Source attribute: kod"/>
+      <definition value="Kod för den typ av analys som utförts.&#xA;&#xA;Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ."/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/CV-CWE"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.tid">
+      <path value="Laboratorieanalys-Aktivitet.tid"/>
+      <short value="Source attribute: tid"/>
+      <definition value="Angivelse av tidpunkt då analysen utfördes."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/TS"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.metod">
+      <path value="Laboratorieanalys-Aktivitet.metod"/>
+      <short value="Source attribute: metod"/>
+      <definition value="Kod för den typ av tillvägagångssätt för utförandet av analysen som avses.&#xA;&#xA;Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/CV-CWE"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.kommentar">
+      <path value="Laboratorieanalys-Aktivitet.kommentar"/>
+      <short value="Source attribute: kommentar"/>
+      <definition value="Angivelse av kommentar för en enskild analys."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/ST"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.ackrediteradMetod">
+      <path value="Laboratorieanalys-Aktivitet.ackrediteradMetod"/>
+      <short value="Source attribute: ackrediterad metod"/>
+      <definition value="Angivelse av om analysmetoden är ackrediterad eller inte."/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/BL"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.bestarAv">
+      <path value="Laboratorieanalys-Aktivitet.bestarAv"/>
+      <short value="Source attribute: består av"/>
+      <definition value="Source attribute: består av"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Analysgrupp"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.harAnvant">
+      <path value="Laboratorieanalys-Aktivitet.harAnvant"/>
+      <short value="Source attribute: har använt"/>
+      <definition value="Source attribute: har använt"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Analysutrustning-Resurs"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.harUtforande">
+      <path value="Laboratorieanalys-Aktivitet.harUtforande"/>
+      <short value="Source attribute: har utförande"/>
+      <definition value="Source attribute: har utförande"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.harResultat">
+      <path value="Laboratorieanalys-Aktivitet.harResultat"/>
+      <short value="Source attribute: har resultat"/>
+      <definition value="Source attribute: har resultat"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalysresultat-Observation"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.avser">
+      <path value="Laboratorieanalys-Aktivitet.avser"/>
+      <short value="Source attribute: avser"/>
+      <definition value="Source attribute: avser"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Prov-Resurs"/>
+      </type>
+    </element>
+    <element id="Laboratorieanalys-Aktivitet.foranlederFordjupad">
+      <path value="Laboratorieanalys-Aktivitet.foranlederFordjupad"/>
+      <short value="Source attribute: föranleder fördjupad"/>
+      <definition value="Source attribute: föranleder fördjupad"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalysresultat-Observation"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

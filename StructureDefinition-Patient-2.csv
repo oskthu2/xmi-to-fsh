@@ -1,7 +1,0 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"Patient-2","Patient-2","","","",0,*,"","","","null {[]} {[]}
-",": Patient","Supporting logical model generated from gloo4.xmi (source class: : Patient).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Patient-2.tillhor","Patient-2.tillhor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Malpopulation {[]} {[]}
-","Source attribute: tillhör","Source attribute: tillhör","","","","","","","","","",,,,,"",,,,"Patient-2.tillhor",0,1,"",""
-"Patient-2.avser","Patient-2.avser","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard {[]} {[]}
-","Source attribute: avser","Source attribute: avser","","","","","","","","","",,,,,"",,,,"Patient-2.avser",0,1,"",""

@@ -1,0 +1,19 @@
+{
+  "url" : "http://example.org/fhir/gloo4/ImplementationGuide/gloo4",
+  "name" : "gloo4IG",
+  "title" : "gloo4",
+  "description" : "Logical model IG generated automatically from gloo4.xmi (Visual Paradigm XMI export). Do not edit the generated FSH under input/fsh/models/ by hand — re-run scripts/xmi_to_fsh.py instead.",
+  "status" : "draft",
+  "package-id" : "gloo4",
+  "ig-ver" : "0.1.0",
+  "date" : "Fri, 18 Sep, 2026 11:14:11 +0000",
+  "dateISO8601" : "2026-09-18T11:14:11+00:00",
+  "errs" : 13,
+  "warnings" : 502,
+  "hints" : 88,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 753788224
+}

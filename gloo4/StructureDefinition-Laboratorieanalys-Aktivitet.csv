@@ -1,0 +1,33 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet","","","",0,*,"","","","null {[]} {[]}
+","Laboratorieanalys : Aktivitet","Klassen Laboratorieanalys håller information om en analys","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Laboratorieanalys-Aktivitet.-id","Laboratorieanalys-Aktivitet._id","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/II {[]} {[]}
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för en laboratorieanalys.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet._id",0,1,"",""
+"Laboratorieanalys-Aktivitet.status","Laboratorieanalys-Aktivitet.status","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/CV {[]} {[]}
+","Source attribute: status","Kod för analysens status.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.status",1,1,"",""
+"Laboratorieanalys-Aktivitet.kod","Laboratorieanalys-Aktivitet.kod","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/CV-CWE {[]} {[]}
+","Source attribute: kod","Kod för den typ av analys som utförts.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.kod",1,1,"",""
+"Laboratorieanalys-Aktivitet.tid","Laboratorieanalys-Aktivitet.tid","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/TS {[]} {[]}
+","Source attribute: tid","Angivelse av tidpunkt då analysen utfördes.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.tid",0,1,"",""
+"Laboratorieanalys-Aktivitet.metod","Laboratorieanalys-Aktivitet.metod","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/CV-CWE {[]} {[]}
+","Source attribute: metod","Kod för den typ av tillvägagångssätt för utförandet av analysen som avses.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.metod",0,1,"",""
+"Laboratorieanalys-Aktivitet.kommentar","Laboratorieanalys-Aktivitet.kommentar","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/ST {[]} {[]}
+","Source attribute: kommentar","Angivelse av kommentar för en enskild analys.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.kommentar",0,1,"",""
+"Laboratorieanalys-Aktivitet.ackrediteradMetod","Laboratorieanalys-Aktivitet.ackrediteradMetod","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/BL {[]} {[]}
+","Source attribute: ackrediterad metod","Angivelse av om analysmetoden är ackrediterad eller inte.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.ackrediteradMetod",0,1,"",""
+"Laboratorieanalys-Aktivitet.bestarAv","Laboratorieanalys-Aktivitet.bestarAv","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Analysgrupp {[]} {[]}
+","Source attribute: består av","Source attribute: består av","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.bestarAv",1,1,"",""
+"Laboratorieanalys-Aktivitet.harAnvant","Laboratorieanalys-Aktivitet.harAnvant","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/Analysutrustning-Resurs {[]} {[]}
+","Source attribute: har använt","Source attribute: har använt","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.harAnvant",0,*,"",""
+"Laboratorieanalys-Aktivitet.harUtforande","Laboratorieanalys-Aktivitet.harUtforande","","","",0,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet {[]} {[]}
+","Source attribute: har utförande","Source attribute: har utförande","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.harUtforande",0,1,"",""
+"Laboratorieanalys-Aktivitet.harResultat","Laboratorieanalys-Aktivitet.harResultat","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalysresultat-Observation {[]} {[]}
+","Source attribute: har resultat","Source attribute: har resultat","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.harResultat",0,*,"",""
+"Laboratorieanalys-Aktivitet.avser","Laboratorieanalys-Aktivitet.avser","","","",0,*,"","","","http://example.org/fhir/gloo4/StructureDefinition/Prov-Resurs {[]} {[]}
+","Source attribute: avser","Source attribute: avser","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.avser",0,*,"",""
+"Laboratorieanalys-Aktivitet.foranlederFordjupad","Laboratorieanalys-Aktivitet.foranlederFordjupad","","","",1,1,"","","","http://example.org/fhir/gloo4/StructureDefinition/Laboratorieanalysresultat-Observation {[]} {[]}
+","Source attribute: föranleder fördjupad","Source attribute: föranleder fördjupad","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.foranlederFordjupad",1,1,"",""

@@ -1,0 +1,76 @@
+# Signatur - gloo4 v0.1.0
+
+## Logical Model: Signatur 
+
+ 
+Egenhändigt skriven namnteckning eller förkortad namnteckning. 
+
+**Usages:**
+
+* Use this Logical Model: [Signering : Deltagande](StructureDefinition-Signering-Deltagande-2.md)
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/gloo4|current/StructureDefinition/StructureDefinition-Signatur.json)
+
+### Formal Views of Profile Content
+
+ [Description Differentials, Snapshots, and other representations](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](../StructureDefinition-Signatur.csv), [Excel](../StructureDefinition-Signatur.xlsx) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "Signatur",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-be-target"
+  }],
+  "url" : "http://example.org/fhir/gloo4/StructureDefinition/Signatur",
+  "version" : "0.1.0",
+  "name" : "Signatur",
+  "title" : "Signatur",
+  "status" : "draft",
+  "date" : "2026-09-18T11:14:11+00:00",
+  "publisher" : "xmi-to-fsh",
+  "contact" : [{
+    "name" : "xmi-to-fsh",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://github.com/oskthu2/xmi-to-fsh"
+    }]
+  }],
+  "description" : "Egenhändigt skriven namnteckning eller förkortad namnteckning.",
+  "fhirVersion" : "4.0.1",
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://example.org/fhir/gloo4/StructureDefinition/Signatur",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "differential" : {
+    "element" : [{
+      "id" : "Signatur",
+      "path" : "Signatur",
+      "short" : "Signatur",
+      "definition" : "Egenhändigt skriven namnteckning eller förkortad namnteckning."
+    },
+    {
+      "id" : "Signatur.arResultatAv",
+      "path" : "Signatur.arResultatAv",
+      "short" : "Source attribute: är resultat av",
+      "definition" : "Source attribute: är resultat av",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "http://example.org/fhir/gloo4/StructureDefinition/Signering-Deltagande-2"
+      }]
+    }]
+  }
+}
+
+```
