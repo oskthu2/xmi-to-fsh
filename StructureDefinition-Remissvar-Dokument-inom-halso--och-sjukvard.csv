@@ -1,6 +1,9 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "Remissvar-Dokument-inom-halso--och-sjukvard","Remissvar-Dokument-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Remissvar : Dokument (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Remissvar : Dokument (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Remissvar : Dokument (inom hälso- och sjukvård)","Det som kommuniceras till remittenten efter att en remiss har bedömts och den remissmottagande enheten har accepterat att hantera det som frågeställningen avser.
+
+Det kan röra sig om ett svar på frågeställning i remissen men också vara en redogörelse för att en eller flera önskade åtgärder har utförts.   
+[Projektet e-remiss, ""Remissvar""]","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Remissvar-Dokument-inom-halso--och-sjukvard.gorsAv","Remissvar-Dokument-inom-halso--och-sjukvard.gorsAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande-2 {[]} {[]}
 ","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Remissvar-Dokument-inom-halso--och-sjukvard.gorsAv",0,1,"",""
 "Remissvar-Dokument-inom-halso--och-sjukvard.harVisst","Remissvar-Dokument-inom-halso--och-sjukvard.harVisst","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Presentationsformat {[]} {[]}

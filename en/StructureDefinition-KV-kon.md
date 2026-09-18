@@ -3,7 +3,8 @@
 ## Logical Model: KV kön 
 
  
-Supporting logical model generated from gloo4.xmi (source class: KV kön). 
+Anger administrativt kön 
+OID: 1.2.752.129.2.2.1.1 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-KV-kon.csv), [Exc
   "name" : "KVkon",
   "title" : "KV kön",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-KV-kon.csv), [Exc
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: KV kön).",
+  "description" : "Anger administrativt kön\n\nOID: 1.2.752.129.2.2.1.1",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-KV-kon.csv), [Exc
       "id" : "KV-kon",
       "path" : "KV-kon",
       "short" : "KV kön",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: KV kön)."
+      "definition" : "Anger administrativt kön\n\nOID: 1.2.752.129.2.2.1.1"
     }]
   }
 }

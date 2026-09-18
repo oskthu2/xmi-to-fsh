@@ -3,7 +3,7 @@
 ## Logical Model: Utförande enhet : Organisation (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Utförande enhet : Organisation (inom hälso- och sjukvård)). 
+Den enhet som utför en enskild analys. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Utforande-enhet-O
   "name" : "UtforandeenhetOrganisationinomhalsoochsjukvard",
   "title" : "Utförande enhet : Organisation (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Utforande-enhet-O
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Utförande enhet : Organisation (inom hälso- och sjukvård)).",
+  "description" : "Den enhet som utför en enskild analys.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Utforande-enhet-O
       "id" : "Utforande-enhet-Organisation-inom-halso--och-sjukvard",
       "path" : "Utforande-enhet-Organisation-inom-halso--och-sjukvard",
       "short" : "Utförande enhet : Organisation (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Utförande enhet : Organisation (inom hälso- och sjukvård))."
+      "definition" : "Den enhet som utför en enskild analys."
     },
     {
       "id" : "Utforande-enhet-Organisation-inom-halso--och-sjukvard.utfor",

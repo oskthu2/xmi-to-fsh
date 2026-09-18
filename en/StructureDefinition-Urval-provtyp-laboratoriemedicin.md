@@ -3,7 +3,8 @@
 ## Logical Model: Urval provtyp laboratoriemedicin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Urval provtyp laboratoriemedicin). 
+Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provtyp inom laboratoriemedicin. 
+OID: 1.2.752.129.5.1.13 Refset-ID: 500121000057102 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-provtyp-lab
   "name" : "Urvalprovtyplaboratoriemedicin",
   "title" : "Urval provtyp laboratoriemedicin",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-provtyp-lab
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Urval provtyp laboratoriemedicin).",
+  "description" : "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provtyp inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.13\nRefset-ID: 500121000057102",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-provtyp-lab
       "id" : "Urval-provtyp-laboratoriemedicin",
       "path" : "Urval-provtyp-laboratoriemedicin",
       "short" : "Urval provtyp laboratoriemedicin",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Urval provtyp laboratoriemedicin)."
+      "definition" : "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provtyp inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.13\nRefset-ID: 500121000057102"
     }]
   }
 }

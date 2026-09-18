@@ -3,7 +3,8 @@
 ## Logical Model: Remittent : Hälso- och sjukvårdspersonal 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Remittent : Hälso- och sjukvårdspersonal). 
+Den hälso- och sjukvårdspersonal som i sitt uppdrag för en organisatorisk enhet har fattat beslut om att skicka remiss. 
+Vissa använder uttrycket "beställare" för detta begrepp. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remittent-Halso--
   "name" : "RemittentHalsoochsjukvardspersonal",
   "title" : "Remittent : Hälso- och sjukvårdspersonal",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remittent-Halso--
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Remittent : Hälso- och sjukvårdspersonal).",
+  "description" : "Den hälso- och sjukvårdspersonal som i sitt uppdrag för en organisatorisk enhet har fattat beslut om att skicka remiss.\n\nVissa använder uttrycket \"beställare\" för detta begrepp.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remittent-Halso--
       "id" : "Remittent-Halso--och-sjukvardspersonal",
       "path" : "Remittent-Halso--och-sjukvardspersonal",
       "short" : "Remittent : Hälso- och sjukvårdspersonal",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Remittent : Hälso- och sjukvårdspersonal)."
+      "definition" : "Den hälso- och sjukvårdspersonal som i sitt uppdrag för en organisatorisk enhet har fattat beslut om att skicka remiss.\n\nVissa använder uttrycket \"beställare\" för detta begrepp."
     },
     {
       "id" : "Remittent-Halso--och-sjukvardspersonal.skapar",

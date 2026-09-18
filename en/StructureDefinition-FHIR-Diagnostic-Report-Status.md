@@ -3,7 +3,7 @@
 ## Logical Model: FHIR Diagnostic Report Status 
 
  
-Supporting logical model generated from gloo4.xmi (source class: FHIR Diagnostic Report Status ). 
+Value set från FHIR som specificerar typen av provsvar OID: 2.16.840.1.113883.4.642.3.235 http://hl7.org/fhir/ValueSet/diagnostic-report-status 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-FHIR-Diagnostic-R
   "name" : "FHIRDiagnosticReportStatus",
   "title" : "FHIR Diagnostic Report Status ",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-FHIR-Diagnostic-R
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: FHIR Diagnostic Report Status ).",
+  "description" : "Value set från FHIR som specificerar typen av provsvar\nOID: 2.16.840.1.113883.4.642.3.235\nhttp://hl7.org/fhir/ValueSet/diagnostic-report-status",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-FHIR-Diagnostic-R
       "id" : "FHIR-Diagnostic-Report-Status",
       "path" : "FHIR-Diagnostic-Report-Status",
       "short" : "FHIR Diagnostic Report Status ",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: FHIR Diagnostic Report Status )."
+      "definition" : "Value set från FHIR som specificerar typen av provsvar\nOID: 2.16.840.1.113883.4.642.3.235\nhttp://hl7.org/fhir/ValueSet/diagnostic-report-status"
     }]
   }
 }

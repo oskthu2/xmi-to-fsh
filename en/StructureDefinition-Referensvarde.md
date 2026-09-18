@@ -3,7 +3,7 @@
 ## Logical Model: Referensvärde 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Referensvärde). 
+Ö verenskommet värde hos egenskap mot vilket kan jämföras uppmätta eller observerade värden . 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referensvarde.csv
   "name" : "Referensvarde",
   "title" : "Referensvärde",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referensvarde.csv
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Referensvärde).",
+  "description" : "Ö  verenskommet värde   hos egenskap   mot vilket kan jämföras uppmätta eller observerade värden  .",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referensvarde.csv
       "id" : "Referensvarde",
       "path" : "Referensvarde",
       "short" : "Referensvärde",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Referensvärde)."
+      "definition" : "Ö  verenskommet värde   hos egenskap   mot vilket kan jämföras uppmätta eller observerade värden  ."
     },
     {
       "id" : "Referensvarde.gallerFor",

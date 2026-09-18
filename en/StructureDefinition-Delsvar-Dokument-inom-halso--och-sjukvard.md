@@ -3,7 +3,9 @@
 ## Logical Model: Delsvar : Dokument (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Delsvar : Dokument (inom hälso- och sjukvård)). 
+Svar som innehåller resultat från en eller flera analyser där alla beställda analyser ännu inte är slutligt besvarade. 
+Den remissvarsmottagande enheten ska förvänta sig ytterligare svar tills samtliga beställda analyser är utförda och slutligt besvarade. 
+En typ av delsvar är preliminärsvar, som innehåller minst ett resultat från en analys som ännu inte är avslutad. 
 
 **Usages:**
 
@@ -36,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-Delsvar-Dokument-
   "name" : "DelsvarDokumentinomhalsoochsjukvard",
   "title" : "Delsvar : Dokument (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-Delsvar-Dokument-
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Delsvar : Dokument (inom hälso- och sjukvård)).",
+  "description" : "Svar som innehåller resultat från en eller flera analyser där alla beställda analyser ännu inte är slutligt besvarade.\n\nDen remissvarsmottagande enheten ska förvänta sig ytterligare svar tills samtliga beställda analyser är utförda och slutligt besvarade.\n\nEn typ av delsvar är preliminärsvar, som innehåller minst ett resultat från en analys som ännu inte är avslutad.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +59,7 @@ Other representations of profile: [CSV](../StructureDefinition-Delsvar-Dokument-
       "id" : "Delsvar-Dokument-inom-halso--och-sjukvard",
       "path" : "Delsvar-Dokument-inom-halso--och-sjukvard",
       "short" : "Delsvar : Dokument (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Delsvar : Dokument (inom hälso- och sjukvård))."
+      "definition" : "Svar som innehåller resultat från en eller flera analyser där alla beställda analyser ännu inte är slutligt besvarade.\n\nDen remissvarsmottagande enheten ska förvänta sig ytterligare svar tills samtliga beställda analyser är utförda och slutligt besvarade.\n\nEn typ av delsvar är preliminärsvar, som innehåller minst ett resultat från en analys som ännu inte är avslutad."
     },
     {
       "id" : "Delsvar-Dokument-inom-halso--och-sjukvard.arEtt",

@@ -3,7 +3,7 @@
 ## Logical Model: Prov : Resurs 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs). 
+Klassen Prov håller information om ett prov. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs.csv),
   "name" : "ProvResurs",
   "title" : "Prov : Resurs",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs.csv),
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs).",
+  "description" : "Klassen Prov håller information om ett prov.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs.csv),
       "id" : "Prov-Resurs",
       "path" : "Prov-Resurs",
       "short" : "Prov : Resurs",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs)."
+      "definition" : "Klassen Prov håller information om ett prov."
     },
     {
       "id" : "Prov-Resurs.-id",
       "path" : "Prov-Resurs._id",
       "short" : "Source attribute: id; renamed from reserved FSH name 'id'",
-      "definition" : "Source attribute: id; renamed from reserved FSH name 'id'",
+      "definition" : "Angivelse av identitetsbeteckning för ett prov.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs.csv),
       "id" : "Prov-Resurs.material",
       "path" : "Prov-Resurs.material",
       "short" : "Source attribute: material",
-      "definition" : "Source attribute: material",
+      "definition" : "Kod för typ av provmaterial.\n\nKoden för provmaterial kan även innefatta information om provtagningsmetod.\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs.csv),
       "id" : "Prov-Resurs.provtagningstidpunkt",
       "path" : "Prov-Resurs.provtagningstidpunkt",
       "short" : "Source attribute: provtagningstidpunkt",
-      "definition" : "Source attribute: provtagningstidpunkt",
+      "definition" : "Angivelse av den tidpunkt då ett prov är taget.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs.csv),
       "id" : "Prov-Resurs.anatomiskLokalisation",
       "path" : "Prov-Resurs.anatomiskLokalisation",
       "short" : "Source attribute: anatomisk lokalisation",
-      "definition" : "Source attribute: anatomisk lokalisation",
+      "definition" : "Kod som anger var provet är taget.\n\nExempel: höger arm, vänster njure.\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs.csv),
       "id" : "Prov-Resurs.kommentar",
       "path" : "Prov-Resurs.kommentar",
       "short" : "Source attribute: kommentar",
-      "definition" : "Source attribute: kommentar",
+      "definition" : "Angivelse av kommentar om enskilt prov.",
       "min" : 0,
       "max" : "1",
       "type" : [{

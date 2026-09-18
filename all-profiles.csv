@@ -1,66 +1,98 @@
 "Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "Analysgrupp-2","Analysgrupp-2","Analysgrupp-2","","","",0,*,"","","","null {[]} {[]}
-","Analysgrupp","Supporting logical model generated from gloo4.xmi (source class: Analysgrupp).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Analysgrupp","Grupp av analyser utförda på ett eller flera prov från samma provgivare och som man väljer att betrakta som en enhet.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Analysgrupp-2","Analysgrupp-2.grupperar","Analysgrupp-2.grupperar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: grupperar","Source attribute: grupperar","","","","","","","","","",,,,,"",,,,"Analysgrupp-2.grupperar",0,1,"",""
 "Analysgrupp-svarsgrupp","Analysgrupp-svarsgrupp","Analysgrupp-svarsgrupp","","","",0,*,"","","","null {[]} {[]}
-","Analysgrupp (svarsgrupp)","Supporting logical model generated from gloo4.xmi (source class: Analysgrupp (svarsgrupp)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Analysgrupp (svarsgrupp)","Sökning på google visar att ”analysgrupp” verkar avse en grupp av personer som ska analysera något. Och ”svarsgrupp” tycks ha med telefoni att göra. Detta kanske är något informatiskt som inte behöver förklaras i en begreppsmodell? 
+
+Eller ""Grupp av analyser utförda på ett och samma prov""? Stämmer det att det är ett och samma prov? I informationsmodellen står det att analysgrupp kan avse 0 till många prov, men i beskrivningen till klassen Analysgrupp står att denna grupperar ett antal analyser som utförs på ett prov. 
+
+2018-03-14: Vi stryker denna i begreppsmodellen, det löser man i informationsmodellen (gruppkommentar e.d.). 
+
+Analysgrupp  
+Det kan vara ett eller flera prov. Exempel: påvisande av antikroppar mot Borrelia i både blod och cerebrospinalvätska.  
+Observera att olika landsting kan ha löst detta på olika sätt. Man kan av tekniska skäl tvingas ha en analysgrupp som en enda ”vanlig” analys. Och det kan vara tvärtom: labbet hanterar analyserna som en grupp, men av tekniska skäl måste de ingående analyserna svaras ut en och en.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Analysgrupp-svarsgrupp","Analysgrupp-svarsgrupp.grupperarAnalyserSomUtfortsPaSamma","Analysgrupp-svarsgrupp.grupperarAnalyserSomUtfortsPaSamma","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: grupperar analyser som utförts på samma","Source attribute: grupperar analyser som utförts på samma","","","","","","","","","",,,,,"",,,,"Analysgrupp-svarsgrupp.grupperarAnalyserSomUtfortsPaSamma",0,1,"",""
 "Analysgrupp","Analysgrupp","Analysgrupp","","","",0,*,"","","","null {[]} {[]}
-","Analysgrupp","Supporting logical model generated from gloo4.xmi (source class: Analysgrupp).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Analysgrupp","Klassen Analysgrupp grupperar ett antal analyser som utförs på ett eller flera prov från samma patient och som man väljer att betrakta som en enhet.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Analysgrupp","Analysgrupp.namn","Analysgrupp.namn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: namn","Source attribute: namn","","","","","","","","","",,,,,"",,,,"Analysgrupp.namn",0,1,"",""
+","Source attribute: namn","Angivelse av namn eller benämning på en analysgrupp","","","","","","","","","",,,,,"",,,,"Analysgrupp.namn",0,1,"",""
 "Analysgrupp","Analysgrupp.listkod","Analysgrupp.listkod","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: listkod","Source attribute: listkod","","","","","","","","","",,,,,"",,,,"Analysgrupp.listkod",0,1,"",""
+","Source attribute: listkod","Kod för en analysgrupp.","","","","","","","","","",,,,,"",,,,"Analysgrupp.listkod",0,1,"",""
 "Analysgrupp","Analysgrupp.gruppkommentar","Analysgrupp.gruppkommentar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: gruppkommentar","Source attribute: gruppkommentar","","","","","","","","","",,,,,"",,,,"Analysgrupp.gruppkommentar",0,1,"",""
+","Source attribute: gruppkommentar","Angivelse av kommentar för hela analysgruppen.","","","","","","","","","",,,,,"",,,,"Analysgrupp.gruppkommentar",0,1,"",""
 "Analysgrupp","Analysgrupp.bestarAv","Analysgrupp.bestarAv","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
 ","Source attribute: består av","Source attribute: består av","","","","","","","","","",,,,,"",,,,"Analysgrupp.bestarAv",1,1,"",""
 "Analysgrupp","Analysgrupp.bestarAv2","Analysgrupp.bestarAv2","","","",1,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet {[]} {[]}
 ","Source attribute: består av","Source attribute: består av","","","","","","","","","",,,,,"",,,,"Analysgrupp.bestarAv2",1,*,"",""
 "Analysutrustning-Resurs","Analysutrustning-Resurs","Analysutrustning-Resurs","","","",0,*,"","","","null {[]} {[]}
-","Analysutrustning : Resurs","Supporting logical model generated from gloo4.xmi (source class: Analysutrustning : Resurs).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Analysutrustning : Resurs","Klassen Analysutrustning håller information om den utrustning som använts för att utföra en analys.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Analysutrustning-Resurs","Analysutrustning-Resurs.-id","Analysutrustning-Resurs._id","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs._id",0,1,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Identitetsbeteckning för en analysutrustning.Id identifierar unikt en viss instans av utrustning,till skillnad från attributet typ som identifierar en typ eller modellbeteckning.","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs._id",0,1,"",""
 "Analysutrustning-Resurs","Analysutrustning-Resurs.typ","Analysutrustning-Resurs.typ","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: typ","Source attribute: typ","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs.typ",0,1,"",""
+","Source attribute: typ","Typ eller modellbeteckning
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs.typ",0,1,"",""
 "Analysutrustning-Resurs","Analysutrustning-Resurs.beskrivning","Analysutrustning-Resurs.beskrivning","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: beskrivning","Source attribute: beskrivning","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs.beskrivning",0,1,"",""
+","Source attribute: beskrivning","","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs.beskrivning",0,1,"",""
 "Analysutrustning-Resurs","Analysutrustning-Resurs.harAnvant","Analysutrustning-Resurs.harAnvant","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet {[]} {[]}
 ","Source attribute: har använt","Source attribute: har använt","","","","","","","","","",,,,,"",,,,"Analysutrustning-Resurs.harAnvant",0,*,"",""
 "Ansvarig-enhet-Organisation-inom-halso--och-sjukvard","Ansvarig-enhet-Organisation-inom-halso--och-sjukvard","Ansvarig-enhet-Organisation-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Ansvarig enhet : Organisation (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Ansvarig enhet : Organisation (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Ansvarig enhet : Organisation (inom hälso- och sjukvård)","Den enhet som ansvarar för innehållet i laboratoriesvaret.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Ansvarig-enhet-Organisation-inom-halso--och-sjukvard","Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.ansvararFor","Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.ansvararFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: ansvarar för","Source attribute: ansvarar för","","","","","","","","","",,,,,"",,,,"Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.ansvararFor",0,1,"",""
 "Ansvarig-enhet-Organisation-inom-halso--och-sjukvard","Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.arEn","Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.arEn",0,1,"",""
 "Ansvarig-enhet-Organisation-inom-halso--och-sjukvard","Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.ansvararFor2","Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.ansvararFor2","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: ansvarar för","Source attribute: ansvarar för","","","","","","","","","",,,,,"",,,,"Ansvarig-enhet-Organisation-inom-halso--och-sjukvard.ansvararFor2",0,1,"",""
-"BL","BL","BL","","","",0,*,"","","","","BL","Supporting logical model generated from gloo4.xmi (source class: BL).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"CV-CWE","CV-CWE","CV-CWE","","","",0,*,"","","","","CV CWE","Supporting logical model generated from gloo4.xmi (source class: CV CWE).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"CV","CV","CV","","","",0,*,"","","","","CV","Supporting logical model generated from gloo4.xmi (source class: CV).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"BL","BL","BL","","","",0,*,"","","","","BL","Booleskt värde","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"CV-CWE","CV-CWE","CV-CWE","","","",0,*,"","","","","CV CWE","Kodade värden som tillåter text som alternativ.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"CV","CV","CV","","","",0,*,"","","","","CV","Kodade värden","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Delsvar-Dokument-inom-halso--och-sjukvard","Delsvar-Dokument-inom-halso--och-sjukvard","Delsvar-Dokument-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Delsvar : Dokument (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Delsvar : Dokument (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Delsvar : Dokument (inom hälso- och sjukvård)","Svar som innehåller resultat från en eller flera analyser där alla beställda analyser ännu inte är slutligt besvarade.
+
+Den remissvarsmottagande enheten ska förvänta sig ytterligare svar tills samtliga beställda analyser är utförda och slutligt besvarade.
+
+En typ av delsvar är preliminärsvar, som innehåller minst ett resultat från en analys som ännu inte är avslutad.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Delsvar-Dokument-inom-halso--och-sjukvard","Delsvar-Dokument-inom-halso--och-sjukvard.arEtt","Delsvar-Dokument-inom-halso--och-sjukvard.arEtt","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Preliminarsvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: är ett","Source attribute: är ett","","","","","","","","","",,,,,"",,,,"Delsvar-Dokument-inom-halso--och-sjukvard.arEtt",0,1,"",""
 "Delsvar-Dokument-inom-halso--och-sjukvard","Delsvar-Dokument-inom-halso--och-sjukvard.arEtt2","Delsvar-Dokument-inom-halso--och-sjukvard.arEtt2","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: är ett","Source attribute: är ett","","","","","","","","","",,,,,"",,,,"Delsvar-Dokument-inom-halso--och-sjukvard.arEtt2",0,1,"",""
-"FHIR-Diagnostic-Report-Status","FHIR-Diagnostic-Report-Status","FHIR-Diagnostic-Report-Status","","","",0,*,"","","","","FHIR Diagnostic Report Status ","Supporting logical model generated from gloo4.xmi (source class: FHIR Diagnostic Report Status ).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"FHIR-Diagnostic-Report-Status","FHIR-Diagnostic-Report-Status","FHIR-Diagnostic-Report-Status","","","",0,*,"","","","","FHIR Diagnostic Report Status ","Value set från FHIR som specificerar typen av provsvar
+OID: 2.16.840.1.113883.4.642.3.235
+http://hl7.org/fhir/ValueSet/diagnostic-report-status","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Fordjupad-analys","Fordjupad-analys","Fordjupad-analys","","","",0,*,"","","","null {[]} {[]}
-","Fördjupad analys","Supporting logical model generated from gloo4.xmi (source class: Fördjupad analys).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Fördjupad analys","Ytterligare analys föranledd av specifikt analysresultat. 
+
+2018-03-14: Vi stryker denna i begreppsmodellen, det löser sig i informationsmodellen. 
+
+Vad är skillnad mellan fördjupad analys och konfirmationsanalys som de pratade om på mötet? Är det samma? 
+
+2018-03-09: Jonas Svanberg:   
+För mig oklart begrepp. Möjligen kan man mena ”analys/undersökning som normalt inte utförs i aktuell situation”. För mig är det bara en ytterligare Fyndegenskap (8.4).  
+Eller avses ”analys som utförs pga. resultatet i beställd analys, och som inte är beställd från början”? Och behövs för att hantera den situationen?","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Fordjupad-analys","Fordjupad-analys.arEn","Fordjupad-analys.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Fordjupad-analys.arEn",0,1,"",""
 "Forekomst-av-antikropp-titer","Forekomst-av-antikropp-titer","Forekomst-av-antikropp-titer","","","",0,*,"","","","","Förekomst av antikropp (titer)","Supporting logical model generated from gloo4.xmi (source class: Förekomst av antikropp (titer)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"HSA-verksamhetskod","HSA-verksamhetskod","HSA-verksamhetskod","","","",0,*,"","","","","HSA verksamhetskod","Supporting logical model generated from gloo4.xmi (source class: HSA verksamhetskod).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"HSA-verksamhetskod","HSA-verksamhetskod","HSA-verksamhetskod","","","",0,*,"","","","","HSA verksamhetskod","Kod för typ av verksamhet som den organisatoriska enheten bedriver.
+
+OID: 1.2.752.129.2.2.1.3","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson","","","",0,*,"","","","null {[]} {[]}
-","Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal","Supporting logical model generated from gloo4.xmi (source class: Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal","Klassen hälso- och sjukvårdspersonal håller information om person som i sitt yrke utför hälso- och sjukvård.
+Hälso- och sjukvårdspersonal är oftast anställd av en vårdgivare. En vårdgivare kan ha anställd hälso- och sjukvårdspersonal, och ibland, som till exempel för enskild näringsidkare, kan rollerna sammanfalla.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.-id","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson._id","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson._id",0,1,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för hälso- och sjukvårdspersonal.","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson._id",0,1,"",""
 "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.namn","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.namn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: namn","Source attribute: namn","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.namn",0,1,"",""
+","Source attribute: namn","Angivelse av personnamn sammanslaget enligt formatet ""Mellannamn Efternamn, Förnamn"".
+
+Om flera namn av samma typ förekommer ska dessa separeras med mellanslag.","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.namn",0,1,"",""
 "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.befattning","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.befattning","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: befattning","Source attribute: befattning","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.befattning",0,1,"",""
+","Source attribute: befattning","Kod för hälso- och sjukvårdspersonalens befattning.
+Om möjligt ska KV Befattning användas (notera dock att befattning INTE alltid kan jämställas med roll i detta avseende).
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.befattning",0,1,"",""
 "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.harMedicinsktAnsvarig","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.harMedicinsktAnsvarig","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
 ","Source attribute: har medicinskt ansvarig","Source attribute: har medicinskt ansvarig","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.harMedicinsktAnsvarig",0,*,"",""
 "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.utforsAv","Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.utforsAv","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande {[]} {[]}
@@ -75,26 +107,41 @@
 ","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal.gorsAv",0,1,"",""
 "Halso--och-sjukvardspersonal","Halso--och-sjukvardspersonal.arEn","Halso--och-sjukvardspersonal.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remittent-Halso--och-sjukvardspersonal {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Halso--och-sjukvardspersonal.arEn",0,1,"",""
-"II","II","II","","","",0,*,"","","","","II","Supporting logical model generated from gloo4.xmi (source class: II).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"INT","INT","INT","","","",0,*,"","","","","INT","Supporting logical model generated from gloo4.xmi (source class: INT).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"IVL-PQ","IVL-PQ","IVL-PQ","","","",0,*,"","","","","IVL<PQ>","Supporting logical model generated from gloo4.xmi (source class: IVL<PQ>).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"II","II","II","","","",0,*,"","","","","II","Unik Identifierare","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"INT","INT","INT","","","",0,*,"","","","","INT","Ental","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"IVL-PQ","IVL-PQ","IVL-PQ","","","",0,*,"","","","","IVL<PQ>","Interval av PQ","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Informationsmodell","Informationsmodell","Informationsmodell","","","",0,*,"","","","","Informationsmodell","Root logical model generated from gloo4.xmi (source class: Informationsmodell).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"KV-befattning","KV-befattning","KV-befattning","","","",0,*,"","","","","KV befattning","Supporting logical model generated from gloo4.xmi (source class: KV befattning).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"KV-kon","KV-kon","KV-kon","","","",0,*,"","","","","KV kön","Supporting logical model generated from gloo4.xmi (source class: KV kön).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"KV-befattning","KV-befattning","KV-befattning","","","",0,*,"","","","","KV befattning","Innehåller ingormation om en vård- och sjukvårdspersonals befattning.
+
+OID: 1.2.752.129.2.2.1.4","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"KV-kon","KV-kon","KV-kon","","","",0,*,"","","","","KV kön","Anger administrativt kön
+
+OID: 1.2.752.129.2.2.1.1","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Kontaktinformation","Kontaktinformation","Kontaktinformation","","","",0,*,"","","","null {[]} {[]}
-","Kontaktinformation","Supporting logical model generated from gloo4.xmi (source class: Kontaktinformation).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Kontaktinformation","Klassen Kontaktinformation håller information om vart eller till vem vården kan vända sig vid frågor om laboratoriesvaret.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Kontaktinformation","Kontaktinformation.text","Kontaktinformation.text","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: text","Source attribute: text","","","","","","","","","",,,,,"",,,,"Kontaktinformation.text",1,1,"",""
+","Source attribute: text","Textuell beskrivning av kontaktinformation.  
+
+Det kan t.ex. vara telefonnummer och öppettider till en kundtjänst, ett namn på en kontaktperson.","","","","","","","","","",,,,,"",,,,"Kontaktinformation.text",1,1,"",""
 "Kontaktinformation","Kontaktinformation.innehaller","Kontaktinformation.innehaller","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
 ","Source attribute: innehåller","Source attribute: innehåller","","","","","","","","","",,,,,"",,,,"Kontaktinformation.innehaller",1,1,"",""
 "Kopiemottagande-enhet","Kopiemottagande-enhet","Kopiemottagande-enhet","","","",0,*,"","","","null {[]} {[]}
-","Kopiemottagande enhet","Supporting logical model generated from gloo4.xmi (source class: Kopiemottagande enhet).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Kopiemottagande enhet","Den organisatoriska enhet som tar emot en kopia av laboratoriesvaret.  
+   
+Eller ”… av remissvaret”, om detta ska vara generellt. I projektet e-remiss finns ingen kopiemottagare, är det något speciellt för laboratorieremisser? 
+
+2018-03-14: Vi stryker denna ur begreppsmodellen, svarskopia är inget unikt för labbremisser.
+
+2018-03-09: Jonas Svanberg:  
+Kopiemottagande enhet  
+Nej, svarskopia är inget unikt för labbremisser. Det är en kvarleva från papperstiden, då det var lätt att ta en kopia (på vad som helst) och skicka till någon annan.  
+Det förekommer säkert hos vissa landsting, men vanligast är nog att det bara finns ett svar.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Kopiemottagande-enhet","Kopiemottagande-enhet.tarEmotKopiaAv","Kopiemottagande-enhet.tarEmotKopiaAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: tar emot kopia av","Source attribute: tar emot kopia av","","","","","","","","","",,,,,"",,,,"Kopiemottagande-enhet.tarEmotKopiaAv",0,1,"",""
 "Kopiemottagande-enhet","Kopiemottagande-enhet.arEn","Kopiemottagande-enhet.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Kopiemottagande-enhet.arEn",0,1,"",""
 "Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard","Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard","Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)","Bestämning av egenskaper hos prov, t.ex. artbestämning, fysikaliska och kemiska egenskaper.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard","Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.arEn","Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Fordjupad-analys {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.arEn",0,1,"",""
 "Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard","Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.arResultatAv","Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.arResultatAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand {[]} {[]}
@@ -110,21 +157,25 @@
 "Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard","Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.grupperar","Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.grupperar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp-2 {[]} {[]}
 ","Source attribute: grupperar","Source attribute: grupperar","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.grupperar",0,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet","","","",0,*,"","","","null {[]} {[]}
-","Laboratorieanalys : Aktivitet","Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Laboratorieanalys : Aktivitet","Klassen Laboratorieanalys håller information om en analys","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.-id","Laboratorieanalys-Aktivitet._id","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet._id",0,1,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för en laboratorieanalys.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet._id",0,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.status","Laboratorieanalys-Aktivitet.status","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: status","Source attribute: status","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.status",1,1,"",""
+","Source attribute: status","Kod för analysens status.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.status",1,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.kod","Laboratorieanalys-Aktivitet.kod","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: kod","Source attribute: kod","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.kod",1,1,"",""
+","Source attribute: kod","Kod för den typ av analys som utförts.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.kod",1,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.tid","Laboratorieanalys-Aktivitet.tid","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
-","Source attribute: tid","Source attribute: tid","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.tid",0,1,"",""
+","Source attribute: tid","Angivelse av tidpunkt då analysen utfördes.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.tid",0,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.metod","Laboratorieanalys-Aktivitet.metod","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: metod","Source attribute: metod","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.metod",0,1,"",""
+","Source attribute: metod","Kod för den typ av tillvägagångssätt för utförandet av analysen som avses.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.metod",0,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.kommentar","Laboratorieanalys-Aktivitet.kommentar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: kommentar","Source attribute: kommentar","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.kommentar",0,1,"",""
+","Source attribute: kommentar","Angivelse av kommentar för en enskild analys.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.kommentar",0,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.ackrediteradMetod","Laboratorieanalys-Aktivitet.ackrediteradMetod","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/BL {[]} {[]}
-","Source attribute: ackrediterad metod","Source attribute: ackrediterad metod","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.ackrediteradMetod",0,1,"",""
+","Source attribute: ackrediterad metod","Angivelse av om analysmetoden är ackrediterad eller inte.","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.ackrediteradMetod",0,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.bestarAv","Laboratorieanalys-Aktivitet.bestarAv","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp {[]} {[]}
 ","Source attribute: består av","Source attribute: består av","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.bestarAv",1,1,"",""
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.harAnvant","Laboratorieanalys-Aktivitet.harAnvant","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysutrustning-Resurs {[]} {[]}
@@ -138,15 +189,21 @@
 "Laboratorieanalys-Aktivitet","Laboratorieanalys-Aktivitet.foranlederFordjupad","Laboratorieanalys-Aktivitet.foranlederFordjupad","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observation {[]} {[]}
 ","Source attribute: föranleder fördjupad","Source attribute: föranleder fördjupad","","","","","","","","","",,,,,"",,,,"Laboratorieanalys-Aktivitet.foranlederFordjupad",1,1,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation","","","",0,*,"","","","null {[]} {[]}
-","Laboratorieanalysresultat : Observation","Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observation).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Laboratorieanalysresultat : Observation","Klassen Laboratorieanalysresultat håller information om resultat av en utförd analys.
+
+Detta resultat kan exempelvis bestå av ett mätvärde inom laboratoriedisciplinen kemi, ett fynd av en viss bakterieart eller en textuell beskrivning av analysresultatet. Utöver detta kan en kommentar avseende analysresultatet anges separat.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.typ","Laboratorieanalysresultat-Observation.typ","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: typ","Source attribute: typ","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.typ",0,1,"",""
+","Source attribute: typ","Kod för typ av laboratorieanalysresultat.","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.typ",0,1,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.varde","Laboratorieanalysresultat-Observation.varde","","","",1,1,"","","","string {[]} {[]}
-","Source attribute: värde","Source attribute: värde","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.varde",1,1,"",""
+","Source attribute: värde","Angivelse av utfall av en utförd analys.
+
+PQ|IVL<PQ>|ST|CV","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.varde",1,1,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.kommentar","Laboratorieanalysresultat-Observation.kommentar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: kommentar","Source attribute: kommentar","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.kommentar",0,1,"",""
+","Source attribute: kommentar","Angivelse av kommentar som rör laboratorieanalysresultatet.","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.kommentar",0,1,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.tolkning","Laboratorieanalysresultat-Observation.tolkning","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: tolkning","Source attribute: tolkning","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.tolkning",0,*,"",""
+","Source attribute: tolkning","Kod för en tolkning av laboratorieanalysresultatet.  
+
+En sådan tolkning kan vara att analysresultatet ligger utanför aktuellt referensintervall, vilket även benämns som patologisk markör.","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.tolkning",0,*,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.negation","Laboratorieanalysresultat-Observation.negation","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/BL {[]} {[]}
 ","Source attribute: negation","Source attribute: negation","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.negation",1,1,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.harResultat","Laboratorieanalysresultat-Observation.harResultat","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet {[]} {[]}
@@ -160,7 +217,11 @@
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.harUtforares","Laboratorieanalysresultat-Observation.harUtforares","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande {[]} {[]}
 ","Source attribute: har utförares","Source attribute: har utförares","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.harUtforares",0,1,"",""
 "Laboratorieanalysresultat-Observerat-halsotillstand","Laboratorieanalysresultat-Observerat-halsotillstand","Laboratorieanalysresultat-Observerat-halsotillstand","","","",0,*,"","","","null {[]} {[]}
-","Laboratorieanalysresultat : Observerat hälsotillstånd","Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observerat hälsotillstånd).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Laboratorieanalysresultat : Observerat hälsotillstånd","Resultat av en laboratorieanalys. 
+ 
+Ett laboratorieanalysresultat kan utgöras av t.ex. ett fynd (som har sina egenskaper) eller ett mätvärde.  
+Exempel på fynd är en viss bakterieart eller en viss typ av virus.   
+Exempel på ett fynds egenskaper är serotyp, subserotyp och koncentration.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratorieanalysresultat-Observerat-halsotillstand","Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor","Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensintervall {[]} {[]}
 ","Source attribute: gäller för","Source attribute: gäller för","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor",0,1,"",""
 "Laboratorieanalysresultat-Observerat-halsotillstand","Laboratorieanalysresultat-Observerat-halsotillstand.gorsAv","Laboratorieanalysresultat-Observerat-halsotillstand.gorsAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande-2 {[]} {[]}
@@ -174,11 +235,37 @@
 "Laboratorieanalysresultat-Observerat-halsotillstand","Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor2","Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor2","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensvarde {[]} {[]}
 ","Source attribute: gäller för","Source attribute: gäller för","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor2",0,1,"",""
 "Laboratoriedisciplin","Laboratoriedisciplin","Laboratoriedisciplin","","","",0,*,"","","","null {[]} {[]}
-","Laboratoriedisciplin","Supporting logical model generated from gloo4.xmi (source class: Laboratoriedisciplin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Laboratoriedisciplin","Disciplin som en laboratorieverksamhet kan utföra laboratorieundersökningar inom.
+
+Fråga till referensgruppen: ser indelningen olika ut? Funkar det i praktiken?   
+Klinisk kemi; Mikrobiologi   ...
+
+2018-03-09: Jonas Svanberg:  
+Laboratoriedisciplin  
+Ursprungligen är det en indelning av medicinsk kunskap, t.ex. klinisk kemi och klinisk immunologi. Traditionellt var det också både organisatorisk indelning och utförande laboratorium. Så behöver det inte vara nu, men i beställarnas (och labbens) tankevärld finns denna indelning kvar.  
+Här behövs det (om det finns i svaret) som en tagg att sortera eller filtrera på. 
+
+2018-03-20: 20/3: Kan strykas i begreppsmodellen, i infomodellen nytt attribut i klassen Organisatorisk enhet. 
+
+
+ Laboratoriemedicinska specialiteter   
+ Klinisk immunologi och   
+ transfusionsmedicin   
+ Klinisk kemi   
+ Klinisk mikrobiologi   
+ Klinisk patologi   
+ http://www.socialstyrelsen.se/sosfs/2015-8  
+
+Referensgruppsmötet 2018-03-27: 
+Slutsats 1: Vi använder HSA-koder så länge (i HSA finns klinisk genetik som verksamhetskod, men den är där inte klassificerad som laboratorieverksamhet, vilket den borde vara enligt gruppen).    
+Kategorisera det enskilda provet med hjälp av HSA-koderna.    
+Kategoriseringen varierar från land till land.    
+Listkoderna. De är nödvändiga för mikrobiologi idag.    
+Slutsats 2: En liten arbetsgrupp (kodverksgrupp) jobbar vidare med detta.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratoriedisciplin","Laboratoriedisciplin.utforsInomEn","Laboratoriedisciplin.utforsInomEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: utförs inom en","Source attribute: utförs inom en","","","","","","","","","",,,,,"",,,,"Laboratoriedisciplin.utforsInomEn",0,1,"",""
 "Laboratoriesvar-Dokument-inom-halso--och-sjukvard","Laboratoriesvar-Dokument-inom-halso--och-sjukvard","Laboratoriesvar-Dokument-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Laboratoriesvar : Dokument (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Laboratoriesvar : Dokument (inom hälso- och sjukvård)","Remissvar som avser laboratorieanalysresultat.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratoriesvar-Dokument-inom-halso--och-sjukvard","Laboratoriesvar-Dokument-inom-halso--och-sjukvard.ansvararFor","Laboratoriesvar-Dokument-inom-halso--och-sjukvard.ansvararFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Ansvarig-enhet-Organisation-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: ansvarar för","Source attribute: ansvarar för","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument-inom-halso--och-sjukvard.ansvararFor",0,1,"",""
 "Laboratoriesvar-Dokument-inom-halso--och-sjukvard","Laboratoriesvar-Dokument-inom-halso--och-sjukvard.skriver","Laboratoriesvar-Dokument-inom-halso--och-sjukvard.skriver","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Utforande-enhet-Organisation-inom-halso--och-sjukvard {[]} {[]}
@@ -188,17 +275,21 @@
 "Laboratoriesvar-Dokument-inom-halso--och-sjukvard","Laboratoriesvar-Dokument-inom-halso--och-sjukvard.innehaller","Laboratoriesvar-Dokument-inom-halso--och-sjukvard.innehaller","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand {[]} {[]}
 ","Source attribute: innehåller","Source attribute: innehåller","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument-inom-halso--och-sjukvard.innehaller",0,1,"",""
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument","Laboratoriesvar-Dokument","","","",0,*,"","","","null {[]} {[]}
-","Laboratoriesvar : Dokument","Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Laboratoriesvar : Dokument","Klassen Laboratoriesvar håller information om laboratoriesvaret.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument.-id","Laboratoriesvar-Dokument._id","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument._id",1,1,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för laboratoriesvaret.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument._id",1,1,"",""
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument.laboratorieId","Laboratoriesvar-Dokument.laboratorieId","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: laboratorie-id","Source attribute: laboratorie-id","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.laboratorieId",0,1,"",""
+","Source attribute: laboratorie-id","Angivelse av identitetsbeteckning för laboratoriets arbetsorder.
+
+Benämns även som LID.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.laboratorieId",0,1,"",""
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument.typ","Laboratoriesvar-Dokument.typ","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: typ","Source attribute: typ","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.typ",1,1,"",""
+","Source attribute: typ","Kod för typ av laboratoriesvar.
+
+Preliminär/delsvar/slutsvar.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.typ",1,1,"",""
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument.text","Laboratoriesvar-Dokument.text","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: text","Source attribute: text","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.text",0,1,"",""
+","Source attribute: text","Angivelse av utlåtande eller kommentar avseende laboratoriesvaret.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.text",0,1,"",""
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument.svarstidpunkt","Laboratoriesvar-Dokument.svarstidpunkt","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
-","Source attribute: svarstidpunkt","Source attribute: svarstidpunkt","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.svarstidpunkt",1,1,"",""
+","Source attribute: svarstidpunkt","Angivelse av den tidpunkt då laboratoriesvaret skapades.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.svarstidpunkt",1,1,"",""
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument.arAnsvarigForInnehalletI","Laboratoriesvar-Dokument.arAnsvarigForInnehalletI","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet {[]} {[]}
 ","Source attribute: är ansvarig för innehållet i","Source attribute: är ansvarig för innehållet i","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.arAnsvarigForInnehalletI",1,1,"",""
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument.harSvarsmottagande","Laboratoriesvar-Dokument.harSvarsmottagande","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet {[]} {[]}
@@ -218,20 +309,22 @@
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument.besvarar","Laboratoriesvar-Dokument.besvarar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument {[]} {[]}
 ","Source attribute: besvarar","Source attribute: besvarar","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.besvarar",0,1,"",""
 "Malpopulation","Malpopulation","Malpopulation","","","",0,*,"","","","null {[]} {[]}
-","Målpopulation","Supporting logical model generated from gloo4.xmi (source class: Målpopulation).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Målpopulation","Den grupp man undersöker.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Malpopulation","Malpopulation.jamforsMed","Malpopulation.jamforsMed","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referenspopulation {[]} {[]}
 ","Source attribute: jämförs med","Source attribute: jämförs med","","","","","","","","","",,,,,"",,,,"Malpopulation.jamforsMed",0,1,"",""
 "Malpopulation","Malpopulation.tillhor","Malpopulation.tillhor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient-2 {[]} {[]}
 ","Source attribute: tillhör","Source attribute: tillhör","","","","","","","","","",,,,,"",,,,"Malpopulation.tillhor",0,1,"",""
 "Mikroorganism","Mikroorganism","Mikroorganism","","","",0,*,"","","","null {[]} {[]}
-","Mikroorganism","Supporting logical model generated from gloo4.xmi (source class: Mikroorganism).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Mikroorganism","Levande, nästan alltid encellig varelse som är så liten att den inte kan ses med blotta ögat.
+
+Det finns fyra huvudgrupper: bakterier, svampar, virus och parasiter.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Mikroorganism","Mikroorganism.kanUtforasPa","Mikroorganism.kanUtforasPa","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Resistensbestamning-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: kan utföras på","Source attribute: kan utföras på","","","","","","","","","",,,,,"",,,,"Mikroorganism.kanUtforasPa",0,1,"",""
 "Mikroorganism","Mikroorganism.kanVaraFyndAv","Mikroorganism.kanVaraFyndAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand {[]} {[]}
 ","Source attribute: kan vara fynd av","Source attribute: kan vara fynd av","","","","","","","","","",,,,,"",,,,"Mikroorganism.kanVaraFyndAv",0,1,"",""
-"NPU","NPU","NPU","","","",0,*,"","","","","NPU","Supporting logical model generated from gloo4.xmi (source class: NPU).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"NPU","NPU","NPU","","","",0,*,"","","","","NPU","NPU-systemet (Nomenclature of properties and units) är ett register med systematiska, unika benämningar och koder för laboratorieundersökningar.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Organisatorisk-enhet-Organisation-inom-halso--och-sjukv","Organisatorisk-enhet-Organisation-inom-halso--och-sjukv","Organisatorisk-enhet-Organisation-inom-halso--och-sjukv","","","",0,*,"","","","null {[]} {[]}
-","Organisatorisk enhet : Organisation (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisation (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Organisatorisk enhet : Organisation (inom hälso- och sjukvård)","Formellt bildad enhet som tillhör en organisation.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Organisatorisk-enhet-Organisation-inom-halso--och-sjukv","Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn","Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvarsmottagande-enhet-Organisation-inom-halso--och {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn",0,1,"",""
 "Organisatorisk-enhet-Organisation-inom-halso--och-sjukv","Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn2","Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn2","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Kopiemottagande-enhet {[]} {[]}
@@ -245,13 +338,15 @@
 "Organisatorisk-enhet-Organisation-inom-halso--och-sjukv","Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn6","Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn6","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remitterande-enhet-Organisation-inom-halso--och-sjukvar {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn6",0,1,"",""
 "Organisatorisk-enhet-Organisatorisk-enhet","Organisatorisk-enhet-Organisatorisk-enhet","Organisatorisk-enhet-Organisatorisk-enhet","","","",0,*,"","","","null {[]} {[]}
-","Organisatorisk enhet : Organisatorisk enhet","Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisatorisk enhet).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Organisatorisk enhet : Organisatorisk enhet","Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Organisatorisk-enhet-Organisatorisk-enhet","Organisatorisk-enhet-Organisatorisk-enhet.-id","Organisatorisk-enhet-Organisatorisk-enhet._id","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisatorisk-enhet._id",1,1,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för den organisatoriska enheten.
+
+Är alltid ett HSA-id.","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisatorisk-enhet._id",1,1,"",""
 "Organisatorisk-enhet-Organisatorisk-enhet","Organisatorisk-enhet-Organisatorisk-enhet.namn","Organisatorisk-enhet-Organisatorisk-enhet.namn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: namn","Source attribute: namn","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisatorisk-enhet.namn",0,1,"",""
+","Source attribute: namn","Angivelse av namn på den organisatoriska enheten.","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisatorisk-enhet.namn",0,1,"",""
 "Organisatorisk-enhet-Organisatorisk-enhet","Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet","Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: typ av verksamhet","Source attribute: typ av verksamhet","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet",0,*,"",""
+","Source attribute: typ av verksamhet","Kod för typ av verksamhet som den organisatoriska enheten bedriver.","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet",0,*,"",""
 "Organisatorisk-enhet-Organisatorisk-enhet","Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI","Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
 ","Source attribute: är ansvarig för innehållet i","Source attribute: är ansvarig för innehållet i","","","","","","","","","",,,,,"",,,,"Organisatorisk-enhet-Organisatorisk-enhet.arAnsvarigForInnehalletI",0,*,"",""
 "Organisatorisk-enhet-Organisatorisk-enhet","Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande","Organisatorisk-enhet-Organisatorisk-enhet.harSvarsmottagande","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
@@ -266,7 +361,7 @@
 ","Source attribute: timeStamp","Source attribute: timeStamp","","","","","","","","","",,,,,"",,,,"Origin.timeStamp",0,1,"",""
 "Origin","Origin.byRole","Origin.byRole","","","",0,1,"","","","string {[]} {[]}
 ","Source attribute: byRole","Source attribute: byRole","","","","","","","","","",,,,,"",,,,"Origin.byRole",0,1,"",""
-"PQ","PQ","PQ","","","",0,*,"","","","","PQ","Supporting logical model generated from gloo4.xmi (source class: PQ).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PQ","PQ","PQ","","","",0,*,"","","","","PQ","Värde samt enhet enligt unified codes for units of measure (UCUM)","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Patient-2","Patient-2","Patient-2","","","",0,*,"","","","null {[]} {[]}
 ",": Patient","Supporting logical model generated from gloo4.xmi (source class: : Patient).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Patient-2","Patient-2.tillhor","Patient-2.tillhor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Malpopulation {[]} {[]}
@@ -274,9 +369,11 @@
 "Patient-2","Patient-2.avser","Patient-2.avser","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: avser","Source attribute: avser","","","","","","","","","",,,,,"",,,,"Patient-2.avser",0,1,"",""
 "Patient-Patient","Patient-Patient","Patient-Patient","","","",0,*,"","","","null {[]} {[]}
-","Patient : Patient","Supporting logical model generated from gloo4.xmi (source class: Patient : Patient).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Patient : Patient","Klassen Patient håller information om en person som erhåller eller är registrerad för att erhålla hälso- och sjukvård.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Patient-Patient","Patient-Patient.-id","Patient-Patient._id","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Patient-Patient._id",0,1,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för patient.
+
+Detta kan vara av typen personnummer, samordningsnummer eller reservnummer.","","","","","","","","","",,,,,"",,,,"Patient-Patient._id",0,1,"",""
 "Patient-Patient","Patient-Patient.avser","Patient-Patient.avser","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
 ","Source attribute: avser","Source attribute: avser","","","","","","","","","",,,,,"",,,,"Patient-Patient.avser",0,*,"",""
 "Patient-Patient","Patient-Patient.antarRollen","Patient-Patient.antarRollen","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Person-Person {[]} {[]}
@@ -294,11 +391,16 @@
 "Person-Person","Person-Person.-id","Person-Person._id","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
 ","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Person-Person._id",0,1,"",""
 "Person-Person","Person-Person.namn","Person-Person.namn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: namn","Source attribute: namn","","","","","","","","","",,,,,"",,,,"Person-Person.namn",0,1,"",""
+","Source attribute: namn","Angivelse av personnamn sammanslaget enligt formatet ""Mellannamn Efternamn, Förnamn"".
+
+Om flera namn av samma typ förekommer ska dessa separeras med mellanslag.","","","","","","","","","",,,,,"",,,,"Person-Person.namn",0,1,"",""
 "Person-Person","Person-Person.fodelsetidpunkt","Person-Person.fodelsetidpunkt","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
-","Source attribute: födelsetidpunkt","Source attribute: födelsetidpunkt","","","","","","","","","",,,,,"",,,,"Person-Person.fodelsetidpunkt",0,1,"",""
+","Source attribute: födelsetidpunkt","Angivelse av datum och eventuell tidpunkt då patienten är född.
+
+Ska användas om patienten inte har personnummer samt i vissa fall för spädbarn. Om fullständigt födelsedatum inte är känt, anges uppskattad födelsetid. Exakt klockslag kan vara intressant för nyfödda barn, men formatet tillåter lägre precision:
+Format: SSÅÅMMDDThhmmss, SSÅÅMMDDThhmm, SSÅÅMMDD, SSÅÅMM","","","","","","","","","",,,,,"",,,,"Person-Person.fodelsetidpunkt",0,1,"",""
 "Person-Person","Person-Person.kon","Person-Person.kon","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: kön","Source attribute: kön","","","","","","","","","",,,,,"",,,,"Person-Person.kon",0,1,"",""
+","Source attribute: kön","Kod för patientens kön enligt folkbokföringen.","","","","","","","","","",,,,,"",,,,"Person-Person.kon",0,1,"",""
 "Person-Person","Person-Person.antarRollen","Person-Person.antarRollen","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient-Patient {[]} {[]}
 ","Source attribute: antar rollen","Source attribute: antar rollen","","","","","","","","","",,,,,"",,,,"Person-Person.antarRollen",1,1,"",""
 "Personal","Personal","Personal","","","",0,*,"","","","null {[]} {[]}
@@ -310,15 +412,30 @@
 "Personal","Personal.ansvarig","Personal.ansvarig","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient {[]} {[]}
 ","Source attribute: ansvarig","Source attribute: ansvarig","","","","","","","","","",,,,,"",,,,"Personal.ansvarig",0,*,"",""
 "Preliminarsvar-Dokument-inom-halso--och-sjukvard","Preliminarsvar-Dokument-inom-halso--och-sjukvard","Preliminarsvar-Dokument-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Preliminärsvar : Dokument (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Preliminärsvar : Dokument (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Preliminärsvar : Dokument (inom hälso- och sjukvård)","Delsvar som innehåller minst ett resultat från en analys som ännu inte är avslutad.
+
+Den remissvarsmottagande enheten ska förvänta sig ytterligare svar efter ett preliminärsvar och har fortfarande ett ansvar att bevaka detta till dess ett slutsvar har mottagits.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Preliminarsvar-Dokument-inom-halso--och-sjukvard","Preliminarsvar-Dokument-inom-halso--och-sjukvard.arEtt","Preliminarsvar-Dokument-inom-halso--och-sjukvard.arEtt","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Delsvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: är ett","Source attribute: är ett","","","","","","","","","",,,,,"",,,,"Preliminarsvar-Dokument-inom-halso--och-sjukvard.arEtt",0,1,"",""
 "Presentationsformat","Presentationsformat","Presentationsformat","","","",0,*,"","","","null {[]} {[]}
-","Presentationsformat","Supporting logical model generated from gloo4.xmi (source class: Presentationsformat).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Presentationsformat","Typ av filformat för svaret. 
+[Så står det nu i informationsmodellen, klassen Svar, attributet ""presentationsformat"". Detta behöver knappast finnas med i begreppsmodellen.]
+
+
+
+Dokument som innehåller den visuella presentationen av laboratoriesvaret.  
+   
+Men jfr projektet e-remiss, där finns bilaga:  
+Dokument som kompletterar ett annat dokument och är avsett att användas tillsammans med detta.   
+   
+Exempelvis utdrag ur patientjournal, en bild eller liknande som biläggs remissen, eller remissvaret.  
+   
+Är presentation något annat än bilaga?","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Presentationsformat","Presentationsformat.harVisst","Presentationsformat.harVisst","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: har visst","Source attribute: har visst","","","","","","","","","",,,,,"",,,,"Presentationsformat.harVisst",0,1,"",""
 "Prov-Resurs-inom-halso--och-sjukvard","Prov-Resurs-inom-halso--och-sjukvard","Prov-Resurs-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Prov : Resurs (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Prov : Resurs (inom hälso- och sjukvård)","(inom hälso- och sjukvården:) humanbiologiskt material som tagits från en levande eller avliden person eller ett foster i syfte att erhålla information om den som provet härrör från (Biobanksordlistan, under rev.)
+Exempel på humanbiologiskt material är vävnad och kroppsvätskor som blod, urin, sekret.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Prov-Resurs-inom-halso--och-sjukvard","Prov-Resurs-inom-halso--och-sjukvard.grupperarAnalyserSomUtfortsPaSamma","Prov-Resurs-inom-halso--och-sjukvard.grupperarAnalyserSomUtfortsPaSamma","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysgrupp-svarsgrupp {[]} {[]}
 ","Source attribute: grupperar analyser som utförts på samma","Source attribute: grupperar analyser som utförts på samma","","","","","","","","","",,,,,"",,,,"Prov-Resurs-inom-halso--och-sjukvard.grupperarAnalyserSomUtfortsPaSamma",0,1,"",""
 "Prov-Resurs-inom-halso--och-sjukvard","Prov-Resurs-inom-halso--och-sjukvard.Identifierar","Prov-Resurs-inom-halso--och-sjukvard.Identifierar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-id {[]} {[]}
@@ -332,17 +449,23 @@
 "Prov-Resurs-inom-halso--och-sjukvard","Prov-Resurs-inom-halso--och-sjukvard.lamnar","Prov-Resurs-inom-halso--och-sjukvard.lamnar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provgivare {[]} {[]}
 ","Source attribute: lämnar","Source attribute: lämnar","","","","","","","","","",,,,,"",,,,"Prov-Resurs-inom-halso--och-sjukvard.lamnar",0,1,"",""
 "Prov-Resurs","Prov-Resurs","Prov-Resurs","","","",0,*,"","","","null {[]} {[]}
-","Prov : Resurs","Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Prov : Resurs","Klassen Prov håller information om ett prov.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Prov-Resurs","Prov-Resurs.-id","Prov-Resurs._id","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Prov-Resurs._id",0,1,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för ett prov.","","","","","","","","","",,,,,"",,,,"Prov-Resurs._id",0,1,"",""
 "Prov-Resurs","Prov-Resurs.material","Prov-Resurs.material","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: material","Source attribute: material","","","","","","","","","",,,,,"",,,,"Prov-Resurs.material",1,1,"",""
+","Source attribute: material","Kod för typ av provmaterial.
+
+Koden för provmaterial kan även innefatta information om provtagningsmetod.
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Prov-Resurs.material",1,1,"",""
 "Prov-Resurs","Prov-Resurs.provtagningstidpunkt","Prov-Resurs.provtagningstidpunkt","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
-","Source attribute: provtagningstidpunkt","Source attribute: provtagningstidpunkt","","","","","","","","","",,,,,"",,,,"Prov-Resurs.provtagningstidpunkt",1,1,"",""
+","Source attribute: provtagningstidpunkt","Angivelse av den tidpunkt då ett prov är taget.","","","","","","","","","",,,,,"",,,,"Prov-Resurs.provtagningstidpunkt",1,1,"",""
 "Prov-Resurs","Prov-Resurs.anatomiskLokalisation","Prov-Resurs.anatomiskLokalisation","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: anatomisk lokalisation","Source attribute: anatomisk lokalisation","","","","","","","","","",,,,,"",,,,"Prov-Resurs.anatomiskLokalisation",0,1,"",""
+","Source attribute: anatomisk lokalisation","Kod som anger var provet är taget.
+
+Exempel: höger arm, vänster njure.
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Prov-Resurs.anatomiskLokalisation",0,1,"",""
 "Prov-Resurs","Prov-Resurs.kommentar","Prov-Resurs.kommentar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: kommentar","Source attribute: kommentar","","","","","","","","","",,,,,"",,,,"Prov-Resurs.kommentar",0,1,"",""
+","Source attribute: kommentar","Angivelse av kommentar om enskilt prov.","","","","","","","","","",,,,,"",,,,"Prov-Resurs.kommentar",0,1,"",""
 "Prov-Resurs","Prov-Resurs.forvarasI","Prov-Resurs.forvarasI","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provbehallare-Resurs {[]} {[]}
 ","Source attribute: förvaras i","Source attribute: förvaras i","","","","","","","","","",,,,,"",,,,"Prov-Resurs.forvarasI",0,*,"",""
 "Prov-Resurs","Prov-Resurs.avser","Prov-Resurs.avser","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Provrelaterad-aktivitet-Aktivitet {[]} {[]}
@@ -354,55 +477,73 @@
 "Prov-id","Prov-id.Identifierar","Prov-id.Identifierar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: Identifierar","Source attribute: Identifierar","","","","","","","","","",,,,,"",,,,"Prov-id.Identifierar",0,1,"",""
 "Provbehallare-Resurs","Provbehallare-Resurs","Provbehallare-Resurs","","","",0,*,"","","","null {[]} {[]}
-","Provbehållare : Resurs","Supporting logical model generated from gloo4.xmi (source class: Provbehållare : Resurs).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Provbehållare : Resurs","Klassen Provbehållare håller information om den eller de provbehållare som provet förvaras i.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Provbehallare-Resurs","Provbehallare-Resurs.-id","Provbehallare-Resurs._id","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Provbehallare-Resurs._id",0,*,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för en provbehållare.","","","","","","","","","",,,,,"",,,,"Provbehallare-Resurs._id",0,*,"",""
 "Provbehallare-Resurs","Provbehallare-Resurs.typ","Provbehallare-Resurs.typ","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: typ","Source attribute: typ","","","","","","","","","",,,,,"",,,,"Provbehallare-Resurs.typ",1,1,"",""
+","Source attribute: typ","Kod för typ av provbehållare.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Provbehallare-Resurs.typ",1,1,"",""
 "Provbehallare-Resurs","Provbehallare-Resurs.forvarasI","Provbehallare-Resurs.forvarasI","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs {[]} {[]}
 ","Source attribute: förvaras i","Source attribute: förvaras i","","","","","","","","","",,,,,"",,,,"Provbehallare-Resurs.forvarasI",0,*,"",""
 "Provgivare","Provgivare","Provgivare","","","",0,*,"","","","null {[]} {[]}
-","Provgivare","Supporting logical model generated from gloo4.xmi (source class: Provgivare).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Provgivare","Person som lämnar prov.
+(Biobank Sverige, under revidering)","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Provgivare","Provgivare.lamnar","Provgivare.lamnar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: lämnar","Source attribute: lämnar","","","","","","","","","",,,,,"",,,,"Provgivare.lamnar",0,1,"",""
 "Provmaterial","Provmaterial","Provmaterial","","","",0,*,"","","","null {[]} {[]}
-","Provmaterial","Supporting logical model generated from gloo4.xmi (source class: Provmaterial).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Provmaterial","Det material som ett prov består av.
+
+Kan t.ex. vara kroppsvätska, vävnad … (vad är viktigt att få med i exemplen?)","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Provmaterial","Provmaterial.bestarAvVisst","Provmaterial.bestarAvVisst","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: består av visst","Source attribute: består av visst","","","","","","","","","",,,,,"",,,,"Provmaterial.bestarAvVisst",0,1,"",""
 "Provrelaterad-aktivitet-Aktivitet","Provrelaterad-aktivitet-Aktivitet","Provrelaterad-aktivitet-Aktivitet","","","",0,*,"","","","null {[]} {[]}
-","Provrelaterad aktivitet: Aktivitet","Supporting logical model generated from gloo4.xmi (source class: Provrelaterad aktivitet: Aktivitet).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Provrelaterad aktivitet: Aktivitet","Klassen Provrelaterad aktivitet håller information om aktiviteter relaterade till hantering av prov.
+Inkluderar även t.ex. aktiviteter i samband med transport, frysning, förvaring, bearbetning och delning i sekundärprov.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Provrelaterad-aktivitet-Aktivitet","Provrelaterad-aktivitet-Aktivitet.kod","Provrelaterad-aktivitet-Aktivitet.kod","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: kod","Source attribute: kod","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.kod",1,1,"",""
+","Source attribute: kod","Kod för provrelaterad aktivitet.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.kod",1,1,"",""
 "Provrelaterad-aktivitet-Aktivitet","Provrelaterad-aktivitet-Aktivitet.tid","Provrelaterad-aktivitet-Aktivitet.tid","","","",1,1,"","","","string {[]} {[]}
-","Source attribute: tid","Source attribute: tid","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.tid",1,1,"",""
+","Source attribute: tid","Angivelse av tid eller tidsintervall då den provrelaterade aktiviteten utfördes.","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.tid",1,1,"",""
 "Provrelaterad-aktivitet-Aktivitet","Provrelaterad-aktivitet-Aktivitet.metod","Provrelaterad-aktivitet-Aktivitet.metod","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: metod","Source attribute: metod","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.metod",0,1,"",""
+","Source attribute: metod","Kod för metod för provrelaterad aktivitet.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.metod",0,1,"",""
 "Provrelaterad-aktivitet-Aktivitet","Provrelaterad-aktivitet-Aktivitet.avser","Provrelaterad-aktivitet-Aktivitet.avser","","","",1,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs {[]} {[]}
 ","Source attribute: avser","Source attribute: avser","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.avser",1,*,"",""
 "Provtagningsmetod","Provtagningsmetod","Provtagningsmetod","","","",0,*,"","","","null {[]} {[]}
-","Provtagningsmetod","Supporting logical model generated from gloo4.xmi (source class: Provtagningsmetod).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Provtagningsmetod","Tillvägagångssätt för utförande av provtagning.
+
+En vanlig synonym är provtagningsteknik.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Provtagningsmetod","Provtagningsmetod.tasMedViss","Provtagningsmetod.tasMedViss","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: tas med viss","Source attribute: tas med viss","","","","","","","","","",,,,,"",,,,"Provtagningsmetod.tasMedViss",0,1,"",""
 "Referens","Referens","Referens","","","",0,*,"","","","null {[]} {[]}
-","Referens","Supporting logical model generated from gloo4.xmi (source class: Referens).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Referens","Klassen Referens håller information om vilket referensintervall eller referensvärde som gäller för ett resultat.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Referens","Referens.intervall","Referens.intervall","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: intervall","Source attribute: intervall","","","","","","","","","",,,,,"",,,,"Referens.intervall",0,1,"",""
+","Source attribute: intervall","Angivelse av referensintervall som numeriskt värde av mätvärden. Ett referensvärde anges genom att antingen ange ett intervall från det lägre värdet 0 till det högre värdet som sätts till referensvärdet, alternativt från referensvärde som start på intervallet utan angivelse av intervallets slut för att ange att normalvärde ligger över referensvärdet.
+
+Ett och endast ett av attributen intervall eller text ska anges.","","","","","","","","","",,,,,"",,,,"Referens.intervall",0,1,"",""
 "Referens","Referens.text","Referens.text","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: text","Source attribute: text","","","","","","","","","",,,,,"",,,,"Referens.text",0,1,"",""
+","Source attribute: text","Textuell beskrivning av referensintervall.
+
+Ett och endast ett av attributen intervall eller text ska anges.","","","","","","","","","",,,,,"",,,,"Referens.text",0,1,"",""
 "Referens","Referens.population","Referens.population","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: population","Source attribute: population","","","","","","","","","",,,,,"",,,,"Referens.population",0,1,"",""
+","Source attribute: population","Angivelse av den referenspopulation som ligger till grund för angivet referensintervall.","","","","","","","","","",,,,,"",,,,"Referens.population",0,1,"",""
 "Referens","Referens.kommentar","Referens.kommentar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: kommentar","Source attribute: kommentar","","","","","","","","","",,,,,"",,,,"Referens.kommentar",0,1,"",""
+","Source attribute: kommentar","Angivelse av kommentar för det angivna referensintervallet.","","","","","","","","","",,,,,"",,,,"Referens.kommentar",0,1,"",""
 "Referens","Referens.jamforsMed","Referens.jamforsMed","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observation {[]} {[]}
 ","Source attribute: jämförs med","Source attribute: jämförs med","","","","","","","","","",,,,,"",,,,"Referens.jamforsMed",0,*,"",""
 "Referenser","Referenser","Referenser","","","",0,*,"","","","null {[]} {[]}
 ","Referenser","Supporting logical model generated from gloo4.xmi (source class: Referenser).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Referenser","Referenser.R1","Referenser.R1","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: R1; type could not be resolved from source model","Source attribute: R1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Referenser.R1",0,1,"",""
+","Source attribute: R1; type could not be resolved from source model","Arkitektur och regelverk","","","","","","","","","",,,,,"",,,,"Referenser.R1",0,1,"",""
 "Referenser","Referenser.R2","Referenser.R2","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: R2; type could not be resolved from source model","Source attribute: R2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Referenser.R2",0,1,"",""
+","Source attribute: R2; type could not be resolved from source model","Nationell Informationsstruktur 2021:1","","","","","","","","","",,,,,"",,,,"Referenser.R2",0,1,"",""
 "Referensintervall","Referensintervall","Referensintervall","","","",0,*,"","","","null {[]} {[]}
-","Referensintervall","Supporting logical model generated from gloo4.xmi (source class: Referensintervall).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Referensintervall","Det intervall som värden för ett fysiologiskt mätvärde hos  en referenspopulation   med e  n   given sannolikhet  ligger inom för den givna typen av analys med den givna metoden.
+
+Referensintervallet utgör en bas för jämförelse (en referensram) för att tolka ett analysresultat för en viss patient.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Referensintervall","Referensintervall.liggerTillGrundFor","Referensintervall.liggerTillGrundFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referenspopulation {[]} {[]}
 ","Source attribute: ligger till grund för","Source attribute: ligger till grund för","","","","","","","","","",,,,,"",,,,"Referensintervall.liggerTillGrundFor",0,1,"",""
 "Referensintervall","Referensintervall.gallerFor","Referensintervall.gallerFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand {[]} {[]}
@@ -414,17 +555,21 @@
 "Referensmodell","Referensmodell.RIMSaknas","Referensmodell.RIMSaknas","","","",0,1,"","","","string {[]} {[]}
 ","Source attribute: RIM saknas; type could not be resolved from source model","Source attribute: RIM saknas; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Referensmodell.RIMSaknas",0,1,"",""
 "Referenspopulation","Referenspopulation","Referenspopulation","","","",0,*,"","","","null {[]} {[]}
-","Referenspopulation","Supporting logical model generated from gloo4.xmi (source class: Referenspopulation).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Referenspopulation","Den grupp man jämför med målpopulationen.
+
+Referenspopulationen måste stämma överens med målpopulationen i fråga om ålder, kön och sådana saker som spelar roll i sammanhanget.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Referenspopulation","Referenspopulation.liggerTillGrundFor","Referenspopulation.liggerTillGrundFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referensintervall {[]} {[]}
 ","Source attribute: ligger till grund för","Source attribute: ligger till grund för","","","","","","","","","",,,,,"",,,,"Referenspopulation.liggerTillGrundFor",0,1,"",""
 "Referenspopulation","Referenspopulation.jamforsMed","Referenspopulation.jamforsMed","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Malpopulation {[]} {[]}
 ","Source attribute: jämförs med","Source attribute: jämförs med","","","","","","","","","",,,,,"",,,,"Referenspopulation.jamforsMed",0,1,"",""
 "Referensvarde","Referensvarde","Referensvarde","","","",0,*,"","","","null {[]} {[]}
-","Referensvärde","Supporting logical model generated from gloo4.xmi (source class: Referensvärde).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Referensvärde","Ö  verenskommet värde   hos egenskap   mot vilket kan jämföras uppmätta eller observerade värden  .","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Referensvarde","Referensvarde.gallerFor","Referensvarde.gallerFor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand {[]} {[]}
 ","Source attribute: gäller för","Source attribute: gäller för","","","","","","","","","",,,,,"",,,,"Referensvarde.gallerFor",0,1,"",""
 "Remiss-Dokument-inom-halso--och-sjukvard","Remiss-Dokument-inom-halso--och-sjukvard","Remiss-Dokument-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Remiss : Dokument (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Remiss : Dokument (inom hälso- och sjukvård)","Vårdbegäran som utgör beställning av tjänst eller begäran om övertagande av medicinskt ansvar för en patient.
+
+En remiss kan vid utfärdandet ha en tilltänkt remissmottagande enhet eller så kan patienten få möjlighet att på egen hand välja remissmottagande/utförande enhet i efterhand.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Remiss-Dokument-inom-halso--och-sjukvard","Remiss-Dokument-inom-halso--och-sjukvard.skapar","Remiss-Dokument-inom-halso--och-sjukvard.skapar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remittent-Halso--och-sjukvardspersonal {[]} {[]}
 ","Source attribute: skapar","Source attribute: skapar","","","","","","","","","",,,,,"",,,,"Remiss-Dokument-inom-halso--och-sjukvard.skapar",0,1,"",""
 "Remiss-Dokument-inom-halso--och-sjukvard","Remiss-Dokument-inom-halso--och-sjukvard.hanterasAv","Remiss-Dokument-inom-halso--och-sjukvard.hanterasAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissmottagande-enhet-Organisation-inom-halso--och-sju {[]} {[]}
@@ -436,33 +581,43 @@
 "Remiss-Dokument-inom-halso--och-sjukvard","Remiss-Dokument-inom-halso--och-sjukvard.kanHa","Remiss-Dokument-inom-halso--och-sjukvard.kanHa","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: kan ha","Source attribute: kan ha","","","","","","","","","",,,,,"",,,,"Remiss-Dokument-inom-halso--och-sjukvard.kanHa",0,1,"",""
 "Remiss-Dokument","Remiss-Dokument","Remiss-Dokument","","","",0,*,"","","","null {[]} {[]}
-","Remiss : Dokument","Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Remiss : Dokument","Klassen Remiss håller information om den remiss som ligger till grund för svaret.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Remiss-Dokument","Remiss-Dokument.remissId","Remiss-Dokument.remissId","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: remiss-id","Source attribute: remiss-id","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.remissId",1,1,"",""
+","Source attribute: remiss-id","Angivelse av identitetsbeteckning för remissen.
+
+Benämns även RID.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.remissId",1,1,"",""
 "Remiss-Dokument","Remiss-Dokument.remisstidpunkt","Remiss-Dokument.remisstidpunkt","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
-","Source attribute: remisstidpunkt","Source attribute: remisstidpunkt","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.remisstidpunkt",1,1,"",""
+","Source attribute: remisstidpunkt","Angivelse av tidpunkt för när en viss remissversion skapades.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.remisstidpunkt",1,1,"",""
 "Remiss-Dokument","Remiss-Dokument.versionsnummer","Remiss-Dokument.versionsnummer","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/INT {[]} {[]}
-","Source attribute: versionsnummer","Source attribute: versionsnummer","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.versionsnummer",0,1,"",""
+","Source attribute: versionsnummer","Angivelse av löpnummer för remissversion.
+
+Varje ny version av en remiss behåller ursprungligt remiss-id och kan därför refereras av övriga versioner av samma remiss.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.versionsnummer",0,1,"",""
 "Remiss-Dokument","Remiss-Dokument.fragestallning","Remiss-Dokument.fragestallning","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: frågeställning","Source attribute: frågeställning","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.fragestallning",0,1,"",""
+","Source attribute: frågeställning","Angivelse av remissens frågeställning.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.fragestallning",0,1,"",""
 "Remiss-Dokument","Remiss-Dokument.efterfragadTjanst","Remiss-Dokument.efterfragadTjanst","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: efterfrågad tjänst","Source attribute: efterfrågad tjänst","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.efterfragadTjanst",0,*,"",""
+","Source attribute: efterfrågad tjänst","Kod för typ av tjänst som efterfrågas i remissen.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.efterfragadTjanst",0,*,"",""
 "Remiss-Dokument","Remiss-Dokument.kommentarFranBestallare","Remiss-Dokument.kommentarFranBestallare","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: kommentar från beställare","Source attribute: kommentar från beställare","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.kommentarFranBestallare",0,1,"",""
+","Source attribute: kommentar från beställare","Kommentar på beställningen av laboratorieundersökningen.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.kommentarFranBestallare",0,1,"",""
 "Remiss-Dokument","Remiss-Dokument.medicinskInformation","Remiss-Dokument.medicinskInformation","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: medicinsk information","Source attribute: medicinsk information","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.medicinskInformation",0,1,"",""
+","Source attribute: medicinsk information","Medicinsk information som angetts i beställningen relaterad till laboratorieundersökningen.","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.medicinskInformation",0,1,"",""
 "Remiss-Dokument","Remiss-Dokument.besvarar","Remiss-Dokument.besvarar","","","",0,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
 ","Source attribute: besvarar","Source attribute: besvarar","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.besvarar",0,*,"",""
 "Remiss-Dokument","Remiss-Dokument.harRemittent","Remiss-Dokument.harRemittent","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson {[]} {[]}
 ","Source attribute: har remittent","Source attribute: har remittent","","","","","","","","","",,,,,"",,,,"Remiss-Dokument.harRemittent",0,1,"",""
 "Remissmottagande-enhet-Organisation-inom-halso--och-sju","Remissmottagande-enhet-Organisation-inom-halso--och-sju","Remissmottagande-enhet-Organisation-inom-halso--och-sju","","","",0,*,"","","","null {[]} {[]}
-","Remissmottagande enhet : Organisation (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Remissmottagande enhet : Organisation (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Remissmottagande enhet : Organisation (inom hälso- och sjukvård)","Den organisatoriska enhet som utför klinisk bedömning av inkommen remiss samt utför det remissen avser.
+[E-remiss]","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Remissmottagande-enhet-Organisation-inom-halso--och-sju","Remissmottagande-enhet-Organisation-inom-halso--och-sju.arEn","Remissmottagande-enhet-Organisation-inom-halso--och-sju.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Remissmottagande-enhet-Organisation-inom-halso--och-sju.arEn",0,1,"",""
 "Remissmottagande-enhet-Organisation-inom-halso--och-sju","Remissmottagande-enhet-Organisation-inom-halso--och-sju.hanterasAv","Remissmottagande-enhet-Organisation-inom-halso--och-sju.hanterasAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: hanteras av","Source attribute: hanteras av","","","","","","","","","",,,,,"",,,,"Remissmottagande-enhet-Organisation-inom-halso--och-sju.hanterasAv",0,1,"",""
 "Remissvar-Dokument-inom-halso--och-sjukvard","Remissvar-Dokument-inom-halso--och-sjukvard","Remissvar-Dokument-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Remissvar : Dokument (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Remissvar : Dokument (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Remissvar : Dokument (inom hälso- och sjukvård)","Det som kommuniceras till remittenten efter att en remiss har bedömts och den remissmottagande enheten har accepterat att hantera det som frågeställningen avser.
+
+Det kan röra sig om ett svar på frågeställning i remissen men också vara en redogörelse för att en eller flera önskade åtgärder har utförts.   
+[Projektet e-remiss, ""Remissvar""]","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Remissvar-Dokument-inom-halso--och-sjukvard","Remissvar-Dokument-inom-halso--och-sjukvard.gorsAv","Remissvar-Dokument-inom-halso--och-sjukvard.gorsAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande-2 {[]} {[]}
 ","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Remissvar-Dokument-inom-halso--och-sjukvard.gorsAv",0,1,"",""
 "Remissvar-Dokument-inom-halso--och-sjukvard","Remissvar-Dokument-inom-halso--och-sjukvard.harVisst","Remissvar-Dokument-inom-halso--och-sjukvard.harVisst","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Presentationsformat {[]} {[]}
@@ -482,13 +637,17 @@
 "Remissvar-Dokument-inom-halso--och-sjukvard","Remissvar-Dokument-inom-halso--och-sjukvard.arEtt3","Remissvar-Dokument-inom-halso--och-sjukvard.arEtt3","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: är ett","Source attribute: är ett","","","","","","","","","",,,,,"",,,,"Remissvar-Dokument-inom-halso--och-sjukvard.arEtt3",0,1,"",""
 "Remissvarsmottagande-enhet-Organisation-inom-halso--och","Remissvarsmottagande-enhet-Organisation-inom-halso--och","Remissvarsmottagande-enhet-Organisation-inom-halso--och","","","",0,*,"","","","null {[]} {[]}
-","Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård)","Den organisatoriska enhet som ett remissvar skickas till.
+
+Är vanligtvis samma organisatoriska enhet som den remitterande enheten.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Remissvarsmottagande-enhet-Organisation-inom-halso--och","Remissvarsmottagande-enhet-Organisation-inom-halso--och.arMottagareAv","Remissvarsmottagande-enhet-Organisation-inom-halso--och.arMottagareAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: är mottagare av","Source attribute: är mottagare av","","","","","","","","","",,,,,"",,,,"Remissvarsmottagande-enhet-Organisation-inom-halso--och.arMottagareAv",0,1,"",""
 "Remissvarsmottagande-enhet-Organisation-inom-halso--och","Remissvarsmottagande-enhet-Organisation-inom-halso--och.arEn","Remissvarsmottagande-enhet-Organisation-inom-halso--och.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Remissvarsmottagande-enhet-Organisation-inom-halso--och.arEn",0,1,"",""
 "Remittent-Halso--och-sjukvardspersonal","Remittent-Halso--och-sjukvardspersonal","Remittent-Halso--och-sjukvardspersonal","","","",0,*,"","","","null {[]} {[]}
-","Remittent : Hälso- och sjukvårdspersonal","Supporting logical model generated from gloo4.xmi (source class: Remittent : Hälso- och sjukvårdspersonal).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Remittent : Hälso- och sjukvårdspersonal","Den hälso- och sjukvårdspersonal som i sitt uppdrag för en organisatorisk enhet har fattat beslut om att skicka remiss.
+
+Vissa använder uttrycket ""beställare"" för detta begrepp.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Remittent-Halso--och-sjukvardspersonal","Remittent-Halso--och-sjukvardspersonal.skapar","Remittent-Halso--och-sjukvardspersonal.skapar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: skapar","Source attribute: skapar","","","","","","","","","",,,,,"",,,,"Remittent-Halso--och-sjukvardspersonal.skapar",0,1,"",""
 "Remittent-Halso--och-sjukvardspersonal","Remittent-Halso--och-sjukvardspersonal.tillhor","Remittent-Halso--och-sjukvardspersonal.tillhor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remitterande-enhet-Organisation-inom-halso--och-sjukvar {[]} {[]}
@@ -496,17 +655,22 @@
 "Remittent-Halso--och-sjukvardspersonal","Remittent-Halso--och-sjukvardspersonal.arEn","Remittent-Halso--och-sjukvardspersonal.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Remittent-Halso--och-sjukvardspersonal.arEn",0,1,"",""
 "Remitterande-enhet-Organisation-inom-halso--och-sjukvar","Remitterande-enhet-Organisation-inom-halso--och-sjukvar","Remitterande-enhet-Organisation-inom-halso--och-sjukvar","","","",0,*,"","","","null {[]} {[]}
-","Remitterande enhet : Organisation (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Remitterande enhet : Organisation (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Remitterande enhet : Organisation (inom hälso- och sjukvård)","Den organisatoriska enhet som är uppdragsgivare åt remittenten.
+[Projekt e-remiss]
+
+Vissa använder uttrycket ""beställande enhet"" för detta begrepp.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Remitterande-enhet-Organisation-inom-halso--och-sjukvar","Remitterande-enhet-Organisation-inom-halso--och-sjukvar.tillhor","Remitterande-enhet-Organisation-inom-halso--och-sjukvar.tillhor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remittent-Halso--och-sjukvardspersonal {[]} {[]}
 ","Source attribute: tillhör","Source attribute: tillhör","","","","","","","","","",,,,,"",,,,"Remitterande-enhet-Organisation-inom-halso--och-sjukvar.tillhor",0,1,"",""
 "Remitterande-enhet-Organisation-inom-halso--och-sjukvar","Remitterande-enhet-Organisation-inom-halso--och-sjukvar.arEn","Remitterande-enhet-Organisation-inom-halso--och-sjukvar.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Remitterande-enhet-Organisation-inom-halso--och-sjukvar.arEn",0,1,"",""
 "Resistens","Resistens","Resistens","","","",0,*,"","","","null {[]} {[]}
-","Resistens","Supporting logical model generated from gloo4.xmi (source class: Resistens).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Resistens","I det aktuella provet påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel.
+
+Det finns fyra huvudgrupper av mikroorganismer: bakterier, svampar, virus och parasiter.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Resistens","Resistens.faststaller","Resistens.faststaller","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Resistensbestamning-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: fastställer","Source attribute: fastställer","","","","","","","","","",,,,,"",,,,"Resistens.faststaller",0,1,"",""
 "Resistensbestamning-Aktivitet-inom-halso--och-sjukvard","Resistensbestamning-Aktivitet-inom-halso--och-sjukvard","Resistensbestamning-Aktivitet-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Resistensbestämning : Aktivitet (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Resistensbestämning : Aktivitet (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Resistensbestämning : Aktivitet (inom hälso- och sjukvård)","Bestämning av påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Resistensbestamning-Aktivitet-inom-halso--och-sjukvard","Resistensbestamning-Aktivitet-inom-halso--och-sjukvard.faststaller","Resistensbestamning-Aktivitet-inom-halso--och-sjukvard.faststaller","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Resistens {[]} {[]}
 ","Source attribute: fastställer","Source attribute: fastställer","","","","","","","","","",,,,,"",,,,"Resistensbestamning-Aktivitet-inom-halso--och-sjukvard.faststaller",0,1,"",""
 "Resistensbestamning-Aktivitet-inom-halso--och-sjukvard","Resistensbestamning-Aktivitet-inom-halso--och-sjukvard.kanUtforasPa","Resistensbestamning-Aktivitet-inom-halso--och-sjukvard.kanUtforasPa","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Mikroorganism {[]} {[]}
@@ -514,37 +678,53 @@
 "Revisionshistorik","Revisionshistorik","Revisionshistorik","","","",0,*,"","","","null {[]} {[]}
 ","Revisionshistorik","Supporting logical model generated from gloo4.xmi (source class: Revisionshistorik).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Revisionshistorik","Revisionshistorik.Version40RC2","Revisionshistorik.Version40RC2","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0 RC2; type could not be resolved from source model","Source attribute: Version 4.0 RC2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC2",0,1,"",""
+","Source attribute: Version 4.0 RC2; type could not be resolved from source model","Ny version 4.0 av laboratoriesvarskontrakt som stödjer mikrobiologiska svar. Förarbete av Fredrik Ström och Helena Antonsson.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC2",0,1,"",""
 "Revisionshistorik","Revisionshistorik.Version40RC5","Revisionshistorik.Version40RC5","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0 RC5; type could not be resolved from source model","Source attribute: Version 4.0 RC5; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC5",0,1,"",""
+","Source attribute: Version 4.0 RC5; type could not be resolved from source model","Fortsatt arbete där koppling till kodverk har förtydligats. Vissa specifika klasser har bytts ut till generiska kombinationer av analys/analysresultat. Begreppsmodellering och terminologi i enlighet med Socialstyrelsens termbank och Nationella Informationsstruktur.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC5",0,1,"",""
 "Revisionshistorik","Revisionshistorik.Version40RC6","Revisionshistorik.Version40RC6","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0 RC6; type could not be resolved from source model","Source attribute: Version 4.0 RC6; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC6",0,1,"",""
+","Source attribute: Version 4.0 RC6; type could not be resolved from source model","Utökade attribut för analysutrustning.
+Möjlighet för mottagare att signera enskilda resultat förutom hela svaret
+Ändrad kardinalitet på signatur från ansvarig för svar.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC6",0,1,"",""
 "Revisionshistorik","Revisionshistorik.Version40RC9","Revisionshistorik.Version40RC9","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0 RC9; type could not be resolved from source model","Source attribute: Version 4.0 RC9; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC9",0,1,"",""
+","Source attribute: Version 4.0 RC9; type could not be resolved from source model","Lagt till coding strength på CV-datatyp (CNE - Coded with No Exceptions och CWE - Coded With Exceptions)","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC9",0,1,"",""
 "Revisionshistorik","Revisionshistorik.Version40","Revisionshistorik.Version40","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0; type could not be resolved from source model","Source attribute: Version 4.0; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40",0,1,"",""
+","Source attribute: Version 4.0; type could not be resolved from source model","Ny informationsspecifikation för laboratoriesvar fastställd.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40",0,1,"",""
 "Revisionshistorik","Revisionshistorik.Version401","Revisionshistorik.Version401","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0.1; type could not be resolved from source model","Source attribute: Version 4.0.1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version401",0,1,"",""
+","Source attribute: Version 4.0.1; type could not be resolved from source model","Uppdaterat samtliga urval.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version401",0,1,"",""
 "Revisionshistorik","Revisionshistorik.f402","Revisionshistorik.f402","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: 4.0.2; type could not be resolved from source model","Source attribute: 4.0.2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.f402",0,1,"",""
+","Source attribute: 4.0.2; type could not be resolved from source model","Uppdaterade tomma fält i beskrivningen av informationsmodellen.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.f402",0,1,"",""
 "Revisionshistorik","Revisionshistorik.Version41","Revisionshistorik.Version41","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.1; type could not be resolved from source model","Source attribute: Version 4.1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version41",0,1,"",""
+","Source attribute: Version 4.1; type could not be resolved from source model","Uppdaterat beskrivningen för olika typer av signeringar.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version41",0,1,"",""
 "RevisionshistorikTA","RevisionshistorikTA","RevisionshistorikTA","","","",0,*,"","","","null {[]} {[]}
 ","RevisionshistorikTA","Supporting logical model generated from gloo4.xmi (source class: RevisionshistorikTA).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "RevisionshistorikTA","RevisionshistorikTA.Version40","RevisionshistorikTA.Version40","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0; type could not be resolved from source model","Source attribute: Version 4.0; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version40",0,1,"",""
+","Source attribute: Version 4.0; type could not be resolved from source model","Ny informationsspecifikation för laboratoriesvar fastställd.","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version40",0,1,"",""
 "RevisionshistorikTA","RevisionshistorikTA.Version401","RevisionshistorikTA.Version401","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0.1; type could not be resolved from source model","Source attribute: Version 4.0.1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version401",0,1,"",""
+","Source attribute: Version 4.0.1; type could not be resolved from source model","Uppdaterat samtliga urval.","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version401",0,1,"",""
 "RevisionshistorikTA","RevisionshistorikTA.Version402","RevisionshistorikTA.Version402","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0.2; type could not be resolved from source model","Source attribute: Version 4.0.2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version402",0,1,"",""
-"SNOMED-CT-SE","SNOMED-CT-SE","SNOMED-CT-SE","","","",0,*,"","","","","SNOMED-CT SE","Supporting logical model generated from gloo4.xmi (source class: SNOMED-CT SE).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"ST","ST","ST","","","",0,*,"","","","","ST","Supporting logical model generated from gloo4.xmi (source class: ST).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Source attribute: Version 4.0.2; type could not be resolved from source model","Uppdaterad med exempel för resistensbestämning.","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version402",0,1,"",""
+"SNOMED-CT-SE","SNOMED-CT-SE","SNOMED-CT-SE","","","",0,*,"","","","","SNOMED-CT SE","SNOMED CT innehåller en stor mängd kliniska termer.
+
+OID: 1.2.752.116.2.1.1","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"ST","ST","ST","","","",0,*,"","","","","ST","Textsträng","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Signatur","Signatur","Signatur","","","",0,*,"","","","null {[]} {[]}
-","Signatur","Supporting logical model generated from gloo4.xmi (source class: Signatur).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Signatur","Egenhändigt skriven namnteckning eller förkortad namnteckning.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Signatur","Signatur.arResultatAv","Signatur.arResultatAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signering-Deltagande-2 {[]} {[]}
 ","Source attribute: är resultat av","Source attribute: är resultat av","","","","","","","","","",,,,,"",,,,"Signatur.arResultatAv",0,1,"",""
 "Signering-Deltagande-2","Signering-Deltagande-2","Signering-Deltagande-2","","","",0,*,"","","","null {[]} {[]}
-","Signering : Deltagande","Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Signering : Deltagande","Påförande av signatur.  
+   
+Inom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.
+
+1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.
+
+Den ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).
+
+2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.
+
+3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.
+
+4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Signering-Deltagande-2","Signering-Deltagande-2.gorsAv","Signering-Deltagande-2.gorsAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand {[]} {[]}
 ","Source attribute: görs av","Source attribute: görs av","","","","","","","","","",,,,,"",,,,"Signering-Deltagande-2.gorsAv",0,1,"",""
 "Signering-Deltagande-2","Signering-Deltagande-2.gorsAv2","Signering-Deltagande-2.gorsAv2","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal {[]} {[]}
@@ -554,9 +734,15 @@
 "Signering-Deltagande-2","Signering-Deltagande-2.arResultatAv","Signering-Deltagande-2.arResultatAv","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Signatur {[]} {[]}
 ","Source attribute: är resultat av","Source attribute: är resultat av","","","","","","","","","",,,,,"",,,,"Signering-Deltagande-2.arResultatAv",0,1,"",""
 "Signering-Deltagande","Signering-Deltagande","Signering-Deltagande","","","",0,*,"","","","null {[]} {[]}
-","Signering : Deltagande","Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Signering : Deltagande","Klassen Signering håller information om tidsangivelse då ett relaterat objekt är signerat.
+Inom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.
+1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.
+Den ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).
+2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.
+3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.
+4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Signering-Deltagande","Signering-Deltagande.tidpunkt","Signering-Deltagande.tidpunkt","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
-","Source attribute: tidpunkt","Source attribute: tidpunkt","","","","","","","","","",,,,,"",,,,"Signering-Deltagande.tidpunkt",1,1,"",""
+","Source attribute: tidpunkt","Angivelse av tidpunkt då signering genomfördes.","","","","","","","","","",,,,,"",,,,"Signering-Deltagande.tidpunkt",1,1,"",""
 "Signering-Deltagande","Signering-Deltagande.harMottgares","Signering-Deltagande.harMottgares","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
 ","Source attribute: har mottgares","Source attribute: har mottgares","","","","","","","","","",,,,,"",,,,"Signering-Deltagande.harMottgares",0,1,"",""
 "Signering-Deltagande","Signering-Deltagande.harAnsvarigs","Signering-Deltagande.harAnsvarigs","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument {[]} {[]}
@@ -568,27 +754,61 @@
 "Signering-Deltagande","Signering-Deltagande.utforsAv","Signering-Deltagande.utforsAv","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson {[]} {[]}
 ","Source attribute: utförs av","Source attribute: utförs av","","","","","","","","","",,,,,"",,,,"Signering-Deltagande.utforsAv",1,1,"",""
 "Slutsvar-Dokument-inom-halso--och-sjukvard","Slutsvar-Dokument-inom-halso--och-sjukvard","Slutsvar-Dokument-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Slutsvar : Dokument (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Slutsvar : Dokument (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Slutsvar : Dokument (inom hälso- och sjukvård)","Svar där samtliga i remissen beställda analyser i och med detta svar är besvarade slutligt, och inga fortsatta analyser pågår.
+
+Den remissvarsmottagande enheten ska i och med detta inte förvänta sig ytterligare svar. Även efter ett slutsvar finns det möjlighet för utförande enhet att skicka ytterligare svar relaterat till samma remiss.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Slutsvar-Dokument-inom-halso--och-sjukvard","Slutsvar-Dokument-inom-halso--och-sjukvard.arEtt","Slutsvar-Dokument-inom-halso--och-sjukvard.arEtt","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: är ett","Source attribute: är ett","","","","","","","","","",,,,,"",,,,"Slutsvar-Dokument-inom-halso--och-sjukvard.arEtt",0,1,"",""
-"TS","TS","TS","","","",0,*,"","","","","TS","Supporting logical model generated from gloo4.xmi (source class: TS).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-analyskoder-laboratoriemedicin","Urval-analyskoder-laboratoriemedicin","Urval-analyskoder-laboratoriemedicin","","","",0,*,"","","","","Urval analyskoder laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval analyskoder laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-analysmetod-laboratoriemedicin","Urval-analysmetod-laboratoriemedicin","Urval-analysmetod-laboratoriemedicin","","","",0,*,"","","","","Urval analysmetod laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval analysmetod laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-analysstatus-laboratoriemedicin","Urval-analysstatus-laboratoriemedicin","Urval-analysstatus-laboratoriemedicin","","","",0,*,"","","","","Urval analysstatus laboratoriemedicin  ","Supporting logical model generated from gloo4.xmi (source class: Urval analysstatus laboratoriemedicin  ).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-anatomisk-lokalisation-laboratoriemedicin","Urval-anatomisk-lokalisation-laboratoriemedicin","Urval-anatomisk-lokalisation-laboratoriemedicin","","","",0,*,"","","","","Urval anatomisk lokalisation laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval anatomisk lokalisation laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-fynd-bakterieegenskaper-laboratoriemedicin","Urval-fynd-bakterieegenskaper-laboratoriemedicin","Urval-fynd-bakterieegenskaper-laboratoriemedicin","","","",0,*,"","","","","Urval fynd bakterieegenskaper laboratoriemedicin ","Supporting logical model generated from gloo4.xmi (source class: Urval fynd bakterieegenskaper laboratoriemedicin ).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-fynd-mikroorganism-laboratoriemedicin","Urval-fynd-mikroorganism-laboratoriemedicin","Urval-fynd-mikroorganism-laboratoriemedicin","","","",0,*,"","","","","Urval fynd mikroorganism laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval fynd mikroorganism laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-fynd-ovrigt-laboratoriemedicin","Urval-fynd-ovrigt-laboratoriemedicin","Urval-fynd-ovrigt-laboratoriemedicin","","","",0,*,"","","","","Urval fynd övrigt laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval fynd övrigt laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-fynd-resistens-laboratoriemedicin","Urval-fynd-resistens-laboratoriemedicin","Urval-fynd-resistens-laboratoriemedicin","","","",0,*,"","","","","Urval fynd resistens laboratoriemedicin ","Supporting logical model generated from gloo4.xmi (source class: Urval fynd resistens laboratoriemedicin ).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-provbehallare-laboratoriemedicin","Urval-provbehallare-laboratoriemedicin","Urval-provbehallare-laboratoriemedicin","","","",0,*,"","","","","Urval provbehallare laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval provbehallare laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-provtyp-laboratoriemedicin","Urval-provtyp-laboratoriemedicin","Urval-provtyp-laboratoriemedicin","","","",0,*,"","","","","Urval provtyp laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval provtyp laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"Urval-tolkning-resultat-laboratoriemedicin","Urval-tolkning-resultat-laboratoriemedicin","Urval-tolkning-resultat-laboratoriemedicin","","","",0,*,"","","","","Urval tolkning resultat laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval tolkning resultat laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"TS","TS","TS","","","",0,*,"","","","","TS","Tidpunkt","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-analyskoder-laboratoriemedicin","Urval-analyskoder-laboratoriemedicin","Urval-analyskoder-laboratoriemedicin","","","",0,*,"","","","","Urval analyskoder laboratoriemedicin","Kod för den typ av analys som utförts.   Urval från NPU.
+
+OID: 1.2.752.108.1.1","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-analysmetod-laboratoriemedicin","Urval-analysmetod-laboratoriemedicin","Urval-analysmetod-laboratoriemedicin","","","",0,*,"","","","","Urval analysmetod laboratoriemedicin","Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva metodprinciper inom laboratoriemedicin. Princip för analysmetod bör användas för laboratoriemedicinska undersökningar där resultaten kan skilja sig beroende på analysmetoden, även om man avser att mäta samma sak, eller när metodprincipen är viktig för tolkningen av resultatet.
+
+OID: 1.2.752.129.5.1.18
+Refset-ID: 63181000052104","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-analysstatus-laboratoriemedicin","Urval-analysstatus-laboratoriemedicin","Urval-analysstatus-laboratoriemedicin","","","",0,*,"","","","","Urval analysstatus laboratoriemedicin  ","Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva analysstatus inom laboratoriemedicin. Detta urval är baserat på urvalet aktivitetsstatus med Refset-ID 56421000052109.
+
+OID: 1.2.752.129.5.1.6
+Refset-ID: 500111000057108","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-anatomisk-lokalisation-laboratoriemedicin","Urval-anatomisk-lokalisation-laboratoriemedicin","Urval-anatomisk-lokalisation-laboratoriemedicin","","","",0,*,"","","","","Urval anatomisk lokalisation laboratoriemedicin","Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva anatomisk lokalisation inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.7
+Refset-ID: 500091000057101","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-fynd-bakterieegenskaper-laboratoriemedicin","Urval-fynd-bakterieegenskaper-laboratoriemedicin","Urval-fynd-bakterieegenskaper-laboratoriemedicin","","","",0,*,"","","","","Urval fynd bakterieegenskaper laboratoriemedicin ","Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av undersökning av egenskaper av bakterier som inte utgör släkte eller art inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.8
+Refset-ID: 500101000057105","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-fynd-mikroorganism-laboratoriemedicin","Urval-fynd-mikroorganism-laboratoriemedicin","Urval-fynd-mikroorganism-laboratoriemedicin","","","",0,*,"","","","","Urval fynd mikroorganism laboratoriemedicin","Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva fynd av mikroorganismer inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.9
+Refset-ID: 500061000057107","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-fynd-ovrigt-laboratoriemedicin","Urval-fynd-ovrigt-laboratoriemedicin","Urval-fynd-ovrigt-laboratoriemedicin","","","",0,*,"","","","","Urval fynd övrigt laboratoriemedicin","Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av laboratorieundersökning inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.11
+Refset-ID: 500081000057104","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-fynd-resistens-laboratoriemedicin","Urval-fynd-resistens-laboratoriemedicin","Urval-fynd-resistens-laboratoriemedicin","","","",0,*,"","","","","Urval fynd resistens laboratoriemedicin ","Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva resultat av undersökning av resistens mot antibiotika inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.10
+Refset-ID: 500041000057108","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-provbehallare-laboratoriemedicin","Urval-provbehallare-laboratoriemedicin","Urval-provbehallare-laboratoriemedicin","","","",0,*,"","","","","Urval provbehallare laboratoriemedicin","Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provbehållare inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.12
+Refset-ID: 500071000057102","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-provtyp-laboratoriemedicin","Urval-provtyp-laboratoriemedicin","Urval-provtyp-laboratoriemedicin","","","",0,*,"","","","","Urval provtyp laboratoriemedicin","Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provtyp inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.13
+Refset-ID: 500121000057102","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-tolkning-resultat-laboratoriemedicin","Urval-tolkning-resultat-laboratoriemedicin","Urval-tolkning-resultat-laboratoriemedicin","","","",0,*,"","","","","Urval tolkning resultat laboratoriemedicin","Urval ur Snomed CT (OID: 1.2.752.116.2.1.1)för att beskriva tolkning av fynd inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.14
+Refset-ID: 500051000057105","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Utforande-enhet-Organisation-inom-halso--och-sjukvard","Utforande-enhet-Organisation-inom-halso--och-sjukvard","Utforande-enhet-Organisation-inom-halso--och-sjukvard","","","",0,*,"","","","null {[]} {[]}
-","Utförande enhet : Organisation (inom hälso- och sjukvård)","Supporting logical model generated from gloo4.xmi (source class: Utförande enhet : Organisation (inom hälso- och sjukvård)).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Utförande enhet : Organisation (inom hälso- och sjukvård)","Den enhet som utför en enskild analys.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Utforande-enhet-Organisation-inom-halso--och-sjukvard","Utforande-enhet-Organisation-inom-halso--och-sjukvard.utfor","Utforande-enhet-Organisation-inom-halso--och-sjukvard.utfor","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: utför","Source attribute: utför","","","","","","","","","",,,,,"",,,,"Utforande-enhet-Organisation-inom-halso--och-sjukvard.utfor",0,1,"",""
 "Utforande-enhet-Organisation-inom-halso--och-sjukvard","Utforande-enhet-Organisation-inom-halso--och-sjukvard.arEn","Utforande-enhet-Organisation-inom-halso--och-sjukvard.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Utforande-enhet-Organisation-inom-halso--och-sjukvard.arEn",0,1,"",""
 "Utforande-enhet-Organisation-inom-halso--och-sjukvard","Utforande-enhet-Organisation-inom-halso--och-sjukvard.skriver","Utforande-enhet-Organisation-inom-halso--och-sjukvard.skriver","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: skriver","Source attribute: skriver","","","","","","","","","",,,,,"",,,,"Utforande-enhet-Organisation-inom-halso--och-sjukvard.skriver",0,1,"",""
-"Utford-analys","Utford-analys","Utford-analys","","","",0,*,"","","","","Utförd analys","Supporting logical model generated from gloo4.xmi (source class: Utförd analys).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Utford-analys","Utford-analys","Utford-analys","","","",0,*,"","","","","Utförd analys","Detta är väl mer en statusmarkering? Planerad, pågående, utförd; kanske inte behövs i en begreppsmodell?","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""

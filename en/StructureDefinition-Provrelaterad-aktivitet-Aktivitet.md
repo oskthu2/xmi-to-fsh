@@ -3,7 +3,7 @@
 ## Logical Model: Provrelaterad aktivitet: Aktivitet 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Provrelaterad aktivitet: Aktivitet). 
+Klassen Provrelaterad aktivitet håller information om aktiviteter relaterade till hantering av prov. Inkluderar även t.ex. aktiviteter i samband med transport, frysning, förvaring, bearbetning och delning i sekundärprov. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provrelaterad-akt
   "name" : "ProvrelateradaktivitetAktivitet",
   "title" : "Provrelaterad aktivitet: Aktivitet",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provrelaterad-akt
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Provrelaterad aktivitet: Aktivitet).",
+  "description" : "Klassen Provrelaterad aktivitet håller information om aktiviteter relaterade till hantering av prov.\nInkluderar även t.ex. aktiviteter i samband med transport, frysning, förvaring, bearbetning och delning i sekundärprov.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Provrelaterad-akt
       "id" : "Provrelaterad-aktivitet-Aktivitet",
       "path" : "Provrelaterad-aktivitet-Aktivitet",
       "short" : "Provrelaterad aktivitet: Aktivitet",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Provrelaterad aktivitet: Aktivitet)."
+      "definition" : "Klassen Provrelaterad aktivitet håller information om aktiviteter relaterade till hantering av prov.\nInkluderar även t.ex. aktiviteter i samband med transport, frysning, förvaring, bearbetning och delning i sekundärprov."
     },
     {
       "id" : "Provrelaterad-aktivitet-Aktivitet.kod",
       "path" : "Provrelaterad-aktivitet-Aktivitet.kod",
       "short" : "Source attribute: kod",
-      "definition" : "Source attribute: kod",
+      "definition" : "Kod för provrelaterad aktivitet.\n\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provrelaterad-akt
       "id" : "Provrelaterad-aktivitet-Aktivitet.tid",
       "path" : "Provrelaterad-aktivitet-Aktivitet.tid",
       "short" : "Source attribute: tid",
-      "definition" : "Source attribute: tid",
+      "definition" : "Angivelse av tid eller tidsintervall då den provrelaterade aktiviteten utfördes.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provrelaterad-akt
       "id" : "Provrelaterad-aktivitet-Aktivitet.metod",
       "path" : "Provrelaterad-aktivitet-Aktivitet.metod",
       "short" : "Source attribute: metod",
-      "definition" : "Source attribute: metod",
+      "definition" : "Kod för metod för provrelaterad aktivitet.\n\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 0,
       "max" : "1",
       "type" : [{

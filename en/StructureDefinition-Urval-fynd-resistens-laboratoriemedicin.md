@@ -3,7 +3,8 @@
 ## Logical Model: Urval fynd resistens laboratoriemedicin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Urval fynd resistens laboratoriemedicin ). 
+Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva resultat av undersökning av resistens mot antibiotika inom laboratoriemedicin. 
+OID: 1.2.752.129.5.1.10 Refset-ID: 500041000057108 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-resist
   "name" : "Urvalfyndresistenslaboratoriemedicin",
   "title" : "Urval fynd resistens laboratoriemedicin ",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-resist
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Urval fynd resistens laboratoriemedicin ).",
+  "description" : "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva resultat av undersökning av resistens mot antibiotika inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.10\nRefset-ID: 500041000057108",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-resist
       "id" : "Urval-fynd-resistens-laboratoriemedicin",
       "path" : "Urval-fynd-resistens-laboratoriemedicin",
       "short" : "Urval fynd resistens laboratoriemedicin ",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Urval fynd resistens laboratoriemedicin )."
+      "definition" : "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva resultat av undersökning av resistens mot antibiotika inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.10\nRefset-ID: 500041000057108"
     }]
   }
 }

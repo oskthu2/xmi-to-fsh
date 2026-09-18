@@ -3,7 +3,8 @@
 ## Logical Model: Slutsvar : Dokument (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Slutsvar : Dokument (inom hälso- och sjukvård)). 
+Svar där samtliga i remissen beställda analyser i och med detta svar är besvarade slutligt, och inga fortsatta analyser pågår. 
+Den remissvarsmottagande enheten ska i och med detta inte förvänta sig ytterligare svar. Även efter ett slutsvar finns det möjlighet för utförande enhet att skicka ytterligare svar relaterat till samma remiss. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Slutsvar-Dokument
   "name" : "SlutsvarDokumentinomhalsoochsjukvard",
   "title" : "Slutsvar : Dokument (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Slutsvar-Dokument
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Slutsvar : Dokument (inom hälso- och sjukvård)).",
+  "description" : "Svar där samtliga i remissen beställda analyser i och med detta svar är besvarade slutligt, och inga fortsatta analyser pågår.\n\nDen remissvarsmottagande enheten ska i och med detta inte förvänta sig ytterligare svar. Även efter ett slutsvar finns det möjlighet för utförande enhet att skicka ytterligare svar relaterat till samma remiss.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Slutsvar-Dokument
       "id" : "Slutsvar-Dokument-inom-halso--och-sjukvard",
       "path" : "Slutsvar-Dokument-inom-halso--och-sjukvard",
       "short" : "Slutsvar : Dokument (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Slutsvar : Dokument (inom hälso- och sjukvård))."
+      "definition" : "Svar där samtliga i remissen beställda analyser i och med detta svar är besvarade slutligt, och inga fortsatta analyser pågår.\n\nDen remissvarsmottagande enheten ska i och med detta inte förvänta sig ytterligare svar. Även efter ett slutsvar finns det möjlighet för utförande enhet att skicka ytterligare svar relaterat till samma remiss."
     },
     {
       "id" : "Slutsvar-Dokument-inom-halso--och-sjukvard.arEtt",

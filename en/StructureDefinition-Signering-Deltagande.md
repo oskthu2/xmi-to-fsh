@@ -3,7 +3,12 @@
 ## Logical Model: Signering : Deltagande 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande). 
+Klassen Signering håller information om tidsangivelse då ett relaterat objekt är signerat. Inom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser. 
+1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten. Den ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).
+1. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.
+1. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.
+1. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen.
+ 
 
 **Usages:**
 
@@ -36,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-Signering-Deltaga
   "name" : "SigneringDeltagande",
   "title" : "Signering : Deltagande",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-Signering-Deltaga
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande).",
+  "description" : "Klassen Signering håller information om tidsangivelse då ett relaterat objekt är signerat.\nInom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.\n1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.\nDen ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).\n2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.\n3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.\n4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +62,13 @@ Other representations of profile: [CSV](../StructureDefinition-Signering-Deltaga
       "id" : "Signering-Deltagande",
       "path" : "Signering-Deltagande",
       "short" : "Signering : Deltagande",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande)."
+      "definition" : "Klassen Signering håller information om tidsangivelse då ett relaterat objekt är signerat.\nInom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.\n1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.\nDen ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).\n2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.\n3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.\n4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen."
     },
     {
       "id" : "Signering-Deltagande.tidpunkt",
       "path" : "Signering-Deltagande.tidpunkt",
       "short" : "Source attribute: tidpunkt",
-      "definition" : "Source attribute: tidpunkt",
+      "definition" : "Angivelse av tidpunkt då signering genomfördes.",
       "min" : 1,
       "max" : "1",
       "type" : [{

@@ -3,7 +3,8 @@
 ## Logical Model: Laboratorieanalysresultat : Observation 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observation). 
+Klassen Laboratorieanalysresultat håller information om resultat av en utförd analys. 
+Detta resultat kan exempelvis bestå av ett mätvärde inom laboratoriedisciplinen kemi, ett fynd av en viss bakterieart eller en textuell beskrivning av analysresultatet. Utöver detta kan en kommentar avseende analysresultatet anges separat. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
   "name" : "LaboratorieanalysresultatObservation",
   "title" : "Laboratorieanalysresultat : Observation",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observation).",
+  "description" : "Klassen Laboratorieanalysresultat håller information om resultat av en utförd analys.\n\nDetta resultat kan exempelvis bestå av ett mätvärde inom laboratoriedisciplinen kemi, ett fynd av en viss bakterieart eller en textuell beskrivning av analysresultatet. Utöver detta kan en kommentar avseende analysresultatet anges separat.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +58,13 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalysresultat-Observation",
       "path" : "Laboratorieanalysresultat-Observation",
       "short" : "Laboratorieanalysresultat : Observation",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observation)."
+      "definition" : "Klassen Laboratorieanalysresultat håller information om resultat av en utförd analys.\n\nDetta resultat kan exempelvis bestå av ett mätvärde inom laboratoriedisciplinen kemi, ett fynd av en viss bakterieart eller en textuell beskrivning av analysresultatet. Utöver detta kan en kommentar avseende analysresultatet anges separat."
     },
     {
       "id" : "Laboratorieanalysresultat-Observation.typ",
       "path" : "Laboratorieanalysresultat-Observation.typ",
       "short" : "Source attribute: typ",
-      "definition" : "Source attribute: typ",
+      "definition" : "Kod för typ av laboratorieanalysresultat.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -74,7 +75,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalysresultat-Observation.varde",
       "path" : "Laboratorieanalysresultat-Observation.varde",
       "short" : "Source attribute: värde",
-      "definition" : "Source attribute: värde",
+      "definition" : "Angivelse av utfall av en utförd analys.\n\nPQ|IVL<PQ>|ST|CV",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -85,7 +86,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalysresultat-Observation.kommentar",
       "path" : "Laboratorieanalysresultat-Observation.kommentar",
       "short" : "Source attribute: kommentar",
-      "definition" : "Source attribute: kommentar",
+      "definition" : "Angivelse av kommentar som rör laboratorieanalysresultatet.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -96,7 +97,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalysresultat-Observation.tolkning",
       "path" : "Laboratorieanalysresultat-Observation.tolkning",
       "short" : "Source attribute: tolkning",
-      "definition" : "Source attribute: tolkning",
+      "definition" : "Kod för en tolkning av laboratorieanalysresultatet.  \n\nEn sådan tolkning kan vara att analysresultatet ligger utanför aktuellt referensintervall, vilket även benämns som patologisk markör.",
       "min" : 0,
       "max" : "*",
       "type" : [{

@@ -3,7 +3,8 @@
 ## Logical Model: Urval tolkning resultat laboratoriemedicin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Urval tolkning resultat laboratoriemedicin). 
+Urval ur Snomed CT (OID: 1.2.752.116.2.1.1)för att beskriva tolkning av fynd inom laboratoriemedicin. 
+OID: 1.2.752.129.5.1.14 Refset-ID: 500051000057105 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-tolkning-re
   "name" : "Urvaltolkningresultatlaboratoriemedicin",
   "title" : "Urval tolkning resultat laboratoriemedicin",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-tolkning-re
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Urval tolkning resultat laboratoriemedicin).",
+  "description" : "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1)för att beskriva tolkning av fynd inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.14\nRefset-ID: 500051000057105",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-tolkning-re
       "id" : "Urval-tolkning-resultat-laboratoriemedicin",
       "path" : "Urval-tolkning-resultat-laboratoriemedicin",
       "short" : "Urval tolkning resultat laboratoriemedicin",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Urval tolkning resultat laboratoriemedicin)."
+      "definition" : "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1)för att beskriva tolkning av fynd inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.14\nRefset-ID: 500051000057105"
     }]
   }
 }

@@ -3,7 +3,8 @@
 ## Logical Model: Preliminärsvar : Dokument (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Preliminärsvar : Dokument (inom hälso- och sjukvård)). 
+Delsvar som innehåller minst ett resultat från en analys som ännu inte är avslutad. 
+Den remissvarsmottagande enheten ska förvänta sig ytterligare svar efter ett preliminärsvar och har fortfarande ett ansvar att bevaka detta till dess ett slutsvar har mottagits. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Preliminarsvar-Do
   "name" : "PreliminarsvarDokumentinomhalsoochsjukvard",
   "title" : "Preliminärsvar : Dokument (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Preliminarsvar-Do
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Preliminärsvar : Dokument (inom hälso- och sjukvård)).",
+  "description" : "Delsvar som innehåller minst ett resultat från en analys som ännu inte är avslutad.\n\nDen remissvarsmottagande enheten ska förvänta sig ytterligare svar efter ett preliminärsvar och har fortfarande ett ansvar att bevaka detta till dess ett slutsvar har mottagits.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Preliminarsvar-Do
       "id" : "Preliminarsvar-Dokument-inom-halso--och-sjukvard",
       "path" : "Preliminarsvar-Dokument-inom-halso--och-sjukvard",
       "short" : "Preliminärsvar : Dokument (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Preliminärsvar : Dokument (inom hälso- och sjukvård))."
+      "definition" : "Delsvar som innehåller minst ett resultat från en analys som ännu inte är avslutad.\n\nDen remissvarsmottagande enheten ska förvänta sig ytterligare svar efter ett preliminärsvar och har fortfarande ett ansvar att bevaka detta till dess ett slutsvar har mottagits."
     },
     {
       "id" : "Preliminarsvar-Dokument-inom-halso--och-sjukvard.arEtt",

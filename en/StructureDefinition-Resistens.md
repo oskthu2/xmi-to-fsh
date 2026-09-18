@@ -3,7 +3,8 @@
 ## Logical Model: Resistens 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Resistens). 
+I det aktuella provet påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel. 
+Det finns fyra huvudgrupper av mikroorganismer: bakterier, svampar, virus och parasiter. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Resistens.csv), [
   "name" : "Resistens",
   "title" : "Resistens",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Resistens.csv), [
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Resistens).",
+  "description" : "I det aktuella provet påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel.\n\nDet finns fyra huvudgrupper av mikroorganismer: bakterier, svampar, virus och parasiter.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Resistens.csv), [
       "id" : "Resistens",
       "path" : "Resistens",
       "short" : "Resistens",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Resistens)."
+      "definition" : "I det aktuella provet påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel.\n\nDet finns fyra huvudgrupper av mikroorganismer: bakterier, svampar, virus och parasiter."
     },
     {
       "id" : "Resistens.faststaller",

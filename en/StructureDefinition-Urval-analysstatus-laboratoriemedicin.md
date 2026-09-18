@@ -3,7 +3,8 @@
 ## Logical Model: Urval analysstatus laboratoriemedicin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Urval analysstatus laboratoriemedicin ). 
+Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva analysstatus inom laboratoriemedicin. Detta urval är baserat på urvalet aktivitetsstatus med Refset-ID 56421000052109. 
+OID: 1.2.752.129.5.1.6 Refset-ID: 500111000057108 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-analysstatu
   "name" : "Urvalanalysstatuslaboratoriemedicin",
   "title" : "Urval analysstatus laboratoriemedicin  ",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-analysstatu
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Urval analysstatus laboratoriemedicin  ).",
+  "description" : "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva analysstatus inom laboratoriemedicin. Detta urval är baserat på urvalet aktivitetsstatus med Refset-ID 56421000052109.\n\nOID: 1.2.752.129.5.1.6\nRefset-ID: 500111000057108",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-analysstatu
       "id" : "Urval-analysstatus-laboratoriemedicin",
       "path" : "Urval-analysstatus-laboratoriemedicin",
       "short" : "Urval analysstatus laboratoriemedicin  ",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Urval analysstatus laboratoriemedicin  )."
+      "definition" : "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva analysstatus inom laboratoriemedicin. Detta urval är baserat på urvalet aktivitetsstatus med Refset-ID 56421000052109.\n\nOID: 1.2.752.129.5.1.6\nRefset-ID: 500111000057108"
     }]
   }
 }

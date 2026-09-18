@@ -1,10 +1,10 @@
 XmiToFshIG : Validation Results
 =========================================
 
-err = 12, warn = 513, info = 90
+err = 13, warn = 511, info = 90
 IG Publisher Version: 2.3.4
-Generated Fri Sep 18 10:00:38 UTC 2026. FHIR version 4.0.1 for xmi.to.fsh#0.1.0 (canonical = http://example.org/fhir/xmi-to-fsh)
- Build Errors : 12 / 4 / 0
+Generated Fri Sep 18 10:31:10 UTC 2026. FHIR version 4.0.1 for xmi.to.fsh#0.1.0 (canonical = http://example.org/fhir/xmi-to-fsh)
+ Build Errors : 12 / 3 / 0
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Analysutrustning : 0 / 0 / 1
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BBasofilagranulocyterReferensintervall : 0 / 0 / 1
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BBasofilagranulocyterReferensintervall2 : 0 / 0 / 1
@@ -51,7 +51,7 @@ Generated Fri Sep 18 10:00:38 UTC 2026. FHIR version 4.0.1 for xmi.to.fsh#0.1.0 
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Analysgrupp : 0 / 0 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Analysgrupp-2 : 0 / 4 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Analysgrupp-svarsgrupp : 0 / 4 / 2
- /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Analysutrustning-Resurs : 0 / 10 / 2
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Analysutrustning-Resurs : 1 / 10 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Ansvarig-enhet-Organisation-inom-halso--och-sjukvard : 0 / 8 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-BL : 0 / 0 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-CV : 0 / 0 / 2
@@ -65,7 +65,7 @@ Generated Fri Sep 18 10:00:38 UTC 2026. FHIR version 4.0.1 for xmi.to.fsh#0.1.0 
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson : 0 / 16 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-II : 0 / 0 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-INT : 0 / 0 / 2
- /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-IVL-PQ : 0 / 5 / 2
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-IVL-PQ : 0 / 2 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Informationsmodell : 0 / 0 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-KV-befattning : 0 / 2 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-KV-kon : 0 / 2 / 2
@@ -73,7 +73,7 @@ Generated Fri Sep 18 10:00:38 UTC 2026. FHIR version 4.0.1 for xmi.to.fsh#0.1.0 
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Kopiemottagande-enhet : 0 / 6 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Laboratorieanalys-Aktivitet : 0 / 28 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard : 0 / 16 / 2
- /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Laboratorieanalysresultat-Observation : 0 / 22 / 2
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Laboratorieanalysresultat-Observation : 0 / 24 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Laboratorieanalysresultat-Observerat-halsotillstand : 0 / 14 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Laboratoriedisciplin : 0 / 0 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Laboratoriesvar-Dokument : 0 / 30 / 2
@@ -151,7 +151,6 @@ ERROR: There are multiple resources with the same title [B—Monocyter, Referens
 ERROR: There are multiple resources with the same title [B—Neutrofila granulocyter, Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
 ERROR: There are multiple resources with the same title [Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
 ERROR: There are multiple resources with the same title [Referensintervall (titer)].  This is not allowed because it produces duplicate entries in the table of contents.
-WARNING: /home/runner/work/xmi-to-fsh/xmi-to-fsh/output/en/StructureDefinition-IVL-PQ.html: Illegal HTML: illegal html element: PQ ().)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -218,6 +217,7 @@ WARNING: StructureDefinition/Analysgrupp-svarsgrupp: StructureDefinition.differe
 WARNING: StructureDefinition/Analysgrupp-svarsgrupp: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/Analysgrupp-svarsgrupp could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-Analysutrustning-Resurs.json ==
+ERROR: StructureDefinition/Analysutrustning-Resurs: StructureDefinition.snapshot: Constraint failed: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities (element.all(definition.exists() and min.exists() and max.exists()))'
 WARNING: StructureDefinition/Analysutrustning-Resurs: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Analysutrustning-Resurs: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Analysutrustning-Resurs: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -307,10 +307,7 @@ INFORMATION: Resource: The resource StructureDefinition/II could usefully have a
 == fsh-generated/resources/StructureDefinition-INT.json ==
 INFORMATION: Resource: The resource StructureDefinition/INT could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-IVL-PQ.json ==
-WARNING: StructureDefinition/IVL-PQ: StructureDefinition.description: The markdown contains content that appears to be an embedded HTML tag starting at '<P'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-WARNING: StructureDefinition/IVL-PQ: StructureDefinition.snapshot.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at '<P'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/IVL-PQ: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
-WARNING: StructureDefinition/IVL-PQ: StructureDefinition.differential.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at '<P'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/IVL-PQ: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 INFORMATION: Resource: The resource StructureDefinition/IVL-PQ could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-Informationsmodell.json ==
@@ -384,6 +381,7 @@ INFORMATION: Resource: The resource StructureDefinition/Laboratorieanalys-Aktivi
 == fsh-generated/resources/StructureDefinition-Laboratorieanalysresultat-Observation.json ==
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.snapshot.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.snapshot.element[2].definition: The markdown contains content that appears to be an embedded HTML tag starting at '<P'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.snapshot.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
@@ -395,6 +393,7 @@ WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDef
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.snapshot.element[10]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.differential.element[0]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
+WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.differential.element[2].definition: The markdown contains content that appears to be an embedded HTML tag starting at '<P'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'
 WARNING: StructureDefinition/Laboratorieanalysresultat-Observation: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken (path.matches('[A-Za-z][A-Za-z0-9]*(\\.[a-z][A-Za-z0-9]*(\\[x])?)*'))'

@@ -3,7 +3,9 @@
 ## Logical Model: Remissvar : Dokument (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Remissvar : Dokument (inom hälso- och sjukvård)). 
+Det som kommuniceras till remittenten efter att en remiss har bedömts och den remissmottagande enheten har accepterat att hantera det som frågeställningen avser. 
+Det kan röra sig om ett svar på frågeställning i remissen men också vara en redogörelse för att en eller flera önskade åtgärder har utförts. 
+ [Projektet e-remiss, "Remissvar"] 
 
 **Usages:**
 
@@ -36,7 +38,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remissvar-Dokumen
   "name" : "RemissvarDokumentinomhalsoochsjukvard",
   "title" : "Remissvar : Dokument (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remissvar-Dokumen
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Remissvar : Dokument (inom hälso- och sjukvård)).",
+  "description" : "Det som kommuniceras till remittenten efter att en remiss har bedömts och den remissmottagande enheten har accepterat att hantera det som frågeställningen avser.\n\nDet kan röra sig om ett svar på frågeställning i remissen men också vara en redogörelse för att en eller flera önskade åtgärder har utförts.   \n[Projektet e-remiss, \"Remissvar\"]",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +59,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remissvar-Dokumen
       "id" : "Remissvar-Dokument-inom-halso--och-sjukvard",
       "path" : "Remissvar-Dokument-inom-halso--och-sjukvard",
       "short" : "Remissvar : Dokument (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Remissvar : Dokument (inom hälso- och sjukvård))."
+      "definition" : "Det som kommuniceras till remittenten efter att en remiss har bedömts och den remissmottagande enheten har accepterat att hantera det som frågeställningen avser.\n\nDet kan röra sig om ett svar på frågeställning i remissen men också vara en redogörelse för att en eller flera önskade åtgärder har utförts.   \n[Projektet e-remiss, \"Remissvar\"]"
     },
     {
       "id" : "Remissvar-Dokument-inom-halso--och-sjukvard.gorsAv",

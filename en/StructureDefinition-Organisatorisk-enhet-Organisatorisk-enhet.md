@@ -3,7 +3,7 @@
 ## Logical Model: Organisatorisk enhet : Organisatorisk enhet 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisatorisk enhet). 
+Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Organisatorisk-en
   "name" : "OrganisatoriskenhetOrganisatoriskenhet",
   "title" : "Organisatorisk enhet : Organisatorisk enhet",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Organisatorisk-en
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisatorisk enhet).",
+  "description" : "Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Organisatorisk-en
       "id" : "Organisatorisk-enhet-Organisatorisk-enhet",
       "path" : "Organisatorisk-enhet-Organisatorisk-enhet",
       "short" : "Organisatorisk enhet : Organisatorisk enhet",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisatorisk enhet)."
+      "definition" : "Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation."
     },
     {
       "id" : "Organisatorisk-enhet-Organisatorisk-enhet.-id",
       "path" : "Organisatorisk-enhet-Organisatorisk-enhet._id",
       "short" : "Source attribute: id; renamed from reserved FSH name 'id'",
-      "definition" : "Source attribute: id; renamed from reserved FSH name 'id'",
+      "definition" : "Angivelse av identitetsbeteckning för den organisatoriska enheten.\n\nÄr alltid ett HSA-id.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Organisatorisk-en
       "id" : "Organisatorisk-enhet-Organisatorisk-enhet.namn",
       "path" : "Organisatorisk-enhet-Organisatorisk-enhet.namn",
       "short" : "Source attribute: namn",
-      "definition" : "Source attribute: namn",
+      "definition" : "Angivelse av namn på den organisatoriska enheten.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Organisatorisk-en
       "id" : "Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet",
       "path" : "Organisatorisk-enhet-Organisatorisk-enhet.typAvVerksamhet",
       "short" : "Source attribute: typ av verksamhet",
-      "definition" : "Source attribute: typ av verksamhet",
+      "definition" : "Kod för typ av verksamhet som den organisatoriska enheten bedriver.",
       "min" : 0,
       "max" : "*",
       "type" : [{

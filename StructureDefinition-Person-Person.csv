@@ -4,10 +4,15 @@
 "Person-Person.-id","Person-Person._id","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
 ","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Person-Person._id",0,1,"",""
 "Person-Person.namn","Person-Person.namn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: namn","Source attribute: namn","","","","","","","","","",,,,,"",,,,"Person-Person.namn",0,1,"",""
+","Source attribute: namn","Angivelse av personnamn sammanslaget enligt formatet ""Mellannamn Efternamn, Förnamn"".
+
+Om flera namn av samma typ förekommer ska dessa separeras med mellanslag.","","","","","","","","","",,,,,"",,,,"Person-Person.namn",0,1,"",""
 "Person-Person.fodelsetidpunkt","Person-Person.fodelsetidpunkt","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
-","Source attribute: födelsetidpunkt","Source attribute: födelsetidpunkt","","","","","","","","","",,,,,"",,,,"Person-Person.fodelsetidpunkt",0,1,"",""
+","Source attribute: födelsetidpunkt","Angivelse av datum och eventuell tidpunkt då patienten är född.
+
+Ska användas om patienten inte har personnummer samt i vissa fall för spädbarn. Om fullständigt födelsedatum inte är känt, anges uppskattad födelsetid. Exakt klockslag kan vara intressant för nyfödda barn, men formatet tillåter lägre precision:
+Format: SSÅÅMMDDThhmmss, SSÅÅMMDDThhmm, SSÅÅMMDD, SSÅÅMM","","","","","","","","","",,,,,"",,,,"Person-Person.fodelsetidpunkt",0,1,"",""
 "Person-Person.kon","Person-Person.kon","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: kön","Source attribute: kön","","","","","","","","","",,,,,"",,,,"Person-Person.kon",0,1,"",""
+","Source attribute: kön","Kod för patientens kön enligt folkbokföringen.","","","","","","","","","",,,,,"",,,,"Person-Person.kon",0,1,"",""
 "Person-Person.antarRollen","Person-Person.antarRollen","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Patient-Patient {[]} {[]}
 ","Source attribute: antar rollen","Source attribute: antar rollen","","","","","","","","","",,,,,"",,,,"Person-Person.antarRollen",1,1,"",""

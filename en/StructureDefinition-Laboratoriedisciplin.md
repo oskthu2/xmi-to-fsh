@@ -3,7 +3,26 @@
 ## Logical Model: Laboratoriedisciplin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Laboratoriedisciplin). 
+Disciplin som en laboratorieverksamhet kan utföra laboratorieundersökningar inom. 
+Fråga till referensgruppen: ser indelningen olika ut? Funkar det i praktiken? 
+ Klinisk kemi; Mikrobiologi … 
+2018-03-09: Jonas Svanberg:
+ Laboratoriedisciplin
+ Ursprungligen är det en indelning av medicinsk kunskap, t.ex. klinisk kemi och klinisk immunologi. Traditionellt var det också både organisatorisk indelning och utförande laboratorium. Så behöver det inte vara nu, men i beställarnas (och labbens) tankevärld finns denna indelning kvar.
+ Här behövs det (om det finns i svaret) som en tagg att sortera eller filtrera på. 
+2018-03-20: 20/3: Kan strykas i begreppsmodellen, i infomodellen nytt attribut i klassen Organisatorisk enhet. 
+Laboratoriemedicinska specialiteter 
+ Klinisk immunologi och 
+ transfusionsmedicin 
+ Klinisk kemi 
+ Klinisk mikrobiologi 
+ Klinisk patologi 
+ http://www.socialstyrelsen.se/sosfs/2015-8 
+Referensgruppsmötet 2018-03-27: Slutsats 1: Vi använder HSA-koder så länge (i HSA finns klinisk genetik som verksamhetskod, men den är där inte klassificerad som laboratorieverksamhet, vilket den borde vara enligt gruppen). 
+ Kategorisera det enskilda provet med hjälp av HSA-koderna. 
+ Kategoriseringen varierar från land till land. 
+ Listkoderna. De är nödvändiga för mikrobiologi idag. 
+ Slutsats 2: En liten arbetsgrupp (kodverksgrupp) jobbar vidare med detta. 
 
 **Usages:**
 
@@ -36,7 +55,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriediscip
   "name" : "Laboratoriedisciplin",
   "title" : "Laboratoriedisciplin",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +64,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriediscip
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Laboratoriedisciplin).",
+  "description" : "Disciplin som en laboratorieverksamhet kan utföra laboratorieundersökningar inom.\n\nFråga till referensgruppen: ser indelningen olika ut? Funkar det i praktiken?   \nKlinisk kemi; Mikrobiologi   ...\n\n2018-03-09: Jonas Svanberg:  \nLaboratoriedisciplin  \nUrsprungligen är det en indelning av medicinsk kunskap, t.ex. klinisk kemi och klinisk immunologi. Traditionellt var det också både organisatorisk indelning och utförande laboratorium. Så behöver det inte vara nu, men i beställarnas (och labbens) tankevärld finns denna indelning kvar.  \nHär behövs det (om det finns i svaret) som en tagg att sortera eller filtrera på. \n\n2018-03-20: 20/3: Kan strykas i begreppsmodellen, i infomodellen nytt attribut i klassen Organisatorisk enhet. \n\n\n Laboratoriemedicinska specialiteter   \n Klinisk immunologi och   \n transfusionsmedicin   \n Klinisk kemi   \n Klinisk mikrobiologi   \n Klinisk patologi   \n http://www.socialstyrelsen.se/sosfs/2015-8  \n\nReferensgruppsmötet 2018-03-27: \nSlutsats 1: Vi använder HSA-koder så länge (i HSA finns klinisk genetik som verksamhetskod, men den är där inte klassificerad som laboratorieverksamhet, vilket den borde vara enligt gruppen).    \nKategorisera det enskilda provet med hjälp av HSA-koderna.    \nKategoriseringen varierar från land till land.    \nListkoderna. De är nödvändiga för mikrobiologi idag.    \nSlutsats 2: En liten arbetsgrupp (kodverksgrupp) jobbar vidare med detta.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +76,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriediscip
       "id" : "Laboratoriedisciplin",
       "path" : "Laboratoriedisciplin",
       "short" : "Laboratoriedisciplin",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Laboratoriedisciplin)."
+      "definition" : "Disciplin som en laboratorieverksamhet kan utföra laboratorieundersökningar inom.\n\nFråga till referensgruppen: ser indelningen olika ut? Funkar det i praktiken?   \nKlinisk kemi; Mikrobiologi   ...\n\n2018-03-09: Jonas Svanberg:  \nLaboratoriedisciplin  \nUrsprungligen är det en indelning av medicinsk kunskap, t.ex. klinisk kemi och klinisk immunologi. Traditionellt var det också både organisatorisk indelning och utförande laboratorium. Så behöver det inte vara nu, men i beställarnas (och labbens) tankevärld finns denna indelning kvar.  \nHär behövs det (om det finns i svaret) som en tagg att sortera eller filtrera på. \n\n2018-03-20: 20/3: Kan strykas i begreppsmodellen, i infomodellen nytt attribut i klassen Organisatorisk enhet. \n\n\n Laboratoriemedicinska specialiteter   \n Klinisk immunologi och   \n transfusionsmedicin   \n Klinisk kemi   \n Klinisk mikrobiologi   \n Klinisk patologi   \n http://www.socialstyrelsen.se/sosfs/2015-8  \n\nReferensgruppsmötet 2018-03-27: \nSlutsats 1: Vi använder HSA-koder så länge (i HSA finns klinisk genetik som verksamhetskod, men den är där inte klassificerad som laboratorieverksamhet, vilket den borde vara enligt gruppen).    \nKategorisera det enskilda provet med hjälp av HSA-koderna.    \nKategoriseringen varierar från land till land.    \nListkoderna. De är nödvändiga för mikrobiologi idag.    \nSlutsats 2: En liten arbetsgrupp (kodverksgrupp) jobbar vidare med detta."
     },
     {
       "id" : "Laboratoriedisciplin.utforsInomEn",

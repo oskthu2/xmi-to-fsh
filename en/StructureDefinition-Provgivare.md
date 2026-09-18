@@ -3,7 +3,7 @@
 ## Logical Model: Provgivare 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Provgivare). 
+Person som lämnar prov. (Biobank Sverige, under revidering) 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provgivare.csv), 
   "name" : "Provgivare",
   "title" : "Provgivare",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provgivare.csv), 
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Provgivare).",
+  "description" : "Person som lämnar prov.\n(Biobank Sverige, under revidering)",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provgivare.csv), 
       "id" : "Provgivare",
       "path" : "Provgivare",
       "short" : "Provgivare",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Provgivare)."
+      "definition" : "Person som lämnar prov.\n(Biobank Sverige, under revidering)"
     },
     {
       "id" : "Provgivare.lamnar",

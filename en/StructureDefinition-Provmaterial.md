@@ -3,7 +3,8 @@
 ## Logical Model: Provmaterial 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Provmaterial). 
+Det material som ett prov består av. 
+Kan t.ex. vara kroppsvätska, vävnad … (vad är viktigt att få med i exemplen?) 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provmaterial.csv)
   "name" : "Provmaterial",
   "title" : "Provmaterial",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provmaterial.csv)
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Provmaterial).",
+  "description" : "Det material som ett prov består av.\n\nKan t.ex. vara kroppsvätska, vävnad … (vad är viktigt att få med i exemplen?)",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Provmaterial.csv)
       "id" : "Provmaterial",
       "path" : "Provmaterial",
       "short" : "Provmaterial",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Provmaterial)."
+      "definition" : "Det material som ett prov består av.\n\nKan t.ex. vara kroppsvätska, vävnad … (vad är viktigt att få med i exemplen?)"
     },
     {
       "id" : "Provmaterial.bestarAvVisst",

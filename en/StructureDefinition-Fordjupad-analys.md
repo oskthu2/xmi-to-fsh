@@ -3,7 +3,12 @@
 ## Logical Model: Fördjupad analys 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Fördjupad analys). 
+Ytterligare analys föranledd av specifikt analysresultat. 
+2018-03-14: Vi stryker denna i begreppsmodellen, det löser sig i informationsmodellen. 
+Vad är skillnad mellan fördjupad analys och konfirmationsanalys som de pratade om på mötet? Är det samma? 
+2018-03-09: Jonas Svanberg: 
+ För mig oklart begrepp. Möjligen kan man mena ”analys/undersökning som normalt inte utförs i aktuell situation”. För mig är det bara en ytterligare Fyndegenskap (8.4).
+ Eller avses ”analys som utförs pga. resultatet i beställd analys, och som inte är beställd från början”? Och behövs för att hantera den situationen? 
 
 **Usages:**
 
@@ -36,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-Fordjupad-analys.
   "name" : "Fordjupadanalys",
   "title" : "Fördjupad analys",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-Fordjupad-analys.
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Fördjupad analys).",
+  "description" : "Ytterligare analys föranledd av specifikt analysresultat. \n\n2018-03-14: Vi stryker denna i begreppsmodellen, det löser sig i informationsmodellen. \n\nVad är skillnad mellan fördjupad analys och konfirmationsanalys som de pratade om på mötet? Är det samma? \n\n2018-03-09: Jonas Svanberg:   \nFör mig oklart begrepp. Möjligen kan man mena ”analys/undersökning som normalt inte utförs i aktuell situation”. För mig är det bara en ytterligare Fyndegenskap (8.4).  \nEller avses ”analys som utförs pga. resultatet i beställd analys, och som inte är beställd från början”? Och behövs för att hantera den situationen?",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +62,7 @@ Other representations of profile: [CSV](../StructureDefinition-Fordjupad-analys.
       "id" : "Fordjupad-analys",
       "path" : "Fordjupad-analys",
       "short" : "Fördjupad analys",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Fördjupad analys)."
+      "definition" : "Ytterligare analys föranledd av specifikt analysresultat. \n\n2018-03-14: Vi stryker denna i begreppsmodellen, det löser sig i informationsmodellen. \n\nVad är skillnad mellan fördjupad analys och konfirmationsanalys som de pratade om på mötet? Är det samma? \n\n2018-03-09: Jonas Svanberg:   \nFör mig oklart begrepp. Möjligen kan man mena ”analys/undersökning som normalt inte utförs i aktuell situation”. För mig är det bara en ytterligare Fyndegenskap (8.4).  \nEller avses ”analys som utförs pga. resultatet i beställd analys, och som inte är beställd från början”? Och behövs för att hantera den situationen?"
     },
     {
       "id" : "Fordjupad-analys.arEn",

@@ -3,7 +3,7 @@
 ## Logical Model: Laboratoriesvar : Dokument 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument). 
+Klassen Laboratoriesvar håller information om laboratoriesvaret. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriesvar-D
   "name" : "LaboratoriesvarDokument",
   "title" : "Laboratoriesvar : Dokument",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriesvar-D
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument).",
+  "description" : "Klassen Laboratoriesvar håller information om laboratoriesvaret.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriesvar-D
       "id" : "Laboratoriesvar-Dokument",
       "path" : "Laboratoriesvar-Dokument",
       "short" : "Laboratoriesvar : Dokument",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument)."
+      "definition" : "Klassen Laboratoriesvar håller information om laboratoriesvaret."
     },
     {
       "id" : "Laboratoriesvar-Dokument.-id",
       "path" : "Laboratoriesvar-Dokument._id",
       "short" : "Source attribute: id; renamed from reserved FSH name 'id'",
-      "definition" : "Source attribute: id; renamed from reserved FSH name 'id'",
+      "definition" : "Angivelse av identitetsbeteckning för laboratoriesvaret.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriesvar-D
       "id" : "Laboratoriesvar-Dokument.laboratorieId",
       "path" : "Laboratoriesvar-Dokument.laboratorieId",
       "short" : "Source attribute: laboratorie-id",
-      "definition" : "Source attribute: laboratorie-id",
+      "definition" : "Angivelse av identitetsbeteckning för laboratoriets arbetsorder.\n\nBenämns även som LID.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriesvar-D
       "id" : "Laboratoriesvar-Dokument.typ",
       "path" : "Laboratoriesvar-Dokument.typ",
       "short" : "Source attribute: typ",
-      "definition" : "Source attribute: typ",
+      "definition" : "Kod för typ av laboratoriesvar.\n\nPreliminär/delsvar/slutsvar.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriesvar-D
       "id" : "Laboratoriesvar-Dokument.text",
       "path" : "Laboratoriesvar-Dokument.text",
       "short" : "Source attribute: text",
-      "definition" : "Source attribute: text",
+      "definition" : "Angivelse av utlåtande eller kommentar avseende laboratoriesvaret.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratoriesvar-D
       "id" : "Laboratoriesvar-Dokument.svarstidpunkt",
       "path" : "Laboratoriesvar-Dokument.svarstidpunkt",
       "short" : "Source attribute: svarstidpunkt",
-      "definition" : "Source attribute: svarstidpunkt",
+      "definition" : "Angivelse av den tidpunkt då laboratoriesvaret skapades.",
       "min" : 1,
       "max" : "1",
       "type" : [{

@@ -1,2 +1,5 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"Urval-analysstatus-laboratoriemedicin","Urval-analysstatus-laboratoriemedicin","","","",0,*,"","","","","Urval analysstatus laboratoriemedicin  ","Supporting logical model generated from gloo4.xmi (source class: Urval analysstatus laboratoriemedicin  ).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-analysstatus-laboratoriemedicin","Urval-analysstatus-laboratoriemedicin","","","",0,*,"","","","","Urval analysstatus laboratoriemedicin  ","Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva analysstatus inom laboratoriemedicin. Detta urval är baserat på urvalet aktivitetsstatus med Refset-ID 56421000052109.
+
+OID: 1.2.752.129.5.1.6
+Refset-ID: 500111000057108","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""

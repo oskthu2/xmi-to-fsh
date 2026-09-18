@@ -3,7 +3,10 @@
 ## Logical Model: Laboratorieanalysresultat : Observerat hälsotillstånd 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observerat hälsotillstånd). 
+Resultat av en laboratorieanalys. 
+Ett laboratorieanalysresultat kan utgöras av t.ex. ett fynd (som har sina egenskaper) eller ett mätvärde.
+ Exempel på fynd är en viss bakterieart eller en viss typ av virus. 
+ Exempel på ett fynds egenskaper är serotyp, subserotyp och koncentration. 
 
 **Usages:**
 
@@ -36,7 +39,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
   "name" : "LaboratorieanalysresultatObserverathalsotillstand",
   "title" : "Laboratorieanalysresultat : Observerat hälsotillstånd",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +48,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observerat hälsotillstånd).",
+  "description" : "Resultat av en laboratorieanalys. \n \nEtt laboratorieanalysresultat kan utgöras av t.ex. ett fynd (som har sina egenskaper) eller ett mätvärde.  \nExempel på fynd är en viss bakterieart eller en viss typ av virus.   \nExempel på ett fynds egenskaper är serotyp, subserotyp och koncentration.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +60,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalysresultat-Observerat-halsotillstand",
       "path" : "Laboratorieanalysresultat-Observerat-halsotillstand",
       "short" : "Laboratorieanalysresultat : Observerat hälsotillstånd",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observerat hälsotillstånd)."
+      "definition" : "Resultat av en laboratorieanalys. \n \nEtt laboratorieanalysresultat kan utgöras av t.ex. ett fynd (som har sina egenskaper) eller ett mätvärde.  \nExempel på fynd är en viss bakterieart eller en viss typ av virus.   \nExempel på ett fynds egenskaper är serotyp, subserotyp och koncentration."
     },
     {
       "id" : "Laboratorieanalysresultat-Observerat-halsotillstand.gallerFor",

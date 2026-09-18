@@ -3,7 +3,8 @@
 ## Logical Model: Remiss : Dokument (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument (inom hälso- och sjukvård)). 
+Vårdbegäran som utgör beställning av tjänst eller begäran om övertagande av medicinskt ansvar för en patient. 
+En remiss kan vid utfärdandet ha en tilltänkt remissmottagande enhet eller så kan patienten få möjlighet att på egen hand välja remissmottagande/utförande enhet i efterhand. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument-i
   "name" : "RemissDokumentinomhalsoochsjukvard",
   "title" : "Remiss : Dokument (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument-i
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument (inom hälso- och sjukvård)).",
+  "description" : "Vårdbegäran som utgör beställning av tjänst eller begäran om övertagande av medicinskt ansvar för en patient.\n\nEn remiss kan vid utfärdandet ha en tilltänkt remissmottagande enhet eller så kan patienten få möjlighet att på egen hand välja remissmottagande/utförande enhet i efterhand.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument-i
       "id" : "Remiss-Dokument-inom-halso--och-sjukvard",
       "path" : "Remiss-Dokument-inom-halso--och-sjukvard",
       "short" : "Remiss : Dokument (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument (inom hälso- och sjukvård))."
+      "definition" : "Vårdbegäran som utgör beställning av tjänst eller begäran om övertagande av medicinskt ansvar för en patient.\n\nEn remiss kan vid utfärdandet ha en tilltänkt remissmottagande enhet eller så kan patienten få möjlighet att på egen hand välja remissmottagande/utförande enhet i efterhand."
     },
     {
       "id" : "Remiss-Dokument-inom-halso--och-sjukvard.skapar",

@@ -3,7 +3,7 @@
 ## Logical Model: BL 
 
  
-Supporting logical model generated from gloo4.xmi (source class: BL). 
+Booleskt värde 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-BL.csv), [Excel](
   "name" : "BL",
   "title" : "BL",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-BL.csv), [Excel](
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: BL).",
+  "description" : "Booleskt värde",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-BL.csv), [Excel](
       "id" : "BL",
       "path" : "BL",
       "short" : "BL",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: BL)."
+      "definition" : "Booleskt värde"
     }]
   }
 }

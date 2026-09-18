@@ -3,7 +3,7 @@
 ## Logical Model: CV 
 
  
-Supporting logical model generated from gloo4.xmi (source class: CV). 
+Kodade värden 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-CV.csv), [Excel](
   "name" : "CV",
   "title" : "CV",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-CV.csv), [Excel](
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: CV).",
+  "description" : "Kodade värden",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-CV.csv), [Excel](
       "id" : "CV",
       "path" : "CV",
       "short" : "CV",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: CV)."
+      "definition" : "Kodade värden"
     }]
   }
 }

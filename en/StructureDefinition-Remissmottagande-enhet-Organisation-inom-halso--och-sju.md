@@ -3,7 +3,7 @@
 ## Logical Model: Remissmottagande enhet : Organisation (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Remissmottagande enhet : Organisation (inom hälso- och sjukvård)). 
+Den organisatoriska enhet som utför klinisk bedömning av inkommen remiss samt utför det remissen avser. [E-remiss] 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remissmottagande-
   "name" : "RemissmottagandeenhetOrganisationinomhalsoochsjukvard",
   "title" : "Remissmottagande enhet : Organisation (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remissmottagande-
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Remissmottagande enhet : Organisation (inom hälso- och sjukvård)).",
+  "description" : "Den organisatoriska enhet som utför klinisk bedömning av inkommen remiss samt utför det remissen avser.\n[E-remiss]",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remissmottagande-
       "id" : "Remissmottagande-enhet-Organisation-inom-halso--och-sju",
       "path" : "Remissmottagande-enhet-Organisation-inom-halso--och-sju",
       "short" : "Remissmottagande enhet : Organisation (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Remissmottagande enhet : Organisation (inom hälso- och sjukvård))."
+      "definition" : "Den organisatoriska enhet som utför klinisk bedömning av inkommen remiss samt utför det remissen avser.\n[E-remiss]"
     },
     {
       "id" : "Remissmottagande-enhet-Organisation-inom-halso--och-sju.arEn",

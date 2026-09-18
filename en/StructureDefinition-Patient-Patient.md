@@ -3,7 +3,7 @@
 ## Logical Model: Patient : Patient 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Patient : Patient). 
+Klassen Patient håller information om en person som erhåller eller är registrerad för att erhålla hälso- och sjukvård. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Patient-Patient.c
   "name" : "PatientPatient",
   "title" : "Patient : Patient",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Patient-Patient.c
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Patient : Patient).",
+  "description" : "Klassen Patient håller information om en person som erhåller eller är registrerad för att erhålla hälso- och sjukvård.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Patient-Patient.c
       "id" : "Patient-Patient",
       "path" : "Patient-Patient",
       "short" : "Patient : Patient",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Patient : Patient)."
+      "definition" : "Klassen Patient håller information om en person som erhåller eller är registrerad för att erhålla hälso- och sjukvård."
     },
     {
       "id" : "Patient-Patient.-id",
       "path" : "Patient-Patient._id",
       "short" : "Source attribute: id; renamed from reserved FSH name 'id'",
-      "definition" : "Source attribute: id; renamed from reserved FSH name 'id'",
+      "definition" : "Angivelse av identitetsbeteckning för patient.\n\nDetta kan vara av typen personnummer, samordningsnummer eller reservnummer.",
       "min" : 0,
       "max" : "1",
       "type" : [{

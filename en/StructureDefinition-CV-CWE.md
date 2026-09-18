@@ -3,7 +3,7 @@
 ## Logical Model: CV CWE 
 
  
-Supporting logical model generated from gloo4.xmi (source class: CV CWE). 
+Kodade värden som tillåter text som alternativ. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-CV-CWE.csv), [Exc
   "name" : "CVCWE",
   "title" : "CV CWE",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-CV-CWE.csv), [Exc
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: CV CWE).",
+  "description" : "Kodade värden som tillåter text som alternativ.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-CV-CWE.csv), [Exc
       "id" : "CV-CWE",
       "path" : "CV-CWE",
       "short" : "CV CWE",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: CV CWE)."
+      "definition" : "Kodade värden som tillåter text som alternativ."
     }]
   }
 }

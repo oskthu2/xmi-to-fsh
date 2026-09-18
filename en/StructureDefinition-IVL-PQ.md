@@ -3,7 +3,7 @@
 ## Logical Model: IVL<PQ> 
 
  
-Supporting logical model generated from gloo4.xmi (source class: IVL). 
+Interval av PQ 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-IVL-PQ.csv), [Exc
   "name" : "IVLPQ",
   "title" : "IVL<PQ>",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-IVL-PQ.csv), [Exc
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: IVL<PQ>).",
+  "description" : "Interval av PQ",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-IVL-PQ.csv), [Exc
       "id" : "IVL-PQ",
       "path" : "IVL-PQ",
       "short" : "IVL<PQ>",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: IVL<PQ>)."
+      "definition" : "Interval av PQ"
     }]
   }
 }

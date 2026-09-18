@@ -3,7 +3,7 @@
 ## Logical Model: Analysgrupp 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Analysgrupp). 
+Klassen Analysgrupp grupperar ett antal analyser som utförs på ett eller flera prov från samma patient och som man väljer att betrakta som en enhet. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp.csv),
   "name" : "Analysgrupp",
   "title" : "Analysgrupp",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp.csv),
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp).",
+  "description" : "Klassen Analysgrupp grupperar ett antal analyser som utförs på ett eller flera prov från samma patient och som man väljer att betrakta som en enhet.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp.csv),
       "id" : "Analysgrupp",
       "path" : "Analysgrupp",
       "short" : "Analysgrupp",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp)."
+      "definition" : "Klassen Analysgrupp grupperar ett antal analyser som utförs på ett eller flera prov från samma patient och som man väljer att betrakta som en enhet."
     },
     {
       "id" : "Analysgrupp.namn",
       "path" : "Analysgrupp.namn",
       "short" : "Source attribute: namn",
-      "definition" : "Source attribute: namn",
+      "definition" : "Angivelse av namn eller benämning på en analysgrupp",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp.csv),
       "id" : "Analysgrupp.listkod",
       "path" : "Analysgrupp.listkod",
       "short" : "Source attribute: listkod",
-      "definition" : "Source attribute: listkod",
+      "definition" : "Kod för en analysgrupp.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp.csv),
       "id" : "Analysgrupp.gruppkommentar",
       "path" : "Analysgrupp.gruppkommentar",
       "short" : "Source attribute: gruppkommentar",
-      "definition" : "Source attribute: gruppkommentar",
+      "definition" : "Angivelse av kommentar för hela analysgruppen.",
       "min" : 0,
       "max" : "1",
       "type" : [{

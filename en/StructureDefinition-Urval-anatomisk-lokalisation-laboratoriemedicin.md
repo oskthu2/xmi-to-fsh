@@ -3,7 +3,8 @@
 ## Logical Model: Urval anatomisk lokalisation laboratoriemedicin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Urval anatomisk lokalisation laboratoriemedicin). 
+Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva anatomisk lokalisation inom laboratoriemedicin. 
+OID: 1.2.752.129.5.1.7 Refset-ID: 500091000057101 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-anatomisk-l
   "name" : "Urvalanatomisklokalisationlaboratoriemedicin",
   "title" : "Urval anatomisk lokalisation laboratoriemedicin",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-anatomisk-l
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Urval anatomisk lokalisation laboratoriemedicin).",
+  "description" : "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva anatomisk lokalisation inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.7\nRefset-ID: 500091000057101",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-anatomisk-l
       "id" : "Urval-anatomisk-lokalisation-laboratoriemedicin",
       "path" : "Urval-anatomisk-lokalisation-laboratoriemedicin",
       "short" : "Urval anatomisk lokalisation laboratoriemedicin",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Urval anatomisk lokalisation laboratoriemedicin)."
+      "definition" : "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva anatomisk lokalisation inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.7\nRefset-ID: 500091000057101"
     }]
   }
 }

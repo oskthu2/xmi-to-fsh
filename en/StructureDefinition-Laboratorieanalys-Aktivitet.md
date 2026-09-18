@@ -3,7 +3,7 @@
 ## Logical Model: Laboratorieanalys : Aktivitet 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet). 
+Klassen Laboratorieanalys håller information om en analys 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
   "name" : "LaboratorieanalysAktivitet",
   "title" : "Laboratorieanalys : Aktivitet",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet).",
+  "description" : "Klassen Laboratorieanalys håller information om en analys",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalys-Aktivitet",
       "path" : "Laboratorieanalys-Aktivitet",
       "short" : "Laboratorieanalys : Aktivitet",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet)."
+      "definition" : "Klassen Laboratorieanalys håller information om en analys"
     },
     {
       "id" : "Laboratorieanalys-Aktivitet.-id",
       "path" : "Laboratorieanalys-Aktivitet._id",
       "short" : "Source attribute: id; renamed from reserved FSH name 'id'",
-      "definition" : "Source attribute: id; renamed from reserved FSH name 'id'",
+      "definition" : "Angivelse av identitetsbeteckning för en laboratorieanalys.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalys-Aktivitet.status",
       "path" : "Laboratorieanalys-Aktivitet.status",
       "short" : "Source attribute: status",
-      "definition" : "Source attribute: status",
+      "definition" : "Kod för analysens status.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalys-Aktivitet.kod",
       "path" : "Laboratorieanalys-Aktivitet.kod",
       "short" : "Source attribute: kod",
-      "definition" : "Source attribute: kod",
+      "definition" : "Kod för den typ av analys som utförts.\n\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalys-Aktivitet.tid",
       "path" : "Laboratorieanalys-Aktivitet.tid",
       "short" : "Source attribute: tid",
-      "definition" : "Source attribute: tid",
+      "definition" : "Angivelse av tidpunkt då analysen utfördes.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalys-Aktivitet.metod",
       "path" : "Laboratorieanalys-Aktivitet.metod",
       "short" : "Source attribute: metod",
-      "definition" : "Source attribute: metod",
+      "definition" : "Kod för den typ av tillvägagångssätt för utförandet av analysen som avses.\n\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -118,7 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalys-Aktivitet.kommentar",
       "path" : "Laboratorieanalys-Aktivitet.kommentar",
       "short" : "Source attribute: kommentar",
-      "definition" : "Source attribute: kommentar",
+      "definition" : "Angivelse av kommentar för en enskild analys.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -129,7 +129,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalys-Aktivitet.ackrediteradMetod",
       "path" : "Laboratorieanalys-Aktivitet.ackrediteradMetod",
       "short" : "Source attribute: ackrediterad metod",
-      "definition" : "Source attribute: ackrediterad metod",
+      "definition" : "Angivelse av om analysmetoden är ackrediterad eller inte.",
       "min" : 0,
       "max" : "1",
       "type" : [{

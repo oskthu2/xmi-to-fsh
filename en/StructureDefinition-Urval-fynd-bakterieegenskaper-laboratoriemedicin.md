@@ -3,7 +3,8 @@
 ## Logical Model: Urval fynd bakterieegenskaper laboratoriemedicin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Urval fynd bakterieegenskaper laboratoriemedicin ). 
+Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av undersökning av egenskaper av bakterier som inte utgör släkte eller art inom laboratoriemedicin. 
+OID: 1.2.752.129.5.1.8 Refset-ID: 500101000057105 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-bakter
   "name" : "Urvalfyndbakterieegenskaperlaboratoriemedicin",
   "title" : "Urval fynd bakterieegenskaper laboratoriemedicin ",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-bakter
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Urval fynd bakterieegenskaper laboratoriemedicin ).",
+  "description" : "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av undersökning av egenskaper av bakterier som inte utgör släkte eller art inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.8\nRefset-ID: 500101000057105",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-bakter
       "id" : "Urval-fynd-bakterieegenskaper-laboratoriemedicin",
       "path" : "Urval-fynd-bakterieegenskaper-laboratoriemedicin",
       "short" : "Urval fynd bakterieegenskaper laboratoriemedicin ",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Urval fynd bakterieegenskaper laboratoriemedicin )."
+      "definition" : "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av undersökning av egenskaper av bakterier som inte utgör släkte eller art inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.8\nRefset-ID: 500101000057105"
     }]
   }
 }

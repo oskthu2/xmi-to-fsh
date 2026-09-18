@@ -3,7 +3,8 @@
 ## Logical Model: Urval analyskoder laboratoriemedicin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Urval analyskoder laboratoriemedicin). 
+Kod för den typ av analys som utförts. Urval från NPU. 
+OID: 1.2.752.108.1.1 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-analyskoder
   "name" : "Urvalanalyskoderlaboratoriemedicin",
   "title" : "Urval analyskoder laboratoriemedicin",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-analyskoder
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Urval analyskoder laboratoriemedicin).",
+  "description" : "Kod för den typ av analys som utförts.   Urval från NPU.\n\nOID: 1.2.752.108.1.1",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-analyskoder
       "id" : "Urval-analyskoder-laboratoriemedicin",
       "path" : "Urval-analyskoder-laboratoriemedicin",
       "short" : "Urval analyskoder laboratoriemedicin",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Urval analyskoder laboratoriemedicin)."
+      "definition" : "Kod för den typ av analys som utförts.   Urval från NPU.\n\nOID: 1.2.752.108.1.1"
     }]
   }
 }

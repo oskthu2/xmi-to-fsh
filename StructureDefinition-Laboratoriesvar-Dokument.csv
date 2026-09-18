@@ -1,16 +1,20 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "Laboratoriesvar-Dokument","Laboratoriesvar-Dokument","","","",0,*,"","","","null {[]} {[]}
-","Laboratoriesvar : Dokument","Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Laboratoriesvar : Dokument","Klassen Laboratoriesvar håller information om laboratoriesvaret.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratoriesvar-Dokument.-id","Laboratoriesvar-Dokument._id","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: id; renamed from reserved FSH name 'id'","Source attribute: id; renamed from reserved FSH name 'id'","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument._id",1,1,"",""
+","Source attribute: id; renamed from reserved FSH name 'id'","Angivelse av identitetsbeteckning för laboratoriesvaret.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument._id",1,1,"",""
 "Laboratoriesvar-Dokument.laboratorieId","Laboratoriesvar-Dokument.laboratorieId","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/II {[]} {[]}
-","Source attribute: laboratorie-id","Source attribute: laboratorie-id","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.laboratorieId",0,1,"",""
+","Source attribute: laboratorie-id","Angivelse av identitetsbeteckning för laboratoriets arbetsorder.
+
+Benämns även som LID.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.laboratorieId",0,1,"",""
 "Laboratoriesvar-Dokument.typ","Laboratoriesvar-Dokument.typ","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
-","Source attribute: typ","Source attribute: typ","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.typ",1,1,"",""
+","Source attribute: typ","Kod för typ av laboratoriesvar.
+
+Preliminär/delsvar/slutsvar.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.typ",1,1,"",""
 "Laboratoriesvar-Dokument.text","Laboratoriesvar-Dokument.text","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
-","Source attribute: text","Source attribute: text","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.text",0,1,"",""
+","Source attribute: text","Angivelse av utlåtande eller kommentar avseende laboratoriesvaret.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.text",0,1,"",""
 "Laboratoriesvar-Dokument.svarstidpunkt","Laboratoriesvar-Dokument.svarstidpunkt","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/TS {[]} {[]}
-","Source attribute: svarstidpunkt","Source attribute: svarstidpunkt","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.svarstidpunkt",1,1,"",""
+","Source attribute: svarstidpunkt","Angivelse av den tidpunkt då laboratoriesvaret skapades.","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.svarstidpunkt",1,1,"",""
 "Laboratoriesvar-Dokument.arAnsvarigForInnehalletI","Laboratoriesvar-Dokument.arAnsvarigForInnehalletI","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet {[]} {[]}
 ","Source attribute: är ansvarig för innehållet i","Source attribute: är ansvarig för innehållet i","","","","","","","","","",,,,,"",,,,"Laboratoriesvar-Dokument.arAnsvarigForInnehalletI",1,1,"",""
 "Laboratoriesvar-Dokument.harSvarsmottagande","Laboratoriesvar-Dokument.harSvarsmottagande","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet {[]} {[]}

@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "XmiToFshIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Logical Models from Visual Paradigm XMI"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-18T09:59:15+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-18T10:29:51+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "xmi-to-fsh"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
@@ -735,7 +735,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Analysgrupp" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysgrupp" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Analysgrupp grupperar ett antal analyser som utförs på ett eller flera prov från samma patient och som man väljer att betrakta som en enhet." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3 ;
@@ -749,7 +749,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Analysgrupp-2" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysgrupp" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Grupp av analyser utförda på ett eller flera prov från samma provgivare och som man väljer att betrakta som en enhet." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4 ;
@@ -763,7 +763,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Analysgrupp-svarsgrupp" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysgrupp (svarsgrupp)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp (svarsgrupp))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sökning på google visar att ”analysgrupp” verkar avse en grupp av personer som ska analysera något. Och ”svarsgrupp” tycks ha med telefoni att göra. Detta kanske är något informatiskt som inte behöver förklaras i en begreppsmodell? \n\nEller \"Grupp av analyser utförda på ett och samma prov\"? Stämmer det att det är ett och samma prov? I informationsmodellen står det att analysgrupp kan avse 0 till många prov, men i beskrivningen till klassen Analysgrupp står att denna grupperar ett antal analyser som utförs på ett prov. \n\n2018-03-14: Vi stryker denna i begreppsmodellen, det löser man i informationsmodellen (gruppkommentar e.d.). \n\nAnalysgrupp  \nDet kan vara ett eller flera prov. Exempel: påvisande av antikroppar mot Borrelia i både blod och cerebrospinalvätska.  \nObservera att olika landsting kan ha löst detta på olika sätt. Man kan av tekniska skäl tvingas ha en analysgrupp som en enda ”vanlig” analys. Och det kan vara tvärtom: labbet hanterar analyserna som en grupp, men av tekniska skäl måste de ingående analyserna svaras ut en och en." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5 ;
@@ -798,7 +798,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Analysutrustning-Resurs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysutrustning : Resurs" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Analysutrustning : Resurs)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Analysutrustning håller information om den utrustning som använts för att utföra en analys." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7 ;
@@ -812,7 +812,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Ansvarig-enhet-Organisation-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ansvarig enhet : Organisation (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Ansvarig enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den enhet som ansvarar för innehållet i laboratoriesvaret." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8 ;
@@ -826,7 +826,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/BL" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BL" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: BL)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Booleskt värde" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9 ;
@@ -1176,7 +1176,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/CV" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CV" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: CV)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Kodade värden" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 26 ;
@@ -1190,7 +1190,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/CV-CWE" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CV CWE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: CV CWE)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Kodade värden som tillåter text som alternativ." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 27 ;
@@ -1204,7 +1204,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Delsvar-Dokument-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Delsvar : Dokument (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Delsvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Svar som innehåller resultat från en eller flera analyser där alla beställda analyser ännu inte är slutligt besvarade.\n\nDen remissvarsmottagande enheten ska förvänta sig ytterligare svar tills samtliga beställda analyser är utförda och slutligt besvarade.\n\nEn typ av delsvar är preliminärsvar, som innehåller minst ett resultat från en analys som ännu inte är avslutad." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 28 ;
@@ -1218,7 +1218,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/FHIR-Diagnostic-Report-Status" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "FHIR Diagnostic Report Status " ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: FHIR Diagnostic Report Status )." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Value set från FHIR som specificerar typen av provsvar\nOID: 2.16.840.1.113883.4.642.3.235\nhttp://hl7.org/fhir/ValueSet/diagnostic-report-status" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 29 ;
@@ -1232,7 +1232,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Fordjupad-analys" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Fördjupad analys" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Fördjupad analys)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ytterligare analys föranledd av specifikt analysresultat. \n\n2018-03-14: Vi stryker denna i begreppsmodellen, det löser sig i informationsmodellen. \n\nVad är skillnad mellan fördjupad analys och konfirmationsanalys som de pratade om på mötet? Är det samma? \n\n2018-03-09: Jonas Svanberg:   \nFör mig oklart begrepp. Möjligen kan man mena ”analys/undersökning som normalt inte utförs i aktuell situation”. För mig är det bara en ytterligare Fyndegenskap (8.4).  \nEller avses ”analys som utförs pga. resultatet i beställd analys, och som inte är beställd från början”? Och behövs för att hantera den situationen?" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 30 ;
@@ -1260,7 +1260,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/HSA-verksamhetskod" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "HSA verksamhetskod" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: HSA verksamhetskod)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Kod för typ av verksamhet som den organisatoriska enheten bedriver.\n\nOID: 1.2.752.129.2.2.1.3" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 32 ;
@@ -1274,7 +1274,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen hälso- och sjukvårdspersonal håller information om person som i sitt yrke utför hälso- och sjukvård.\nHälso- och sjukvårdspersonal är oftast anställd av en vårdgivare. En vårdgivare kan ha anställd hälso- och sjukvårdspersonal, och ibland, som till exempel för enskild näringsidkare, kan rollerna sammanfalla." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 33 ;
@@ -1288,7 +1288,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/II" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "II" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: II)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Unik Identifierare" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 34 ;
@@ -1316,7 +1316,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/INT" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "INT" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: INT)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ental" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 36 ;
@@ -1330,7 +1330,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/IVL-PQ" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "IVL<PQ>" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: IVL<PQ>)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Interval av PQ" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 37 ;
@@ -1344,7 +1344,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Kontaktinformation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kontaktinformation" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Kontaktinformation)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Kontaktinformation håller information om vart eller till vem vården kan vända sig vid frågor om laboratoriesvaret." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 38 ;
@@ -1358,7 +1358,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Kopiemottagande-enhet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kopiemottagande enhet" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Kopiemottagande enhet)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den organisatoriska enhet som tar emot en kopia av laboratoriesvaret.  \n   \nEller ”… av remissvaret”, om detta ska vara generellt. I projektet e-remiss finns ingen kopiemottagare, är det något speciellt för laboratorieremisser? \n\n2018-03-14: Vi stryker denna ur begreppsmodellen, svarskopia är inget unikt för labbremisser.\n\n2018-03-09: Jonas Svanberg:  \nKopiemottagande enhet  \nNej, svarskopia är inget unikt för labbremisser. Det är en kvarleva från papperstiden, då det var lätt att ta en kopia (på vad som helst) och skicka till någon annan.  \nDet förekommer säkert hos vissa landsting, men vanligast är nog att det bara finns ett svar." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 39 ;
@@ -1372,7 +1372,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/KV-befattning" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "KV befattning" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: KV befattning)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Innehåller ingormation om en vård- och sjukvårdspersonals befattning.\n\nOID: 1.2.752.129.2.2.1.4" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 40 ;
@@ -1386,7 +1386,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/KV-kon" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "KV kön" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: KV kön)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Anger administrativt kön\n\nOID: 1.2.752.129.2.2.1.1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 41 ;
@@ -1400,7 +1400,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratorieanalys-Aktivitet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorieanalys : Aktivitet" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Laboratorieanalys håller information om en analys" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 42 ;
@@ -1414,7 +1414,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bestämning av egenskaper hos prov, t.ex. artbestämning, fysikaliska och kemiska egenskaper." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 43 ;
@@ -1428,7 +1428,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratorieanalysresultat-Observation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorieanalysresultat : Observation" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observation)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Laboratorieanalysresultat håller information om resultat av en utförd analys.\n\nDetta resultat kan exempelvis bestå av ett mätvärde inom laboratoriedisciplinen kemi, ett fynd av en viss bakterieart eller en textuell beskrivning av analysresultatet. Utöver detta kan en kommentar avseende analysresultatet anges separat." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 44 ;
@@ -1442,7 +1442,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratorieanalysresultat : Observerat hälsotillstånd" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observerat hälsotillstånd)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Resultat av en laboratorieanalys. \n \nEtt laboratorieanalysresultat kan utgöras av t.ex. ett fynd (som har sina egenskaper) eller ett mätvärde.  \nExempel på fynd är en viss bakterieart eller en viss typ av virus.   \nExempel på ett fynds egenskaper är serotyp, subserotyp och koncentration." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 45 ;
@@ -1456,7 +1456,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratoriedisciplin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratoriedisciplin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratoriedisciplin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Disciplin som en laboratorieverksamhet kan utföra laboratorieundersökningar inom.\n\nFråga till referensgruppen: ser indelningen olika ut? Funkar det i praktiken?   \nKlinisk kemi; Mikrobiologi   ...\n\n2018-03-09: Jonas Svanberg:  \nLaboratoriedisciplin  \nUrsprungligen är det en indelning av medicinsk kunskap, t.ex. klinisk kemi och klinisk immunologi. Traditionellt var det också både organisatorisk indelning och utförande laboratorium. Så behöver det inte vara nu, men i beställarnas (och labbens) tankevärld finns denna indelning kvar.  \nHär behövs det (om det finns i svaret) som en tagg att sortera eller filtrera på. \n\n2018-03-20: 20/3: Kan strykas i begreppsmodellen, i infomodellen nytt attribut i klassen Organisatorisk enhet. \n\n\n Laboratoriemedicinska specialiteter   \n Klinisk immunologi och   \n transfusionsmedicin   \n Klinisk kemi   \n Klinisk mikrobiologi   \n Klinisk patologi   \n http://www.socialstyrelsen.se/sosfs/2015-8  \n\nReferensgruppsmötet 2018-03-27: \nSlutsats 1: Vi använder HSA-koder så länge (i HSA finns klinisk genetik som verksamhetskod, men den är där inte klassificerad som laboratorieverksamhet, vilket den borde vara enligt gruppen).    \nKategorisera det enskilda provet med hjälp av HSA-koderna.    \nKategoriseringen varierar från land till land.    \nListkoderna. De är nödvändiga för mikrobiologi idag.    \nSlutsats 2: En liten arbetsgrupp (kodverksgrupp) jobbar vidare med detta." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 46 ;
@@ -1470,7 +1470,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratoriesvar-Dokument" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratoriesvar : Dokument" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Laboratoriesvar håller information om laboratoriesvaret." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 47 ;
@@ -1484,7 +1484,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Laboratoriesvar : Dokument (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Remissvar som avser laboratorieanalysresultat." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 48 ;
@@ -1498,7 +1498,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Mikroorganism" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mikroorganism" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Mikroorganism)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Levande, nästan alltid encellig varelse som är så liten att den inte kan ses med blotta ögat.\n\nDet finns fyra huvudgrupper: bakterier, svampar, virus och parasiter." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 49 ;
@@ -1512,7 +1512,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Malpopulation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Målpopulation" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Målpopulation)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den grupp man undersöker." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 50 ;
@@ -1526,7 +1526,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/NPU" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "NPU" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: NPU)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "NPU-systemet (Nomenclature of properties and units) är ett register med systematiska, unika benämningar och koder för laboratorieundersökningar." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 51 ;
@@ -1540,7 +1540,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organisatorisk enhet : Organisation (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Formellt bildad enhet som tillhör en organisation." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 52 ;
@@ -1554,7 +1554,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organisatorisk enhet : Organisatorisk enhet" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisatorisk enhet)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 53 ;
@@ -1596,7 +1596,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-Patient" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient : Patient" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Patient : Patient)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Patient håller information om en person som erhåller eller är registrerad för att erhålla hälso- och sjukvård." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 56 ;
@@ -1638,7 +1638,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/PQ" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "PQ" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: PQ)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Värde samt enhet enligt unified codes for units of measure (UCUM)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 59 ;
@@ -1652,7 +1652,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Preliminarsvar-Dokument-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Preliminärsvar : Dokument (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Preliminärsvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Delsvar som innehåller minst ett resultat från en analys som ännu inte är avslutad.\n\nDen remissvarsmottagande enheten ska förvänta sig ytterligare svar efter ett preliminärsvar och har fortfarande ett ansvar att bevaka detta till dess ett slutsvar har mottagits." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 60 ;
@@ -1666,7 +1666,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Presentationsformat" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Presentationsformat" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Presentationsformat)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Typ av filformat för svaret. \n[Så står det nu i informationsmodellen, klassen Svar, attributet \"presentationsformat\". Detta behöver knappast finnas med i begreppsmodellen.]\n\n\n\nDokument som innehåller den visuella presentationen av laboratoriesvaret.  \n   \nMen jfr projektet e-remiss, där finns bilaga:  \nDokument som kompletterar ett annat dokument och är avsett att användas tillsammans med detta.   \n   \nExempelvis utdrag ur patientjournal, en bild eller liknande som biläggs remissen, eller remissvaret.  \n   \nÄr presentation något annat än bilaga?" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 61 ;
@@ -1680,7 +1680,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Prov-Resurs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prov : Resurs" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Prov håller information om ett prov." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 62 ;
@@ -1694,7 +1694,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prov : Resurs (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "(inom hälso- och sjukvården:) humanbiologiskt material som tagits från en levande eller avliden person eller ett foster i syfte att erhålla information om den som provet härrör från (Biobanksordlistan, under rev.)\nExempel på humanbiologiskt material är vävnad och kroppsvätskor som blod, urin, sekret." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 63 ;
@@ -1722,7 +1722,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Provbehallare-Resurs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provbehållare : Resurs" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provbehållare : Resurs)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Provbehållare håller information om den eller de provbehållare som provet förvaras i." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 65 ;
@@ -1736,7 +1736,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Provgivare" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provgivare" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provgivare)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Person som lämnar prov.\n(Biobank Sverige, under revidering)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 66 ;
@@ -1750,7 +1750,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Provmaterial" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provmaterial" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provmaterial)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Det material som ett prov består av.\n\nKan t.ex. vara kroppsvätska, vävnad … (vad är viktigt att få med i exemplen?)" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 67 ;
@@ -1764,7 +1764,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Provrelaterad-aktivitet-Aktivitet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provrelaterad aktivitet: Aktivitet" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provrelaterad aktivitet: Aktivitet)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Provrelaterad aktivitet håller information om aktiviteter relaterade till hantering av prov.\nInkluderar även t.ex. aktiviteter i samband med transport, frysning, förvaring, bearbetning och delning i sekundärprov." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 68 ;
@@ -1778,7 +1778,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Provtagningsmetod" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provtagningsmetod" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Provtagningsmetod)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tillvägagångssätt för utförande av provtagning.\n\nEn vanlig synonym är provtagningsteknik." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 69 ;
@@ -2002,7 +2002,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Referens" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referens" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referens)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Referens håller information om vilket referensintervall eller referensvärde som gäller för ett resultat." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 80 ;
@@ -2030,7 +2030,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Referensintervall" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referensintervall)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Det intervall som värden för ett fysiologiskt mätvärde hos  en referenspopulation   med e  n   given sannolikhet  ligger inom för den givna typen av analys med den givna metoden.\n\nReferensintervallet utgör en bas för jämförelse (en referensram) för att tolka ett analysresultat för en viss patient." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 82 ;
@@ -2373,7 +2373,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Referenspopulation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referenspopulation" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referenspopulation)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den grupp man jämför med målpopulationen.\n\nReferenspopulationen måste stämma överens med målpopulationen i fråga om ålder, kön och sådana saker som spelar roll i sammanhanget." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 99 ;
@@ -2387,7 +2387,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Referensvarde" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensvärde" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referensvärde)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ö  verenskommet värde   hos egenskap   mot vilket kan jämföras uppmätta eller observerade värden  ." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 100 ;
@@ -2401,7 +2401,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Remiss-Dokument" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remiss : Dokument" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Remiss håller information om den remiss som ligger till grund för svaret." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 101 ;
@@ -2415,7 +2415,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remiss : Dokument (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vårdbegäran som utgör beställning av tjänst eller begäran om övertagande av medicinskt ansvar för en patient.\n\nEn remiss kan vid utfärdandet ha en tilltänkt remissmottagande enhet eller så kan patienten få möjlighet att på egen hand välja remissmottagande/utförande enhet i efterhand." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 102 ;
@@ -2429,7 +2429,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Remissmottagande-enhet-Organisation-inom-halso--och-sju" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remissmottagande enhet : Organisation (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remissmottagande enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den organisatoriska enhet som utför klinisk bedömning av inkommen remiss samt utför det remissen avser.\n[E-remiss]" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 103 ;
@@ -2443,7 +2443,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remissvar : Dokument (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remissvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Det som kommuniceras till remittenten efter att en remiss har bedömts och den remissmottagande enheten har accepterat att hantera det som frågeställningen avser.\n\nDet kan röra sig om ett svar på frågeställning i remissen men också vara en redogörelse för att en eller flera önskade åtgärder har utförts.   \n[Projektet e-remiss, \"Remissvar\"]" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 104 ;
@@ -2457,7 +2457,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Remissvarsmottagande-enhet-Organisation-inom-halso--och" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den organisatoriska enhet som ett remissvar skickas till.\n\nÄr vanligtvis samma organisatoriska enhet som den remitterande enheten." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 105 ;
@@ -2471,7 +2471,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Remittent-Halso--och-sjukvardspersonal" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remittent : Hälso- och sjukvårdspersonal" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remittent : Hälso- och sjukvårdspersonal)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den hälso- och sjukvårdspersonal som i sitt uppdrag för en organisatorisk enhet har fattat beslut om att skicka remiss.\n\nVissa använder uttrycket \"beställare\" för detta begrepp." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 106 ;
@@ -2485,7 +2485,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Remitterande-enhet-Organisation-inom-halso--och-sjukvar" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Remitterande enhet : Organisation (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Remitterande enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den organisatoriska enhet som är uppdragsgivare åt remittenten.\n[Projekt e-remiss]\n\nVissa använder uttrycket \"beställande enhet\" för detta begrepp." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 107 ;
@@ -2499,7 +2499,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Resistens" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resistens" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Resistens)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "I det aktuella provet påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel.\n\nDet finns fyra huvudgrupper av mikroorganismer: bakterier, svampar, virus och parasiter." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 108 ;
@@ -2513,7 +2513,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Resistensbestamning-Aktivitet-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Resistensbestämning : Aktivitet (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Resistensbestämning : Aktivitet (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bestämning av påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 109 ;
@@ -2555,7 +2555,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Signatur" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Signatur" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Signatur)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Egenhändigt skriven namnteckning eller förkortad namnteckning." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 112 ;
@@ -2569,7 +2569,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Signering-Deltagande" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Signering : Deltagande" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Klassen Signering håller information om tidsangivelse då ett relaterat objekt är signerat.\nInom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.\n1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.\nDen ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).\n2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.\n3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.\n4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 113 ;
@@ -2583,7 +2583,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Signering-Deltagande-2" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Signering : Deltagande" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Påförande av signatur.  \n   \nInom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.\n\n1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.\n\nDen ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).\n\n2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.\n\n3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.\n\n4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 114 ;
@@ -2597,7 +2597,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Slutsvar-Dokument-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Slutsvar : Dokument (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Slutsvar : Dokument (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Svar där samtliga i remissen beställda analyser i och med detta svar är besvarade slutligt, och inga fortsatta analyser pågår.\n\nDen remissvarsmottagande enheten ska i och med detta inte förvänta sig ytterligare svar. Även efter ett slutsvar finns det möjlighet för utförande enhet att skicka ytterligare svar relaterat till samma remiss." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 115 ;
@@ -2611,7 +2611,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/SNOMED-CT-SE" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SNOMED-CT SE" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: SNOMED-CT SE)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SNOMED CT innehåller en stor mängd kliniska termer.\n\nOID: 1.2.752.116.2.1.1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 116 ;
@@ -2625,7 +2625,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/ST" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ST" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: ST)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Textsträng" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 117 ;
@@ -2639,7 +2639,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/TS" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "TS" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: TS)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Tidpunkt" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 118 ;
@@ -2653,7 +2653,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-analyskoder-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval analyskoder laboratoriemedicin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval analyskoder laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Kod för den typ av analys som utförts.   Urval från NPU.\n\nOID: 1.2.752.108.1.1" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 119 ;
@@ -2667,7 +2667,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-analysmetod-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval analysmetod laboratoriemedicin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval analysmetod laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva metodprinciper inom laboratoriemedicin. Princip för analysmetod bör användas för laboratoriemedicinska undersökningar där resultaten kan skilja sig beroende på analysmetoden, även om man avser att mäta samma sak, eller när metodprincipen är viktig för tolkningen av resultatet.\n\nOID: 1.2.752.129.5.1.18\nRefset-ID: 63181000052104" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 120 ;
@@ -2681,7 +2681,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-analysstatus-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval analysstatus laboratoriemedicin  " ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval analysstatus laboratoriemedicin  )." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva analysstatus inom laboratoriemedicin. Detta urval är baserat på urvalet aktivitetsstatus med Refset-ID 56421000052109.\n\nOID: 1.2.752.129.5.1.6\nRefset-ID: 500111000057108" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 121 ;
@@ -2695,7 +2695,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-anatomisk-lokalisation-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval anatomisk lokalisation laboratoriemedicin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval anatomisk lokalisation laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva anatomisk lokalisation inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.7\nRefset-ID: 500091000057101" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 122 ;
@@ -2709,7 +2709,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-fynd-bakterieegenskaper-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval fynd bakterieegenskaper laboratoriemedicin " ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval fynd bakterieegenskaper laboratoriemedicin )." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av undersökning av egenskaper av bakterier som inte utgör släkte eller art inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.8\nRefset-ID: 500101000057105" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 123 ;
@@ -2723,7 +2723,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-fynd-mikroorganism-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval fynd mikroorganism laboratoriemedicin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval fynd mikroorganism laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva fynd av mikroorganismer inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.9\nRefset-ID: 500061000057107" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 124 ;
@@ -2737,7 +2737,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-fynd-resistens-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval fynd resistens laboratoriemedicin " ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval fynd resistens laboratoriemedicin )." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva resultat av undersökning av resistens mot antibiotika inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.10\nRefset-ID: 500041000057108" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 125 ;
@@ -2751,7 +2751,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-fynd-ovrigt-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval fynd övrigt laboratoriemedicin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval fynd övrigt laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av laboratorieundersökning inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.11\nRefset-ID: 500081000057104" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 126 ;
@@ -2765,7 +2765,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-provbehallare-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval provbehallare laboratoriemedicin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval provbehallare laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provbehållare inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.12\nRefset-ID: 500071000057102" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 127 ;
@@ -2779,7 +2779,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-provtyp-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval provtyp laboratoriemedicin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval provtyp laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provtyp inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.13\nRefset-ID: 500121000057102" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 128 ;
@@ -2793,7 +2793,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Urval-tolkning-resultat-laboratoriemedicin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Urval tolkning resultat laboratoriemedicin" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Urval tolkning resultat laboratoriemedicin)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1)för att beskriva tolkning av fynd inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.14\nRefset-ID: 500051000057105" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 129 ;
@@ -2807,7 +2807,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Utforande-enhet-Organisation-inom-halso--och-sjukvard" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Utförande enhet : Organisation (inom hälso- och sjukvård)" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Utförande enhet : Organisation (inom hälso- och sjukvård))." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Den enhet som utför en enskild analys." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 130 ;
@@ -2821,7 +2821,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/Utford-analys" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Utförd analys" ] ;
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Utförd analys)." ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Detta är väl mer en statusmarkering? Planerad, pågående, utförd; kanske inte behövs i en begreppsmodell?" ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ] ;
      fhir:ImplementationGuide.definition.page [

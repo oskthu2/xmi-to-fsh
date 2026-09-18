@@ -3,7 +3,7 @@
 ## Logical Model: Referens 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Referens). 
+Klassen Referens håller information om vilket referensintervall eller referensvärde som gäller för ett resultat. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referens.csv), [E
   "name" : "Referens",
   "title" : "Referens",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referens.csv), [E
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Referens).",
+  "description" : "Klassen Referens håller information om vilket referensintervall eller referensvärde som gäller för ett resultat.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Referens.csv), [E
       "id" : "Referens",
       "path" : "Referens",
       "short" : "Referens",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Referens)."
+      "definition" : "Klassen Referens håller information om vilket referensintervall eller referensvärde som gäller för ett resultat."
     },
     {
       "id" : "Referens.intervall",
       "path" : "Referens.intervall",
       "short" : "Source attribute: intervall",
-      "definition" : "Source attribute: intervall",
+      "definition" : "Angivelse av referensintervall som numeriskt värde av mätvärden. Ett referensvärde anges genom att antingen ange ett intervall från det lägre värdet 0 till det högre värdet som sätts till referensvärdet, alternativt från referensvärde som start på intervallet utan angivelse av intervallets slut för att ange att normalvärde ligger över referensvärdet.\n\nEtt och endast ett av attributen intervall eller text ska anges.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referens.csv), [E
       "id" : "Referens.text",
       "path" : "Referens.text",
       "short" : "Source attribute: text",
-      "definition" : "Source attribute: text",
+      "definition" : "Textuell beskrivning av referensintervall.\n\nEtt och endast ett av attributen intervall eller text ska anges.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referens.csv), [E
       "id" : "Referens.population",
       "path" : "Referens.population",
       "short" : "Source attribute: population",
-      "definition" : "Source attribute: population",
+      "definition" : "Angivelse av den referenspopulation som ligger till grund för angivet referensintervall.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referens.csv), [E
       "id" : "Referens.kommentar",
       "path" : "Referens.kommentar",
       "short" : "Source attribute: kommentar",
-      "definition" : "Source attribute: kommentar",
+      "definition" : "Angivelse av kommentar för det angivna referensintervallet.",
       "min" : 0,
       "max" : "1",
       "type" : [{

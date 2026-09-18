@@ -3,7 +3,7 @@
 ## Logical Model: Remiss : Dokument 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument). 
+Klassen Remiss håller information om den remiss som ligger till grund för svaret. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
   "name" : "RemissDokument",
   "title" : "Remiss : Dokument",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument).",
+  "description" : "Klassen Remiss håller information om den remiss som ligger till grund för svaret.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
       "id" : "Remiss-Dokument",
       "path" : "Remiss-Dokument",
       "short" : "Remiss : Dokument",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument)."
+      "definition" : "Klassen Remiss håller information om den remiss som ligger till grund för svaret."
     },
     {
       "id" : "Remiss-Dokument.remissId",
       "path" : "Remiss-Dokument.remissId",
       "short" : "Source attribute: remiss-id",
-      "definition" : "Source attribute: remiss-id",
+      "definition" : "Angivelse av identitetsbeteckning för remissen.\n\nBenämns även RID.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
       "id" : "Remiss-Dokument.remisstidpunkt",
       "path" : "Remiss-Dokument.remisstidpunkt",
       "short" : "Source attribute: remisstidpunkt",
-      "definition" : "Source attribute: remisstidpunkt",
+      "definition" : "Angivelse av tidpunkt för när en viss remissversion skapades.",
       "min" : 1,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
       "id" : "Remiss-Dokument.versionsnummer",
       "path" : "Remiss-Dokument.versionsnummer",
       "short" : "Source attribute: versionsnummer",
-      "definition" : "Source attribute: versionsnummer",
+      "definition" : "Angivelse av löpnummer för remissversion.\n\nVarje ny version av en remiss behåller ursprungligt remiss-id och kan därför refereras av övriga versioner av samma remiss.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
       "id" : "Remiss-Dokument.fragestallning",
       "path" : "Remiss-Dokument.fragestallning",
       "short" : "Source attribute: frågeställning",
-      "definition" : "Source attribute: frågeställning",
+      "definition" : "Angivelse av remissens frågeställning.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -107,7 +107,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
       "id" : "Remiss-Dokument.efterfragadTjanst",
       "path" : "Remiss-Dokument.efterfragadTjanst",
       "short" : "Source attribute: efterfrågad tjänst",
-      "definition" : "Source attribute: efterfrågad tjänst",
+      "definition" : "Kod för typ av tjänst som efterfrågas i remissen.\n\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 0,
       "max" : "*",
       "type" : [{
@@ -118,7 +118,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
       "id" : "Remiss-Dokument.kommentarFranBestallare",
       "path" : "Remiss-Dokument.kommentarFranBestallare",
       "short" : "Source attribute: kommentar från beställare",
-      "definition" : "Source attribute: kommentar från beställare",
+      "definition" : "Kommentar på beställningen av laboratorieundersökningen.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -129,7 +129,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remiss-Dokument.c
       "id" : "Remiss-Dokument.medicinskInformation",
       "path" : "Remiss-Dokument.medicinskInformation",
       "short" : "Source attribute: medicinsk information",
-      "definition" : "Source attribute: medicinsk information",
+      "definition" : "Medicinsk information som angetts i beställningen relaterad till laboratorieundersökningen.",
       "min" : 0,
       "max" : "1",
       "type" : [{

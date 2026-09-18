@@ -3,7 +3,7 @@
 ## Logical Model: Prov : Resurs (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs (inom hälso- och sjukvård)). 
+(inom hälso- och sjukvården:) humanbiologiskt material som tagits från en levande eller avliden person eller ett foster i syfte att erhålla information om den som provet härrör från (Biobanksordlistan, under rev.) Exempel på humanbiologiskt material är vävnad och kroppsvätskor som blod, urin, sekret. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs-inom-
   "name" : "ProvResursinomhalsoochsjukvard",
   "title" : "Prov : Resurs (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs-inom-
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs (inom hälso- och sjukvård)).",
+  "description" : "(inom hälso- och sjukvården:) humanbiologiskt material som tagits från en levande eller avliden person eller ett foster i syfte att erhålla information om den som provet härrör från (Biobanksordlistan, under rev.)\nExempel på humanbiologiskt material är vävnad och kroppsvätskor som blod, urin, sekret.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Prov-Resurs-inom-
       "id" : "Prov-Resurs-inom-halso--och-sjukvard",
       "path" : "Prov-Resurs-inom-halso--och-sjukvard",
       "short" : "Prov : Resurs (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs (inom hälso- och sjukvård))."
+      "definition" : "(inom hälso- och sjukvården:) humanbiologiskt material som tagits från en levande eller avliden person eller ett foster i syfte att erhålla information om den som provet härrör från (Biobanksordlistan, under rev.)\nExempel på humanbiologiskt material är vävnad och kroppsvätskor som blod, urin, sekret."
     },
     {
       "id" : "Prov-Resurs-inom-halso--och-sjukvard.grupperarAnalyserSomUtfortsPaSamma",

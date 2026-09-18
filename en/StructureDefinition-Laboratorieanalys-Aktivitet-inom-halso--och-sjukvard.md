@@ -3,7 +3,7 @@
 ## Logical Model: Laboratorieanalys : Aktivitet (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)). 
+Bestämning av egenskaper hos prov, t.ex. artbestämning, fysikaliska och kemiska egenskaper. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
   "name" : "LaboratorieanalysAktivitetinomhalsoochsjukvard",
   "title" : "Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)).",
+  "description" : "Bestämning av egenskaper hos prov, t.ex. artbestämning, fysikaliska och kemiska egenskaper.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "id" : "Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard",
       "path" : "Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard",
       "short" : "Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet (inom hälso- och sjukvård))."
+      "definition" : "Bestämning av egenskaper hos prov, t.ex. artbestämning, fysikaliska och kemiska egenskaper."
     },
     {
       "id" : "Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard.arEn",

@@ -12,7 +12,7 @@
   <name value="XmiToFshIG"/>
   <title value="Logical Models from Visual Paradigm XMI"/>
   <status value="draft"/>
-  <date value="2026-09-18T09:59:15+00:00"/>
+  <date value="2026-09-18T10:29:51+00:00"/>
   <publisher value="xmi-to-fsh"/>
   <contact>
     <name value="xmi-to-fsh"/>
@@ -491,7 +491,7 @@
         <reference value="StructureDefinition/Analysgrupp"/>
       </reference>
       <name value="Analysgrupp"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Analysgrupp)."/>
+      <description value="Klassen Analysgrupp grupperar ett antal analyser som utförs på ett eller flera prov från samma patient och som man väljer att betrakta som en enhet."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -502,7 +502,7 @@
         <reference value="StructureDefinition/Analysgrupp-2"/>
       </reference>
       <name value="Analysgrupp"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Analysgrupp)."/>
+      <description value="Grupp av analyser utförda på ett eller flera prov från samma provgivare och som man väljer att betrakta som en enhet."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -513,7 +513,7 @@
         <reference value="StructureDefinition/Analysgrupp-svarsgrupp"/>
       </reference>
       <name value="Analysgrupp (svarsgrupp)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Analysgrupp (svarsgrupp))."/>
+      <description value="Sökning på google visar att ”analysgrupp” verkar avse en grupp av personer som ska analysera något. Och ”svarsgrupp” tycks ha med telefoni att göra. Detta kanske är något informatiskt som inte behöver förklaras i en begreppsmodell? &#xA;&#xA;Eller &quot;Grupp av analyser utförda på ett och samma prov&quot;? Stämmer det att det är ett och samma prov? I informationsmodellen står det att analysgrupp kan avse 0 till många prov, men i beskrivningen till klassen Analysgrupp står att denna grupperar ett antal analyser som utförs på ett prov. &#xA;&#xA;2018-03-14: Vi stryker denna i begreppsmodellen, det löser man i informationsmodellen (gruppkommentar e.d.). &#xA;&#xA;Analysgrupp  &#xA;Det kan vara ett eller flera prov. Exempel: påvisande av antikroppar mot Borrelia i både blod och cerebrospinalvätska.  &#xA;Observera att olika landsting kan ha löst detta på olika sätt. Man kan av tekniska skäl tvingas ha en analysgrupp som en enda ”vanlig” analys. Och det kan vara tvärtom: labbet hanterar analyserna som en grupp, men av tekniska skäl måste de ingående analyserna svaras ut en och en."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -538,7 +538,7 @@
         <reference value="StructureDefinition/Analysutrustning-Resurs"/>
       </reference>
       <name value="Analysutrustning : Resurs"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Analysutrustning : Resurs)."/>
+      <description value="Klassen Analysutrustning håller information om den utrustning som använts för att utföra en analys."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -549,7 +549,7 @@
         <reference value="StructureDefinition/Ansvarig-enhet-Organisation-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Ansvarig enhet : Organisation (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Ansvarig enhet : Organisation (inom hälso- och sjukvård))."/>
+      <description value="Den enhet som ansvarar för innehållet i laboratoriesvaret."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -560,7 +560,7 @@
         <reference value="StructureDefinition/BL"/>
       </reference>
       <name value="BL"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: BL)."/>
+      <description value="Booleskt värde"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -795,7 +795,7 @@
         <reference value="StructureDefinition/CV"/>
       </reference>
       <name value="CV"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: CV)."/>
+      <description value="Kodade värden"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -806,7 +806,7 @@
         <reference value="StructureDefinition/CV-CWE"/>
       </reference>
       <name value="CV CWE"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: CV CWE)."/>
+      <description value="Kodade värden som tillåter text som alternativ."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -817,7 +817,7 @@
         <reference value="StructureDefinition/Delsvar-Dokument-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Delsvar : Dokument (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Delsvar : Dokument (inom hälso- och sjukvård))."/>
+      <description value="Svar som innehåller resultat från en eller flera analyser där alla beställda analyser ännu inte är slutligt besvarade.&#xA;&#xA;Den remissvarsmottagande enheten ska förvänta sig ytterligare svar tills samtliga beställda analyser är utförda och slutligt besvarade.&#xA;&#xA;En typ av delsvar är preliminärsvar, som innehåller minst ett resultat från en analys som ännu inte är avslutad."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -828,7 +828,7 @@
         <reference value="StructureDefinition/FHIR-Diagnostic-Report-Status"/>
       </reference>
       <name value="FHIR Diagnostic Report Status "/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: FHIR Diagnostic Report Status )."/>
+      <description value="Value set från FHIR som specificerar typen av provsvar&#xA;OID: 2.16.840.1.113883.4.642.3.235&#xA;http://hl7.org/fhir/ValueSet/diagnostic-report-status"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -839,7 +839,7 @@
         <reference value="StructureDefinition/Fordjupad-analys"/>
       </reference>
       <name value="Fördjupad analys"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Fördjupad analys)."/>
+      <description value="Ytterligare analys föranledd av specifikt analysresultat. &#xA;&#xA;2018-03-14: Vi stryker denna i begreppsmodellen, det löser sig i informationsmodellen. &#xA;&#xA;Vad är skillnad mellan fördjupad analys och konfirmationsanalys som de pratade om på mötet? Är det samma? &#xA;&#xA;2018-03-09: Jonas Svanberg:   &#xA;För mig oklart begrepp. Möjligen kan man mena ”analys/undersökning som normalt inte utförs i aktuell situation”. För mig är det bara en ytterligare Fyndegenskap (8.4).  &#xA;Eller avses ”analys som utförs pga. resultatet i beställd analys, och som inte är beställd från början”? Och behövs för att hantera den situationen?"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -861,7 +861,7 @@
         <reference value="StructureDefinition/HSA-verksamhetskod"/>
       </reference>
       <name value="HSA verksamhetskod"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: HSA verksamhetskod)."/>
+      <description value="Kod för typ av verksamhet som den organisatoriska enheten bedriver.&#xA;&#xA;OID: 1.2.752.129.2.2.1.3"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -872,7 +872,7 @@
         <reference value="StructureDefinition/Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson"/>
       </reference>
       <name value="Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal)."/>
+      <description value="Klassen hälso- och sjukvårdspersonal håller information om person som i sitt yrke utför hälso- och sjukvård.&#xA;Hälso- och sjukvårdspersonal är oftast anställd av en vårdgivare. En vårdgivare kan ha anställd hälso- och sjukvårdspersonal, och ibland, som till exempel för enskild näringsidkare, kan rollerna sammanfalla."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -883,7 +883,7 @@
         <reference value="StructureDefinition/II"/>
       </reference>
       <name value="II"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: II)."/>
+      <description value="Unik Identifierare"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -905,7 +905,7 @@
         <reference value="StructureDefinition/INT"/>
       </reference>
       <name value="INT"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: INT)."/>
+      <description value="Ental"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -916,7 +916,7 @@
         <reference value="StructureDefinition/IVL-PQ"/>
       </reference>
       <name value="IVL&lt;PQ&gt;"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: IVL&lt;PQ&gt;)."/>
+      <description value="Interval av PQ"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -927,7 +927,7 @@
         <reference value="StructureDefinition/Kontaktinformation"/>
       </reference>
       <name value="Kontaktinformation"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Kontaktinformation)."/>
+      <description value="Klassen Kontaktinformation håller information om vart eller till vem vården kan vända sig vid frågor om laboratoriesvaret."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -938,7 +938,7 @@
         <reference value="StructureDefinition/Kopiemottagande-enhet"/>
       </reference>
       <name value="Kopiemottagande enhet"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Kopiemottagande enhet)."/>
+      <description value="Den organisatoriska enhet som tar emot en kopia av laboratoriesvaret.  &#xA;   &#xA;Eller ”… av remissvaret”, om detta ska vara generellt. I projektet e-remiss finns ingen kopiemottagare, är det något speciellt för laboratorieremisser? &#xA;&#xA;2018-03-14: Vi stryker denna ur begreppsmodellen, svarskopia är inget unikt för labbremisser.&#xA;&#xA;2018-03-09: Jonas Svanberg:  &#xA;Kopiemottagande enhet  &#xA;Nej, svarskopia är inget unikt för labbremisser. Det är en kvarleva från papperstiden, då det var lätt att ta en kopia (på vad som helst) och skicka till någon annan.  &#xA;Det förekommer säkert hos vissa landsting, men vanligast är nog att det bara finns ett svar."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -949,7 +949,7 @@
         <reference value="StructureDefinition/KV-befattning"/>
       </reference>
       <name value="KV befattning"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: KV befattning)."/>
+      <description value="Innehåller ingormation om en vård- och sjukvårdspersonals befattning.&#xA;&#xA;OID: 1.2.752.129.2.2.1.4"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -960,7 +960,7 @@
         <reference value="StructureDefinition/KV-kon"/>
       </reference>
       <name value="KV kön"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: KV kön)."/>
+      <description value="Anger administrativt kön&#xA;&#xA;OID: 1.2.752.129.2.2.1.1"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -971,7 +971,7 @@
         <reference value="StructureDefinition/Laboratorieanalys-Aktivitet"/>
       </reference>
       <name value="Laboratorieanalys : Aktivitet"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet)."/>
+      <description value="Klassen Laboratorieanalys håller information om en analys"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -982,7 +982,7 @@
         <reference value="StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Laboratorieanalys : Aktivitet (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalys : Aktivitet (inom hälso- och sjukvård))."/>
+      <description value="Bestämning av egenskaper hos prov, t.ex. artbestämning, fysikaliska och kemiska egenskaper."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -993,7 +993,7 @@
         <reference value="StructureDefinition/Laboratorieanalysresultat-Observation"/>
       </reference>
       <name value="Laboratorieanalysresultat : Observation"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observation)."/>
+      <description value="Klassen Laboratorieanalysresultat håller information om resultat av en utförd analys.&#xA;&#xA;Detta resultat kan exempelvis bestå av ett mätvärde inom laboratoriedisciplinen kemi, ett fynd av en viss bakterieart eller en textuell beskrivning av analysresultatet. Utöver detta kan en kommentar avseende analysresultatet anges separat."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1004,7 +1004,7 @@
         <reference value="StructureDefinition/Laboratorieanalysresultat-Observerat-halsotillstand"/>
       </reference>
       <name value="Laboratorieanalysresultat : Observerat hälsotillstånd"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observerat hälsotillstånd)."/>
+      <description value="Resultat av en laboratorieanalys. &#xA; &#xA;Ett laboratorieanalysresultat kan utgöras av t.ex. ett fynd (som har sina egenskaper) eller ett mätvärde.  &#xA;Exempel på fynd är en viss bakterieart eller en viss typ av virus.   &#xA;Exempel på ett fynds egenskaper är serotyp, subserotyp och koncentration."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1015,7 +1015,7 @@
         <reference value="StructureDefinition/Laboratoriedisciplin"/>
       </reference>
       <name value="Laboratoriedisciplin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Laboratoriedisciplin)."/>
+      <description value="Disciplin som en laboratorieverksamhet kan utföra laboratorieundersökningar inom.&#xA;&#xA;Fråga till referensgruppen: ser indelningen olika ut? Funkar det i praktiken?   &#xA;Klinisk kemi; Mikrobiologi   ...&#xA;&#xA;2018-03-09: Jonas Svanberg:  &#xA;Laboratoriedisciplin  &#xA;Ursprungligen är det en indelning av medicinsk kunskap, t.ex. klinisk kemi och klinisk immunologi. Traditionellt var det också både organisatorisk indelning och utförande laboratorium. Så behöver det inte vara nu, men i beställarnas (och labbens) tankevärld finns denna indelning kvar.  &#xA;Här behövs det (om det finns i svaret) som en tagg att sortera eller filtrera på. &#xA;&#xA;2018-03-20: 20/3: Kan strykas i begreppsmodellen, i infomodellen nytt attribut i klassen Organisatorisk enhet. &#xA;&#xA;&#xA; Laboratoriemedicinska specialiteter   &#xA; Klinisk immunologi och   &#xA; transfusionsmedicin   &#xA; Klinisk kemi   &#xA; Klinisk mikrobiologi   &#xA; Klinisk patologi   &#xA; http://www.socialstyrelsen.se/sosfs/2015-8  &#xA;&#xA;Referensgruppsmötet 2018-03-27: &#xA;Slutsats 1: Vi använder HSA-koder så länge (i HSA finns klinisk genetik som verksamhetskod, men den är där inte klassificerad som laboratorieverksamhet, vilket den borde vara enligt gruppen).    &#xA;Kategorisera det enskilda provet med hjälp av HSA-koderna.    &#xA;Kategoriseringen varierar från land till land.    &#xA;Listkoderna. De är nödvändiga för mikrobiologi idag.    &#xA;Slutsats 2: En liten arbetsgrupp (kodverksgrupp) jobbar vidare med detta."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1026,7 +1026,7 @@
         <reference value="StructureDefinition/Laboratoriesvar-Dokument"/>
       </reference>
       <name value="Laboratoriesvar : Dokument"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument)."/>
+      <description value="Klassen Laboratoriesvar håller information om laboratoriesvaret."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1037,7 +1037,7 @@
         <reference value="StructureDefinition/Laboratoriesvar-Dokument-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Laboratoriesvar : Dokument (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Laboratoriesvar : Dokument (inom hälso- och sjukvård))."/>
+      <description value="Remissvar som avser laboratorieanalysresultat."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1048,7 +1048,7 @@
         <reference value="StructureDefinition/Mikroorganism"/>
       </reference>
       <name value="Mikroorganism"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Mikroorganism)."/>
+      <description value="Levande, nästan alltid encellig varelse som är så liten att den inte kan ses med blotta ögat.&#xA;&#xA;Det finns fyra huvudgrupper: bakterier, svampar, virus och parasiter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1059,7 +1059,7 @@
         <reference value="StructureDefinition/Malpopulation"/>
       </reference>
       <name value="Målpopulation"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Målpopulation)."/>
+      <description value="Den grupp man undersöker."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1070,7 +1070,7 @@
         <reference value="StructureDefinition/NPU"/>
       </reference>
       <name value="NPU"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: NPU)."/>
+      <description value="NPU-systemet (Nomenclature of properties and units) är ett register med systematiska, unika benämningar och koder för laboratorieundersökningar."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1081,7 +1081,7 @@
         <reference value="StructureDefinition/Organisatorisk-enhet-Organisation-inom-halso--och-sjukv"/>
       </reference>
       <name value="Organisatorisk enhet : Organisation (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisation (inom hälso- och sjukvård))."/>
+      <description value="Formellt bildad enhet som tillhör en organisation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1092,7 +1092,7 @@
         <reference value="StructureDefinition/Organisatorisk-enhet-Organisatorisk-enhet"/>
       </reference>
       <name value="Organisatorisk enhet : Organisatorisk enhet"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisatorisk enhet)."/>
+      <description value="Klassen Organisatorisk enhet håller information om formellt bildade enheter som tillhör en organisation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1125,7 +1125,7 @@
         <reference value="StructureDefinition/Patient-Patient"/>
       </reference>
       <name value="Patient : Patient"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Patient : Patient)."/>
+      <description value="Klassen Patient håller information om en person som erhåller eller är registrerad för att erhålla hälso- och sjukvård."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1158,7 +1158,7 @@
         <reference value="StructureDefinition/PQ"/>
       </reference>
       <name value="PQ"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: PQ)."/>
+      <description value="Värde samt enhet enligt unified codes for units of measure (UCUM)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1169,7 +1169,7 @@
         <reference value="StructureDefinition/Preliminarsvar-Dokument-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Preliminärsvar : Dokument (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Preliminärsvar : Dokument (inom hälso- och sjukvård))."/>
+      <description value="Delsvar som innehåller minst ett resultat från en analys som ännu inte är avslutad.&#xA;&#xA;Den remissvarsmottagande enheten ska förvänta sig ytterligare svar efter ett preliminärsvar och har fortfarande ett ansvar att bevaka detta till dess ett slutsvar har mottagits."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1180,7 +1180,7 @@
         <reference value="StructureDefinition/Presentationsformat"/>
       </reference>
       <name value="Presentationsformat"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Presentationsformat)."/>
+      <description value="Typ av filformat för svaret. &#xA;[Så står det nu i informationsmodellen, klassen Svar, attributet &quot;presentationsformat&quot;. Detta behöver knappast finnas med i begreppsmodellen.]&#xA;&#xA;&#xA;&#xA;Dokument som innehåller den visuella presentationen av laboratoriesvaret.  &#xA;   &#xA;Men jfr projektet e-remiss, där finns bilaga:  &#xA;Dokument som kompletterar ett annat dokument och är avsett att användas tillsammans med detta.   &#xA;   &#xA;Exempelvis utdrag ur patientjournal, en bild eller liknande som biläggs remissen, eller remissvaret.  &#xA;   &#xA;Är presentation något annat än bilaga?"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1191,7 +1191,7 @@
         <reference value="StructureDefinition/Prov-Resurs"/>
       </reference>
       <name value="Prov : Resurs"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs)."/>
+      <description value="Klassen Prov håller information om ett prov."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1202,7 +1202,7 @@
         <reference value="StructureDefinition/Prov-Resurs-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Prov : Resurs (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Prov : Resurs (inom hälso- och sjukvård))."/>
+      <description value="(inom hälso- och sjukvården:) humanbiologiskt material som tagits från en levande eller avliden person eller ett foster i syfte att erhålla information om den som provet härrör från (Biobanksordlistan, under rev.)&#xA;Exempel på humanbiologiskt material är vävnad och kroppsvätskor som blod, urin, sekret."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1224,7 +1224,7 @@
         <reference value="StructureDefinition/Provbehallare-Resurs"/>
       </reference>
       <name value="Provbehållare : Resurs"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Provbehållare : Resurs)."/>
+      <description value="Klassen Provbehållare håller information om den eller de provbehållare som provet förvaras i."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1235,7 +1235,7 @@
         <reference value="StructureDefinition/Provgivare"/>
       </reference>
       <name value="Provgivare"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Provgivare)."/>
+      <description value="Person som lämnar prov.&#xA;(Biobank Sverige, under revidering)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1246,7 +1246,7 @@
         <reference value="StructureDefinition/Provmaterial"/>
       </reference>
       <name value="Provmaterial"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Provmaterial)."/>
+      <description value="Det material som ett prov består av.&#xA;&#xA;Kan t.ex. vara kroppsvätska, vävnad … (vad är viktigt att få med i exemplen?)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1257,7 +1257,7 @@
         <reference value="StructureDefinition/Provrelaterad-aktivitet-Aktivitet"/>
       </reference>
       <name value="Provrelaterad aktivitet: Aktivitet"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Provrelaterad aktivitet: Aktivitet)."/>
+      <description value="Klassen Provrelaterad aktivitet håller information om aktiviteter relaterade till hantering av prov.&#xA;Inkluderar även t.ex. aktiviteter i samband med transport, frysning, förvaring, bearbetning och delning i sekundärprov."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1268,7 +1268,7 @@
         <reference value="StructureDefinition/Provtagningsmetod"/>
       </reference>
       <name value="Provtagningsmetod"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Provtagningsmetod)."/>
+      <description value="Tillvägagångssätt för utförande av provtagning.&#xA;&#xA;En vanlig synonym är provtagningsteknik."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1419,7 +1419,7 @@
         <reference value="StructureDefinition/Referens"/>
       </reference>
       <name value="Referens"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Referens)."/>
+      <description value="Klassen Referens håller information om vilket referensintervall eller referensvärde som gäller för ett resultat."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1441,7 +1441,7 @@
         <reference value="StructureDefinition/Referensintervall"/>
       </reference>
       <name value="Referensintervall"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Referensintervall)."/>
+      <description value="Det intervall som värden för ett fysiologiskt mätvärde hos  en referenspopulation   med e  n   given sannolikhet  ligger inom för den givna typen av analys med den givna metoden.&#xA;&#xA;Referensintervallet utgör en bas för jämförelse (en referensram) för att tolka ett analysresultat för en viss patient."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1673,7 +1673,7 @@
         <reference value="StructureDefinition/Referenspopulation"/>
       </reference>
       <name value="Referenspopulation"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Referenspopulation)."/>
+      <description value="Den grupp man jämför med målpopulationen.&#xA;&#xA;Referenspopulationen måste stämma överens med målpopulationen i fråga om ålder, kön och sådana saker som spelar roll i sammanhanget."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1684,7 +1684,7 @@
         <reference value="StructureDefinition/Referensvarde"/>
       </reference>
       <name value="Referensvärde"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Referensvärde)."/>
+      <description value="Ö  verenskommet värde   hos egenskap   mot vilket kan jämföras uppmätta eller observerade värden  ."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1695,7 +1695,7 @@
         <reference value="StructureDefinition/Remiss-Dokument"/>
       </reference>
       <name value="Remiss : Dokument"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument)."/>
+      <description value="Klassen Remiss håller information om den remiss som ligger till grund för svaret."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1706,7 +1706,7 @@
         <reference value="StructureDefinition/Remiss-Dokument-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Remiss : Dokument (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Remiss : Dokument (inom hälso- och sjukvård))."/>
+      <description value="Vårdbegäran som utgör beställning av tjänst eller begäran om övertagande av medicinskt ansvar för en patient.&#xA;&#xA;En remiss kan vid utfärdandet ha en tilltänkt remissmottagande enhet eller så kan patienten få möjlighet att på egen hand välja remissmottagande/utförande enhet i efterhand."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1717,7 +1717,7 @@
         <reference value="StructureDefinition/Remissmottagande-enhet-Organisation-inom-halso--och-sju"/>
       </reference>
       <name value="Remissmottagande enhet : Organisation (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Remissmottagande enhet : Organisation (inom hälso- och sjukvård))."/>
+      <description value="Den organisatoriska enhet som utför klinisk bedömning av inkommen remiss samt utför det remissen avser.&#xA;[E-remiss]"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1728,7 +1728,7 @@
         <reference value="StructureDefinition/Remissvar-Dokument-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Remissvar : Dokument (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Remissvar : Dokument (inom hälso- och sjukvård))."/>
+      <description value="Det som kommuniceras till remittenten efter att en remiss har bedömts och den remissmottagande enheten har accepterat att hantera det som frågeställningen avser.&#xA;&#xA;Det kan röra sig om ett svar på frågeställning i remissen men också vara en redogörelse för att en eller flera önskade åtgärder har utförts.   &#xA;[Projektet e-remiss, &quot;Remissvar&quot;]"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1739,7 +1739,7 @@
         <reference value="StructureDefinition/Remissvarsmottagande-enhet-Organisation-inom-halso--och"/>
       </reference>
       <name value="Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Remissvarsmottagande enhet : Organisation (inom hälso- och sjukvård))."/>
+      <description value="Den organisatoriska enhet som ett remissvar skickas till.&#xA;&#xA;Är vanligtvis samma organisatoriska enhet som den remitterande enheten."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1750,7 +1750,7 @@
         <reference value="StructureDefinition/Remittent-Halso--och-sjukvardspersonal"/>
       </reference>
       <name value="Remittent : Hälso- och sjukvårdspersonal"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Remittent : Hälso- och sjukvårdspersonal)."/>
+      <description value="Den hälso- och sjukvårdspersonal som i sitt uppdrag för en organisatorisk enhet har fattat beslut om att skicka remiss.&#xA;&#xA;Vissa använder uttrycket &quot;beställare&quot; för detta begrepp."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1761,7 +1761,7 @@
         <reference value="StructureDefinition/Remitterande-enhet-Organisation-inom-halso--och-sjukvar"/>
       </reference>
       <name value="Remitterande enhet : Organisation (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Remitterande enhet : Organisation (inom hälso- och sjukvård))."/>
+      <description value="Den organisatoriska enhet som är uppdragsgivare åt remittenten.&#xA;[Projekt e-remiss]&#xA;&#xA;Vissa använder uttrycket &quot;beställande enhet&quot; för detta begrepp."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1772,7 +1772,7 @@
         <reference value="StructureDefinition/Resistens"/>
       </reference>
       <name value="Resistens"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Resistens)."/>
+      <description value="I det aktuella provet påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel.&#xA;&#xA;Det finns fyra huvudgrupper av mikroorganismer: bakterier, svampar, virus och parasiter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1783,7 +1783,7 @@
         <reference value="StructureDefinition/Resistensbestamning-Aktivitet-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Resistensbestämning : Aktivitet (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Resistensbestämning : Aktivitet (inom hälso- och sjukvård))."/>
+      <description value="Bestämning av påvisad mikroorganisms känslighet för relevanta antimikrobiella läkemedel."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1816,7 +1816,7 @@
         <reference value="StructureDefinition/Signatur"/>
       </reference>
       <name value="Signatur"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Signatur)."/>
+      <description value="Egenhändigt skriven namnteckning eller förkortad namnteckning."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1827,7 +1827,7 @@
         <reference value="StructureDefinition/Signering-Deltagande"/>
       </reference>
       <name value="Signering : Deltagande"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande)."/>
+      <description value="Klassen Signering håller information om tidsangivelse då ett relaterat objekt är signerat.&#xA;Inom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.&#xA;1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.&#xA;Den ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).&#xA;2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.&#xA;3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.&#xA;4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1838,7 +1838,7 @@
         <reference value="StructureDefinition/Signering-Deltagande-2"/>
       </reference>
       <name value="Signering : Deltagande"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande)."/>
+      <description value="Påförande av signatur.  &#xA;   &#xA;Inom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.&#xA;&#xA;1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.&#xA;&#xA;Den ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).&#xA;&#xA;2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.&#xA;&#xA;3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.&#xA;&#xA;4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1849,7 +1849,7 @@
         <reference value="StructureDefinition/Slutsvar-Dokument-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Slutsvar : Dokument (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Slutsvar : Dokument (inom hälso- och sjukvård))."/>
+      <description value="Svar där samtliga i remissen beställda analyser i och med detta svar är besvarade slutligt, och inga fortsatta analyser pågår.&#xA;&#xA;Den remissvarsmottagande enheten ska i och med detta inte förvänta sig ytterligare svar. Även efter ett slutsvar finns det möjlighet för utförande enhet att skicka ytterligare svar relaterat till samma remiss."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1860,7 +1860,7 @@
         <reference value="StructureDefinition/SNOMED-CT-SE"/>
       </reference>
       <name value="SNOMED-CT SE"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: SNOMED-CT SE)."/>
+      <description value="SNOMED CT innehåller en stor mängd kliniska termer.&#xA;&#xA;OID: 1.2.752.116.2.1.1"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1871,7 +1871,7 @@
         <reference value="StructureDefinition/ST"/>
       </reference>
       <name value="ST"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: ST)."/>
+      <description value="Textsträng"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1882,7 +1882,7 @@
         <reference value="StructureDefinition/TS"/>
       </reference>
       <name value="TS"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: TS)."/>
+      <description value="Tidpunkt"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1893,7 +1893,7 @@
         <reference value="StructureDefinition/Urval-analyskoder-laboratoriemedicin"/>
       </reference>
       <name value="Urval analyskoder laboratoriemedicin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval analyskoder laboratoriemedicin)."/>
+      <description value="Kod för den typ av analys som utförts.   Urval från NPU.&#xA;&#xA;OID: 1.2.752.108.1.1"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1904,7 +1904,7 @@
         <reference value="StructureDefinition/Urval-analysmetod-laboratoriemedicin"/>
       </reference>
       <name value="Urval analysmetod laboratoriemedicin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval analysmetod laboratoriemedicin)."/>
+      <description value="Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva metodprinciper inom laboratoriemedicin. Princip för analysmetod bör användas för laboratoriemedicinska undersökningar där resultaten kan skilja sig beroende på analysmetoden, även om man avser att mäta samma sak, eller när metodprincipen är viktig för tolkningen av resultatet.&#xA;&#xA;OID: 1.2.752.129.5.1.18&#xA;Refset-ID: 63181000052104"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1915,7 +1915,7 @@
         <reference value="StructureDefinition/Urval-analysstatus-laboratoriemedicin"/>
       </reference>
       <name value="Urval analysstatus laboratoriemedicin  "/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval analysstatus laboratoriemedicin  )."/>
+      <description value="Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva analysstatus inom laboratoriemedicin. Detta urval är baserat på urvalet aktivitetsstatus med Refset-ID 56421000052109.&#xA;&#xA;OID: 1.2.752.129.5.1.6&#xA;Refset-ID: 500111000057108"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1926,7 +1926,7 @@
         <reference value="StructureDefinition/Urval-anatomisk-lokalisation-laboratoriemedicin"/>
       </reference>
       <name value="Urval anatomisk lokalisation laboratoriemedicin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval anatomisk lokalisation laboratoriemedicin)."/>
+      <description value="Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva anatomisk lokalisation inom laboratoriemedicin.&#xA;&#xA;OID: 1.2.752.129.5.1.7&#xA;Refset-ID: 500091000057101"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1937,7 +1937,7 @@
         <reference value="StructureDefinition/Urval-fynd-bakterieegenskaper-laboratoriemedicin"/>
       </reference>
       <name value="Urval fynd bakterieegenskaper laboratoriemedicin "/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval fynd bakterieegenskaper laboratoriemedicin )."/>
+      <description value="Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av undersökning av egenskaper av bakterier som inte utgör släkte eller art inom laboratoriemedicin.&#xA;&#xA;OID: 1.2.752.129.5.1.8&#xA;Refset-ID: 500101000057105"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1948,7 +1948,7 @@
         <reference value="StructureDefinition/Urval-fynd-mikroorganism-laboratoriemedicin"/>
       </reference>
       <name value="Urval fynd mikroorganism laboratoriemedicin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval fynd mikroorganism laboratoriemedicin)."/>
+      <description value="Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva fynd av mikroorganismer inom laboratoriemedicin.&#xA;&#xA;OID: 1.2.752.129.5.1.9&#xA;Refset-ID: 500061000057107"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1959,7 +1959,7 @@
         <reference value="StructureDefinition/Urval-fynd-resistens-laboratoriemedicin"/>
       </reference>
       <name value="Urval fynd resistens laboratoriemedicin "/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval fynd resistens laboratoriemedicin )."/>
+      <description value="Urval ur Snomed CT (1.2.752.116.2.1.1) för att beskriva resultat av undersökning av resistens mot antibiotika inom laboratoriemedicin.&#xA;&#xA;OID: 1.2.752.129.5.1.10&#xA;Refset-ID: 500041000057108"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1970,7 +1970,7 @@
         <reference value="StructureDefinition/Urval-fynd-ovrigt-laboratoriemedicin"/>
       </reference>
       <name value="Urval fynd övrigt laboratoriemedicin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval fynd övrigt laboratoriemedicin)."/>
+      <description value="Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av laboratorieundersökning inom laboratoriemedicin.&#xA;&#xA;OID: 1.2.752.129.5.1.11&#xA;Refset-ID: 500081000057104"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1981,7 +1981,7 @@
         <reference value="StructureDefinition/Urval-provbehallare-laboratoriemedicin"/>
       </reference>
       <name value="Urval provbehallare laboratoriemedicin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval provbehallare laboratoriemedicin)."/>
+      <description value="Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provbehållare inom laboratoriemedicin.&#xA;&#xA;OID: 1.2.752.129.5.1.12&#xA;Refset-ID: 500071000057102"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1992,7 +1992,7 @@
         <reference value="StructureDefinition/Urval-provtyp-laboratoriemedicin"/>
       </reference>
       <name value="Urval provtyp laboratoriemedicin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval provtyp laboratoriemedicin)."/>
+      <description value="Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva provtyp inom laboratoriemedicin.&#xA;&#xA;OID: 1.2.752.129.5.1.13&#xA;Refset-ID: 500121000057102"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2003,7 +2003,7 @@
         <reference value="StructureDefinition/Urval-tolkning-resultat-laboratoriemedicin"/>
       </reference>
       <name value="Urval tolkning resultat laboratoriemedicin"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Urval tolkning resultat laboratoriemedicin)."/>
+      <description value="Urval ur Snomed CT (OID: 1.2.752.116.2.1.1)för att beskriva tolkning av fynd inom laboratoriemedicin.&#xA;&#xA;OID: 1.2.752.129.5.1.14&#xA;Refset-ID: 500051000057105"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2014,7 +2014,7 @@
         <reference value="StructureDefinition/Utforande-enhet-Organisation-inom-halso--och-sjukvard"/>
       </reference>
       <name value="Utförande enhet : Organisation (inom hälso- och sjukvård)"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Utförande enhet : Organisation (inom hälso- och sjukvård))."/>
+      <description value="Den enhet som utför en enskild analys."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2025,7 +2025,7 @@
         <reference value="StructureDefinition/Utford-analys"/>
       </reference>
       <name value="Utförd analys"/>
-      <description value="Supporting logical model generated from gloo4.xmi (source class: Utförd analys)."/>
+      <description value="Detta är väl mer en statusmarkering? Planerad, pågående, utförd; kanske inte behövs i en begreppsmodell?"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

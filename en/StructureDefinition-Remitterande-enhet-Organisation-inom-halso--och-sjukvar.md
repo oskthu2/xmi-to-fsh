@@ -3,7 +3,8 @@
 ## Logical Model: Remitterande enhet : Organisation (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Remitterande enhet : Organisation (inom hälso- och sjukvård)). 
+Den organisatoriska enhet som är uppdragsgivare åt remittenten. [Projekt e-remiss] 
+Vissa använder uttrycket "beställande enhet" för detta begrepp. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remitterande-enhe
   "name" : "RemitterandeenhetOrganisationinomhalsoochsjukvard",
   "title" : "Remitterande enhet : Organisation (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remitterande-enhe
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Remitterande enhet : Organisation (inom hälso- och sjukvård)).",
+  "description" : "Den organisatoriska enhet som är uppdragsgivare åt remittenten.\n[Projekt e-remiss]\n\nVissa använder uttrycket \"beställande enhet\" för detta begrepp.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Remitterande-enhe
       "id" : "Remitterande-enhet-Organisation-inom-halso--och-sjukvar",
       "path" : "Remitterande-enhet-Organisation-inom-halso--och-sjukvar",
       "short" : "Remitterande enhet : Organisation (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Remitterande enhet : Organisation (inom hälso- och sjukvård))."
+      "definition" : "Den organisatoriska enhet som är uppdragsgivare åt remittenten.\n[Projekt e-remiss]\n\nVissa använder uttrycket \"beställande enhet\" för detta begrepp."
     },
     {
       "id" : "Remitterande-enhet-Organisation-inom-halso--och-sjukvar.tillhor",

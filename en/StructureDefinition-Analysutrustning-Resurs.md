@@ -3,7 +3,7 @@
 ## Logical Model: Analysutrustning : Resurs 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Analysutrustning : Resurs). 
+Klassen Analysutrustning håller information om den utrustning som använts för att utföra en analys. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysutrustning-
   "name" : "AnalysutrustningResurs",
   "title" : "Analysutrustning : Resurs",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysutrustning-
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Analysutrustning : Resurs).",
+  "description" : "Klassen Analysutrustning håller information om den utrustning som använts för att utföra en analys.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Analysutrustning-
       "id" : "Analysutrustning-Resurs",
       "path" : "Analysutrustning-Resurs",
       "short" : "Analysutrustning : Resurs",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Analysutrustning : Resurs)."
+      "definition" : "Klassen Analysutrustning håller information om den utrustning som använts för att utföra en analys."
     },
     {
       "id" : "Analysutrustning-Resurs.-id",
       "path" : "Analysutrustning-Resurs._id",
       "short" : "Source attribute: id; renamed from reserved FSH name 'id'",
-      "definition" : "Source attribute: id; renamed from reserved FSH name 'id'",
+      "definition" : "Identitetsbeteckning för en analysutrustning.Id identifierar unikt en viss instans av utrustning,till skillnad från attributet typ som identifierar en typ eller modellbeteckning.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysutrustning-
       "id" : "Analysutrustning-Resurs.typ",
       "path" : "Analysutrustning-Resurs.typ",
       "short" : "Source attribute: typ",
-      "definition" : "Source attribute: typ",
+      "definition" : "Typ eller modellbeteckning\n\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysutrustning-
       "id" : "Analysutrustning-Resurs.beskrivning",
       "path" : "Analysutrustning-Resurs.beskrivning",
       "short" : "Source attribute: beskrivning",
-      "definition" : "Source attribute: beskrivning",
+      "definition" : "-",
       "min" : 0,
       "max" : "1",
       "type" : [{

@@ -3,7 +3,7 @@
 ## Logical Model: TS 
 
  
-Supporting logical model generated from gloo4.xmi (source class: TS). 
+Tidpunkt 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-TS.csv), [Excel](
   "name" : "TS",
   "title" : "TS",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-TS.csv), [Excel](
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: TS).",
+  "description" : "Tidpunkt",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-TS.csv), [Excel](
       "id" : "TS",
       "path" : "TS",
       "short" : "TS",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: TS)."
+      "definition" : "Tidpunkt"
     }]
   }
 }

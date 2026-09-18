@@ -3,7 +3,8 @@
 ## Logical Model: Mikroorganism 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Mikroorganism). 
+Levande, nästan alltid encellig varelse som är så liten att den inte kan ses med blotta ögat. 
+Det finns fyra huvudgrupper: bakterier, svampar, virus och parasiter. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Mikroorganism.csv
   "name" : "Mikroorganism",
   "title" : "Mikroorganism",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Mikroorganism.csv
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Mikroorganism).",
+  "description" : "Levande, nästan alltid encellig varelse som är så liten att den inte kan ses med blotta ögat.\n\nDet finns fyra huvudgrupper: bakterier, svampar, virus och parasiter.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Mikroorganism.csv
       "id" : "Mikroorganism",
       "path" : "Mikroorganism",
       "short" : "Mikroorganism",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Mikroorganism)."
+      "definition" : "Levande, nästan alltid encellig varelse som är så liten att den inte kan ses med blotta ögat.\n\nDet finns fyra huvudgrupper: bakterier, svampar, virus och parasiter."
     },
     {
       "id" : "Mikroorganism.kanUtforasPa",

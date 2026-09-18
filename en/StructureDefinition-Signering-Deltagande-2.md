@@ -3,7 +3,15 @@
 ## Logical Model: Signering : Deltagande 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande). 
+Påförande av signatur. 
+Inom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser. 
+1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.
+ 
+Den ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser). 
+1. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.
+1. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.
+1. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen.
+ 
 
 **Usages:**
 
@@ -36,7 +44,7 @@ Other representations of profile: [CSV](../StructureDefinition-Signering-Deltaga
   "name" : "SigneringDeltagande2",
   "title" : "Signering : Deltagande",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +53,7 @@ Other representations of profile: [CSV](../StructureDefinition-Signering-Deltaga
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande).",
+  "description" : "Påförande av signatur.  \n   \nInom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.\n\n1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.\n\nDen ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).\n\n2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.\n\n3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.\n\n4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +65,7 @@ Other representations of profile: [CSV](../StructureDefinition-Signering-Deltaga
       "id" : "Signering-Deltagande-2",
       "path" : "Signering-Deltagande-2",
       "short" : "Signering : Deltagande",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Signering : Deltagande)."
+      "definition" : "Påförande av signatur.  \n   \nInom laboratoriedomänen finns det fyra olika typer av signering. Signeringen avser hela laboratoriesvaret eller enskilda analyser.\n\n1. Laboratoriesvaret signeras av en medicinskt ansvarig hälso- och sjukvårdspersonal på den ansvariga enheten.\n\nDen ansvariga enheten kan vara den remissvarsmottagande enheten eller den utförande enheten (exempelvis vid patientnära analyser).\n\n2. En enskild analys signeras av den hälso- och sjukvårdspersonal som utför analysen.\n\n3. Laboratoriesvaret signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när det förs in i patientjournalen.\n\n4. En enskild analys signeras av hälso- och sjukvårdspersonal på den remissvarsmottagande enheten när den förs in i patientjournalen."
     },
     {
       "id" : "Signering-Deltagande-2.gorsAv",

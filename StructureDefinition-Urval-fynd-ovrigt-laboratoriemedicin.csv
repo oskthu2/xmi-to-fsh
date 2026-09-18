@@ -1,2 +1,5 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
-"Urval-fynd-ovrigt-laboratoriemedicin","Urval-fynd-ovrigt-laboratoriemedicin","","","",0,*,"","","","","Urval fynd övrigt laboratoriemedicin","Supporting logical model generated from gloo4.xmi (source class: Urval fynd övrigt laboratoriemedicin).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"Urval-fynd-ovrigt-laboratoriemedicin","Urval-fynd-ovrigt-laboratoriemedicin","","","",0,*,"","","","","Urval fynd övrigt laboratoriemedicin","Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva resultat av laboratorieundersökning inom laboratoriemedicin.
+
+OID: 1.2.752.129.5.1.11
+Refset-ID: 500081000057104","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""

@@ -3,7 +3,12 @@
 ## Logical Model: Analysgrupp (svarsgrupp) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Analysgrupp (svarsgrupp)). 
+Sökning på google visar att ”analysgrupp” verkar avse en grupp av personer som ska analysera något. Och ”svarsgrupp” tycks ha med telefoni att göra. Detta kanske är något informatiskt som inte behöver förklaras i en begreppsmodell? 
+Eller "Grupp av analyser utförda på ett och samma prov"? Stämmer det att det är ett och samma prov? I informationsmodellen står det att analysgrupp kan avse 0 till många prov, men i beskrivningen till klassen Analysgrupp står att denna grupperar ett antal analyser som utförs på ett prov. 
+2018-03-14: Vi stryker denna i begreppsmodellen, det löser man i informationsmodellen (gruppkommentar e.d.). 
+Analysgrupp
+ Det kan vara ett eller flera prov. Exempel: påvisande av antikroppar mot Borrelia i både blod och cerebrospinalvätska.
+ Observera att olika landsting kan ha löst detta på olika sätt. Man kan av tekniska skäl tvingas ha en analysgrupp som en enda ”vanlig” analys. Och det kan vara tvärtom: labbet hanterar analyserna som en grupp, men av tekniska skäl måste de ingående analyserna svaras ut en och en. 
 
 **Usages:**
 
@@ -36,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp-svars
   "name" : "Analysgruppsvarsgrupp",
   "title" : "Analysgrupp (svarsgrupp)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp-svars
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp (svarsgrupp)).",
+  "description" : "Sökning på google visar att ”analysgrupp” verkar avse en grupp av personer som ska analysera något. Och ”svarsgrupp” tycks ha med telefoni att göra. Detta kanske är något informatiskt som inte behöver förklaras i en begreppsmodell? \n\nEller \"Grupp av analyser utförda på ett och samma prov\"? Stämmer det att det är ett och samma prov? I informationsmodellen står det att analysgrupp kan avse 0 till många prov, men i beskrivningen till klassen Analysgrupp står att denna grupperar ett antal analyser som utförs på ett prov. \n\n2018-03-14: Vi stryker denna i begreppsmodellen, det löser man i informationsmodellen (gruppkommentar e.d.). \n\nAnalysgrupp  \nDet kan vara ett eller flera prov. Exempel: påvisande av antikroppar mot Borrelia i både blod och cerebrospinalvätska.  \nObservera att olika landsting kan ha löst detta på olika sätt. Man kan av tekniska skäl tvingas ha en analysgrupp som en enda ”vanlig” analys. Och det kan vara tvärtom: labbet hanterar analyserna som en grupp, men av tekniska skäl måste de ingående analyserna svaras ut en och en.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +62,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp-svars
       "id" : "Analysgrupp-svarsgrupp",
       "path" : "Analysgrupp-svarsgrupp",
       "short" : "Analysgrupp (svarsgrupp)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp (svarsgrupp))."
+      "definition" : "Sökning på google visar att ”analysgrupp” verkar avse en grupp av personer som ska analysera något. Och ”svarsgrupp” tycks ha med telefoni att göra. Detta kanske är något informatiskt som inte behöver förklaras i en begreppsmodell? \n\nEller \"Grupp av analyser utförda på ett och samma prov\"? Stämmer det att det är ett och samma prov? I informationsmodellen står det att analysgrupp kan avse 0 till många prov, men i beskrivningen till klassen Analysgrupp står att denna grupperar ett antal analyser som utförs på ett prov. \n\n2018-03-14: Vi stryker denna i begreppsmodellen, det löser man i informationsmodellen (gruppkommentar e.d.). \n\nAnalysgrupp  \nDet kan vara ett eller flera prov. Exempel: påvisande av antikroppar mot Borrelia i både blod och cerebrospinalvätska.  \nObservera att olika landsting kan ha löst detta på olika sätt. Man kan av tekniska skäl tvingas ha en analysgrupp som en enda ”vanlig” analys. Och det kan vara tvärtom: labbet hanterar analyserna som en grupp, men av tekniska skäl måste de ingående analyserna svaras ut en och en."
     },
     {
       "id" : "Analysgrupp-svarsgrupp.grupperarAnalyserSomUtfortsPaSamma",

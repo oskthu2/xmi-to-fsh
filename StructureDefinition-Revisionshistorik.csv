@@ -2,18 +2,20 @@
 "Revisionshistorik","Revisionshistorik","","","",0,*,"","","","null {[]} {[]}
 ","Revisionshistorik","Supporting logical model generated from gloo4.xmi (source class: Revisionshistorik).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Revisionshistorik.Version40RC2","Revisionshistorik.Version40RC2","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0 RC2; type could not be resolved from source model","Source attribute: Version 4.0 RC2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC2",0,1,"",""
+","Source attribute: Version 4.0 RC2; type could not be resolved from source model","Ny version 4.0 av laboratoriesvarskontrakt som stödjer mikrobiologiska svar. Förarbete av Fredrik Ström och Helena Antonsson.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC2",0,1,"",""
 "Revisionshistorik.Version40RC5","Revisionshistorik.Version40RC5","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0 RC5; type could not be resolved from source model","Source attribute: Version 4.0 RC5; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC5",0,1,"",""
+","Source attribute: Version 4.0 RC5; type could not be resolved from source model","Fortsatt arbete där koppling till kodverk har förtydligats. Vissa specifika klasser har bytts ut till generiska kombinationer av analys/analysresultat. Begreppsmodellering och terminologi i enlighet med Socialstyrelsens termbank och Nationella Informationsstruktur.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC5",0,1,"",""
 "Revisionshistorik.Version40RC6","Revisionshistorik.Version40RC6","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0 RC6; type could not be resolved from source model","Source attribute: Version 4.0 RC6; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC6",0,1,"",""
+","Source attribute: Version 4.0 RC6; type could not be resolved from source model","Utökade attribut för analysutrustning.
+Möjlighet för mottagare att signera enskilda resultat förutom hela svaret
+Ändrad kardinalitet på signatur från ansvarig för svar.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC6",0,1,"",""
 "Revisionshistorik.Version40RC9","Revisionshistorik.Version40RC9","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0 RC9; type could not be resolved from source model","Source attribute: Version 4.0 RC9; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC9",0,1,"",""
+","Source attribute: Version 4.0 RC9; type could not be resolved from source model","Lagt till coding strength på CV-datatyp (CNE - Coded with No Exceptions och CWE - Coded With Exceptions)","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40RC9",0,1,"",""
 "Revisionshistorik.Version40","Revisionshistorik.Version40","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0; type could not be resolved from source model","Source attribute: Version 4.0; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40",0,1,"",""
+","Source attribute: Version 4.0; type could not be resolved from source model","Ny informationsspecifikation för laboratoriesvar fastställd.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version40",0,1,"",""
 "Revisionshistorik.Version401","Revisionshistorik.Version401","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0.1; type could not be resolved from source model","Source attribute: Version 4.0.1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version401",0,1,"",""
+","Source attribute: Version 4.0.1; type could not be resolved from source model","Uppdaterat samtliga urval.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version401",0,1,"",""
 "Revisionshistorik.f402","Revisionshistorik.f402","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: 4.0.2; type could not be resolved from source model","Source attribute: 4.0.2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.f402",0,1,"",""
+","Source attribute: 4.0.2; type could not be resolved from source model","Uppdaterade tomma fält i beskrivningen av informationsmodellen.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.f402",0,1,"",""
 "Revisionshistorik.Version41","Revisionshistorik.Version41","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.1; type could not be resolved from source model","Source attribute: Version 4.1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version41",0,1,"",""
+","Source attribute: Version 4.1; type could not be resolved from source model","Uppdaterat beskrivningen för olika typer av signeringar.","","","","","","","","","",,,,,"",,,,"Revisionshistorik.Version41",0,1,"",""

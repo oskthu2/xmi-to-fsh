@@ -3,7 +3,7 @@
 ## Logical Model: Utförd analys 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Utförd analys). 
+Detta är väl mer en statusmarkering? Planerad, pågående, utförd; kanske inte behövs i en begreppsmodell? 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Utford-analys.csv
   "name" : "Utfordanalys",
   "title" : "Utförd analys",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Utford-analys.csv
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Utförd analys).",
+  "description" : "Detta är väl mer en statusmarkering? Planerad, pågående, utförd; kanske inte behövs i en begreppsmodell?",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Utford-analys.csv
       "id" : "Utford-analys",
       "path" : "Utford-analys",
       "short" : "Utförd analys",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Utförd analys)."
+      "definition" : "Detta är väl mer en statusmarkering? Planerad, pågående, utförd; kanske inte behövs i en begreppsmodell?"
     }]
   }
 }

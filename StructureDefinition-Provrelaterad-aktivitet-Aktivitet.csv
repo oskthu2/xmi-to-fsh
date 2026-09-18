@@ -1,11 +1,16 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "Provrelaterad-aktivitet-Aktivitet","Provrelaterad-aktivitet-Aktivitet","","","",0,*,"","","","null {[]} {[]}
-","Provrelaterad aktivitet: Aktivitet","Supporting logical model generated from gloo4.xmi (source class: Provrelaterad aktivitet: Aktivitet).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Provrelaterad aktivitet: Aktivitet","Klassen Provrelaterad aktivitet håller information om aktiviteter relaterade till hantering av prov.
+Inkluderar även t.ex. aktiviteter i samband med transport, frysning, förvaring, bearbetning och delning i sekundärprov.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Provrelaterad-aktivitet-Aktivitet.kod","Provrelaterad-aktivitet-Aktivitet.kod","","","",1,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: kod","Source attribute: kod","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.kod",1,1,"",""
+","Source attribute: kod","Kod för provrelaterad aktivitet.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.kod",1,1,"",""
 "Provrelaterad-aktivitet-Aktivitet.tid","Provrelaterad-aktivitet-Aktivitet.tid","","","",1,1,"","","","string {[]} {[]}
-","Source attribute: tid","Source attribute: tid","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.tid",1,1,"",""
+","Source attribute: tid","Angivelse av tid eller tidsintervall då den provrelaterade aktiviteten utfördes.","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.tid",1,1,"",""
 "Provrelaterad-aktivitet-Aktivitet.metod","Provrelaterad-aktivitet-Aktivitet.metod","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV-CWE {[]} {[]}
-","Source attribute: metod","Source attribute: metod","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.metod",0,1,"",""
+","Source attribute: metod","Kod för metod för provrelaterad aktivitet.
+
+Om kod inte kan anges från nationellt urval kan originalText användas för textalternativ.","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.metod",0,1,"",""
 "Provrelaterad-aktivitet-Aktivitet.avser","Provrelaterad-aktivitet-Aktivitet.avser","","","",1,*,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Prov-Resurs {[]} {[]}
 ","Source attribute: avser","Source attribute: avser","","","","","","","","","",,,,,"",,,,"Provrelaterad-aktivitet-Aktivitet.avser",1,*,"",""

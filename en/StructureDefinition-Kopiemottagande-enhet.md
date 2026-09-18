@@ -3,7 +3,13 @@
 ## Logical Model: Kopiemottagande enhet 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Kopiemottagande enhet). 
+Den organisatoriska enhet som tar emot en kopia av laboratoriesvaret. 
+Eller ”… av remissvaret”, om detta ska vara generellt. I projektet e-remiss finns ingen kopiemottagare, är det något speciellt för laboratorieremisser? 
+2018-03-14: Vi stryker denna ur begreppsmodellen, svarskopia är inget unikt för labbremisser. 
+2018-03-09: Jonas Svanberg:
+ Kopiemottagande enhet
+ Nej, svarskopia är inget unikt för labbremisser. Det är en kvarleva från papperstiden, då det var lätt att ta en kopia (på vad som helst) och skicka till någon annan.
+ Det förekommer säkert hos vissa landsting, men vanligast är nog att det bara finns ett svar. 
 
 **Usages:**
 
@@ -36,7 +42,7 @@ Other representations of profile: [CSV](../StructureDefinition-Kopiemottagande-e
   "name" : "Kopiemottagandeenhet",
   "title" : "Kopiemottagande enhet",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +51,7 @@ Other representations of profile: [CSV](../StructureDefinition-Kopiemottagande-e
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Kopiemottagande enhet).",
+  "description" : "Den organisatoriska enhet som tar emot en kopia av laboratoriesvaret.  \n   \nEller ”… av remissvaret”, om detta ska vara generellt. I projektet e-remiss finns ingen kopiemottagare, är det något speciellt för laboratorieremisser? \n\n2018-03-14: Vi stryker denna ur begreppsmodellen, svarskopia är inget unikt för labbremisser.\n\n2018-03-09: Jonas Svanberg:  \nKopiemottagande enhet  \nNej, svarskopia är inget unikt för labbremisser. Det är en kvarleva från papperstiden, då det var lätt att ta en kopia (på vad som helst) och skicka till någon annan.  \nDet förekommer säkert hos vissa landsting, men vanligast är nog att det bara finns ett svar.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +63,7 @@ Other representations of profile: [CSV](../StructureDefinition-Kopiemottagande-e
       "id" : "Kopiemottagande-enhet",
       "path" : "Kopiemottagande-enhet",
       "short" : "Kopiemottagande enhet",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Kopiemottagande enhet)."
+      "definition" : "Den organisatoriska enhet som tar emot en kopia av laboratoriesvaret.  \n   \nEller ”… av remissvaret”, om detta ska vara generellt. I projektet e-remiss finns ingen kopiemottagare, är det något speciellt för laboratorieremisser? \n\n2018-03-14: Vi stryker denna ur begreppsmodellen, svarskopia är inget unikt för labbremisser.\n\n2018-03-09: Jonas Svanberg:  \nKopiemottagande enhet  \nNej, svarskopia är inget unikt för labbremisser. Det är en kvarleva från papperstiden, då det var lätt att ta en kopia (på vad som helst) och skicka till någon annan.  \nDet förekommer säkert hos vissa landsting, men vanligast är nog att det bara finns ett svar."
     },
     {
       "id" : "Kopiemottagande-enhet.tarEmotKopiaAv",

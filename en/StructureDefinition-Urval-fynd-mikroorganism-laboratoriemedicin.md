@@ -3,7 +3,8 @@
 ## Logical Model: Urval fynd mikroorganism laboratoriemedicin 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Urval fynd mikroorganism laboratoriemedicin). 
+Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva fynd av mikroorganismer inom laboratoriemedicin. 
+OID: 1.2.752.129.5.1.9 Refset-ID: 500061000057107 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-mikroo
   "name" : "Urvalfyndmikroorganismlaboratoriemedicin",
   "title" : "Urval fynd mikroorganism laboratoriemedicin",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-mikroo
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Urval fynd mikroorganism laboratoriemedicin).",
+  "description" : "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva fynd av mikroorganismer inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.9\nRefset-ID: 500061000057107",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-mikroo
       "id" : "Urval-fynd-mikroorganism-laboratoriemedicin",
       "path" : "Urval-fynd-mikroorganism-laboratoriemedicin",
       "short" : "Urval fynd mikroorganism laboratoriemedicin",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Urval fynd mikroorganism laboratoriemedicin)."
+      "definition" : "Urval ur Snomed CT (OID: 1.2.752.116.2.1.1) för att beskriva fynd av mikroorganismer inom laboratoriemedicin.\n\nOID: 1.2.752.129.5.1.9\nRefset-ID: 500061000057107"
     }]
   }
 }

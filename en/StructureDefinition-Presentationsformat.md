@@ -3,7 +3,12 @@
 ## Logical Model: Presentationsformat 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Presentationsformat). 
+Typ av filformat för svaret. [Så står det nu i informationsmodellen, klassen Svar, attributet "presentationsformat". Detta behöver knappast finnas med i begreppsmodellen.] 
+Dokument som innehåller den visuella presentationen av laboratoriesvaret. 
+Men jfr projektet e-remiss, där finns bilaga:
+ Dokument som kompletterar ett annat dokument och är avsett att användas tillsammans med detta. 
+Exempelvis utdrag ur patientjournal, en bild eller liknande som biläggs remissen, eller remissvaret. 
+Är presentation något annat än bilaga? 
 
 **Usages:**
 
@@ -36,7 +41,7 @@ Other representations of profile: [CSV](../StructureDefinition-Presentationsform
   "name" : "Presentationsformat",
   "title" : "Presentationsformat",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +50,7 @@ Other representations of profile: [CSV](../StructureDefinition-Presentationsform
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Presentationsformat).",
+  "description" : "Typ av filformat för svaret. \n[Så står det nu i informationsmodellen, klassen Svar, attributet \"presentationsformat\". Detta behöver knappast finnas med i begreppsmodellen.]\n\n\n\nDokument som innehåller den visuella presentationen av laboratoriesvaret.  \n   \nMen jfr projektet e-remiss, där finns bilaga:  \nDokument som kompletterar ett annat dokument och är avsett att användas tillsammans med detta.   \n   \nExempelvis utdrag ur patientjournal, en bild eller liknande som biläggs remissen, eller remissvaret.  \n   \nÄr presentation något annat än bilaga?",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +62,7 @@ Other representations of profile: [CSV](../StructureDefinition-Presentationsform
       "id" : "Presentationsformat",
       "path" : "Presentationsformat",
       "short" : "Presentationsformat",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Presentationsformat)."
+      "definition" : "Typ av filformat för svaret. \n[Så står det nu i informationsmodellen, klassen Svar, attributet \"presentationsformat\". Detta behöver knappast finnas med i begreppsmodellen.]\n\n\n\nDokument som innehåller den visuella presentationen av laboratoriesvaret.  \n   \nMen jfr projektet e-remiss, där finns bilaga:  \nDokument som kompletterar ett annat dokument och är avsett att användas tillsammans med detta.   \n   \nExempelvis utdrag ur patientjournal, en bild eller liknande som biläggs remissen, eller remissvaret.  \n   \nÄr presentation något annat än bilaga?"
     },
     {
       "id" : "Presentationsformat.harVisst",

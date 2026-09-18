@@ -3,7 +3,7 @@
 ## Logical Model: Organisatorisk enhet : Organisation (inom hälso- och sjukvård) 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisation (inom hälso- och sjukvård)). 
+Formellt bildad enhet som tillhör en organisation. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Organisatorisk-en
   "name" : "OrganisatoriskenhetOrganisationinomhalsoochsjukvard",
   "title" : "Organisatorisk enhet : Organisation (inom hälso- och sjukvård)",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Organisatorisk-en
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisation (inom hälso- och sjukvård)).",
+  "description" : "Formellt bildad enhet som tillhör en organisation.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Organisatorisk-en
       "id" : "Organisatorisk-enhet-Organisation-inom-halso--och-sjukv",
       "path" : "Organisatorisk-enhet-Organisation-inom-halso--och-sjukv",
       "short" : "Organisatorisk enhet : Organisation (inom hälso- och sjukvård)",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Organisatorisk enhet : Organisation (inom hälso- och sjukvård))."
+      "definition" : "Formellt bildad enhet som tillhör en organisation."
     },
     {
       "id" : "Organisatorisk-enhet-Organisation-inom-halso--och-sjukv.arEn",

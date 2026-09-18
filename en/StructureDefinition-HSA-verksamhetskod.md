@@ -3,7 +3,8 @@
 ## Logical Model: HSA verksamhetskod 
 
  
-Supporting logical model generated from gloo4.xmi (source class: HSA verksamhetskod). 
+Kod för typ av verksamhet som den organisatoriska enheten bedriver. 
+OID: 1.2.752.129.2.2.1.3 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-HSA-verksamhetsko
   "name" : "HSAverksamhetskod",
   "title" : "HSA verksamhetskod",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-HSA-verksamhetsko
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: HSA verksamhetskod).",
+  "description" : "Kod för typ av verksamhet som den organisatoriska enheten bedriver.\n\nOID: 1.2.752.129.2.2.1.3",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-HSA-verksamhetsko
       "id" : "HSA-verksamhetskod",
       "path" : "HSA-verksamhetskod",
       "short" : "HSA verksamhetskod",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: HSA verksamhetskod)."
+      "definition" : "Kod för typ av verksamhet som den organisatoriska enheten bedriver.\n\nOID: 1.2.752.129.2.2.1.3"
     }]
   }
 }

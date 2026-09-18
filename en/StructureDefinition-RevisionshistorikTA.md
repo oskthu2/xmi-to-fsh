@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Revisionshistorik
   "name" : "RevisionshistorikTA",
   "title" : "RevisionshistorikTA",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -63,7 +63,7 @@ Other representations of profile: [CSV](../StructureDefinition-Revisionshistorik
       "id" : "RevisionshistorikTA.Version40",
       "path" : "RevisionshistorikTA.Version40",
       "short" : "Source attribute: Version 4.0; type could not be resolved from source model",
-      "definition" : "Source attribute: Version 4.0; type could not be resolved from source model",
+      "definition" : "Ny informationsspecifikation för laboratoriesvar fastställd.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Revisionshistorik
       "id" : "RevisionshistorikTA.Version401",
       "path" : "RevisionshistorikTA.Version401",
       "short" : "Source attribute: Version 4.0.1; type could not be resolved from source model",
-      "definition" : "Source attribute: Version 4.0.1; type could not be resolved from source model",
+      "definition" : "Uppdaterat samtliga urval.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Revisionshistorik
       "id" : "RevisionshistorikTA.Version402",
       "path" : "RevisionshistorikTA.Version402",
       "short" : "Source attribute: Version 4.0.2; type could not be resolved from source model",
-      "definition" : "Source attribute: Version 4.0.2; type could not be resolved from source model",
+      "definition" : "Uppdaterad med exempel för resistensbestämning.",
       "min" : 0,
       "max" : "1",
       "type" : [{

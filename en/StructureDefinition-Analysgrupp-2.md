@@ -3,7 +3,7 @@
 ## Logical Model: Analysgrupp 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Analysgrupp). 
+Grupp av analyser utförda på ett eller flera prov från samma provgivare och som man väljer att betrakta som en enhet. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp-2.csv
   "name" : "Analysgrupp2",
   "title" : "Analysgrupp",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp-2.csv
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp).",
+  "description" : "Grupp av analyser utförda på ett eller flera prov från samma provgivare och som man väljer att betrakta som en enhet.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Analysgrupp-2.csv
       "id" : "Analysgrupp-2",
       "path" : "Analysgrupp-2",
       "short" : "Analysgrupp",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Analysgrupp)."
+      "definition" : "Grupp av analyser utförda på ett eller flera prov från samma provgivare och som man väljer att betrakta som en enhet."
     },
     {
       "id" : "Analysgrupp-2.grupperar",

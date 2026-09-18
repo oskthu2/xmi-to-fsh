@@ -2,8 +2,8 @@
 "RevisionshistorikTA","RevisionshistorikTA","","","",0,*,"","","","null {[]} {[]}
 ","RevisionshistorikTA","Supporting logical model generated from gloo4.xmi (source class: RevisionshistorikTA).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "RevisionshistorikTA.Version40","RevisionshistorikTA.Version40","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0; type could not be resolved from source model","Source attribute: Version 4.0; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version40",0,1,"",""
+","Source attribute: Version 4.0; type could not be resolved from source model","Ny informationsspecifikation för laboratoriesvar fastställd.","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version40",0,1,"",""
 "RevisionshistorikTA.Version401","RevisionshistorikTA.Version401","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0.1; type could not be resolved from source model","Source attribute: Version 4.0.1; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version401",0,1,"",""
+","Source attribute: Version 4.0.1; type could not be resolved from source model","Uppdaterat samtliga urval.","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version401",0,1,"",""
 "RevisionshistorikTA.Version402","RevisionshistorikTA.Version402","","","",0,1,"","","","string {[]} {[]}
-","Source attribute: Version 4.0.2; type could not be resolved from source model","Source attribute: Version 4.0.2; type could not be resolved from source model","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version402",0,1,"",""
+","Source attribute: Version 4.0.2; type could not be resolved from source model","Uppdaterad med exempel för resistensbestämning.","","","","","","","","","",,,,,"",,,,"RevisionshistorikTA.Version402",0,1,"",""

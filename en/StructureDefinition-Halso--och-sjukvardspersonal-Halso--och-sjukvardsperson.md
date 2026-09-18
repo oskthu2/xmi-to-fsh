@@ -3,7 +3,7 @@
 ## Logical Model: Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal). 
+Klassen hälso- och sjukvårdspersonal håller information om person som i sitt yrke utför hälso- och sjukvård. Hälso- och sjukvårdspersonal är oftast anställd av en vårdgivare. En vårdgivare kan ha anställd hälso- och sjukvårdspersonal, och ibland, som till exempel för enskild näringsidkare, kan rollerna sammanfalla. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Halso--och-sjukva
   "name" : "HalsoochsjukvardspersonalHalsoochsjukvardspersonal",
   "title" : "Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Halso--och-sjukva
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal).",
+  "description" : "Klassen hälso- och sjukvårdspersonal håller information om person som i sitt yrke utför hälso- och sjukvård.\nHälso- och sjukvårdspersonal är oftast anställd av en vårdgivare. En vårdgivare kan ha anställd hälso- och sjukvårdspersonal, och ibland, som till exempel för enskild näringsidkare, kan rollerna sammanfalla.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Halso--och-sjukva
       "id" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson",
       "path" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson",
       "short" : "Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Hälso- och sjukvårdspersonal : Hälso- och sjukvårdspersonal)."
+      "definition" : "Klassen hälso- och sjukvårdspersonal håller information om person som i sitt yrke utför hälso- och sjukvård.\nHälso- och sjukvårdspersonal är oftast anställd av en vårdgivare. En vårdgivare kan ha anställd hälso- och sjukvårdspersonal, och ibland, som till exempel för enskild näringsidkare, kan rollerna sammanfalla."
     },
     {
       "id" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.-id",
       "path" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson._id",
       "short" : "Source attribute: id; renamed from reserved FSH name 'id'",
-      "definition" : "Source attribute: id; renamed from reserved FSH name 'id'",
+      "definition" : "Angivelse av identitetsbeteckning för hälso- och sjukvårdspersonal.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Halso--och-sjukva
       "id" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.namn",
       "path" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.namn",
       "short" : "Source attribute: namn",
-      "definition" : "Source attribute: namn",
+      "definition" : "Angivelse av personnamn sammanslaget enligt formatet \"Mellannamn Efternamn, Förnamn\".\n\nOm flera namn av samma typ förekommer ska dessa separeras med mellanslag.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Halso--och-sjukva
       "id" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.befattning",
       "path" : "Halso--och-sjukvardspersonal-Halso--och-sjukvardsperson.befattning",
       "short" : "Source attribute: befattning",
-      "definition" : "Source attribute: befattning",
+      "definition" : "Kod för hälso- och sjukvårdspersonalens befattning.\nOm möjligt ska KV Befattning användas (notera dock att befattning INTE alltid kan jämställas med roll i detta avseende).\n\nOm kod inte kan anges från nationellt urval kan originalText användas för textalternativ.",
       "min" : 0,
       "max" : "1",
       "type" : [{

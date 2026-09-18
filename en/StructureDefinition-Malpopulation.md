@@ -3,7 +3,7 @@
 ## Logical Model: Målpopulation 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Målpopulation). 
+Den grupp man undersöker. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Malpopulation.csv
   "name" : "Malpopulation",
   "title" : "Målpopulation",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Malpopulation.csv
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Målpopulation).",
+  "description" : "Den grupp man undersöker.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-Malpopulation.csv
       "id" : "Malpopulation",
       "path" : "Malpopulation",
       "short" : "Målpopulation",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Målpopulation)."
+      "definition" : "Den grupp man undersöker."
     },
     {
       "id" : "Malpopulation.jamforsMed",

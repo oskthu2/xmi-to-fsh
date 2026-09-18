@@ -3,7 +3,7 @@
 ## Logical Model: NPU 
 
  
-Supporting logical model generated from gloo4.xmi (source class: NPU). 
+NPU-systemet (Nomenclature of properties and units) är ett register med systematiska, unika benämningar och koder för laboratorieundersökningar. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-NPU.csv), [Excel]
   "name" : "NPU",
   "title" : "NPU",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-NPU.csv), [Excel]
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: NPU).",
+  "description" : "NPU-systemet (Nomenclature of properties and units) är ett register med systematiska, unika benämningar och koder för laboratorieundersökningar.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +57,7 @@ Other representations of profile: [CSV](../StructureDefinition-NPU.csv), [Excel]
       "id" : "NPU",
       "path" : "NPU",
       "short" : "NPU",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: NPU)."
+      "definition" : "NPU-systemet (Nomenclature of properties and units) är ett register med systematiska, unika benämningar och koder för laboratorieundersökningar."
     }]
   }
 }

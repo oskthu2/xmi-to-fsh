@@ -1,5 +1,13 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
 "Fordjupad-analys","Fordjupad-analys","","","",0,*,"","","","null {[]} {[]}
-","Fördjupad analys","Supporting logical model generated from gloo4.xmi (source class: Fördjupad analys).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+","Fördjupad analys","Ytterligare analys föranledd av specifikt analysresultat. 
+
+2018-03-14: Vi stryker denna i begreppsmodellen, det löser sig i informationsmodellen. 
+
+Vad är skillnad mellan fördjupad analys och konfirmationsanalys som de pratade om på mötet? Är det samma? 
+
+2018-03-09: Jonas Svanberg:   
+För mig oklart begrepp. Möjligen kan man mena ”analys/undersökning som normalt inte utförs i aktuell situation”. För mig är det bara en ytterligare Fyndegenskap (8.4).  
+Eller avses ”analys som utförs pga. resultatet i beställd analys, och som inte är beställd från början”? Och behövs för att hantera den situationen?","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Fordjupad-analys.arEn","Fordjupad-analys.arEn","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/Laboratorieanalys-Aktivitet-inom-halso--och-sjukvard {[]} {[]}
 ","Source attribute: är en","Source attribute: är en","","","","","","","","","",,,,,"",,,,"Fordjupad-analys.arEn",0,1,"",""

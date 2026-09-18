@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Person-Person.csv
   "name" : "PersonPerson",
   "title" : "Person : Person",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -74,7 +74,7 @@ Other representations of profile: [CSV](../StructureDefinition-Person-Person.csv
       "id" : "Person-Person.namn",
       "path" : "Person-Person.namn",
       "short" : "Source attribute: namn",
-      "definition" : "Source attribute: namn",
+      "definition" : "Angivelse av personnamn sammanslaget enligt formatet \"Mellannamn Efternamn, Förnamn\".\n\nOm flera namn av samma typ förekommer ska dessa separeras med mellanslag.",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -85,7 +85,7 @@ Other representations of profile: [CSV](../StructureDefinition-Person-Person.csv
       "id" : "Person-Person.fodelsetidpunkt",
       "path" : "Person-Person.fodelsetidpunkt",
       "short" : "Source attribute: födelsetidpunkt",
-      "definition" : "Source attribute: födelsetidpunkt",
+      "definition" : "Angivelse av datum och eventuell tidpunkt då patienten är född.\n\nSka användas om patienten inte har personnummer samt i vissa fall för spädbarn. Om fullständigt födelsedatum inte är känt, anges uppskattad födelsetid. Exakt klockslag kan vara intressant för nyfödda barn, men formatet tillåter lägre precision:\nFormat: SSÅÅMMDDThhmmss, SSÅÅMMDDThhmm, SSÅÅMMDD, SSÅÅMM",
       "min" : 0,
       "max" : "1",
       "type" : [{
@@ -96,7 +96,7 @@ Other representations of profile: [CSV](../StructureDefinition-Person-Person.csv
       "id" : "Person-Person.kon",
       "path" : "Person-Person.kon",
       "short" : "Source attribute: kön",
-      "definition" : "Source attribute: kön",
+      "definition" : "Kod för patientens kön enligt folkbokföringen.",
       "min" : 0,
       "max" : "1",
       "type" : [{

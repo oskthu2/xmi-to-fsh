@@ -3,7 +3,7 @@
 ## Logical Model: Kontaktinformation 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Kontaktinformation). 
+Klassen Kontaktinformation håller information om vart eller till vem vården kan vända sig vid frågor om laboratoriesvaret. 
 
 **Usages:**
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Kontaktinformatio
   "name" : "Kontaktinformation",
   "title" : "Kontaktinformation",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +45,7 @@ Other representations of profile: [CSV](../StructureDefinition-Kontaktinformatio
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Kontaktinformation).",
+  "description" : "Klassen Kontaktinformation håller information om vart eller till vem vården kan vända sig vid frågor om laboratoriesvaret.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,13 +57,13 @@ Other representations of profile: [CSV](../StructureDefinition-Kontaktinformatio
       "id" : "Kontaktinformation",
       "path" : "Kontaktinformation",
       "short" : "Kontaktinformation",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Kontaktinformation)."
+      "definition" : "Klassen Kontaktinformation håller information om vart eller till vem vården kan vända sig vid frågor om laboratoriesvaret."
     },
     {
       "id" : "Kontaktinformation.text",
       "path" : "Kontaktinformation.text",
       "short" : "Source attribute: text",
-      "definition" : "Source attribute: text",
+      "definition" : "Textuell beskrivning av kontaktinformation.  \n\nDet kan t.ex. vara telefonnummer och öppettider till en kundtjänst, ett namn på en kontaktperson.",
       "min" : 1,
       "max" : "1",
       "type" : [{

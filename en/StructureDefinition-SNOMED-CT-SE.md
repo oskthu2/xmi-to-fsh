@@ -3,7 +3,8 @@
 ## Logical Model: SNOMED-CT SE 
 
  
-Supporting logical model generated from gloo4.xmi (source class: SNOMED-CT SE). 
+SNOMED CT innehåller en stor mängd kliniska termer. 
+OID: 1.2.752.116.2.1.1 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-SNOMED-CT-SE.csv)
   "name" : "SNOMEDCTSE",
   "title" : "SNOMED-CT SE",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-SNOMED-CT-SE.csv)
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: SNOMED-CT SE).",
+  "description" : "SNOMED CT innehåller en stor mängd kliniska termer.\n\nOID: 1.2.752.116.2.1.1",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-SNOMED-CT-SE.csv)
       "id" : "SNOMED-CT-SE",
       "path" : "SNOMED-CT-SE",
       "short" : "SNOMED-CT SE",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: SNOMED-CT SE)."
+      "definition" : "SNOMED CT innehåller en stor mängd kliniska termer.\n\nOID: 1.2.752.116.2.1.1"
     }]
   }
 }

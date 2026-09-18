@@ -3,7 +3,8 @@
 ## Logical Model: Referenspopulation 
 
  
-Supporting logical model generated from gloo4.xmi (source class: Referenspopulation). 
+Den grupp man jämför med målpopulationen. 
+Referenspopulationen måste stämma överens med målpopulationen i fråga om ålder, kön och sådana saker som spelar roll i sammanhanget. 
 
 **Usages:**
 
@@ -36,7 +37,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referenspopulatio
   "name" : "Referenspopulation",
   "title" : "Referenspopulation",
   "status" : "draft",
-  "date" : "2026-09-18T09:59:15+00:00",
+  "date" : "2026-09-18T10:29:51+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -45,7 +46,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referenspopulatio
       "value" : "https://github.com/oskthu2/xmi-to-fsh"
     }]
   }],
-  "description" : "Supporting logical model generated from gloo4.xmi (source class: Referenspopulation).",
+  "description" : "Den grupp man jämför med målpopulationen.\n\nReferenspopulationen måste stämma överens med målpopulationen i fråga om ålder, kön och sådana saker som spelar roll i sammanhanget.",
   "fhirVersion" : "4.0.1",
   "kind" : "logical",
   "abstract" : false,
@@ -57,7 +58,7 @@ Other representations of profile: [CSV](../StructureDefinition-Referenspopulatio
       "id" : "Referenspopulation",
       "path" : "Referenspopulation",
       "short" : "Referenspopulation",
-      "definition" : "Supporting logical model generated from gloo4.xmi (source class: Referenspopulation)."
+      "definition" : "Den grupp man jämför med målpopulationen.\n\nReferenspopulationen måste stämma överens med målpopulationen i fråga om ålder, kön och sådana saker som spelar roll i sammanhanget."
     },
     {
       "id" : "Referenspopulation.liggerTillGrundFor",
