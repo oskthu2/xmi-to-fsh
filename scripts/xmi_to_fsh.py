@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 """Convert Visual Paradigm XMI exports into FSH logical model definitions.
 
-Each *.xmi file in the input directory becomes one *.fsh file. Every
-uml:Class found in the file becomes a `Logical:` definition. The class
-flagged as the root (Visual Paradigm's "Root" checkbox, exported as
+Each *.xmi file in the input directory becomes its own, independent FHIR
+Implementation Guide, named after the file: a self-contained project
+directory under the output root (sushi-config.yaml, ig.ini, generated FSH,
+page content) that SUSHI/the IG Publisher can build on its own. Every
+uml:Class in the file becomes a `Logical:` definition. The class flagged
+as the root (Visual Paradigm's "Root" checkbox, exported as
 <isRoot xmi:value="true"/>) is treated as the logical-model profile for
-that file; any other classes it depends on are emitted alongside it as
+the IG; any other classes it depends on are emitted alongside it as
 supporting logical types so the FSH is self-contained.
 """
 from __future__ import annotations
 
 import argparse
 import re
+import shutil
 import sys
 import unicodedata
 import xml.etree.ElementTree as ET
@@ -84,6 +88,62 @@ def slug_id(name: str, used: set[str], fallback: str = "unnamed") -> str:
         n += 1
     used.add(candidate.lower())
     return candidate
+
+
+def slugify(name: str, fallback: str = "ig") -> str:
+    """Lowercase, ASCII, hyphenated slug — used for each XMI file's IG
+    directory name, FHIR package id, and canonical URL segment."""
+    ascii_name = strip_diacritics(name or "")
+    ascii_name = re.sub(r"[^A-Za-z0-9]+", "-", ascii_name).strip("-").lower()
+    return ascii_name or fallback
+
+
+SUSHI_CONFIG_TEMPLATE = """\
+# Configuration for SUSHI (FSH -> FHIR) and the HL7 FHIR IG Publisher.
+# Generated automatically from {source_file} by scripts/xmi_to_fsh.py — do
+# not edit by hand; re-run the script to regenerate. Customize
+# canonical/publisher below (or the --canonical-base/--publisher-* flags)
+# before publishing this IG for real.
+id: {id}
+canonical: {canonical}
+name: {name}
+title: "{title}"
+description: >-
+  Logical model IG generated automatically from {source_file}
+  (Visual Paradigm XMI export). Do not edit the generated FSH under
+  input/fsh/models/ by hand — re-run scripts/xmi_to_fsh.py instead.
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: {copyright_year}+
+releaseLabel: ci-build
+publisher:
+  name: {publisher_name}
+  url: {publisher_url}
+
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
+"""
+
+IG_INI_TEMPLATE = """\
+[IG]
+ig = fsh-generated/resources/ImplementationGuide-{id}.json
+template = fhir2.base.template#current
+"""
+
+INDEX_MD_TEMPLATE = """\
+### Overview
+
+This Implementation Guide is built automatically from a single Visual
+Paradigm XMI export, `{source_file}`. It defines one FHIR
+[Logical Model](artifacts.html) per UML class found in the file; the
+class marked **Root** in Visual Paradigm is the model that represents
+this IG as a whole (**{root_class}**), and any other classes it uses are
+included as supporting logical models.
+
+See the [Artifacts](artifacts.html) page for the full list.
+"""
 
 
 def sanitize_field_name(name: str) -> str:
@@ -572,8 +632,13 @@ def render_instances(instance_specs: list[InstanceSpec], classes: dict[str, Logi
     return out
 
 
-def convert_file(xmi_path: Path, out_dir: Path, id_registry: set[str],
-                  name_registry: set[str], instance_name_registry: set[str]) -> list[str]:
+def convert_file(xmi_path: Path, igs_root: Path, canonical_base: str,
+                  publisher_name: str, publisher_url: str,
+                  ig_slug_registry: set[str]) -> tuple[str, list[str]]:
+    """Converts one XMI file into its own, self-contained IG directory
+    under igs_root, named after the file. Every identifier/name registry
+    used is local to this one IG — each file is now an independent FHIR
+    package, not merged with any other file's output."""
     warnings: list[str] = []
     try:
         tree = ET.parse(xmi_path)
@@ -585,6 +650,10 @@ def convert_file(xmi_path: Path, out_dir: Path, id_registry: set[str],
 
     if not classes:
         raise ConversionWarning(f"{xmi_path.name}: no uml:Class elements found")
+
+    id_registry: set[str] = set()
+    name_registry: set[str] = set()
+    instance_name_registry: set[str] = set()
 
     assign_fsh_names(classes, name_registry)
 
@@ -640,29 +709,73 @@ def convert_file(xmi_path: Path, out_dir: Path, id_registry: set[str],
         out_parts.extend(instance_blocks)
         instance_count = len(instance_blocks)
 
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_name = re.sub(r"[^A-Za-z0-9.\-]+", "_", xmi_path.stem) + ".fsh"
-    out_path = out_dir / out_name
-    out_path.write_text("\n".join(out_parts), encoding="utf-8")
+    slug = slugify(xmi_path.stem)
+    candidate = slug
+    n = 2
+    while candidate in ig_slug_registry:
+        candidate = f"{slug}-{n}"
+        n += 1
+    ig_slug_registry.add(candidate)
+    slug = candidate
 
-    print(f"[ok] {xmi_path.name} -> {out_path} "
+    ig_dir = igs_root / slug
+    fsh_dir = ig_dir / "input" / "fsh" / "models"
+    pagecontent_dir = ig_dir / "input" / "pagecontent"
+    fsh_dir.mkdir(parents=True, exist_ok=True)
+    pagecontent_dir.mkdir(parents=True, exist_ok=True)
+
+    fsh_path = fsh_dir / (re.sub(r"[^A-Za-z0-9.\-]+", "_", xmi_path.stem) + ".fsh")
+    fsh_path.write_text("\n".join(out_parts), encoding="utf-8")
+
+    ig_name = re.sub(r"[^A-Za-z0-9]", "", xmi_path.stem) or slug.title().replace("-", "")
+    if ig_name[0].isdigit():
+        ig_name = f"Ig{ig_name}"
+    (ig_dir / "sushi-config.yaml").write_text(
+        SUSHI_CONFIG_TEMPLATE.format(
+            source_file=xmi_path.name,
+            id=slug,
+            canonical=f"{canonical_base.rstrip('/')}/{slug}",
+            name=f"{ig_name}IG",
+            title=xmi_path.stem,
+            copyright_year=2026,
+            publisher_name=publisher_name,
+            publisher_url=publisher_url,
+        ),
+        encoding="utf-8",
+    )
+    (ig_dir / "ig.ini").write_text(
+        IG_INI_TEMPLATE.format(id=slug), encoding="utf-8"
+    )
+    (pagecontent_dir / "index.md").write_text(
+        INDEX_MD_TEMPLATE.format(source_file=xmi_path.name, root_class=root_cls.name),
+        encoding="utf-8",
+    )
+
+    print(f"[ok] {xmi_path.name} -> igs/{slug}/ "
           f"({len(classes)} class(es), {instance_count} example instance(s), "
           f"root: {root_cls.name})")
     for w in warnings:
         print(f"  [warn] {w}")
-    return warnings
+    return slug, warnings
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", default="xmi-input",
                          help="Directory containing *.xmi files")
-    parser.add_argument("--output", default="input/fsh/models",
-                         help="Directory to write generated *.fsh files into")
+    parser.add_argument("--output-root", default="igs",
+                         help="Directory under which each XMI file gets its "
+                              "own IG subdirectory (named after the file)")
+    parser.add_argument("--canonical-base", default="http://example.org/fhir",
+                         help="Base canonical URL; each IG's canonical is "
+                              "<canonical-base>/<slug>")
+    parser.add_argument("--publisher-name", default="xmi-to-fsh")
+    parser.add_argument("--publisher-url",
+                         default="https://github.com/oskthu2/xmi-to-fsh")
     args = parser.parse_args()
 
     in_dir = Path(args.input)
-    out_dir = Path(args.output)
+    igs_root = Path(args.output_root)
 
     if not in_dir.is_dir():
         print(f"error: input directory '{in_dir}' does not exist", file=sys.stderr)
@@ -673,26 +786,30 @@ def main() -> int:
         print(f"error: no .xmi files found in '{in_dir}'", file=sys.stderr)
         return 1
 
-    if out_dir.is_dir():
-        for old in out_dir.glob("*.fsh"):
-            old.unlink()
+    # Every IG is fully regenerated each run; wipe stale output (e.g. from a
+    # file that was since renamed or removed) rather than leaving it behind.
+    if igs_root.is_dir():
+        shutil.rmtree(igs_root)
+    igs_root.mkdir(parents=True, exist_ok=True)
 
-    id_registry: set[str] = set()
-    name_registry: set[str] = set()
-    instance_name_registry: set[str] = set()
+    ig_slug_registry: set[str] = set()
     total_warnings = 0
     failed = False
+    slugs: list[str] = []
     for xmi_path in xmi_files:
         try:
-            warnings = convert_file(xmi_path, out_dir, id_registry, name_registry,
-                                     instance_name_registry)
+            slug, warnings = convert_file(
+                xmi_path, igs_root, args.canonical_base,
+                args.publisher_name, args.publisher_url, ig_slug_registry,
+            )
+            slugs.append(slug)
             total_warnings += len(warnings)
         except ConversionWarning as exc:
             print(f"[error] {exc}", file=sys.stderr)
             failed = True
 
-    print(f"\nDone: {len(xmi_files)} file(s) processed, "
-          f"{total_warnings} warning(s).")
+    print(f"\nDone: {len(xmi_files)} file(s) processed into "
+          f"{len(slugs)} IG(s) under {igs_root}/, {total_warnings} warning(s).")
     return 1 if failed else 0
 
 
