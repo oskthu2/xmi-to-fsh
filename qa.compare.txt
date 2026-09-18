@@ -1,10 +1,52 @@
 XmiToFshIG : Validation Results
 =========================================
 
-err = 3, warn = 513, info = 90
+err = 12, warn = 513, info = 90
 $--
 Generated $--. FHIR version $-- for xmi.to.fsh#$-- (canonical = http://example.org/fhir/xmi-to-fsh)
- Build Errors : 3 / 4 / 0
+ Build Errors : 12 / 4 / 0
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Analysutrustning : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BBasofilagranulocyterReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BBasofilagranulocyterReferensintervall2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BEosinofilagranulocyterReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BEosinofilagranulocyterReferensintervall2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BHbA1cIFCCReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BHemoglobinHbReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BHemoglobinHbReferensintervall2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BHemoglobinHbReferensintervall3 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BLeukocyterReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BLeukocyterReferensintervall2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BLymfocyterReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BLymfocyterReferensintervall2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BMonocyterReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BMonocyterReferensintervall2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BNeutrofilagranulocyterReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-BNeutrofilagranulocyterReferensintervall2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PCRPReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PCpeptidReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PGAD65akIgGELISAReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PGlukosReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PHDLkolesterolReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PKolesterolReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PLDLkolesteroldirektReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-POcellIA2akReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PTriglyceriderReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-PnonHDLkolesterolReferensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall1 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall10 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall22 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall3 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall4 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall5 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall6 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall7 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall8 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervall9 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervalltiter : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervalltiter2 : 0 / 0 / 1
+ /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/Binary-Referensintervalltiter3 : 0 / 0 / 1
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/ImplementationGuide-xmi.to.fsh : 0 / 4 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Analysgrupp : 0 / 0 / 2
  /home/runner/work/xmi-to-fsh/xmi-to-fsh/fsh-generated/resources/StructureDefinition-Analysgrupp-2 : 0 / 4 / 2
@@ -100,15 +142,66 @@ Generated $--. FHIR version $-- for xmi.to.fsh#$-- (canonical = http://example.o
 ERROR: ImplementationGuide.definition.parameter[24].value: Supressed messages file not found
 ERROR: There are multiple resources with the same title [Analysgrupp].  This is not allowed because it produces duplicate entries in the table of contents.
 ERROR: There are multiple resources with the same title [Signering : Deltagande].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [B—Basofila granulocyter, Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [B—Eosinofila granulocyter, Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [B—Hemoglobin (Hb), Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [B—Leukocyter, Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [B—Lymfocyter, Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [B—Monocyter, Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [B—Neutrofila granulocyter, Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Referensintervall].  This is not allowed because it produces duplicate entries in the table of contents.
+ERROR: There are multiple resources with the same title [Referensintervall (titer)].  This is not allowed because it produces duplicate entries in the table of contents.
 WARNING: /home/runner/work/xmi-to-fsh/xmi-to-fsh/output/en/StructureDefinition-IVL-PQ.html: Illegal HTML: illegal html element: PQ ().)
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Binary-Analysutrustning.json ==
+== fsh-generated/resources/Binary-BBasofilagranulocyterReferensintervall.json ==
+== fsh-generated/resources/Binary-BBasofilagranulocyterReferensintervall2.json ==
+== fsh-generated/resources/Binary-BEosinofilagranulocyterReferensintervall.json ==
+== fsh-generated/resources/Binary-BEosinofilagranulocyterReferensintervall2.json ==
+== fsh-generated/resources/Binary-BHbA1cIFCCReferensintervall.json ==
+== fsh-generated/resources/Binary-BHemoglobinHbReferensintervall.json ==
+== fsh-generated/resources/Binary-BHemoglobinHbReferensintervall2.json ==
+== fsh-generated/resources/Binary-BHemoglobinHbReferensintervall3.json ==
+== fsh-generated/resources/Binary-BLeukocyterReferensintervall.json ==
+== fsh-generated/resources/Binary-BLeukocyterReferensintervall2.json ==
+== fsh-generated/resources/Binary-BLymfocyterReferensintervall.json ==
+== fsh-generated/resources/Binary-BLymfocyterReferensintervall2.json ==
+== fsh-generated/resources/Binary-BMonocyterReferensintervall.json ==
+== fsh-generated/resources/Binary-BMonocyterReferensintervall2.json ==
+== fsh-generated/resources/Binary-BNeutrofilagranulocyterReferensintervall.json ==
+== fsh-generated/resources/Binary-BNeutrofilagranulocyterReferensintervall2.json ==
+== fsh-generated/resources/Binary-PCRPReferensintervall.json ==
+== fsh-generated/resources/Binary-PCpeptidReferensintervall.json ==
+== fsh-generated/resources/Binary-PGAD65akIgGELISAReferensintervall.json ==
+== fsh-generated/resources/Binary-PGlukosReferensintervall.json ==
+== fsh-generated/resources/Binary-PHDLkolesterolReferensintervall.json ==
+== fsh-generated/resources/Binary-PKolesterolReferensintervall.json ==
+== fsh-generated/resources/Binary-PLDLkolesteroldirektReferensintervall.json ==
+== fsh-generated/resources/Binary-POcellIA2akReferensintervall.json ==
+== fsh-generated/resources/Binary-PTriglyceriderReferensintervall.json ==
+== fsh-generated/resources/Binary-PnonHDLkolesterolReferensintervall.json ==
+== fsh-generated/resources/Binary-Referensintervall.json ==
+== fsh-generated/resources/Binary-Referensintervall1.json ==
+== fsh-generated/resources/Binary-Referensintervall10.json ==
+== fsh-generated/resources/Binary-Referensintervall2.json ==
+== fsh-generated/resources/Binary-Referensintervall22.json ==
+== fsh-generated/resources/Binary-Referensintervall3.json ==
+== fsh-generated/resources/Binary-Referensintervall4.json ==
+== fsh-generated/resources/Binary-Referensintervall5.json ==
+== fsh-generated/resources/Binary-Referensintervall6.json ==
+== fsh-generated/resources/Binary-Referensintervall7.json ==
+== fsh-generated/resources/Binary-Referensintervall8.json ==
+== fsh-generated/resources/Binary-Referensintervall9.json ==
+== fsh-generated/resources/Binary-Referensintervalltiter.json ==
+== fsh-generated/resources/Binary-Referensintervalltiter2.json ==
+== fsh-generated/resources/Binary-Referensintervalltiter3.json ==
 == fsh-generated/resources/ImplementationGuide-xmi.to.fsh.json ==
-WARNING: ImplementationGuide/xmi.to.fsh: ImplementationGuide.definition.resource[11].name: value should not start or finish with whitespace 'FHIR Diagnostic Report Status '
-WARNING: ImplementationGuide/xmi.to.fsh: ImplementationGuide.definition.resource[78].name: value should not start or finish with whitespace 'Urval analysstatus laboratoriemedicin  '
-WARNING: ImplementationGuide/xmi.to.fsh: ImplementationGuide.definition.resource[80].name: value should not start or finish with whitespace 'Urval fynd bakterieegenskaper laboratoriemedicin '
-WARNING: ImplementationGuide/xmi.to.fsh: ImplementationGuide.definition.resource[82].name: value should not start or finish with whitespace 'Urval fynd resistens laboratoriemedicin '
+WARNING: ImplementationGuide/xmi.to.fsh: ImplementationGuide.definition.resource[28].name: value should not start or finish with whitespace 'FHIR Diagnostic Report Status '
+WARNING: ImplementationGuide/xmi.to.fsh: ImplementationGuide.definition.resource[120].name: value should not start or finish with whitespace 'Urval analysstatus laboratoriemedicin  '
+WARNING: ImplementationGuide/xmi.to.fsh: ImplementationGuide.definition.resource[122].name: value should not start or finish with whitespace 'Urval fynd bakterieegenskaper laboratoriemedicin '
+WARNING: ImplementationGuide/xmi.to.fsh: ImplementationGuide.definition.resource[124].name: value should not start or finish with whitespace 'Urval fynd resistens laboratoriemedicin '
 INFORMATION: Resource: The resource ImplementationGuide/xmi.to.fsh could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-Analysgrupp.json ==
 INFORMATION: Resource: The resource StructureDefinition/Analysgrupp could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)

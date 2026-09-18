@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.name [ fhir:value "XmiToFshIG"] ;
   fhir:ImplementationGuide.title [ fhir:value "Logical Models from Visual Paradigm XMI"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-09-18T08:41:45+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-09-18T09:59:15+00:00"^^xsd:dateTime] ;
   fhir:ImplementationGuide.publisher [ fhir:value "xmi-to-fsh"] ;
   fhir:ImplementationGuide.contact [
      fhir:index -1 ;
@@ -769,6 +769,27 @@
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Analysutrustning> ;
+         fhir:Reference.reference [ fhir:value "Binary/Analysutrustning" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Analysutrustning" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysutrustning-Resurs" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Analysutrustning-Resurs>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
@@ -807,6 +828,342 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "BL" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: BL)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BBasofilagranulocyterReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/BBasofilagranulocyterReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Basofila granulocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BBasofilagranulocyterReferensintervall2> ;
+         fhir:Reference.reference [ fhir:value "Binary/BBasofilagranulocyterReferensintervall2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Basofila granulocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BEosinofilagranulocyterReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/BEosinofilagranulocyterReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Eosinofila granulocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BEosinofilagranulocyterReferensintervall2> ;
+         fhir:Reference.reference [ fhir:value "Binary/BEosinofilagranulocyterReferensintervall2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Eosinofila granulocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BHbA1cIFCCReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/BHbA1cIFCCReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—HbA1c (IFCC), Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BHemoglobinHbReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/BHemoglobinHbReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Hemoglobin (Hb), Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BHemoglobinHbReferensintervall2> ;
+         fhir:Reference.reference [ fhir:value "Binary/BHemoglobinHbReferensintervall2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Hemoglobin (Hb), Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BHemoglobinHbReferensintervall3> ;
+         fhir:Reference.reference [ fhir:value "Binary/BHemoglobinHbReferensintervall3" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Hemoglobin (Hb), Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BLeukocyterReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/BLeukocyterReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Leukocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BLeukocyterReferensintervall2> ;
+         fhir:Reference.reference [ fhir:value "Binary/BLeukocyterReferensintervall2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Leukocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BLymfocyterReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/BLymfocyterReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Lymfocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BLymfocyterReferensintervall2> ;
+         fhir:Reference.reference [ fhir:value "Binary/BLymfocyterReferensintervall2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Lymfocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BMonocyterReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/BMonocyterReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Monocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BMonocyterReferensintervall2> ;
+         fhir:Reference.reference [ fhir:value "Binary/BMonocyterReferensintervall2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Monocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BNeutrofilagranulocyterReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/BNeutrofilagranulocyterReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Neutrofila granulocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/BNeutrofilagranulocyterReferensintervall2> ;
+         fhir:Reference.reference [ fhir:value "Binary/BNeutrofilagranulocyterReferensintervall2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "B—Neutrofila granulocyter, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [
@@ -1427,6 +1784,216 @@
        fhir:index -1 ;
        fhir:Element.extension [
          fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PCpeptidReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PCpeptidReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—C-peptid, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PCRPReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PCRPReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—CRP, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PGAD65akIgGELISAReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PGAD65akIgGELISAReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—GAD65-ak (IgG, ELISA), Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PGlukosReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PGlukosReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—Glukos, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PHDLkolesterolReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PHDLkolesterolReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—HDL-kolesterol, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PKolesterolReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PKolesterolReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—Kolesterol, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PLDLkolesteroldirektReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PLDLkolesteroldirektReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—LDL-kolesterol, direkt, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PnonHDLkolesterolReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PnonHDLkolesterolReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—non-HDL-kolesterol, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/PTriglyceriderReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/PTriglyceriderReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—Triglycerider, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/POcellIA2akReferensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/POcellIA2akReferensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "P—Ö-cell(IA-2)-ak, Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ] ;
@@ -1465,6 +2032,321 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Supporting logical model generated from gloo4.xmi (source class: Referensintervall)." ] ;
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall2> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall3> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall3" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall4> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall4" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall5> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall5" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall6> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall6" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall7> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall7" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall8> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall8" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall9> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall9" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall10> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall10" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervalltiter> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervalltiter" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall (titer)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervalltiter2> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervalltiter2" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall (titer)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervalltiter3> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervalltiter3" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall (titer)" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall1> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall1" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall 1" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
+     ], [
+       fhir:index -1 ;
+       fhir:Element.extension [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format" ] ;
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index -1 ;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ] ;
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://example.org/fhir/xmi-to-fsh/Binary/Referensintervall22> ;
+         fhir:Reference.reference [ fhir:value "Binary/Referensintervall22" ]
+       ] ;
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Referensintervall 2" ] ;
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example instance generated from an object diagram in gloo4.xmi." ] ;
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens" ;
+         fhir:link <http://example.org/fhir/xmi-to-fsh/StructureDefinition/Referens>
+       ]
      ], [
        fhir:index -1 ;
        fhir:Element.extension [

@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "PCRPReferensintervall",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIveG1pLXRvLWZzaC9TdHJ1Y3R1cmVEZWZpbml0aW9uL1JlZmVyZW5zIiwKICAiaW50ZXJ2YWxsIjogIjw4IG1nL0wiCn0K"
+}

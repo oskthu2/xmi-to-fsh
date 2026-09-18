@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Urval-fynd-resist
   "name" : "Urvalfyndresistenslaboratoriemedicin",
   "title" : "Urval fynd resistens laboratoriemedicin ",
   "status" : "draft",
-  "date" : "2026-09-18T08:41:45+00:00",
+  "date" : "2026-09-18T09:59:15+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",

@@ -141,7 +141,7 @@
 ","Laboratorieanalysresultat : Observation","Supporting logical model generated from gloo4.xmi (source class: Laboratorieanalysresultat : Observation).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.typ","Laboratorieanalysresultat-Observation.typ","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/CV {[]} {[]}
 ","Source attribute: typ","Source attribute: typ","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.typ",0,1,"",""
-"Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.varde","Laboratorieanalysresultat-Observation.varde","","","",1,1,"","","","base64Binary {[]} {[]}
+"Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.varde","Laboratorieanalysresultat-Observation.varde","","","",1,1,"","","","string {[]} {[]}
 ","Source attribute: värde","Source attribute: värde","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.varde",1,1,"",""
 "Laboratorieanalysresultat-Observation","Laboratorieanalysresultat-Observation.kommentar","Laboratorieanalysresultat-Observation.kommentar","","","",0,1,"","","","http://example.org/fhir/xmi-to-fsh/StructureDefinition/ST {[]} {[]}
 ","Source attribute: kommentar","Source attribute: kommentar","","","","","","","","","",,,,,"",,,,"Laboratorieanalysresultat-Observation.kommentar",0,1,"",""

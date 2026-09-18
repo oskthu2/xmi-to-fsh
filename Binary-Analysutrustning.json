@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "Analysutrustning",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL2V4YW1wbGUub3JnL2ZoaXIveG1pLXRvLWZzaC9TdHJ1Y3R1cmVEZWZpbml0aW9uL0FuYWx5c3V0cnVzdG5pbmctUmVzdXJzIgp9Cg=="
+}

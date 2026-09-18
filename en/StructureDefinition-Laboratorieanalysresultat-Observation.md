@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
   "name" : "LaboratorieanalysresultatObservation",
   "title" : "Laboratorieanalysresultat : Observation",
   "status" : "draft",
-  "date" : "2026-09-18T08:41:45+00:00",
+  "date" : "2026-09-18T09:59:15+00:00",
   "publisher" : "xmi-to-fsh",
   "contact" : [{
     "name" : "xmi-to-fsh",
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](../StructureDefinition-Laboratorieanalys
       "min" : 1,
       "max" : "1",
       "type" : [{
-        "code" : "base64Binary"
+        "code" : "string"
       }]
     },
     {
