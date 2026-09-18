@@ -16,10 +16,6 @@ releaseLabel: ci-build
 publisher:
   name: xmi-to-fsh
   url: https://github.com/oskthu2/xmi-to-fsh
-template: fhir.base.template#current
-
-parameters:
-  releaselabel: ci-build
 
 menu:
   Home: index.html

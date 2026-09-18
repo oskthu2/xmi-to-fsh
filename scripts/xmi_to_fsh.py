@@ -87,13 +87,22 @@ def slug_id(name: str, used: set[str], fallback: str = "unnamed") -> str:
 
 
 def sanitize_field_name(name: str) -> str:
+    """FHIR element names must be simple alphanumerics (invariant eld-20) —
+    no underscores, hyphens, spaces, etc. Multi-word names (e.g. from a
+    Swedish attribute/role name with spaces) are joined into camelCase
+    instead of being underscore-separated, so `är ansvarig för` becomes
+    `arAnsvarigFor` rather than the invalid `ar_ansvarig_for`. A name
+    that's already a single alphanumeric token is left untouched."""
     ascii_name = strip_diacritics(name or "")
-    ascii_name = re.sub(r"[^A-Za-z0-9_]+", "_", ascii_name).strip("_")
-    if not ascii_name:
+    words = re.findall(r"[A-Za-z0-9]+", ascii_name)
+    if not words:
         return "field"
-    if ascii_name[0].isdigit():
-        ascii_name = f"_{ascii_name}"
-    return ascii_name
+    result = words[0]
+    for word in words[1:]:
+        result += word[0].upper() + word[1:]
+    if result[0].isdigit():
+        result = f"f{result}"
+    return result
 
 
 def escape_fsh_string(text: str) -> str:
@@ -302,7 +311,7 @@ def apply_associations(associations: list[ET.Element], classes: dict[str, Logica
             existing = existing_field_names(owner_cls)
             n = 2
             while candidate.lower() in existing:
-                candidate = f"{base_field}_{n}"
+                candidate = f"{base_field}{n}"
                 n += 1
 
             renamed = False
