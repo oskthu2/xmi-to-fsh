@@ -1,0 +1,26 @@
+# Configuration for SUSHI (FSH -> FHIR) and the HL7 FHIR IG Publisher.
+# Customize id/canonical/publisher before publishing this IG for real.
+id: xmi.to.fsh
+canonical: http://example.org/fhir/xmi-to-fsh
+name: XmiToFshIG
+title: "Logical Models from Visual Paradigm XMI"
+description: >-
+  Logical models generated automatically from Visual Paradigm XMI exports
+  found in xmi-input/. Do not edit the generated FSH files under
+  input/fsh/models/ by hand — re-run scripts/xmi_to_fsh.py instead.
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+publisher:
+  name: xmi-to-fsh
+  url: https://github.com/oskthu2/xmi-to-fsh
+template: fhir.base.template#current
+
+parameters:
+  releaselabel: ci-build
+
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
