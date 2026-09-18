@@ -52,7 +52,7 @@ PRIMITIVE_TYPE_MAP = {
     "oid": "oid", "uuid": "uuid", "id": "id", "code": "code",
     "markdown": "markdown", "base64binary": "base64Binary", "base64": "base64Binary",
     "unsignedint": "unsignedInt", "positiveint": "positiveInt",
-    "xhtml": "xhtml", "any": "base64Binary",
+    "xhtml": "xhtml", "any": "string",
 }
 
 # FHIR types that are already spelled correctly and should pass through as-is.
@@ -447,11 +447,19 @@ def render_instances(instance_specs: list[InstanceSpec], classes: dict[str, Logi
                       instance_name_registry: set[str],
                       warnings: list[str], source_file: str) -> list[str]:
     """Best-effort: converts each uml:InstanceSpecification (an object in one
-    of the source model's object diagrams) into a FSH example Instance of
-    the corresponding Logical model. Slot values are copied through as-is —
+    of the source model's object diagrams) into a FSH Instance of the
+    corresponding Logical model. Slot values are copied through as-is —
     some object diagrams use real example data, others use descriptive
     placeholder text (e.g. "{comment} [0..1]"), and this does not try to
-    tell them apart."""
+    tell them apart.
+
+    Object diagrams are inherently partial sketches: they rarely set every
+    required (min cardinality >= 1) attribute of the class they instantiate,
+    which SUSHI rejects for `Usage: #example` instances. So an instance is
+    only marked #example (a standalone, browsable example in the built IG)
+    when every one of its class's required attributes got a value from a
+    slot; otherwise it's marked #inline (still compiled and included in the
+    FHIR package, just not validated or published as its own example page)."""
     out: list[str] = []
     for spec in instance_specs:
         cls = classes.get(spec.classifier_id) if spec.classifier_id else None
@@ -472,16 +480,8 @@ def render_instances(instance_specs: list[InstanceSpec], classes: dict[str, Logi
             n += 1
         instance_name_registry.add(candidate.lower())
 
-        lines = [f"Instance: {candidate}"]
-        lines.append(f"InstanceOf: {cls.fsh_name}")
-        lines.append(f'Title: "{escape_fsh_string(spec.name)}"')
-        lines.append("Usage: #example")
-        lines.append(
-            f'Description: "Example instance generated from an object diagram '
-            f'in {escape_fsh_string(source_file)}."'
-        )
-
-        rule_count = 0
+        rules: list[str] = []
+        covered_source_ids: set[str] = set()
         for defining_feature, value_text in spec.slots:
             found = attr_index.get(defining_feature)
             if found is None:
@@ -498,12 +498,34 @@ def render_instances(instance_specs: list[InstanceSpec], classes: dict[str, Logi
                     f"converted automatically"
                 )
                 continue
-            lines.append(
+            rules.append(
                 f"* {attr.field_name} = {format_instance_value(value_text, attr.type_name)}"
             )
-            rule_count += 1
+            covered_source_ids.add(attr.source_id)
 
-        if rule_count == 0:
+        is_complete = all(
+            attr.lower == "0" or attr.source_id in covered_source_ids
+            for attr in cls.attributes
+        )
+        usage = "#example" if is_complete else "#inline"
+        if not is_complete:
+            warnings.append(
+                f"{spec.name}: marked Usage: #inline instead of #example — "
+                f"this object diagram doesn't set every required attribute "
+                f"of '{cls.name}', so SUSHI would reject it as an example"
+            )
+
+        lines = [f"Instance: {candidate}"]
+        lines.append(f"InstanceOf: {cls.fsh_name}")
+        lines.append(f'Title: "{escape_fsh_string(spec.name)}"')
+        lines.append(f"Usage: {usage}")
+        role = "Example" if is_complete else "Partial example (illustrative only)"
+        lines.append(
+            f'Description: "{role} instance generated from an object diagram '
+            f'in {escape_fsh_string(source_file)}."'
+        )
+        lines.extend(rules)
+        if not rules:
             lines.append("// (no slot values could be mapped to attributes)")
         out.append("\n".join(lines) + "\n")
     return out
