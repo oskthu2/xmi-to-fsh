@@ -1,4 +1,4 @@
-name: Build FHIR IG from XMI
+name: Build FHIR IGs from XMI
 
 on:
   push:
@@ -18,9 +18,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  # Step 1: turn every xmi-input/*.xmi file into FSH logical models, then
-  # ask SUSHI to compile+validate the FSH. This is the fast gate: if the
-  # XMI doesn't produce valid FSH, nothing else runs.
+  # Step 1: turn every xmi-input/*.xmi file into its own IG directory under
+  # igs/<slug>/ (named after the file), then ask SUSHI to compile+validate
+  # each one independently. This is the fast gate: if any IG's FSH doesn't
+  # compile, nothing else runs.
   extract-and-validate:
     name: Extract FSH from XMI & validate with SUSHI
     runs-on: ubuntu-latest
@@ -42,25 +43,34 @@ jobs:
       - name: Install SUSHI
         run: npm ci
 
-      - name: Generate FSH logical models from XMI
-        run: python3 scripts/xmi_to_fsh.py --input xmi-input --output input/fsh/models
+      - name: Generate one IG per XMI file
+        run: python3 scripts/xmi_to_fsh.py --input xmi-input --output-root igs
 
-      - name: Validate FSH with SUSHI
-        run: npx sushi build .
+      - name: Validate every IG's FSH with SUSHI
+        env:
+          SUSHI_CMD: npx sushi
+        run: bash scripts/validate_all_igs.sh
 
-      - name: Upload generated FSH
+      # upload-artifact computes the least-common-ancestor of everything
+      # matched below as the artifact root — here that's "igs" itself, since
+      # paths diverge into igs/<slug>/... right after it — so download this
+      # artifact back into a directory named "igs" to restore the layout.
+      - name: Upload generated IGs
         uses: actions/upload-artifact@v4
         with:
-          name: generated-fsh
-          path: input/fsh/models/*.fsh
+          name: generated-igs
+          path: |
+            igs/*/sushi-config.yaml
+            igs/*/ig.ini
+            igs/*/input/**
           if-no-files-found: error
           retention-days: 7
 
-  # Step 2: build the full IG website with the HL7 FHIR IG Publisher,
+  # Step 2: build every IG's full website with the HL7 FHIR IG Publisher,
   # reusing exactly the FSH that was just validated. Only runs if step 1
   # succeeded.
   build-ig:
-    name: Build IG with FHIR IG Publisher
+    name: Build IGs with FHIR IG Publisher
     needs: extract-and-validate
     runs-on: ubuntu-latest
     permissions:
@@ -85,8 +95,8 @@ jobs:
           distribution: temurin
           java-version: "17"
 
-      # The IG's template (fhir2.base.template, set in ig.ini) renders
-      # the site with Jekyll, which isn't preinstalled on the runner.
+      # Every IG's template (fhir2.base.template, set in its ig.ini) renders
+      # its site with Jekyll, which isn't preinstalled on the runner.
       - name: Set up Ruby (for Jekyll)
         uses: ruby/setup-ruby@v1
         with:
@@ -95,14 +105,11 @@ jobs:
       - name: Install Jekyll
         run: gem install jekyll
 
-      # upload-artifact flattens input/fsh/models/*.fsh to just the
-      # filenames (their common parent dir becomes the artifact root), so
-      # download straight back into that same directory.
-      - name: Download generated FSH from step 1
+      - name: Download generated IGs from step 1
         uses: actions/download-artifact@v4
         with:
-          name: generated-fsh
-          path: input/fsh/models
+          name: generated-igs
+          path: igs
 
       - name: Get current week (cache key for the IG Publisher jar)
         id: week
@@ -123,26 +130,27 @@ jobs:
           curl -fL -o publisher.jar \
             "https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar"
 
-      # The IG Publisher expects fsh-generated/ to already contain the
-      # compiled FHIR resources (including the ImplementationGuide
-      # resource ig.ini points at) — it does not run SUSHI itself.
-      - name: Run SUSHI to produce FHIR resources
-        run: sushi build .
+      # For each igs/<slug>/, runs SUSHI (the publisher doesn't invoke it
+      # itself) then the IG Publisher, and collects the built site into
+      # site/<slug>/, plus a landing page at site/index.html linking to all
+      # of them.
+      - name: Build every IG
+        env:
+          SUSHI_CMD: sushi
+          PUBLISHER_JAR: ${{ github.workspace }}/publisher.jar
+        run: bash scripts/build_all_igs.sh
 
-      - name: Build IG
-        run: java -Xmx4g -jar publisher.jar -ig ig.ini
-
-      - name: Upload built IG site
+      - name: Upload built IG sites
         uses: actions/upload-artifact@v4
         with:
-          name: ig-site
-          path: output/**
+          name: ig-sites
+          path: site/**
           retention-days: 14
 
-      - name: Publish IG site to gh-pages
+      - name: Publish IG sites to gh-pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          publish_dir: ./site
           publish_branch: gh-pages

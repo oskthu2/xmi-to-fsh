@@ -6,7 +6,6 @@
     "fsh-sushi": "3.20.1"
   },
   "scripts": {
-    "generate": "python3 scripts/xmi_to_fsh.py",
-    "sushi": "sushi build ."
+    "generate": "python3 scripts/xmi_to_fsh.py"
   }
 }
