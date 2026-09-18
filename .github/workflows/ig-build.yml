@@ -103,7 +103,13 @@ jobs:
           curl -fL -o publisher.jar \
             "https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar"
 
-      - name: Build IG (this also runs SUSHI again to produce FHIR resources)
+      # The IG Publisher expects fsh-generated/ to already contain the
+      # compiled FHIR resources (including the ImplementationGuide
+      # resource ig.ini points at) — it does not run SUSHI itself.
+      - name: Run SUSHI to produce FHIR resources
+        run: sushi build .
+
+      - name: Build IG
         run: java -Xmx4g -jar publisher.jar -ig ig.ini
 
       - name: Upload built IG site
