@@ -78,11 +78,14 @@ jobs:
           distribution: temurin
           java-version: "17"
 
+      # upload-artifact flattens input/fsh/models/*.fsh to just the
+      # filenames (their common parent dir becomes the artifact root), so
+      # download straight back into that same directory.
       - name: Download generated FSH from step 1
         uses: actions/download-artifact@v4
         with:
           name: generated-fsh
-          path: .
+          path: input/fsh/models
 
       - name: Get current week (cache key for the IG Publisher jar)
         id: week
