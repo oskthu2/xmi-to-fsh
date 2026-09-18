@@ -128,6 +128,7 @@ class Attribute:
     is_complex: bool
     unresolved_type: bool = False
     source_id: str | None = None
+    definition: str | None = None
 
 
 @dataclass
@@ -138,6 +139,7 @@ class LogicalClass:
     attributes: list[Attribute] = field(default_factory=list)
     fsh_id: str | None = None
     fsh_name: str | None = None
+    definition: str | None = None
 
 
 @dataclass
@@ -162,6 +164,18 @@ def find_isroot(class_el: ET.Element) -> bool:
 
 def is_element_type(el: ET.Element, *type_names: str) -> bool:
     return xmi_attr(el, "type") in type_names
+
+
+def find_documentation(el: ET.Element) -> str | None:
+    """Visual Paradigm stores an element's free-text documentation as a
+    direct child <ownedComment><body>...</body></ownedComment>."""
+    for comment_el in el.findall("ownedComment"):
+        if not is_element_type(comment_el, "uml:Comment"):
+            continue
+        body_el = comment_el.find("body")
+        if body_el is not None and body_el.text and body_el.text.strip():
+            return body_el.text.strip()
+    return None
 
 
 def parse_instance_spec(el: ET.Element) -> InstanceSpec:
@@ -205,6 +219,7 @@ def build_registry(root: ET.Element):
                 xmi_id=xid,
                 name=el.get("name") or xid,
                 is_root=find_isroot(el),
+                definition=find_documentation(el),
             )
         elif is_element_type(el, "uml:DataType", "uml:PrimitiveType", "uml:Enumeration"):
             xid = xmi_attr(el, "id")
@@ -264,7 +279,8 @@ def resolve_type(type_id: str | None, classes: dict[str, LogicalClass],
 def make_attribute(raw_name: str | None, type_id: str | None, lower_el, upper_el,
                     classes, type_name, warnings, context,
                     default_lower="0", default_upper="1",
-                    source_id: str | None = None) -> Attribute:
+                    source_id: str | None = None,
+                    definition: str | None = None) -> Attribute:
     original_name = raw_name or "field"
     field_name = sanitize_field_name(original_name)
     renamed = False
@@ -291,6 +307,7 @@ def make_attribute(raw_name: str | None, type_id: str | None, lower_el, upper_el
         is_complex=is_complex,
         unresolved_type=unresolved,
         source_id=source_id,
+        definition=definition,
     )
 
 
@@ -307,6 +324,7 @@ def collect_class_attributes(class_el: ET.Element, cls: LogicalClass, classes,
             classes, type_name, warnings,
             context=cls.name,
             source_id=xmi_attr(attr_el, "id"),
+            definition=find_documentation(attr_el),
         )
         cls.attributes.append(attr)
 
@@ -387,13 +405,16 @@ def render_class_fsh(cls: LogicalClass, is_root: bool, source_file: str,
     fsh_id = slug_id(cls.name, id_registry)
     cls.fsh_id = fsh_id
     role = "Root logical model" if is_root else "Supporting logical model"
-    lines = [f"Logical: {cls.fsh_name}"]
+    lines = [
+        f"// {role} generated from {source_file} (source class: {cls.name})",
+        f"Logical: {cls.fsh_name}",
+    ]
     lines.append(f"Id: {fsh_id}")
     lines.append(f'Title: "{escape_fsh_string(cls.name)}"')
-    lines.append(
-        f'Description: "{role} generated from {escape_fsh_string(source_file)} '
-        f'(source class: {escape_fsh_string(cls.name)})."'
+    description = cls.definition or (
+        f"{role} generated from {source_file} (source class: {cls.name})."
     )
+    lines.append(f'Description: "{escape_fsh_string(description)}"')
     lines.append("Parent: Base")
     lines.append("Characteristics: #can-be-target")
     if not cls.attributes:
@@ -410,6 +431,10 @@ def render_class_fsh(cls: LogicalClass, is_root: bool, source_file: str,
             f'* {attr.field_name} {attr.lower}..{attr.upper} '
             f'{attr.type_name} "{short}"'
         )
+        if attr.definition:
+            lines.append(
+                f'* {attr.field_name} ^definition = "{escape_fsh_string(attr.definition)}"'
+            )
     return "\n".join(lines) + "\n"
 
 
