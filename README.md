@@ -3,50 +3,96 @@
 Turns Visual Paradigm XMI exports into a FHIR Implementation Guide of
 logical models, built and published automatically by GitHub Actions.
 
-## How it works
+## Using it day to day
 
-1. Drop `.xmi` files exported from Visual Paradigm into [`xmi-input/`](xmi-input).
-2. [`scripts/xmi_to_fsh.py`](scripts/xmi_to_fsh.py) converts every file into
-   one FSH file under `input/fsh/models/` (generated, not committed):
-   - Every `uml:Class` in the file becomes a FSH `Logical:` model.
-   - The class marked **Root** in Visual Paradigm (exported as
-     `<isRoot xmi:value="true"/>`) becomes the profile that represents the
-     file; every other class it depends on is emitted alongside it so the
-     FSH is self-contained.
-   - Attribute data types and cardinalities (`lowerValue`/`upperValue`) are
-     carried over as FSH cardinality/type rules.
-   - Attribute names that collide with FSH keywords or with elements every
-     logical model already inherits (e.g. `id`, `extension`) are renamed
-     with a leading underscore (`id` -> `_id`); the original name is kept
-     in the element's short description.
-   - Relationships modeled as UML associations (rather than as attributes)
-     are converted on a best-effort basis, since Visual Paradigm often
-     exports these without role names — check the build log for
-     `synthesized attribute` warnings and consider adding explicit role
-     names in Visual Paradigm if the generated names aren't right.
-3. GitHub Actions ([`.github/workflows/ig-build.yml`](.github/workflows/ig-build.yml))
-   runs this in two gated steps on every push/PR to `main`:
-   - **`extract-and-validate`** — runs the conversion script, then
-     `sushi build .` to compile and validate the generated FSH. This step
-     fails the whole workflow if the FSH doesn't compile.
-   - **`build-ig`** — only runs if validation passed. Downloads the
-     validated FSH, then runs the official HL7 FHIR IG Publisher to build
-     the complete IG website (profiles, narrative pages from
-     `input/pagecontent/`, artifact index, etc.).
-4. On every push to `main` (not on pull requests), the built site is
-   published to the `gh-pages` branch via `peaceiris/actions-gh-pages`.
-   Turn on **Settings -> Pages -> Deploy from a branch -> `gh-pages`** once
-   to serve it.
+1. **Add or update XMI files.** Export your model(s) from Visual Paradigm
+   as `.xmi` and drop them into [`xmi-input/`](xmi-input) (any filename,
+   any number of files). Commit and push — either directly to `main` or
+   via a pull request.
+   - In each file, mark exactly one class as **Root** in Visual Paradigm
+     (this exports as `<isRoot xmi:value="true"/>`). That class becomes
+     the logical model the file represents; every other class it depends
+     on comes along as a supporting type.
+   - If you open a PR, GitHub Actions extracts and validates the FSH
+     automatically — check the PR's checks before merging.
+2. **Merge to `main`.** This triggers the full pipeline: extraction,
+   validation, and an IG Publisher build, ending with the built site
+   pushed to the `gh-pages` branch.
+3. **Get the built IG.** Once GitHub Pages is turned on for this repo
+   (**Settings → Pages → Source: Deploy from a branch → `gh-pages` → `/`
+   (root)** — a one-time setup), the site is published at
+   `https://<owner>.github.io/<repo>/` and updates automatically on every
+   push to `main`. You can also download the site or the FHIR package
+   (`output/**`) as a build artifact from the `build-ig` job of any
+   workflow run, without waiting for Pages.
+4. **If something fails**, read the failing job's log first — the
+   converter prints a warning for every attribute, association, or
+   instance it couldn't confidently convert (see below), which is
+   usually enough to tell whether it's a real bug or something to adjust
+   in the source model (e.g. adding an explicit association role name).
+
+## How the conversion works
+
+Everything happens in [`scripts/xmi_to_fsh.py`](scripts/xmi_to_fsh.py),
+which parses each XMI file directly (no Visual Paradigm needed) and
+writes one `.fsh` file per input file.
+
+- **Classes → Logical models.** Every `uml:Class` becomes a FSH
+  `Logical:` definition (`Parent: Base`). The class flagged **Root**
+  becomes the profile representing the file; the rest are emitted
+  alongside it as supporting types, since FSH needs every referenced
+  type defined somewhere. If no class is flagged root, the converter
+  guesses (prefers a class nothing else points to) and logs a warning —
+  mark a root explicitly in Visual Paradigm to control this.
+- **Attributes → cardinality + type rules.** `lowerValue`/`upperValue`
+  become the FSH cardinality (`0..1`, `1..*`, etc.), defaulting to `0..1`
+  when absent, matching UML's own default. The attribute's UML type is
+  mapped to a FHIR primitive (`string`, `integer`, `dateTime`, …) when
+  recognized, or to another Logical model when it points at a class in
+  the same file; an unresolvable type falls back to `string` with a
+  warning.
+- **Reserved names.** An attribute named `id`, `extension`, or any real
+  FSH keyword (`from`, `and`, `obeys`, …) would collide with FSH syntax
+  or with elements every Logical model already inherits, so it's renamed
+  with a leading underscore (`id` → `_id`). The original name is kept in
+  the element's short description.
+- **Associations (best-effort).** A relationship modeled as a UML
+  association rather than a plain attribute is converted into an
+  attribute on each navigable side. Visual Paradigm often exports these
+  without role names, so the generated field name falls back to the
+  association's own name or the target class's name — check the build
+  log for `synthesized attribute` warnings and add explicit role names
+  in Visual Paradigm if the generated names read oddly.
+- **Object diagrams → example instances.** A `uml:InstanceSpecification`
+  (an object in one of the model's object diagrams) becomes a FSH
+  `Instance:` of the class it's an instance of, with its slots copied
+  over as `* field = value` rules. Object diagrams are usually partial
+  sketches that don't set every required attribute of their class, and
+  FHIR/SUSHI rejects an incomplete instance — so only instances that
+  *do* set every required attribute become real, validated, browsable
+  `Usage: #example` instances; the rest are written out as FSH comments
+  instead (visible in the source, harmless to validation, not published
+  as their own example page).
+- **Documentation → descriptions/definitions.** When a class or
+  attribute has free-text documentation in Visual Paradigm (an
+  `ownedComment`), it becomes the Logical model's `Description:` (for a
+  class) or a `* field ^definition = "..."` rule (for an attribute).
+  Without documentation, a generic auto-generated description is used
+  instead.
+
+Every warning the script prints is informational, not fatal — the run
+only fails (and blocks CI) if a file has no classes at all or genuinely
+can't be parsed as XML.
 
 ## Repository layout
 
 ```
-xmi-input/              Source XMI files exported from Visual Paradigm
+xmi-input/              Source XMI files exported from Visual Paradigm — edit these
 scripts/xmi_to_fsh.py   The XMI -> FSH converter
 sushi-config.yaml       SUSHI / IG Publisher configuration
 ig.ini                  IG Publisher entry point (points at the SUSHI-generated IG resource)
 input/pagecontent/      Hand-written narrative pages (index.md, etc.)
-input/fsh/models/       Generated FSH logical models (gitignored, built by CI)
+input/fsh/models/       Generated FSH (gitignored, rebuilt by CI on every run)
 .github/workflows/      The two-step CI pipeline
 ```
 
@@ -54,15 +100,35 @@ input/fsh/models/       Generated FSH logical models (gitignored, built by CI)
 sources, page content, etc.), which is why the raw XMI files live in the
 separate `xmi-input/` folder instead.
 
+## CI pipeline
+
+[`.github/workflows/ig-build.yml`](.github/workflows/ig-build.yml) runs
+two gated jobs on every push and pull request to `main`:
+
+1. **`extract-and-validate`** — runs the conversion script, then
+   `sushi build .` to compile and validate the generated FSH. Fails the
+   whole workflow if the FSH doesn't compile, so `build-ig` never runs
+   on broken output.
+2. **`build-ig`** — only runs if validation passed. Downloads the
+   validated FSH, runs SUSHI again to produce the FHIR resources, then
+   the official HL7 FHIR IG Publisher to build the complete site
+   (profiles, examples, narrative pages, artifact index, etc.). On a
+   push to `main` (not on pull requests), the built site is also pushed
+   to the `gh-pages` branch via `peaceiris/actions-gh-pages` — this
+   needs the `contents: write` permission the workflow already grants
+   itself for that job.
+
 ## Running locally
 
 ```sh
 npm install
 python3 scripts/xmi_to_fsh.py --input xmi-input --output input/fsh/models
 npx sushi build .           # validate FSH
-# optional, requires Java 17+ and downloads the IG Publisher jar:
+
+# optional, requires Java 17+ and Ruby+Jekyll, and downloads the IG Publisher jar:
 curl -fL -o publisher.jar https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar
-java -jar publisher.jar -ig sushi-config.yaml
+sushi build .               # (re)generate fsh-generated/, which the publisher reads
+java -jar publisher.jar -ig ig.ini
 ```
 
 ## Before publishing for real
